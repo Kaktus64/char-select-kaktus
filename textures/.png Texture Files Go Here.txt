@@ -1,0 +1,10 @@
+REMEMBER. For most of these to work, they must be a dimension that is a multiple of 16x16.
+
+So,
+
+16x16
+32x32
+64x64
+128x128
+
+And so on, with a limit of 1024x1024.
