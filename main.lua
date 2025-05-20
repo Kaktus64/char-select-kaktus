@@ -84,7 +84,7 @@ local ANIMTABLE_KAKTUS = {
     [CHAR_ANIM_CREDITS_LOOK_BACK_THEN_RUN] = 'endcutsceneotherkak',
     [CHAR_ANIM_CREDITS_WAVING] = 'endcutsceneotherkak',
     [CHAR_ANIM_FIRST_PERSON] = 'idleanimkak',
-    [CHAR_ANIM_AIR_KICK] = 'roundhousekak'
+    [CHAR_ANIM_AIR_KICK] = 'roundhousekak',
 }
 
 local PALETTE_CHAR = {
@@ -117,15 +117,15 @@ local HM_KAKTUS= {
 
 local CSloaded = false
 local function on_character_select_load()
-    CT_KAKTUS = _G.charSelect.character_add("Kaktus", {"Kaktus arrives at Peach's Castle", "after taking a wrong turn on the", "I-35."}, "Kaktus64, Charlie & JerThePear", {r = 172, g = 80, b = 255}, E_MODEL_KAKTUS, CT_KAKTUS, KAKTUS_ICON)
+    CT_KAKTUS = _G.charSelect.character_add("Kaktus", {"Kaktus arrives at Peach's Castle", "after taking a wrong turn on the", "I-35."}, "Kaktus64 & JerThePear", {r = 172, g = 80, b = 255}, E_MODEL_KAKTUS, CT_KAKTUS, KAKTUS_ICON)
     _G.charSelect.character_add_caps(E_MODEL_KAKTUS, CAPTABLE_CHAR)
     _G.charSelect.character_add_voice(E_MODEL_KAKTUS, VOICETABLE_KAKTUS)
-    _G.charSelect.character_add_celebration_star(E_MODEL_KAKTUS, E_MODEL_CUSTOM_STAR, TEX_CUSTOM_STAR_ICON)
     _G.charSelect.character_add_palette_preset(E_MODEL_KAKTUS, PALETTE_CHAR)
     _G.charSelect.character_add_health_meter(CT_KAKTUS, HM_KAKTUS)
     _G.charSelect.character_add_animations(E_MODEL_KAKTUS, ANIMTABLE_KAKTUS)
     _G.charSelect.character_hook_moveset(CT_KAKTUS, HOOK_MARIO_UPDATE, HOOK_BEFORE_SET_MARIO_ACTION)
-    _G.charSelect.character_set_category(CT_KAKTUS, "Kaktus's CS Mods")
+    _G.charSelect.character_set_category(CT_KAKTUS, "DXA")
+    _G.charSelect.character_set_category(CT_KAKTUS, "Squishy Workshop")
     add_moveset()
     CSloaded = true
 end
@@ -143,6 +143,8 @@ end
 hook_event(HOOK_ON_MODS_LOADED, on_character_select_load)
 hook_event(HOOK_CHARACTER_SOUND, on_character_sound)
 hook_event(HOOK_MARIO_UPDATE, on_character_snore)
+
+KakGB = get_texture_info("KaktusGameBoy")
 
 function is_kaktus()
     return CT_KAKTUS == charSelect.character_get_current_number()
