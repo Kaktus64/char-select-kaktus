@@ -12,23 +12,7 @@ function act_dash (m)
 
 end
 end
-ACT_KAKFLOAT = allocate_mario_action(ACT_FLAG_AIR|ACT_FLAG_ALLOW_VERTICAL_WIND_ACTION)
-function act_kakfloat (m)
-    sml
-ACT_KAKROLL = allocate_mario_action(ACT_GROUP_MOVING|ACT_FLAG_ALLOW_VERTICAL_WIND_ACTION|ACT_FLAG_ATTACKING)
-function act_kakroll (m)
-    smlua_anim_util_set_animation(m.marioObj, "kakroll")
-    mario_set_forward_vel(m, 50)
-    local stepResult = perform_air_step(m, 0)
-        if stepResult == AIR_STEP_LANDED and m.prevAction ~= ACT_KAKROLLFLOOR then --hitting the gound
-        return set_mario_action(m, ACT_KAKROLLFLOOR, 0)
-        elseif m.wall then
-            m.vel.y = 0
-            return set_mario_action(m, ACT_BACKWARD_AIR_KB, 0)
-        elseif stepResult == AIR_STEP_LANDED and m.prevAction == ACT_KAKROLLFLOOR then
-            return set_mario_action(m, ACT_BRAKING, 0)
-        end
-end
+
 ACT_KAKROLLFLOOR = allocate_mario_action(ACT_GROUP_MOVING|ACT_FLAG_ALLOW_VERTICAL_WIND_ACTION|ACT_FLAG_ATTACKING)
 function act_kakrollfloor (m)
     smlua_anim_util_set_animation(m.marioObj, "kakroll")
