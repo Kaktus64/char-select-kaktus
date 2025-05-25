@@ -19,7 +19,11 @@ end
 
 local E_MODEL_KAKTUS = smlua_model_util_get_id("kaktus_geo") -- Located in "actors"
 
+local E_MODEL_KAKTETO = smlua_model_util_get_id("kakteto_geo")
+
 local KAKTUS_ICON = get_texture_info("Kaktus_Icon") -- Located in "textures"
+
+local KAKTETO_ICON = get_texture_info("Kakteto_Icon")
 
 -- All Located in "sound" Name them whatever you want. Remember to include the .ogg extension
 local VOICETABLE_KAKTUS = {
@@ -64,16 +68,9 @@ local VOICETABLE_KAKTUS = {
 	[CHAR_SOUND_DROWNING] = 'drown.ogg', -- Running out of air underwater
     [CHAR_SOUND_MAMA_MIA] = 'levelboot.ogg', -- Booted out of level
 --EXTRAS
-    [CHAR_SOUND_PRESS_START_TO_PLAY] = 'go.ogg'
+    [CHAR_SOUND_PRESS_START_TO_PLAY] = 'sm64_moneybags_jump.ogg'
 }
 
--- All Located in "actors"
---local CAPTABLE_CHAR = {
-   --normal = smlua_model_util_get_id("kaktus_caps_geo"),
-   --wing = smlua_model_util_get_id("kaktus_caps_wing_geo"),
-   --metal = smlua_model_util_get_id("kaktus_caps_metal_geo"),
-   --metalWing = smlua_model_util_get_id("kaktus_caps_metal_wing_geo"),
---}
 
 local ANIMTABLE_KAKTUS = {
     [CHAR_ANIM_IDLE_HEAD_CENTER] = 'idleanimkak',
@@ -87,12 +84,23 @@ local ANIMTABLE_KAKTUS = {
     [CHAR_ANIM_AIR_KICK] = 'roundhousekak',
 }
 
-local PALETTE_CHAR = {
+local PALETTE_KAKTUS = {
     [PANTS]  = "313149",
     [SHIRT]  = "791E82",
     [GLOVES] = "FFB97B",
     [SHOES]  = "D8004D",
     [HAIR]   = "743F39",
+    [SKIN]   = "DB9C70",
+    [CAP]    = "3E8948",
+	[EMBLEM] = "D87644"
+}
+
+local PALETTE_KAKTETO = {
+    [PANTS]  = "313149",
+    [SHIRT]  = "333333",
+    [GLOVES] = "FFB97B",
+    [SHOES]  = "D8004D",
+    [HAIR]   = "AD1834",
     [SKIN]   = "DB9C70",
     [CAP]    = "3E8948",
 	[EMBLEM] = "D87644"
@@ -120,13 +128,18 @@ local function on_character_select_load()
     CT_KAKTUS = _G.charSelect.character_add("Kaktus", {"Kaktus arrives at Peach's Castle", "after taking a wrong turn on the", "I-35."}, "Kaktus64 & JerThePear", {r = 172, g = 80, b = 255}, E_MODEL_KAKTUS, CT_KAKTUS, KAKTUS_ICON)
     _G.charSelect.character_add_caps(E_MODEL_KAKTUS, CAPTABLE_CHAR)
     _G.charSelect.character_add_voice(E_MODEL_KAKTUS, VOICETABLE_KAKTUS)
-    _G.charSelect.character_add_palette_preset(E_MODEL_KAKTUS, PALETTE_CHAR)
+    _G.charSelect.character_add_palette_preset(E_MODEL_KAKTUS, PALETTE_KAKTUS)
     _G.charSelect.character_add_health_meter(CT_KAKTUS, HM_KAKTUS)
     _G.charSelect.character_add_animations(E_MODEL_KAKTUS, ANIMTABLE_KAKTUS)
     _G.charSelect.character_hook_moveset(CT_KAKTUS, HOOK_MARIO_UPDATE, HOOK_BEFORE_SET_MARIO_ACTION)
     _G.charSelect.character_set_category(CT_KAKTUS, "DXA")
     _G.charSelect.character_set_category(CT_KAKTUS, "Squishy Workshop")
     add_moveset()
+
+    _G.charSelect.character_add_costume(CT_KAKTUS, "Kakane Teto", nil, "Kaktus64 & JerThePear", nil, E_MODEL_KAKTETO, CT_LUIGI, KAKTETO_ICON, nil, nil)
+    _G.charSelect.character_add_voice(E_MODEL_KAKTETO, VOICETABLE_KAKTUS)
+    _G.charSelect.character_add_palette_preset(E_MODEL_KAKTETO, PALETTE_KAKTETO)
+    _G.charSelect.character_add_animations(E_MODEL_KAKTETO, ANIMTABLE_KAKTUS)
     CSloaded = true
 end
 
