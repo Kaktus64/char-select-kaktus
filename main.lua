@@ -21,7 +21,7 @@ local E_MODEL_KAKTUS = smlua_model_util_get_id("kaktus_geo") -- Located in "acto
 
 local E_MODEL_KAKTETO = smlua_model_util_get_id("kakteto_geo")
 
-local KAKTUS_ICON = get_texture_info("Kaktus_Icon") -- Located in "textures"
+local KAKTUS_ICON = get_texture_info("Kaktus-LifeIcon1") -- Located in "textures"
 
 local KAKTETO_ICON = get_texture_info("Kakteto_Icon")
 

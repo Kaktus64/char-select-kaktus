@@ -59,10 +59,17 @@ end
 if inc == ACT_SIDE_FLIP then
     m.vel.y = 60
 end
+
 end)
 function kaktus_update(m)
     if m.action == ACT_SUPERJUMP_CROUCH_KAK then
         obj_act_squished(1.5)
+    end
+    if m.action == ACT_HOLD_IDLE and m.controller.buttonPressed & L_TRIG ~= 0 then
+        set_mario_action(m, ACT_HOLDING_BOWSER, 0)
+    end
+    if m.action == ACT_HOLD_HEAVY_IDLE and m.controller.buttonPressed & L_TRIG ~= 0 then
+        set_mario_action(m, ACT_HOLDING_BOWSER, 0)
     end
     if m.action == ACT_CROUCHING and m.marioObj.header.gfx.animInfo.animFrame == 30 then
         set_mario_action(m, ACT_SUPERJUMP_CROUCH_KAK, 0)
@@ -131,6 +138,43 @@ function kaktus_update(m)
     end
     if (m.action & ACT_GROUP_MASK) == ACT_GROUP_SUBMERGED then
         m.health = m.health - 1.5
+    end
+    -- CHANGING EYES
+    if (m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_STAR_DANCE and m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_FIRST_PUNCH ) or (m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_WATER_STAR_DANCE and m.marioObj.header.gfx.animInfo.animFrame > 68) then
+        m.marioBodyState.eyeState = MARIO_EYES_LOOK_UP
+    end
+    if m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_AIR_KICK and m.marioObj.header.gfx.animInfo.animFrame < 14 then
+        m.marioBodyState.eyeState = MARIO_EYES_DEAD
+    end
+    if m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_FALL_OVER_BACKWARDS or m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_BACKWARD_AIR_KB then
+        m.marioBodyState.eyeState = MARIO_EYES_DEAD
+    end
+    if m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_GROUND_POUND or m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_START_GROUND_POUND or m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_TRIPLE_JUMP_GROUND_POUND then
+        m.marioBodyState.eyeState = MARIO_EYES_LOOK_DOWN
+    end
+    if m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_GROUND_POUND_LANDING then
+        m.marioBodyState.eyeState = MARIO_EYES_DEAD
+    end
+    if m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_FIRST_PUNCH or m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_SECOND_PUNCH or m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_AIR_KICK or m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_GROUND_KICK or m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_FIRST_PUNCH_FAST or m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_SECOND_PUNCH_FAST or m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_SLIDE_KICK then
+        m.marioBodyState.eyeState = MARIO_EYES_DEAD
+    end
+    if m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_DROWNING_PART1 or m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_DROWNING_PART2 then
+        m.marioBodyState.eyeState = MARIO_EYES_DEAD
+    end
+    if m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_TRIPLE_JUMP_LAND and m.marioObj.header.gfx.animInfo.animFrame < 20 then
+        m.marioBodyState.eyeState = MARIO_EYES_CLOSED
+    end
+    if m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_WALK_PANTING or m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_FAST_LEDGE_GRAB or m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_SLOW_LEDGE_GRAB then
+        m.marioBodyState.eyeState = MARIO_EYES_DEAD
+    end
+    if m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_IDLE_ON_LEDGE then
+        m.marioBodyState.eyeState = MARIO_EYES_LOOK_DOWN
+    end
+    if m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_FORWARD_KB or m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_BACKWARD_KB or m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_AIR_FORWARD_KB or m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_BACKWARD_AIR_KB or m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_WATER_FORWARD_KB or m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_BACKWARDS_WATER_KB or m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_SHOCKED then
+        m.marioBodyState.eyeState = MARIO_EYES_DEAD
+    end
+    if m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_SOFT_FRONT_KB or m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_SOFT_BACK_KB then
+        m.marioBodyState.eyeState = MARIO_EYES_LOOK_DOWN
     end
 end
 _G.charSelect.character_hook_moveset(CT_KAKTUS, HOOK_MARIO_UPDATE, kaktus_update)
