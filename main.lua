@@ -81,9 +81,6 @@ local VOICETABLE_KAKTUS = {
 
 
 local ANIMTABLE_KAKTUS = {
-    [CHAR_ANIM_IDLE_HEAD_CENTER] = 'idleanimkak',
-    [CHAR_ANIM_IDLE_HEAD_LEFT] = 'idleanimkak',
-    [CHAR_ANIM_IDLE_HEAD_RIGHT] = 'lookingsidekak',
     [CHAR_ANIM_TRIPLE_JUMP] = 'triplejumpspin',
     [CHAR_ANIM_CREDITS_START_WALK_LOOK_UP] = 'endcutscenekak',
     [CHAR_ANIM_CREDITS_LOOK_BACK_THEN_RUN] = 'endcutsceneotherkak',

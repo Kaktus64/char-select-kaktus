@@ -25,12 +25,6 @@ function act_superjump_crouch_kak (m)
 end
 hook_mario_action(ACT_DASH, act_dash) 
 hook_mario_action(ACT_SUPERJUMP_CROUCH_KAK, act_superjump_crouch_kak)
-ACT_TAUNTKAK = allocate_mario_action(ACT_FLAG_CUSTOM_ACTION|ACT_FLAG_ALLOW_FIRST_PERSON)
-function act_tauntkak (m)
-    smlua_anim_util_set_animation(m.marioObj, "triplejump")
-    mario_set_forward_vel(m, 0)
-end
-hook_mario_action(ACT_TAUNTKAK, act_tauntkak) 
 function add_moveset()
 
 -- i am so motherfucking stupid
@@ -111,8 +105,8 @@ end
 if inc == ACT_SIDE_FLIP then
     m.vel.y = 60
 end
-if inc == ACT_PUNCHING and m.prevAction == ACT_CROUCHING then
-    return ACT_KAKROLL
+if inc == ACT_BACKFLIP then
+    return ACT_GROUND_POUND_LAND
 end
 if inc == ACT_JUMP and m.prevAction == ACT_JUMP then
     m.vel.y = 0
@@ -120,6 +114,33 @@ if inc == ACT_JUMP and m.prevAction == ACT_JUMP then
 end
 end)
 function kaktus_update(m)
+    if m.action == ACT_JUMP and m.controller.buttonDown & L_TRIG ~= 0 then
+        set_mario_action(m, ACT_FREEFALL, 0)
+        m.vel.y = -8
+    end
+    if m.action == ACT_SIDE_FLIP and m.controller.buttonDown & L_TRIG ~= 0 then
+        set_mario_action(m, ACT_FREEFALL, 0)
+        m.vel.y = -8
+    end
+    if m.action == ACT_LONG_JUMP and m.controller.buttonDown & L_TRIG ~= 0 then
+        set_mario_action(m, ACT_FREEFALL, 0)
+        m.vel.y = -8
+    end
+    if m.action == ACT_BACKFLIP and m.controller.buttonDown & L_TRIG ~= 0 then
+        set_mario_action(m, ACT_FREEFALL, 0)
+        m.vel.y = -8
+    end
+    if m.action == ACT_FREEFALL and m.controller.buttonDown & L_TRIG ~= 0 then
+        set_mario_animation(m, CHAR_ANIM_HANG_ON_CEILING)
+        set_mario_particle_flags(m, ACTIVE_PARTICLE_SPARKLES, 0)
+    end
+    if m.action == ACT_TRIPLE_JUMP and m.controller.buttonDown & L_TRIG ~= 0 then
+        set_mario_action(m, ACT_FREEFALL, 0)
+        m.vel.y = -8
+    end
+    if m.action == ACT_FREEFALL and m.controller.buttonDown & L_TRIG ~= 0 and m.vel.y < -9 then
+        m.vel.y = -8
+    end
     if m.action == ACT_SUPERJUMP_CROUCH_KAK then
         obj_act_squished(1.5)
     end
@@ -138,11 +159,6 @@ function kaktus_update(m)
         m.forwardVel = 50
         m.faceAngle.y = m.intendedYaw
     end
-    if m.action == ACT_LONG_JUMP then
-        set_mario_action (m, ACT_TRIPLE_JUMP, 0)
-        m.vel.y = 50
-        m.forwardVel = 52
-    end
     if m.action == ACT_TRIPLE_JUMP and m.controller.buttonPressed & A_BUTTON ~= 0 and m.controller.buttonDown & Z_TRIG == 0 then
         set_mario_action(m, ACT_JUMP, 0)
         m.vel.y = 45
@@ -160,7 +176,7 @@ function kaktus_update(m)
         set_mario_action(m, ACT_TRIPLE_JUMP, 0)
         set_mario_particle_flags(m, PARTICLE_HORIZONTAL_STAR, 0)
         m.vel.y = 50
-        m.forwardVel = 50
+        m.forwardVel = 60
         m.faceAngle.y = m.intendedYaw
     elseif m.action == ACT_GROUND_POUND_LAND and m.controller.buttonPressed & A_BUTTON ~= 0 and m.controller.buttonDown & Z_TRIG ~= 0 then
         set_mario_action(m, ACT_TRIPLE_JUMP, 0)
