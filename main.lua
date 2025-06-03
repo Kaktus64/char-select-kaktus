@@ -19,11 +19,7 @@ end
 
 local E_MODEL_KAKTUS = smlua_model_util_get_id("kaktus_geo")
 
-local E_MODEL_KAKTETO = smlua_model_util_get_id("kakteto_geo")
-
 local KAKTUS_ICON = get_texture_info("Kaktus-LifeIcon1")
-
-local KAKTETO_ICON = get_texture_info("Kakteto_Icon")
 
 -- SPEEDOMETER
 
@@ -87,7 +83,6 @@ local ANIMTABLE_KAKTUS = {
     [CHAR_ANIM_CREDITS_WAVING] = 'endcutsceneotherkak',
     [CHAR_ANIM_FIRST_PERSON] = 'idleanimkak',
     [CHAR_ANIM_AIR_KICK] = 'roundhousekak',
-    [CHAR_ANIM_SLOW_LONGJUMP] = 'kakbouncejump',
 }
 
 local PALETTE_KAKTUS = {
@@ -141,12 +136,7 @@ local function on_character_select_load()
     _G.charSelect.character_set_category(CT_KAKTUS, "DXA")
     _G.charSelect.character_set_category(CT_KAKTUS, "Squishy Workshop")
     add_moveset()
-
-    _G.charSelect.character_add_costume(CT_KAKTUS, "Kakane Teto", nil, "Kaktus64 & JerThePear", nil, E_MODEL_KAKTETO, CT_LUIGI, KAKTETO_ICON, nil, nil)
-    _G.charSelect.character_add_voice(E_MODEL_KAKTETO, VOICETABLE_KAKTUS)
-    _G.charSelect.character_add_palette_preset(E_MODEL_KAKTETO, PALETTE_KAKTETO)
-    _G.charSelect.character_add_animations(E_MODEL_KAKTETO, ANIMTABLE_KAKTUS)
-
+    
     CSloaded = true
 end
 
