@@ -44,7 +44,8 @@ local brellaActions = { -- What actions you can brella out of
     [ACT_FREEFALL] = true,
     [ACT_SIDE_FLIP] = true,
     [ACT_BACKFLIP] = true,
-    [ACT_WALL_KICK_AIR] = true
+    [ACT_WALL_KICK_AIR] = true,
+    [ACT_TOP_OF_POLE_JUMP] = true
 }
 
 function act_brella_float(m)
@@ -140,7 +141,7 @@ if inc == ACT_JUMP and m.prevAction == ACT_JUMP then
 end
 end)
 function kaktus_update(m)
-    if brellaActions[m.action] and m.vel.y < 0 and m.input & INPUT_A_PRESSED ~= 0 then
+    if brellaActions[m.action] and m.vel.y < 0 and m.input & INPUT_A_PRESSED ~= 0 and m.prevAction ~= ACT_BRELLA_FLOAT then
         set_mario_action(m, ACT_BRELLA_FLOAT, 0)
         set_mario_particle_flags(m, PARTICLE_MIST_CIRCLE, 0)
     end

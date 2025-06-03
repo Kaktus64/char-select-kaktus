@@ -32,45 +32,45 @@ SPEEDOMETER_MAX = get_texture_info("Speedometer5")
 -- All Located in "sound" Name them whatever you want. Remember to include the .ogg extension
 local VOICETABLE_KAKTUS = {
     [CHAR_SOUND_OKEY_DOKEY] = 'Silent.ogg', -- Starting game
-	[CHAR_SOUND_LETS_A_GO] = 'Silent.ogg', -- Starting level
-	[CHAR_SOUND_PUNCH_YAH] = 'hit1.ogg', -- Punch 1
-	[CHAR_SOUND_PUNCH_WAH] = 'hit2.ogg', -- Punch 2
-	[CHAR_SOUND_PUNCH_HOO] = 'kick.ogg', -- Punch 3
-	[CHAR_SOUND_YAH_WAH_HOO] = {'jump1.ogg', 'jump2.ogg', 'jump3.ogg'}, -- First/Second jump sounds
-	[CHAR_SOUND_HOOHOO] = 'jumpdouble23.ogg', -- Third jump sound
-	[CHAR_SOUND_YAHOO_WAHA_YIPPEE] = {'triplejump.ogg', 'longjump.ogg'}, -- Triple jump sounds
-	[CHAR_SOUND_UH] = 'ohmygod.ogg', -- Wall bonk
-	[CHAR_SOUND_UH2] = 'Silent.ogg', -- Landing after long jump
-	[CHAR_SOUND_UH2_2] = 'longjumpland.ogg', -- Same sound as UH2; jumping onto ledge
-	[CHAR_SOUND_HAHA] = 'landtriple.ogg', -- Landing triple jump
-	[CHAR_SOUND_YAHOO] = 'longjump.ogg', -- Long jump
-	[CHAR_SOUND_DOH] = 'wallhit.ogg', -- Long jump wall bonk
-	[CHAR_SOUND_WHOA] = 'ohmygod.ogg', -- Grabbing ledge
-	[CHAR_SOUND_EEUH] = 'lift.ogg', -- Climbing over ledge
-	[CHAR_SOUND_WAAAOOOW] = 'fallong.ogg', -- Falling a long distance
-	[CHAR_SOUND_TWIRL_BOUNCE] = 'holyshit.ogg', -- Bouncing off of a flower spring
-	[CHAR_SOUND_GROUND_POUND_WAH] = 'jump1.ogg',
-	[CHAR_SOUND_HRMM] = 'lift.ogg', -- Lifting something
-	[CHAR_SOUND_HERE_WE_GO] = {'stargetnew.ogg', 'stargetnew2.ogg', 'stargetnew3.ogg', 'stargetnew5.ogg'}, -- Star get
-	[CHAR_SOUND_SO_LONGA_BOWSER] = 'solonga.ogg', -- Throwing Bowser
+	[CHAR_SOUND_LETS_A_GO] = 'kakyes.ogg', -- Starting level
+	[CHAR_SOUND_PUNCH_YAH] = 'kakhey.ogg', -- Punch 1
+	[CHAR_SOUND_PUNCH_WAH] = 'kakyip.ogg', -- Punch 2
+	[CHAR_SOUND_PUNCH_HOO] = 'kakyeah.ogg', -- Punch 3
+	[CHAR_SOUND_YAH_WAH_HOO] = {'kakheyshort.ogg', 'kakyeahshort.ogg'}, -- First/Second jump sounds
+	[CHAR_SOUND_HOOHOO] = 'kakheyhey.ogg', -- Third jump sound
+	[CHAR_SOUND_YAHOO_WAHA_YIPPEE] = {'kakwoohoo.ogg', 'kakyipee.ogg'}, -- Triple jump sounds
+	[CHAR_SOUND_UH] = 'kakeek.ogg', -- Wall bonk
+	[CHAR_SOUND_UH2] = 'kakyes.ogg', -- Landing after long jump
+	[CHAR_SOUND_UH2_2] = 'kakyes.ogg', -- Same sound as UH2; jumping onto ledge
+	[CHAR_SOUND_HAHA] = 'kaktada.ogg', -- Landing triple jump
+	[CHAR_SOUND_YAHOO] = 'kakwoohoo.ogg', -- Long jump
+	[CHAR_SOUND_DOH] = 'kakuhoh.ogg', -- Long jump wall bonk
+	[CHAR_SOUND_WHOA] = 'kakeek.ogg', -- Grabbing ledge
+	[CHAR_SOUND_EEUH] = 'Silent.ogg', -- Climbing over ledge
+	[CHAR_SOUND_WAAAOOOW] = 'kakeek.ogg', -- Falling a long distance
+	[CHAR_SOUND_TWIRL_BOUNCE] = 'kakyipee.ogg', -- Bouncing off of a flower spring
+	[CHAR_SOUND_GROUND_POUND_WAH] = 'kakyip.ogg',
+	[CHAR_SOUND_HRMM] = 'kakhurt.ogg', -- Lifting something
+	[CHAR_SOUND_HERE_WE_GO] = 'kakwoohoo', -- Star get
+	[CHAR_SOUND_SO_LONGA_BOWSER] = 'Silent.ogg', -- Throwing Bowser
 --DAMAGE
-	[CHAR_SOUND_ATTACKED] = 'hurt.ogg', -- Damaged
-	[CHAR_SOUND_PANTING] = 'lowhealth.ogg', -- Low health
-	[CHAR_SOUND_ON_FIRE] = 'assfire.ogg', -- Burned
+	[CHAR_SOUND_ATTACKED] = 'kakow.ogg', -- Damaged
+	[CHAR_SOUND_PANTING] = 'Silent.ogg', -- Low health
+	[CHAR_SOUND_ON_FIRE] = 'kakeek.ogg', -- Burned
 --SLEEP SOUNDS
 	[CHAR_SOUND_IMA_TIRED] = 'Silent.ogg', -- Mario feeling tired
-	[CHAR_SOUND_YAWNING] = 'yawn.ogg', -- Mario yawning before he sits down to sleep
+	[CHAR_SOUND_YAWNING] = 'Silent.ogg', -- Mario yawning before he sits down to sleep
 	[CHAR_SOUND_SNORING1] = 'Silent.ogg', -- Snore Inhale
 	[CHAR_SOUND_SNORING2] = 'Silent.ogg', -- Exhale
-	[CHAR_SOUND_SNORING3] = 'sleeptalking.ogg', -- Sleep talking / mumbling
+	[CHAR_SOUND_SNORING3] = 'Silent.ogg', -- Sleep talking / mumbling
 --COUGHING (USED IN THE GAS MAZE)
-	[CHAR_SOUND_COUGHING1] = 'cough1.ogg', -- Cough take 1
-	[CHAR_SOUND_COUGHING2] = 'cough2.ogg', -- Cough take 2
-	[CHAR_SOUND_COUGHING3] = 'cough3.ogg', -- Cough take 3
+	[CHAR_SOUND_COUGHING1] = 'Silent.ogg', -- Cough take 1
+	[CHAR_SOUND_COUGHING2] = 'Silent.ogg', -- Cough take 2
+	[CHAR_SOUND_COUGHING3] = 'Silent.ogg', -- Cough take 3
 --DEATH
-	[CHAR_SOUND_DYING] = 'deathdamage.ogg', -- Dying from damage
-	[CHAR_SOUND_DROWNING] = 'drown.ogg', -- Running out of air underwater
-    [CHAR_SOUND_MAMA_MIA] = 'levelboot.ogg', -- Booted out of level
+	[CHAR_SOUND_DYING] = 'kakeek.ogg', -- Dying from damage
+	[CHAR_SOUND_DROWNING] = 'Silent.ogg', -- Running out of air underwater
+    [CHAR_SOUND_MAMA_MIA] = 'kakuhoh.ogg', -- Booted out of level
 --EXTRAS
     [CHAR_SOUND_PRESS_START_TO_PLAY] = 'sm64_moneybags_jump.ogg'
 }
@@ -136,7 +136,7 @@ local function on_character_select_load()
     _G.charSelect.character_set_category(CT_KAKTUS, "DXA")
     _G.charSelect.character_set_category(CT_KAKTUS, "Squishy Workshop")
     add_moveset()
-    
+
     CSloaded = true
 end
 
