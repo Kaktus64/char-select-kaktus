@@ -18,6 +18,7 @@ ACT_DASH = allocate_mario_action(ACT_GROUP_AIRBORNE|ACT_FLAG_ALLOW_VERTICAL_WIND
 ACT_SUPERJUMP_CROUCH_KAK = allocate_mario_action(ACT_GROUP_STATIONARY)
 ACT_BRELLA_FLOAT = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR)
 ACT_BRELLA_JUMP = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR)
+ACT_BRELLA_POUND = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR | ACT_FLAG_ATTACKING)
 
 function act_dash (m)
     smlua_anim_util_set_animation(m.marioObj, "triplejump")
@@ -60,7 +61,8 @@ local brellaActions = { -- What actions you can brella out of
 
 local brellaHandActions = { -- What actions you bring out the brella for
     [ACT_PUNCHING] = true,
-    [ACT_MOVE_PUNCHING] = true
+    [ACT_MOVE_PUNCHING] = true,
+    [ACT_CROUCHING] = true
 }
 
 function act_brella_float(m)
@@ -79,13 +81,16 @@ function act_brella_float(m)
     else
         m.vel.y = m.vel.y + 3 -- lets you bounce off goombas - Jer
     end
-    if m.forwardVel > 30 then
+    if m.forwardVel > 40 then
     m.forwardVel = m.forwardVel - 1
     end
     if stepResult == AIR_STEP_LANDED then
         set_mario_action(m, ACT_FREEFALL_LAND, 0)
     end
-
+    if stepResult == AIR_STEP_HIT_WALL and m.forwardVel ~= 0 then
+        mario_bonk_reflection(m, 1)
+        set_mario_action(m, ACT_BRELLA_FLOAT, 0)
+    end
     if m.input & INPUT_A_DOWN == 0 then
         set_mario_action(m, ACT_FREEFALL, 0)
     end
@@ -117,7 +122,6 @@ function act_brella_jump(m)
         m.vel.y = 50
         e.rotAngle = m.faceAngle.y
     end
-
     if m.vel.y < 0 then
         if m.input & INPUT_A_DOWN ~= 0 then
             set_mario_action(m, ACT_BRELLA_FLOAT, 0)
@@ -134,7 +138,24 @@ function act_brella_jump(m)
     return false
 end
 hook_mario_action(ACT_BRELLA_JUMP, act_brella_jump)
-
+function act_brella_pound(m)
+    local e = gStateExtras[m.playerIndex]
+    local stepResult = common_air_action_step(m, ACT_GROUND_POUND_LAND, CHAR_ANIM_START_HANDSTAND, AIR_STEP_NONE)
+    m.faceAngle.y = m.intendedYaw - approach_s32(limit_angle(m.intendedYaw - m.faceAngle.y), 0, 0x200, 0x200)
+    m.marioBodyState.handState = MARIO_HAND_PEACE_SIGN
+    m.marioBodyState.eyeState = MARIO_EYES_DEAD
+    m.peakHeight = m.pos.y
+    if m.vel.y > -75 then --Speeding up the fall -Kaktus
+        m.vel.y = m.vel.y - 0.7
+    end
+    if m.marioObj.header.gfx.animInfo.animFrame < 2 then --small jump at the start of the anim -Kaktus
+        m.vel.y = 35
+    end
+    if m.forwardVel > 75 then --slow down! -Kaktus
+    m.forwardVel = m.forwardVel - 1
+    end
+end
+hook_mario_action(ACT_BRELLA_POUND, act_brella_pound)
 function add_moveset()
 
 -- i am so motherfucking stupid
@@ -176,19 +197,18 @@ if inc == ACT_QUICKSAND_JUMP_LAND then
     m.vel.y = 30
     return ACT_JUMP
 end
+if inc == ACT_GROUND_POUND then
+    return ACT_BRELLA_POUND
+end
 if inc == ACT_SLIDE_KICK then
     m.vel.y = 65
     m.forwardVel = 55
     return ACT_BUTT_SLIDE_AIR
 end
-if inc == ACT_JUMP and m.action == ACT_BUTT_SLIDE then
-    return ACT_FORWARD_ROLLOUT
-end
 if inc == ACT_SIDE_FLIP then
     m.vel.y = 60
 end
 if inc == ACT_BACKFLIP then
-    --return ACT_GROUND_POUND_LAND
     m.pos.y = m.pos.y + 10
     return ACT_BRELLA_JUMP
 end
@@ -244,6 +264,10 @@ function kaktus_update(m)
     if m.action == ACT_SUPERJUMP_CROUCH_KAK then
         obj_act_squished(1.5)
     end
+    if m.action == ACT_GROUND_POUND_LAND and m.controller.buttonPressed & A_BUTTON ~= 0 then
+        set_mario_action(m, ACT_BRELLA_JUMP, 0)
+        m.vel.y = 3
+    end
     if m.action == ACT_HOLD_IDLE and m.controller.buttonPressed & L_TRIG ~= 0 then
         set_mario_action(m, ACT_HOLDING_BOWSER, 0)
     end
@@ -255,6 +279,10 @@ function kaktus_update(m)
         m.vel.y = 30
         m.forwardVel = 50
         m.faceAngle.y = m.intendedYaw
+    end
+    if m.action == ACT_GROUND_POUND_LAND and m.marioObj.header.gfx.animInfo.animFrame == 0 then
+        m.particleFlags = m.particleFlags | PARTICLE_MIST_CIRCLE
+        m.particleFlags = m.particleFlags | PARTICLE_HORIZONTAL_STAR
     end
     if m.action == ACT_TRIPLE_JUMP and m.controller.buttonPressed & A_BUTTON ~= 0 and m.controller.buttonDown & Z_TRIG == 0 then
         set_mario_action(m, ACT_JUMP, 0)
@@ -268,19 +296,6 @@ function kaktus_update(m)
     end
     if m.action == ACT_JUMP and smlua_anim_util_get_current_animation_name(m.marioObj) == "kakbouncejump" and m.marioObj.header.gfx.animInfo.animFrame == 1 and m.prevAction == ACT_TRIPLE_JUMP then
         play_character_sound(m, CHAR_SOUND_HOOHOO)
-    end
-    if m.action == ACT_GROUND_POUND_LAND and m.controller.buttonPressed & A_BUTTON ~= 0 and m.controller.buttonDown & Z_TRIG == 0 then
-        set_mario_action(m, ACT_TRIPLE_JUMP, 0)
-        set_mario_particle_flags(m, PARTICLE_HORIZONTAL_STAR, 0)
-        m.vel.y = 50
-        m.forwardVel = 60
-        m.faceAngle.y = m.intendedYaw
-    elseif m.action == ACT_GROUND_POUND_LAND and m.controller.buttonPressed & A_BUTTON ~= 0 and m.controller.buttonDown & Z_TRIG ~= 0 then
-        set_mario_action(m, ACT_TRIPLE_JUMP, 0)
-        set_mario_particle_flags(m, PARTICLE_HORIZONTAL_STAR, 0)
-        m.vel.y = 65
-        m.forwardVel = 40
-        m.faceAngle.y = m.intendedYaw
     end
     if m.action == ACT_TRIPLE_JUMP and m.controller.buttonDown & Z_TRIG ~= 0 and m.prevAction == ACT_GROUND_POUND_LAND then
         set_mario_particle_flags(m, ACTIVE_PARTICLE_SPARKLES, 0)
