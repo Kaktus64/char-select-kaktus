@@ -32,7 +32,7 @@ SPEEDOMETER_MAX = get_texture_info("Speedometer5")
 -- All Located in "sound" Name them whatever you want. Remember to include the .ogg extension
 local VOICETABLE_KAKTUS = {
     [CHAR_SOUND_OKEY_DOKEY] = 'Silent.ogg', -- Starting game
-	[CHAR_SOUND_LETS_A_GO] = 'kakyes.ogg', -- Starting level
+	[CHAR_SOUND_LETS_A_GO] = 'Silent.ogg', -- Starting level
 	[CHAR_SOUND_PUNCH_YAH] = 'kakhey.ogg', -- Punch 1
 	[CHAR_SOUND_PUNCH_WAH] = 'kakyip.ogg', -- Punch 2
 	[CHAR_SOUND_PUNCH_HOO] = 'kakyeah.ogg', -- Punch 3
@@ -47,11 +47,11 @@ local VOICETABLE_KAKTUS = {
 	[CHAR_SOUND_DOH] = 'kakuhoh.ogg', -- Long jump wall bonk
 	[CHAR_SOUND_WHOA] = 'kakeek.ogg', -- Grabbing ledge
 	[CHAR_SOUND_EEUH] = 'Silent.ogg', -- Climbing over ledge
-	[CHAR_SOUND_WAAAOOOW] = 'kakeek.ogg', -- Falling a long distance
+	[CHAR_SOUND_WAAAOOOW] = 'Silent.ogg', -- Falling a long distance
 	[CHAR_SOUND_TWIRL_BOUNCE] = 'kakyipee.ogg', -- Bouncing off of a flower spring
 	[CHAR_SOUND_GROUND_POUND_WAH] = 'kakyip.ogg',
 	[CHAR_SOUND_HRMM] = 'kakhurt.ogg', -- Lifting something
-	[CHAR_SOUND_HERE_WE_GO] = 'kakwoohoo', -- Star get
+	[CHAR_SOUND_HERE_WE_GO] = 'kakwoohoo.ogg', -- Star get
 	[CHAR_SOUND_SO_LONGA_BOWSER] = 'Silent.ogg', -- Throwing Bowser
 --DAMAGE
 	[CHAR_SOUND_ATTACKED] = 'kakow.ogg', -- Damaged

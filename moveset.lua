@@ -48,6 +48,11 @@ local brellaActions = { -- What actions you can brella out of
     [ACT_TOP_OF_POLE_JUMP] = true
 }
 
+local brellaHandActions = { -- What actions you bring out the brella for
+    [ACT_PUNCHING] = true,
+    [ACT_MOVE_PUNCHING] = true
+}
+
 function act_brella_float(m)
     m.particleFlags = m.particleFlags | PARTICLE_SPARKLES
     local stepResult = common_air_action_step(m, ACT_FREEFALL_LAND, CHAR_ANIM_HANG_ON_CEILING, AIR_STEP_CHECK_LEDGE_GRAB)
@@ -75,8 +80,6 @@ function act_brella_float(m)
     return false
 end
 hook_mario_action(ACT_BRELLA_FLOAT, act_brella_float)
-
-
 function add_moveset()
 
 -- i am so motherfucking stupid
@@ -114,9 +117,6 @@ local np = gNetworkPlayers[m.playerIndex]
 if inc == ACT_DOUBLE_JUMP then
     return ACT_JUMP
 end
-if inc == ACT_TRIPLE_JUMP_LAND then
-    return ACT_GROUND_POUND_LAND
-end
 if inc == ACT_QUICKSAND_JUMP_LAND then 
     m.vel.y = 30
     return ACT_JUMP
@@ -145,6 +145,12 @@ function kaktus_update(m)
         set_mario_action(m, ACT_BRELLA_FLOAT, 0)
         set_mario_particle_flags(m, PARTICLE_MIST_CIRCLE, 0)
     end
+    if brellaHandActions[m.action] and m.prevAction ~= ACT_CROUCHING then
+        m.marioBodyState.handState = MARIO_HAND_PEACE_SIGN
+    end
+    if m.action == ACT_PUNCHING and m.prevAction ~= ACT_CROUCHING then
+        m.marioBodyState.handState = MARIO_HAND_PEACE_SIGN
+    end
     if m.action == ACT_SUPERJUMP_CROUCH_KAK then
         obj_act_squished(1.5)
     end
@@ -153,9 +159,6 @@ function kaktus_update(m)
     end
     if m.action == ACT_HOLD_HEAVY_IDLE and m.controller.buttonPressed & L_TRIG ~= 0 then
         set_mario_action(m, ACT_HOLDING_BOWSER, 0)
-    end
-    if m.action == ACT_CROUCHING and m.marioObj.header.gfx.animInfo.animFrame == 30 then
-        set_mario_action(m, ACT_SUPERJUMP_CROUCH_KAK, 0)
     end
     if m.action == ACT_GROUND_POUND_LAND and m.controller.buttonPressed & B_BUTTON ~= 0 then
         set_mario_action(m, ACT_DIVE, 0)
