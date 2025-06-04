@@ -254,7 +254,9 @@ function kaktus_update(m)
     if m.pos.y == m.floorHeight then
         e.canBrella = true
     end
-
+    --if m.action == ACT_WALKING and m.forwardVel > 45 then
+        --smlua_anim_util_set_animation(m.marioObj, "kak_run_fast_temp")
+    --end
     if brellaHandActions[m.action] and m.prevAction ~= ACT_CROUCHING then
         m.marioBodyState.handState = MARIO_HAND_PEACE_SIGN
     end
@@ -303,6 +305,9 @@ function kaktus_update(m)
     if m.action == ACT_WALKING then
         m.marioBodyState.torsoAngle.x = 0
         m.marioBodyState.torsoAngle.z = 0
+    end
+    if m.action == ACT_WALKING and m.forwardVel > 30 then
+        m.marioBodyState.eyeState = MARIO_EYES_LOOK_DOWN
     end
     if m.action == ACT_TRIPLE_JUMP then
         smlua_anim_util_set_animation(m.marioObj, "kakroll")
