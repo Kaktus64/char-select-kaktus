@@ -1,13 +1,23 @@
 ---@diagnostic disable: undefined-global
 if not _G.charSelectExists then return end
 
+local gStateExtras = {}
+for i = 0, MAX_PLAYERS - 1 do
+    gStateExtras[i] = {}
+    local m = gMarioStates[i]
+    local e = gStateExtras[i]
+    e.rotAngle = 0
+    e.canBrella = true
+end
+
 local function limit_angle(a)
     return (a + 0x8000) % 0x10000 - 0x8000
 end
 
 ACT_DASH = allocate_mario_action(ACT_GROUP_AIRBORNE|ACT_FLAG_ALLOW_VERTICAL_WIND_ACTION|ACT_FLAG_ATTACKING|ACT_FLAG_AIR)
 ACT_SUPERJUMP_CROUCH_KAK = allocate_mario_action(ACT_GROUP_STATIONARY)
-ACT_BRELLA_FLOAT = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR | ACT_FLAG_CONTROL_JUMP_HEIGHT)
+ACT_BRELLA_FLOAT = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR)
+ACT_BRELLA_JUMP = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR)
 
 function act_dash (m)
     smlua_anim_util_set_animation(m.marioObj, "triplejump")
@@ -59,27 +69,72 @@ function act_brella_float(m)
     m.faceAngle.y = m.intendedYaw - approach_s32(limit_angle(m.intendedYaw - m.faceAngle.y), 0, 0x200, 0x200)
     m.marioBodyState.handState = MARIO_HAND_PEACE_SIGN
     m.marioBodyState.eyeState = MARIO_EYES_LOOK_DOWN
-    if m.actionTimer == 1 then
-        m.vel.y = 0
-    elseif m.actionTimer > 1 and m.vel.y > -5 then
-        m.vel.y = m.vel.y - 1
+    m.peakHeight = m.pos.y -- no fall sound
+    
+    if m.vel.y < 0 then
+        m.vel.y = m.vel.y/1.8
+    elseif m.floor.type == SURFACE_VERTICAL_WIND then -- updraft
+        m.vel.y = m.vel.y + 1
+        --djui_chat_message_create("in wind") -- for testing, get rid of it - Jer
     else
-        m.vel.y = -5
+        m.vel.y = m.vel.y + 3 -- lets you bounce off goombas - Jer
     end
-    if m.forwardVel > 50 then
+    if m.forwardVel > 30 then
     m.forwardVel = m.forwardVel - 1
-    end
-    if m.input & INPUT_A_DOWN == 0 then
-        set_mario_action(m, ACT_FREEFALL, 0)
     end
     if stepResult == AIR_STEP_LANDED then
         set_mario_action(m, ACT_FREEFALL_LAND, 0)
+    end
+
+    if m.input & INPUT_A_DOWN == 0 then
+        set_mario_action(m, ACT_FREEFALL, 0)
+    end
+    if m.input & INPUT_Z_PRESSED ~= 0 then -- added this too - Jer
+        set_mario_action(m, ACT_GROUND_POUND, 0)
+    elseif m.input & INPUT_B_PRESSED ~= 0 then
+        set_mario_action(m, ACT_DIVE, 0)
     end
 
     m.actionTimer = m.actionTimer + 1
     return false
 end
 hook_mario_action(ACT_BRELLA_FLOAT, act_brella_float)
+
+function act_brella_jump(m)
+    local e = gStateExtras[m.playerIndex]
+    local stepResult = common_air_action_step(m, ACT_FREEFALL_LAND, CHAR_ANIM_HANG_ON_CEILING, AIR_STEP_CHECK_LEDGE_GRAB)
+    m.marioBodyState.handState = MARIO_HAND_PEACE_SIGN
+    m.marioBodyState.eyeState = MARIO_EYES_LOOK_DOWN
+    m.vel.y = m.vel.y + 2
+
+    if m.vel.y > 10 then
+        m.particleFlags = m.particleFlags | PARTICLE_DUST
+    end
+
+    if m.actionTimer == 0 then
+        play_character_sound(m, CHAR_SOUND_YAHOO)
+        m.particleFlags = m.particleFlags | PARTICLE_MIST_CIRCLE
+        m.vel.y = 50
+        e.rotAngle = m.faceAngle.y
+    end
+
+    if m.vel.y < 0 then
+        if m.input & INPUT_A_DOWN ~= 0 then
+            set_mario_action(m, ACT_BRELLA_FLOAT, 0)
+            e.canBrella = false
+        else
+            set_mario_action(m, ACT_FREEFALL, 0)
+        end
+    end
+
+    e.rotAngle = e.rotAngle + (m.vel.y * 200)
+    m.marioObj.header.gfx.angle.y = e.rotAngle
+
+    m.actionTimer = m.actionTimer + 1
+    return false
+end
+hook_mario_action(ACT_BRELLA_JUMP, act_brella_jump)
+
 function add_moveset()
 
 -- i am so motherfucking stupid
@@ -133,18 +188,53 @@ if inc == ACT_SIDE_FLIP then
     m.vel.y = 60
 end
 if inc == ACT_BACKFLIP then
-    return ACT_GROUND_POUND_LAND
+    --return ACT_GROUND_POUND_LAND
+    m.pos.y = m.pos.y + 10
+    return ACT_BRELLA_JUMP
 end
 if inc == ACT_JUMP and m.prevAction == ACT_JUMP then
     m.vel.y = 0
     smlua_anim_util_set_animation(m.marioObj, "triplejumpspin")
 end
 end)
+
+local eyeStateTable = { -- Epic Eye States Table of Evil Swag - Jer
+    [CHAR_ANIM_STAR_DANCE] = MARIO_EYES_LOOK_UP,
+    [CHAR_ANIM_FIRST_PUNCH] = MARIO_EYES_DEAD,
+    [CHAR_ANIM_SECOND_PUNCH] = MARIO_EYES_DEAD,
+    [CHAR_ANIM_AIR_KICK] = MARIO_EYES_DEAD,
+    [CHAR_ANIM_GROUND_KICK] = MARIO_EYES_DEAD,
+    [CHAR_ANIM_FIRST_PUNCH_FAST] = MARIO_EYES_DEAD,
+    [CHAR_ANIM_SECOND_PUNCH_FAST] = MARIO_EYES_DEAD,
+    [CHAR_ANIM_SLIDE_KICK] = MARIO_EYES_DEAD,
+    [CHAR_ANIM_DROWNING_PART1] = MARIO_EYES_DEAD,
+    [CHAR_ANIM_DROWNING_PART2] = MARIO_EYES_DEAD,
+    [CHAR_ANIM_WALK_PANTING] = MARIO_EYES_DEAD,
+    [CHAR_ANIM_FAST_LEDGE_GRAB] = MARIO_EYES_DEAD,
+    [CHAR_ANIM_SLOW_LEDGE_GRAB] = MARIO_EYES_DEAD,
+    [CHAR_ANIM_IDLE_ON_LEDGE] = MARIO_EYES_LOOK_DOWN,
+    [CHAR_ANIM_SOFT_FRONT_KB] = MARIO_EYES_LOOK_DOWN,
+    [CHAR_ANIM_SOFT_BACK_KB] = MARIO_EYES_LOOK_DOWN,
+    [CHAR_ANIM_GROUND_POUND_LANDING] = MARIO_EYES_DEAD,
+    [CHAR_ANIM_GROUND_POUND] = MARIO_EYES_LOOK_DOWN,
+    [CHAR_ANIM_START_GROUND_POUND] = MARIO_EYES_LOOK_DOWN,
+    [CHAR_ANIM_TRIPLE_JUMP_GROUND_POUND] = MARIO_EYES_LOOK_DOWN,
+    [CHAR_ANIM_FALL_OVER_BACKWARDS] = MARIO_EYES_DEAD,
+    [CHAR_ANIM_BACKWARD_AIR_KB] = MARIO_EYES_DEAD
+}
+
 function kaktus_update(m)
-    if brellaActions[m.action] and m.vel.y < 0 and m.input & INPUT_A_PRESSED ~= 0 and m.prevAction ~= ACT_BRELLA_FLOAT then
+    local e = gStateExtras[m.playerIndex]
+
+    if brellaActions[m.action] and m.vel.y < 0 and m.input & INPUT_A_PRESSED ~= 0 and e.canBrella then
         set_mario_action(m, ACT_BRELLA_FLOAT, 0)
         set_mario_particle_flags(m, PARTICLE_MIST_CIRCLE, 0)
+        e.canBrella = false
     end
+    if m.pos.y == m.floorHeight then
+        e.canBrella = true
+    end
+
     if brellaHandActions[m.action] and m.prevAction ~= ACT_CROUCHING then
         m.marioBodyState.handState = MARIO_HAND_PEACE_SIGN
     end
@@ -234,45 +324,51 @@ function kaktus_update(m)
         m.health = m.health - 1.5
     end
     -- CHANGING EYES
-    if (m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_STAR_DANCE and m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_FIRST_PUNCH ) or (m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_WATER_STAR_DANCE and m.marioObj.header.gfx.animInfo.animFrame > 68) then
-        m.marioBodyState.eyeState = MARIO_EYES_LOOK_UP
+    if eyeStateTable[m.marioObj.header.gfx.animInfo.animID] ~= nil then
+        m.marioBodyState.eyeState = eyeStateTable[m.marioObj.header.gfx.animInfo.animID]
     end
+
+    -- you can get rid of anything in notes, the ones based on anim frames gotta stay tho - Jer
+
+    --if (m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_STAR_DANCE and m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_FIRST_PUNCH ) or (m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_WATER_STAR_DANCE and m.marioObj.header.gfx.animInfo.animFrame > 68) then
+    --    m.marioBodyState.eyeState = MARIO_EYES_LOOK_UP
+    --end
     if m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_AIR_KICK and m.marioObj.header.gfx.animInfo.animFrame < 14 then
         m.marioBodyState.eyeState = MARIO_EYES_DEAD
     end
     if smlua_anim_util_get_current_animation_name(m.marioObj) == "kakbouncejump" then
         m.marioBodyState.eyeState = MARIO_EYES_BLINK
     end
-    if m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_FALL_OVER_BACKWARDS or m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_BACKWARD_AIR_KB then
-        m.marioBodyState.eyeState = MARIO_EYES_DEAD
-    end
-    if m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_GROUND_POUND or m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_START_GROUND_POUND or m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_TRIPLE_JUMP_GROUND_POUND then
-        m.marioBodyState.eyeState = MARIO_EYES_LOOK_DOWN
-    end
-    if m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_GROUND_POUND_LANDING then
-        m.marioBodyState.eyeState = MARIO_EYES_DEAD
-    end
-    if m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_FIRST_PUNCH or m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_SECOND_PUNCH or m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_AIR_KICK or m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_GROUND_KICK or m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_FIRST_PUNCH_FAST or m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_SECOND_PUNCH_FAST or m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_SLIDE_KICK then
-        m.marioBodyState.eyeState = MARIO_EYES_DEAD
-    end
-    if m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_DROWNING_PART1 or m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_DROWNING_PART2 then
-        m.marioBodyState.eyeState = MARIO_EYES_DEAD
-    end
+    --if m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_FALL_OVER_BACKWARDS or m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_BACKWARD_AIR_KB then
+    --    m.marioBodyState.eyeState = MARIO_EYES_DEAD
+    --end
+    --if m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_GROUND_POUND or m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_START_GROUND_POUND or m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_TRIPLE_JUMP_GROUND_POUND then
+    --    m.marioBodyState.eyeState = MARIO_EYES_LOOK_DOWN
+    --end
+    --if m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_GROUND_POUND_LANDING then
+    --    m.marioBodyState.eyeState = MARIO_EYES_DEAD
+    --end
+    --if m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_FIRST_PUNCH or m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_SECOND_PUNCH or m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_AIR_KICK or m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_GROUND_KICK or m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_FIRST_PUNCH_FAST or m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_SECOND_PUNCH_FAST or m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_SLIDE_KICK then
+    --    m.marioBodyState.eyeState = MARIO_EYES_DEAD
+    --end
+    --if m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_DROWNING_PART1 or m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_DROWNING_PART2 then
+    --    m.marioBodyState.eyeState = MARIO_EYES_DEAD
+    --end
     if m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_TRIPLE_JUMP_LAND and m.marioObj.header.gfx.animInfo.animFrame < 20 then
         m.marioBodyState.eyeState = MARIO_EYES_CLOSED
     end
-    if m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_WALK_PANTING or m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_FAST_LEDGE_GRAB or m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_SLOW_LEDGE_GRAB then
-        m.marioBodyState.eyeState = MARIO_EYES_DEAD
-    end
-    if m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_IDLE_ON_LEDGE then
-        m.marioBodyState.eyeState = MARIO_EYES_LOOK_DOWN
-    end
-    if m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_FORWARD_KB or m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_BACKWARD_KB or m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_AIR_FORWARD_KB or m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_BACKWARD_AIR_KB or m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_WATER_FORWARD_KB or m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_BACKWARDS_WATER_KB or m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_SHOCKED then
-        m.marioBodyState.eyeState = MARIO_EYES_DEAD
-    end
-    if m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_SOFT_FRONT_KB or m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_SOFT_BACK_KB then
-        m.marioBodyState.eyeState = MARIO_EYES_LOOK_DOWN
-    end
+    --if m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_WALK_PANTING or m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_FAST_LEDGE_GRAB or m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_SLOW_LEDGE_GRAB then
+    --    m.marioBodyState.eyeState = MARIO_EYES_DEAD
+    --end
+    --if m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_IDLE_ON_LEDGE then
+    --    m.marioBodyState.eyeState = MARIO_EYES_LOOK_DOWN
+    --end
+    --if m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_FORWARD_KB or m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_BACKWARD_KB or m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_AIR_FORWARD_KB or m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_BACKWARD_AIR_KB or m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_WATER_FORWARD_KB or m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_BACKWARDS_WATER_KB or m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_SHOCKED then
+    --    m.marioBodyState.eyeState = MARIO_EYES_DEAD
+    --end
+    --if m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_SOFT_FRONT_KB or m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_SOFT_BACK_KB then
+    --    m.marioBodyState.eyeState = MARIO_EYES_LOOK_DOWN
+    --end
 end
 _G.charSelect.character_hook_moveset(CT_KAKTUS, HOOK_MARIO_UPDATE, kaktus_update)
 end
