@@ -149,6 +149,30 @@ local PALETTE_TRANSGENDER_KAK = {
         [EMBLEM] = "585090"
     }
 
+    local PALETTE_FALL_BREEZE_KAK = {
+    name = "Fall Breeze",
+    [PANTS]  = "62263c",
+    [SHIRT]  = "ff722f",
+    [GLOVES] = "ffffff",
+    [SHOES]  = "8e6b41",
+    [HAIR]   = "944025",
+    [SKIN]   = "fe975b",
+    [CAP]    = "905b33",
+    [EMBLEM] = "ff722f",
+    }
+
+    PALETTE_LOOK_GOOD_KAK =  {
+    name = "Looking Good",
+    [PANTS]  = { r = 0xA9, g = 0x1D, b = 0x28 }, -- A91D28
+    [SHIRT]  = { r = 0x3E, g = 0x20, b = 0x45 }, -- 3E2045
+    [GLOVES] = { r = 0x00, g = 0x9D, b = 0xBD }, -- 009DBD
+    [SHOES]  = { r = 0x5B, g = 0x7C, b = 0xBD }, -- 5B7CBD
+    [HAIR]   = { r = 0x3B, g = 0x0F, b = 0x1C }, -- 3B0F1C
+    [SKIN] = "db9c70",
+    [CAP]    = { r = 0x1C, g = 0x24, b = 0x2D }, -- 1C242D
+    [EMBLEM] = { r = 0xDB, g = 0x3C, b = 0x2E }, -- DB3C2E
+}
+
 local HM_KAKTUS= {
     label = {
         left = get_texture_info("KakLeftHealth"),
@@ -179,11 +203,13 @@ local function on_character_select_load()
 
     -- PALETTES
 
-    _G.charSelect.character_add_palette_preset(E_MODEL_KAKTUS, PALETTE_KAKTUS)
-    _G.charSelect.character_add_palette_preset(E_MODEL_KAKTUS, PALETTE_JERTUS)
-    _G.charSelect.character_add_palette_preset(E_MODEL_KAKTUS, PALETTE_TRANSGENDER_KAK)
-    _G.charSelect.character_add_palette_preset(E_MODEL_KAKTUS, PALETTE_WARM_BREEZE_KAK)
-        _G.charSelect.character_add_palette_preset(E_MODEL_KAKTUS, PALETTE_COOL_BREEZE_KAK)
+    _G.charSelect.character_add_palette_preset(E_MODEL_KAKTUS, PALETTE_KAKTUS, "Kaktus")
+    _G.charSelect.character_add_palette_preset(E_MODEL_KAKTUS, PALETTE_JERTUS, "Jertus")
+    _G.charSelect.character_add_palette_preset(E_MODEL_KAKTUS, PALETTE_TRANSGENDER_KAK, "Trans")
+    _G.charSelect.character_add_palette_preset(E_MODEL_KAKTUS, PALETTE_WARM_BREEZE_KAK, "Warm Breeze")
+    _G.charSelect.character_add_palette_preset(E_MODEL_KAKTUS, PALETTE_COOL_BREEZE_KAK, "Cool Breeze")
+    _G.charSelect.character_add_palette_preset(E_MODEL_KAKTUS, PALETTE_FALL_BREEZE_KAK, "Fall Breeze")
+    _G.charSelect.character_add_palette_preset(E_MODEL_KAKTUS, PALETTE_LOOK_GOOD_KAK, "Looking Good")
     add_moveset()
 
     CSloaded = true
