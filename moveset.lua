@@ -240,7 +240,8 @@ local eyeStateTable = { -- Epic Eye States Table of Evil Swag - Jer
     [CHAR_ANIM_START_GROUND_POUND] = MARIO_EYES_LOOK_DOWN,
     [CHAR_ANIM_TRIPLE_JUMP_GROUND_POUND] = MARIO_EYES_LOOK_DOWN,
     [CHAR_ANIM_FALL_OVER_BACKWARDS] = MARIO_EYES_DEAD,
-    [CHAR_ANIM_BACKWARD_AIR_KB] = MARIO_EYES_DEAD
+    [CHAR_ANIM_BACKWARD_AIR_KB] = MARIO_EYES_DEAD,
+    [CHAR_ANIM_TIPTOE] = MARIO_EYES_LOOK_DOWN
 }
 
 function kaktus_update(m)
@@ -253,6 +254,16 @@ function kaktus_update(m)
     end
     if m.pos.y == m.floorHeight then
         e.canBrella = true
+    end
+    if m.action == ACT_WALKING and m.forwardVel > 35 and m.forwardVel < 40 then
+        m.forwardVel = m.forwardVel + 1.01
+    end
+    if m.action == ACT_WALKING and m.forwardVel > 32 and m.forwardVel < 32.1 then
+        m.forwardVel = 40
+    end
+    if m.action == ACT_WALKING and m.forwardVel > 35 then
+        set_mario_particle_flags(m, PARTICLE_DUST, 0)
+        obj_get_temp_spawn_particles_info(E_MODEL_SMOKE)
     end
     --if m.action == ACT_WALKING and m.forwardVel > 45 then
         --smlua_anim_util_set_animation(m.marioObj, "kak_run_fast_temp")
@@ -302,11 +313,14 @@ function kaktus_update(m)
     if m.action == ACT_TRIPLE_JUMP and m.controller.buttonDown & Z_TRIG ~= 0 and m.prevAction == ACT_GROUND_POUND_LAND then
         set_mario_particle_flags(m, ACTIVE_PARTICLE_SPARKLES, 0)
     end
-    if m.action == ACT_WALKING then
+    if m.action == ACT_WALKING and m.forwardVel > 35 then
+        m.marioBodyState.torsoAngle.x = 20
+    end
+    if m.action == ACT_WALKING and m.forwardVel < 35 then
         m.marioBodyState.torsoAngle.x = 0
         m.marioBodyState.torsoAngle.z = 0
     end
-    if m.action == ACT_WALKING and m.forwardVel > 30 then
+    if m.action == ACT_WALKING and m.forwardVel > 33 then
         m.marioBodyState.eyeState = MARIO_EYES_LOOK_DOWN
     end
     if m.action == ACT_TRIPLE_JUMP then

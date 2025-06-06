@@ -81,7 +81,6 @@ local ANIMTABLE_KAKTUS = {
     [CHAR_ANIM_CREDITS_START_WALK_LOOK_UP] = 'endcutscenekak',
     [CHAR_ANIM_CREDITS_LOOK_BACK_THEN_RUN] = 'endcutsceneotherkak',
     [CHAR_ANIM_CREDITS_WAVING] = 'endcutsceneotherkak',
-    [CHAR_ANIM_FIRST_PERSON] = 'idleanimkak',
     [CHAR_ANIM_AIR_KICK] = 'roundhousekak',
     [CHAR_ANIM_SINGLE_JUMP] = 'jess_single_jump',
     [CHAR_ANIM_RUNNING] = 'kaktuse_run',
@@ -89,6 +88,8 @@ local ANIMTABLE_KAKTUS = {
 }
 
 local PALETTE_KAKTUS = {
+
+    name = "Kaktus",
     [PANTS]  = "313149",
     [SHIRT]  = "791E82",
     [GLOVES] = "FFB97B",
@@ -99,16 +100,54 @@ local PALETTE_KAKTUS = {
 	[EMBLEM] = "D87644"
 }
 
-local PALETTE_KAKTETO = {
-    [PANTS]  = "313149",
-    [SHIRT]  = "333333",
+local PALETTE_JERTUS = {
+
+    name = "Jertus",
+    [PANTS]  = "008040",
+    [SHIRT]  = "ffaa00",
     [GLOVES] = "FFB97B",
-    [SHOES]  = "D8004D",
-    [HAIR]   = "AD1834",
+    [SHOES]  = "462c1e",
+    [HAIR]   = "462c1e",
     [SKIN]   = "DB9C70",
-    [CAP]    = "3E8948",
-	[EMBLEM] = "D87644"
+    [CAP]    = "00ff00",
+	[EMBLEM] = "4c4c4c"
 }
+
+local PALETTE_TRANSGENDER_KAK = {
+        name = "Transgender",
+        [PANTS] = "398FBE",
+        [SHIRT] = "B96C86",
+        [GLOVES] = "FFFFFF",
+        [SHOES] = "620E22",
+        [HAIR] = "FF9BCD",
+        [SKIN] = "DB9C70",
+        [CAP] = "398FBE",
+        [EMBLEM] = "FFFFFF"
+    }
+
+    local PALETTE_WARM_BREEZE_KAK = {
+        name = "Warm Breeze",
+        [PANTS] = "353b64",
+        [SHIRT] = "872e59",
+        [GLOVES] = "ffb97b",
+        [SHOES] = "462c1e",
+        [HAIR] = "462c1e",
+        [SKIN] = "db9c70",
+        [CAP] = "36a74d",
+        [EMBLEM] = "8c4947"
+    }
+
+    local PALETTE_COOL_BREEZE_KAK = {
+        name = "Cool Breeze",
+        [PANTS] = "2b213b",
+        [SHIRT] = "582e82",
+        [GLOVES] = "ffb97b",
+        [SHOES] = "362c47",
+        [HAIR] = "362c47",
+        [SKIN] = "a39cd6",
+        [CAP] = "365594",
+        [EMBLEM] = "585090"
+    }
 
 local HM_KAKTUS= {
     label = {
@@ -132,12 +171,19 @@ local function on_character_select_load()
     CT_KAKTUS = _G.charSelect.character_add("Kaktus", {"Kaktus arrives at Peach's Castle", "after taking a wrong turn on the", "I-35."}, "Kaktus64 & JerThePear", {r = 172, g = 80, b = 255}, E_MODEL_KAKTUS, CT_KAKTUS, KAKTUS_ICON)
     _G.charSelect.character_add_caps(E_MODEL_KAKTUS, CAPTABLE_CHAR)
     _G.charSelect.character_add_voice(E_MODEL_KAKTUS, VOICETABLE_KAKTUS)
-    _G.charSelect.character_add_palette_preset(E_MODEL_KAKTUS, PALETTE_KAKTUS)
     _G.charSelect.character_add_health_meter(CT_KAKTUS, HM_KAKTUS)
     _G.charSelect.character_add_animations(E_MODEL_KAKTUS, ANIMTABLE_KAKTUS)
     _G.charSelect.character_hook_moveset(CT_KAKTUS, HOOK_MARIO_UPDATE, HOOK_BEFORE_SET_MARIO_ACTION, HOOK_ON_HUD_RENDER_BEHIND, HOOK_ON_HUD_RENDER)
     _G.charSelect.character_set_category(CT_KAKTUS, "DXA")
     _G.charSelect.character_set_category(CT_KAKTUS, "Squishy Workshop")
+
+    -- PALETTES
+
+    _G.charSelect.character_add_palette_preset(E_MODEL_KAKTUS, PALETTE_KAKTUS)
+    _G.charSelect.character_add_palette_preset(E_MODEL_KAKTUS, PALETTE_JERTUS)
+    _G.charSelect.character_add_palette_preset(E_MODEL_KAKTUS, PALETTE_TRANSGENDER_KAK)
+    _G.charSelect.character_add_palette_preset(E_MODEL_KAKTUS, PALETTE_WARM_BREEZE_KAK)
+        _G.charSelect.character_add_palette_preset(E_MODEL_KAKTUS, PALETTE_COOL_BREEZE_KAK)
     add_moveset()
 
     CSloaded = true
