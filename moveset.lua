@@ -1,3 +1,6 @@
+
+local KAKTUS_TAIL = audio_sample_load("kaktus-tail.ogg")
+
 ---@diagnostic disable: undefined-global
 if not _G.charSelectExists then return end
 
@@ -19,6 +22,7 @@ ACT_SUPERJUMP_CROUCH_KAK = allocate_mario_action(ACT_GROUP_STATIONARY)
 ACT_BRELLA_FLOAT = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR)
 ACT_BRELLA_JUMP = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR)
 ACT_BRELLA_POUND = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR | ACT_FLAG_ATTACKING)
+ACT_TANOOKI_FLY_KAK = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR)
 
 function act_dash (m)
     smlua_anim_util_set_animation(m.marioObj, "triplejump")
@@ -64,6 +68,37 @@ local brellaHandActions = { -- What actions you bring out the brella for
     [ACT_MOVE_PUNCHING] = true,
     [ACT_CROUCHING] = true
 }
+
+-- TANOOKI ACTIONS
+function act_tanooki_fly_kak(m)
+    local stepResult = common_air_action_step(m, ACT_FREEFALL_LAND, CHAR_ANIM_FLY_FROM_CANNON, AIR_STEP_CHECK_LEDGE_GRAB)
+    m.faceAngle.y = m.intendedYaw - approach_s32(limit_angle(m.intendedYaw - m.faceAngle.y), 0, 0x400, 0x400)
+    m.peakHeight = m.pos.y -- no fall sound
+    m.actionTimer = m.actionTimer + 1
+    if m.vel.y < -75 then
+        m.vel.y = -75
+    end
+    if m.forwardVel > 40 then
+        m.forwardVel = m.forwardVel - 1
+    end
+    if m.controller.buttonPressed & A_BUTTON ~= 0 and m.prevAction ~= ACT_JUMP then
+        m.vel.y = 40
+        set_mario_action(m, ACT_TANOOKI_FLY_KAK, 0)
+        set_mario_particle_flags(m, PARTICLE_MIST_CIRCLE, 0)
+    end
+    if stepResult == AIR_STEP_LANDED then
+        set_mario_action(m, ACT_FREEFALL_LAND, 0)
+    end
+    if stepResult == AIR_STEP_HIT_WALL then
+        mario_bonk_reflection(m, 1)
+        set_mario_action(m, ACT_TANOOKI_FLY_KAK, 0)
+    end
+    if m.actionTimer == 30 then
+        set_mario_action(m, ACT_FREEFALL, 0)
+    end
+    smlua_anim_util_set_animation(m.marioObj, "kaktus_tanookifly")
+end
+hook_mario_action(ACT_TANOOKI_FLY_KAK, act_tanooki_fly_kak)
 
 function act_brella_float(m)
     m.particleFlags = m.particleFlags | PARTICLE_SPARKLES
@@ -216,6 +251,10 @@ if inc == ACT_JUMP and m.prevAction == ACT_JUMP then
     m.vel.y = 0
     smlua_anim_util_set_animation(m.marioObj, "triplejumpspin")
 end
+if inc == ACT_JUMP and m.forwardVel > 40 and (m.flags & MARIO_WING_CAP) ~= 0 then
+    m.vel.y = 100
+    return ACT_TANOOKI_FLY_KAK
+end
 end)
 
 local eyeStateTable = { -- Epic Eye States Table of Evil Swag - Jer
@@ -247,13 +286,25 @@ local eyeStateTable = { -- Epic Eye States Table of Evil Swag - Jer
 function kaktus_update(m)
     local e = gStateExtras[m.playerIndex]
 
-    if brellaActions[m.action] and m.vel.y < 0 and m.input & INPUT_A_PRESSED ~= 0 and e.canBrella then
+    if brellaActions[m.action] and m.vel.y < 0 and m.input & INPUT_A_PRESSED ~= 0 and e.canBrella and (m.flags & MARIO_WING_CAP) == 0 then
         set_mario_action(m, ACT_BRELLA_FLOAT, 0)
         set_mario_particle_flags(m, PARTICLE_MIST_CIRCLE, 0)
         e.canBrella = false
     end
     if m.pos.y == m.floorHeight then
         e.canBrella = true
+    end
+    if m.action == ACT_TANOOKI_FLY_KAK and m.input & INPUT_A_PRESSED ~= 0 then
+        audio_sample_play(KAKTUS_TAIL, m.pos, 3)
+    end
+    if m.action == ACT_TANOOKI_FLY_KAK and (m.flags & MARIO_WING_CAP) == 0 then
+        set_mario_action(m, ACT_FREEFALL, 0)
+    end
+    if (m.flags & MARIO_WING_CAP) ~= 0 then
+        if m.input & INPUT_A_PRESSED ~= 0 and brellaActions[m.action] and m.vel.y < 0 then
+            audio_sample_play(KAKTUS_TAIL, m.pos, 3)
+            m.vel.y = 0
+        end
     end
     if m.action == ACT_WALKING and m.forwardVel > 35 and m.forwardVel < 40 then
         m.forwardVel = m.forwardVel + 1.01
@@ -279,7 +330,8 @@ function kaktus_update(m)
     end
     if m.action == ACT_GROUND_POUND_LAND and m.controller.buttonPressed & A_BUTTON ~= 0 then
         set_mario_action(m, ACT_BRELLA_JUMP, 0)
-        m.vel.y = 3
+        m.vel.y = 5
+        m.forwardVel = 30
     end
     if m.action == ACT_HOLD_IDLE and m.controller.buttonPressed & L_TRIG ~= 0 then
         set_mario_action(m, ACT_HOLDING_BOWSER, 0)
@@ -336,9 +388,6 @@ function kaktus_update(m)
         m.vel.y = 65
         m.faceAngle.y = m.intendedYaw
     end
-    if m.action == ACT_DIVE and m.flags & MARIO_WING_CAP ~= 0 then
-        set_mario_action(m, ACT_FLYING_TRIPLE_JUMP, 0)
-    end
     if m.action == ACT_FLYING_TRIPLE_JUMP and m.controller.buttonDown & A_BUTTON ~= 0 then
         m.vel.y = 0
     end
@@ -361,7 +410,10 @@ function kaktus_update(m)
     if eyeStateTable[m.marioObj.header.gfx.animInfo.animID] ~= nil then
         m.marioBodyState.eyeState = eyeStateTable[m.marioObj.header.gfx.animInfo.animID]
     end
+    
 
+
+    
     -- you can get rid of anything in notes, the ones based on anim frames gotta stay tho - Jer
 
     --if (m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_STAR_DANCE and m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_FIRST_PUNCH ) or (m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_WATER_STAR_DANCE and m.marioObj.header.gfx.animInfo.animFrame > 68) then
