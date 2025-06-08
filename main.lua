@@ -201,7 +201,7 @@ local COURSE_KAKTUS = {
 
 local CAPTABLE_KAKTUS = {
     normal = smlua_model_util_get_id("kakcap_geo"),
-    --wing = smlua_model_util_get_id("custom_model_cap_wing_geo"),
+    wing = smlua_model_util_get_id("kakwingcap_geo"),
     metal = smlua_model_util_get_id("kakmetalcap_geo"),
     --metalWing = smlua_model_util_get_id("custom_model_cap_wing_geo")
 }

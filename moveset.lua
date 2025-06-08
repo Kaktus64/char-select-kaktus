@@ -17,26 +17,11 @@ local function limit_angle(a)
     return (a + 0x8000) % 0x10000 - 0x8000
 end
 
-ACT_DASH = allocate_mario_action(ACT_GROUP_AIRBORNE|ACT_FLAG_ALLOW_VERTICAL_WIND_ACTION|ACT_FLAG_ATTACKING|ACT_FLAG_AIR)
 ACT_SUPERJUMP_CROUCH_KAK = allocate_mario_action(ACT_GROUP_STATIONARY)
 ACT_BRELLA_FLOAT = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR)
 ACT_BRELLA_JUMP = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR)
 ACT_BRELLA_POUND = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR | ACT_FLAG_ATTACKING)
 ACT_TANOOKI_FLY_KAK = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR)
-
-function act_dash (m)
-    smlua_anim_util_set_animation(m.marioObj, "triplejump")
-    mario_set_forward_vel(m, 60)
-
-    local stepResult = perform_air_step(m, 0)
-    if stepResult == AIR_STEP_LANDED then --hitting the gound
-        return set_mario_action(m, ACT_BRAKING, 0)
-    elseif m.wall then
-    m.faceAngle.y = m.faceAngle.y * -60
-        mario_bonk_reflection(m, true)
-    end
-end
-hook_mario_action(ACT_DASH, act_dash)
 
 function act_superjump_crouch_kak (m)
     if m.controller.buttonPressed & A_BUTTON ~= 0 then
@@ -70,11 +55,11 @@ local brellaHandActions = { -- What actions you bring out the brella for
 }
 
 -- TANOOKI ACTIONS
+
 function act_tanooki_fly_kak(m)
     local stepResult = common_air_action_step(m, ACT_FREEFALL_LAND, CHAR_ANIM_FLY_FROM_CANNON, AIR_STEP_CHECK_LEDGE_GRAB)
     m.faceAngle.y = m.intendedYaw - approach_s32(limit_angle(m.intendedYaw - m.faceAngle.y), 0, 0x400, 0x400)
     m.peakHeight = m.pos.y -- no fall sound
-    m.actionTimer = m.actionTimer + 1
     if m.vel.y < -75 then
         m.vel.y = -75
     end
@@ -93,12 +78,11 @@ function act_tanooki_fly_kak(m)
         mario_bonk_reflection(m, 1)
         set_mario_action(m, ACT_TANOOKI_FLY_KAK, 0)
     end
-    if m.actionTimer == 30 then
-        set_mario_action(m, ACT_FREEFALL, 0)
-    end
     smlua_anim_util_set_animation(m.marioObj, "kaktus_tanookifly")
 end
 hook_mario_action(ACT_TANOOKI_FLY_KAK, act_tanooki_fly_kak)
+
+-- BRELLA ACTIONS
 
 function act_brella_float(m)
     m.particleFlags = m.particleFlags | PARTICLE_SPARKLES
@@ -239,6 +223,9 @@ if inc == ACT_SLIDE_KICK then
     m.vel.y = 65
     m.forwardVel = 55
     return ACT_BUTT_SLIDE_AIR
+end
+if inc == ACT_FLYING then
+    return ACT_TANOOKI_FLY_KAK
 end
 if inc == ACT_SIDE_FLIP then
     m.vel.y = 60
