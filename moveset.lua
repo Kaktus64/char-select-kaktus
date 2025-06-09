@@ -22,6 +22,8 @@ ACT_BRELLA_FLOAT = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR)
 ACT_BRELLA_JUMP = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR)
 ACT_BRELLA_POUND = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR | ACT_FLAG_ATTACKING)
 ACT_TANOOKI_FLY_KAK = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR)
+ACT_SHROOM_DASH = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR | ACT_FLAG_ATTACKING)
+ACT_SHROOM_TAUNT = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR)
 
 function act_superjump_crouch_kak (m)
     if m.controller.buttonPressed & A_BUTTON ~= 0 then
@@ -45,7 +47,8 @@ local brellaActions = { -- What actions you can brella out of
     [ACT_SIDE_FLIP] = true,
     [ACT_BACKFLIP] = true,
     [ACT_WALL_KICK_AIR] = true,
-    [ACT_TOP_OF_POLE_JUMP] = true
+    [ACT_TOP_OF_POLE_JUMP] = true,
+    [ACT_SHROOM_DASH] = true
 }
 
 local brellaHandActions = { -- What actions you bring out the brella for
@@ -54,7 +57,7 @@ local brellaHandActions = { -- What actions you bring out the brella for
     [ACT_CROUCHING] = true
 }
 
--- TANOOKI ACTIONS
+-- CAP ACTIONS
 
 function act_tanooki_fly_kak(m)
     local stepResult = common_air_action_step(m, ACT_FREEFALL_LAND, CHAR_ANIM_FLY_FROM_CANNON, AIR_STEP_CHECK_LEDGE_GRAB)
@@ -82,6 +85,29 @@ function act_tanooki_fly_kak(m)
 end
 hook_mario_action(ACT_TANOOKI_FLY_KAK, act_tanooki_fly_kak)
 
+function act_shroom_dash(m)
+    local stepResult = common_air_action_step(m, ACT_FREEFALL_LAND, CHAR_ANIM_BACKFLIP, ACT_FLAG_AIR)
+    m.faceAngle.y = m.intendedYaw - approach_s32(limit_angle(m.intendedYaw - m.faceAngle.y), 0, 0x400, 0x400)
+    set_mario_particle_flags(m, PARTICLE_DUST, 0)
+    if m.prevAction == ACT_WALKING then
+        smlua_anim_util_set_animation(m.marioObj, "triplejumpspin")
+    end
+end
+hook_mario_action(ACT_SHROOM_DASH, act_shroom_dash)
+    local stepResult = common_air_action_step(m, ACT_FREEFALL_LAND, CHAR_ANIM_BACKFLIP, AIR_STEP_CHECK_LEDGE_GRAB)
+    
+
+function act_shroom_taunt(m)
+    local stepResult = common_air_action_step(m, ACT_FREEFALL_LAND, CHAR_ANIM_FORWARD_SPINNING_FLIP, AIR_STEP_CHECK_LEDGE_GRAB)
+    set_mario_particle_flags(m, PARTICLE_SPARKLES, 0)
+    m.faceAngle.y = m.intendedYaw - approach_s32(limit_angle(m.intendedYaw - m.faceAngle.y), 0, 0x200, 0x200)
+    m.actionTimer = m.actionTimer + 1
+    m.vel.y = m.vel.y / 1.2
+    if m.actionTimer > 10 then
+        set_mario_action(m, ACT_FREEFALL, 0)
+    end
+end
+hook_mario_action(ACT_SHROOM_TAUNT, act_shroom_taunt)
 -- BRELLA ACTIONS
 
 function act_brella_float(m)
@@ -242,6 +268,35 @@ if inc == ACT_JUMP and m.forwardVel > 40 and (m.flags & MARIO_WING_CAP) ~= 0 the
     m.vel.y = 100
     return ACT_TANOOKI_FLY_KAK
 end
+if inc == ACT_DIVE and (m.flags & MARIO_METAL_CAP) ~= 0 then
+    set_mario_particle_flags(m, PARTICLE_VERTICAL_STAR, 0)
+    m.forwardVel = 65
+    return ACT_SHROOM_DASH
+end
+if inc == ACT_MOVE_PUNCHING and (m.flags & MARIO_METAL_CAP) ~= 0 then
+    set_mario_particle_flags(m, PARTICLE_VERTICAL_STAR, 0)
+    m.forwardVel = 65
+    return ACT_SHROOM_DASH
+end
+if inc == ACT_BRELLA_FLOAT and (m.flags & MARIO_METAL_CAP) ~= 0 then
+    return ACT_FREEFALL
+end
+if inc == ACT_SHROOM_TAUNT then
+    play_character_sound(m, CHAR_SOUND_YAHOO_WAHA_YIPPEE)
+    set_mario_particle_flags(m, PARTICLE_VERTICAL_STAR, 0)
+end
+if inc == ACT_WATER_PLUNGE and m.controller.buttonDown & B_BUTTON ~= 0 and (m.flags & MARIO_METAL_CAP) ~= 0 then
+    smlua_anim_util_set_animation(m.marioObj, "triplejumpspin")
+    m.vel.y = 60
+    m.forwardVel = 65
+    return ACT_SHROOM_DASH
+end
+if inc == ACT_FREEFALL and m.controller.buttonDown & B_BUTTON ~= 0 and (m.flags & MARIO_METAL_CAP) ~= 0 then
+    smlua_anim_util_set_animation(m.marioObj, "triplejumpspin")
+    m.vel.y = 60
+    m.forwardVel = 65
+    return ACT_SHROOM_DASH
+end
 end)
 
 local eyeStateTable = { -- Epic Eye States Table of Evil Swag - Jer
@@ -273,10 +328,16 @@ local eyeStateTable = { -- Epic Eye States Table of Evil Swag - Jer
 function kaktus_update(m)
     local e = gStateExtras[m.playerIndex]
 
-    if brellaActions[m.action] and m.vel.y < 0 and m.input & INPUT_A_PRESSED ~= 0 and e.canBrella and (m.flags & MARIO_WING_CAP) == 0 then
+    if brellaActions[m.action] and m.vel.y < 0 and m.input & INPUT_A_PRESSED ~= 0 and e.canBrella and (m.flags & MARIO_WING_CAP) == 0 and (m.flags & MARIO_METAL_CAP) == 0 then
         set_mario_action(m, ACT_BRELLA_FLOAT, 0)
         set_mario_particle_flags(m, PARTICLE_MIST_CIRCLE, 0)
         e.canBrella = false
+    end
+    if m.action == ACT_SHROOM_DASH and m.input & INPUT_A_PRESSED ~= 0 and (m.flags & MARIO_METAL_CAP) ~= 0 and m.vel.y < 0 and m.forwardVel > 20 then
+        set_mario_action(m, ACT_SHROOM_TAUNT, 0)
+    end
+    if m.prevAction == ACT_SHROOM_TAUNT and m.action == ACT_FREEFALL and m.input & INPUT_A_PRESSED ~= 0 and (m.flags & MARIO_METAL_CAP) ~= 0 and m.vel.y < 0 and m.forwardVel > 20 then
+        set_mario_action(m, ACT_SHROOM_TAUNT, 0)
     end
     if m.pos.y == m.floorHeight then
         e.canBrella = true
@@ -293,11 +354,18 @@ function kaktus_update(m)
             m.vel.y = 0
         end
     end
-    if m.action == ACT_WALKING and m.forwardVel > 35 and m.forwardVel < 40 then
+    if m.action == ACT_WALKING and m.forwardVel > 35 and m.forwardVel < 40 and (m.flags & MARIO_METAL_CAP) == 0 then
         m.forwardVel = m.forwardVel + 1.01
     end
-    if m.action == ACT_WALKING and m.forwardVel > 32 and m.forwardVel < 32.1 then
+    if m.action == ACT_WALKING and m.forwardVel > 32 and m.forwardVel < 32.1 and (m.flags & MARIO_METAL_CAP) == 0 then
         m.forwardVel = 40
+    end
+    if m.action == ACT_WALKING and m.forwardVel > 35 and m.forwardVel < 60 and (m.flags & MARIO_METAL_CAP) ~= 0 then
+        m.forwardVel = m.forwardVel + 1.01
+    end
+    if m.action == ACT_WALKING and m.forwardVel > 32 and m.forwardVel < 32.1 and (m.flags & MARIO_METAL_CAP) ~= 0 then
+        m.forwardVel = 50
+        set_mario_particle_flags(m, PARTICLE_VERTICAL_STAR, 0)
     end
     if m.action == ACT_WALKING and m.forwardVel > 35 then
         set_mario_particle_flags(m, PARTICLE_DUST, 0)
