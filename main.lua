@@ -86,7 +86,7 @@ local ANIMTABLE_KAKTUS = {
     [CHAR_ANIM_CREDITS_LOOK_BACK_THEN_RUN] = 'endcutsceneotherkak',
     [CHAR_ANIM_CREDITS_WAVING] = 'endcutsceneotherkak',
     [CHAR_ANIM_AIR_KICK] = 'roundhousekak',
-    [CHAR_ANIM_SINGLE_JUMP] = 'jess_single_jump',
+    [CHAR_ANIM_SINGLE_JUMP] = 'kaktus_single_jump',
     [CHAR_ANIM_RUNNING] = 'kaktuse_run',
 
 }
