@@ -21,6 +21,7 @@ ACT_SUPERJUMP_CROUCH_KAK = allocate_mario_action(ACT_GROUP_STATIONARY)
 ACT_BRELLA_FLOAT = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR)
 ACT_BRELLA_JUMP = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR)
 ACT_BRELLA_POUND = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR | ACT_FLAG_ATTACKING)
+ACT_BRELLA_SPIN = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR | ACT_FLAG_ATTACKING)
 ACT_TANOOKI_FLY_KAK = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR)
 ACT_SHROOM_DASH = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR | ACT_FLAG_ATTACKING)
 ACT_SHROOM_TAUNT = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR)
@@ -82,6 +83,13 @@ function act_tanooki_fly_kak(m)
         set_mario_action(m, ACT_TANOOKI_FLY_KAK, 0)
     end
     smlua_anim_util_set_animation(m.marioObj, "kaktus_tanookifly")
+    if m.input & INPUT_Z_PRESSED ~= 0 then -- added this too - Jer
+        set_mario_action(m, ACT_GROUND_POUND, 0)
+    elseif m.input & INPUT_B_PRESSED ~= 0 then
+        set_mario_action(m, ACT_BRELLA_SPIN, 0)
+        m.vel.y = 45
+        m.forwardVel = 48
+    end
 end
 hook_mario_action(ACT_TANOOKI_FLY_KAK, act_tanooki_fly_kak)
 
@@ -91,6 +99,13 @@ function act_shroom_dash(m)
     set_mario_particle_flags(m, PARTICLE_DUST, 0)
     if m.prevAction == ACT_WALKING then
         smlua_anim_util_set_animation(m.marioObj, "triplejumpspin")
+    end
+    if m.input & INPUT_Z_PRESSED ~= 0 then -- added this too - Jer
+        set_mario_action(m, ACT_GROUND_POUND, 0)
+    elseif m.input & INPUT_B_PRESSED ~= 0 then
+        set_mario_action(m, ACT_BRELLA_SPIN, 0)
+        m.vel.y = 45
+        m.forwardVel = 48
     end
 end
 hook_mario_action(ACT_SHROOM_DASH, act_shroom_dash)
@@ -106,6 +121,7 @@ function act_shroom_taunt(m)
     if m.actionTimer > 10 then
         set_mario_action(m, ACT_FREEFALL, 0)
     end
+    
 end
 hook_mario_action(ACT_SHROOM_TAUNT, act_shroom_taunt)
 -- BRELLA ACTIONS
@@ -142,7 +158,9 @@ function act_brella_float(m)
     if m.input & INPUT_Z_PRESSED ~= 0 then -- added this too - Jer
         set_mario_action(m, ACT_GROUND_POUND, 0)
     elseif m.input & INPUT_B_PRESSED ~= 0 then
-        set_mario_action(m, ACT_DIVE, 0)
+        set_mario_action(m, ACT_BRELLA_SPIN, 0)
+        m.vel.y = 45
+        m.forwardVel = 48
     end
 
     m.actionTimer = m.actionTimer + 1
@@ -176,9 +194,15 @@ function act_brella_jump(m)
         end
     end
 
+    if m.input & INPUT_B_PRESSED ~= 0 then
+        set_mario_action(m, ACT_BRELLA_SPIN, 0)
+        m.vel.y = 45
+        m.forwardVel = 48
+    end
+
     e.rotAngle = e.rotAngle + (m.vel.y * 200)
     m.marioObj.header.gfx.angle.y = e.rotAngle
-
+    
     m.actionTimer = m.actionTimer + 1
     return false
 end
@@ -196,11 +220,32 @@ function act_brella_pound(m)
     if m.marioObj.header.gfx.animInfo.animFrame < 2 then --small jump at the start of the anim -Kaktus
         m.vel.y = 35
     end
+    if m.input & INPUT_B_PRESSED ~= 0 then
+        set_mario_action(m, ACT_BRELLA_SPIN, 0)
+        m.vel.y = 45
+        m.forwardVel = 48
+    end
     if m.forwardVel > 75 then --slow down! -Kaktus
     m.forwardVel = m.forwardVel - 1
     end
 end
 hook_mario_action(ACT_BRELLA_POUND, act_brella_pound)
+
+function act_brella_spin(m)
+    local e = gStateExtras[m.playerIndex]
+    local stepResult = common_air_action_step(m, ACT_FREEFALL_LAND, CHAR_ANIM_TWIRL, AIR_STEP_NONE)
+    m.faceAngle.y = m.intendedYaw - approach_s32(limit_angle(m.intendedYaw - m.faceAngle.y), 0, 0x20, 0x20)
+    m.marioBodyState.handState = MARIO_HAND_PEACE_SIGN
+    m.marioBodyState.eyeState = MARIO_EYES_DEAD
+    if m.forwardVel > 75 then --slow down! -Kaktus
+    m.forwardVel = m.forwardVel - 1
+    end
+
+    e.rotAngle = e.rotAngle + (m.forwardVel * 200)
+    m.marioObj.header.gfx.angle.y = e.rotAngle
+end
+hook_mario_action(ACT_BRELLA_SPIN, act_brella_spin)
+
 function add_moveset()
 
 -- i am so motherfucking stupid
@@ -255,6 +300,9 @@ if inc == ACT_FLYING then
 end
 if inc == ACT_SIDE_FLIP then
     m.vel.y = 60
+end
+if inc == ACT_BRELLA_SPIN then
+    play_character_sound(m, CHAR_SOUND_HOOHOO)
 end
 if inc == ACT_BACKFLIP then
     m.pos.y = m.pos.y + 10
