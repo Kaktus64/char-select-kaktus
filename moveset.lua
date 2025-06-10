@@ -102,10 +102,6 @@ function act_shroom_dash(m)
     end
     if m.input & INPUT_Z_PRESSED ~= 0 then -- added this too - Jer
         set_mario_action(m, ACT_GROUND_POUND, 0)
-    elseif m.input & INPUT_B_PRESSED ~= 0 then
-        set_mario_action(m, ACT_BRELLA_SPIN, 0)
-        m.vel.y = 45
-        m.forwardVel = 48
     end
 end
 hook_mario_action(ACT_SHROOM_DASH, act_shroom_dash)
