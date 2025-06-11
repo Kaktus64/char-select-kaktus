@@ -24,7 +24,6 @@ ACT_BRELLA_POUND = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR | ACT
 ACT_BRELLA_SPIN = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR | ACT_FLAG_ATTACKING)
 ACT_TANOOKI_FLY_KAK = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR)
 ACT_SHROOM_DASH = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR | ACT_FLAG_ATTACKING)
-ACT_SHROOM_TAUNT = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR)
 
 function act_superjump_crouch_kak (m)
     if m.controller.buttonPressed & A_BUTTON ~= 0 then
@@ -100,26 +99,12 @@ function act_shroom_dash(m)
     if m.prevAction == ACT_WALKING then
         smlua_anim_util_set_animation(m.marioObj, "triplejumpspin")
     end
-    if m.input & INPUT_Z_PRESSED ~= 0 then -- added this too - Jer
+    if m.input & INPUT_Z_PRESSED ~= 0 then
         set_mario_action(m, ACT_GROUND_POUND, 0)
     end
 end
 hook_mario_action(ACT_SHROOM_DASH, act_shroom_dash)
-    local stepResult = common_air_action_step(m, ACT_FREEFALL_LAND, CHAR_ANIM_BACKFLIP, AIR_STEP_CHECK_LEDGE_GRAB)
-    
 
-function act_shroom_taunt(m)
-    local stepResult = common_air_action_step(m, ACT_FREEFALL_LAND, CHAR_ANIM_FORWARD_SPINNING_FLIP, AIR_STEP_CHECK_LEDGE_GRAB)
-    set_mario_particle_flags(m, PARTICLE_SPARKLES, 0)
-    m.faceAngle.y = m.intendedYaw - approach_s32(limit_angle(m.intendedYaw - m.faceAngle.y), 0, 0x200, 0x200)
-    m.actionTimer = m.actionTimer + 1
-    m.vel.y = m.vel.y / 1.2
-    if m.actionTimer > 10 then
-        set_mario_action(m, ACT_FREEFALL, 0)
-    end
-    
-end
-hook_mario_action(ACT_SHROOM_TAUNT, act_shroom_taunt)
 -- BRELLA ACTIONS
 
 function act_brella_float(m)
@@ -229,7 +214,7 @@ hook_mario_action(ACT_BRELLA_POUND, act_brella_pound)
 
 function act_brella_spin(m)
     local e = gStateExtras[m.playerIndex]
-    local stepResult = common_air_action_step(m, ACT_FREEFALL_LAND, CHAR_ANIM_TWIRL, AIR_STEP_NONE)
+    local stepResult = common_air_action_step(m, ACT_FREEFALL_LAND, CHAR_ANIM_SKID_ON_GROUND, AIR_STEP_NONE)
     m.faceAngle.y = m.intendedYaw - approach_s32(limit_angle(m.intendedYaw - m.faceAngle.y), 0, 0x20, 0x20)
     m.marioBodyState.handState = MARIO_HAND_PEACE_SIGN
     m.marioBodyState.eyeState = MARIO_EYES_DEAD
@@ -325,10 +310,6 @@ end
 if inc == ACT_BRELLA_FLOAT and (m.flags & MARIO_METAL_CAP) ~= 0 then
     return ACT_FREEFALL
 end
-if inc == ACT_SHROOM_TAUNT then
-    play_character_sound(m, CHAR_SOUND_YAHOO_WAHA_YIPPEE)
-    set_mario_particle_flags(m, PARTICLE_VERTICAL_STAR, 0)
-end
 if inc == ACT_WATER_PLUNGE and m.controller.buttonDown & B_BUTTON ~= 0 and (m.flags & MARIO_METAL_CAP) ~= 0 then
     smlua_anim_util_set_animation(m.marioObj, "triplejumpspin")
     m.vel.y = 60
@@ -341,6 +322,11 @@ if inc == ACT_FREEFALL and m.controller.buttonDown & B_BUTTON ~= 0 and (m.flags 
     m.forwardVel = 65
     return ACT_SHROOM_DASH
 end
+end)
+
+charSelect.character_hook_moveset(CT_KAKTUS, HOOK_ON_SET_MARIO_ACTION,
+function(m)
+
 end)
 
 local eyeStateTable = { -- Epic Eye States Table of Evil Swag - Jer
@@ -377,14 +363,11 @@ function kaktus_update(m)
         set_mario_particle_flags(m, PARTICLE_MIST_CIRCLE, 0)
         e.canBrella = false
     end
-    if m.action == ACT_SHROOM_DASH and m.input & INPUT_A_PRESSED ~= 0 and (m.flags & MARIO_METAL_CAP) ~= 0 and m.vel.y < 0 and m.forwardVel > 20 then
-        set_mario_action(m, ACT_SHROOM_TAUNT, 0)
-    end
-    if m.prevAction == ACT_SHROOM_TAUNT and m.action == ACT_FREEFALL and m.input & INPUT_A_PRESSED ~= 0 and (m.flags & MARIO_METAL_CAP) ~= 0 and m.vel.y < 0 and m.forwardVel > 20 then
-        set_mario_action(m, ACT_SHROOM_TAUNT, 0)
-    end
     if m.pos.y == m.floorHeight then
         e.canBrella = true
+    end
+    if m.action == ACT_PUTTING_ON_CAP and (m.flags & MARIO_METAL_CAP) ~= 0 then
+        m.capTimer = 2400
     end
     if m.action == ACT_TANOOKI_FLY_KAK and m.input & INPUT_A_PRESSED ~= 0 then
         audio_sample_play(KAKTUS_TAIL, m.pos, 3)
@@ -429,7 +412,7 @@ function kaktus_update(m)
     end
     if m.action == ACT_GROUND_POUND_LAND and m.controller.buttonPressed & A_BUTTON ~= 0 then
         set_mario_action(m, ACT_BRELLA_JUMP, 0)
-        m.vel.y = 5
+        m.vel.y = 40
         m.forwardVel = 30
     end
     if m.action == ACT_HOLD_IDLE and m.controller.buttonPressed & L_TRIG ~= 0 then
