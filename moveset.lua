@@ -330,7 +330,6 @@ function(m)
 end)
 
 local eyeStateTable = { -- Epic Eye States Table of Evil Swag - Jer
-    [CHAR_ANIM_STAR_DANCE] = MARIO_EYES_LOOK_UP,
     [CHAR_ANIM_FIRST_PUNCH] = MARIO_EYES_DEAD,
     [CHAR_ANIM_SECOND_PUNCH] = MARIO_EYES_DEAD,
     [CHAR_ANIM_AIR_KICK] = MARIO_EYES_DEAD,
@@ -358,6 +357,14 @@ local eyeStateTable = { -- Epic Eye States Table of Evil Swag - Jer
 function kaktus_update(m)
     local e = gStateExtras[m.playerIndex]
 
+    
+    if smlua_anim_util_get_current_animation_name(m.marioObj) == "kaktus_menu_pose" then
+    m.marioBodyState.eyeState = MARIO_EYES_LOOK_UP
+    m.marioBodyState.capState = MARIO_HAS_DEFAULT_CAP_OFF
+    m.marioBodyState.handState = MARIO_HAND_HOLDING_CAP
+    end
+
+
     if brellaActions[m.action] and m.vel.y < 0 and m.input & INPUT_A_PRESSED ~= 0 and e.canBrella and (m.flags & MARIO_WING_CAP) == 0 and (m.flags & MARIO_METAL_CAP) == 0 then
         set_mario_action(m, ACT_BRELLA_FLOAT, 0)
         set_mario_particle_flags(m, PARTICLE_MIST_CIRCLE, 0)
@@ -381,6 +388,11 @@ function kaktus_update(m)
             m.vel.y = 0
         end
     end
+    if m.action == ACT_WALKING and m.forwardVel > 45 and m.forwardVel < 55 then
+        m.forwardVel = m.forwardVel + 0.965
+        smlua_anim_util_set_animation(m.marioObj, "kaktus_fast_run")
+        m.marioBodyState.eyeState = MARIO_EYES_DEAD
+    end
     if m.action == ACT_WALKING and m.forwardVel > 35 and m.forwardVel < 40 and (m.flags & MARIO_METAL_CAP) == 0 then
         m.forwardVel = m.forwardVel + 1.01
     end
@@ -391,7 +403,7 @@ function kaktus_update(m)
         m.forwardVel = m.forwardVel + 1.01
     end
     if m.action == ACT_WALKING and m.forwardVel > 32 and m.forwardVel < 32.1 and (m.flags & MARIO_METAL_CAP) ~= 0 then
-        m.forwardVel = 50
+        m.forwardVel = 40
         set_mario_particle_flags(m, PARTICLE_VERTICAL_STAR, 0)
     end
     if m.action == ACT_WALKING and m.forwardVel > 35 then
@@ -435,9 +447,6 @@ function kaktus_update(m)
         set_mario_action(m, ACT_JUMP, 0)
         m.vel.y = 45
     end
-    if m.action == ACT_CROUCHING and m.controller.buttonPressed & B_BUTTON ~= 0 then
-        set_mario_action(m, ACT_KAKROLL, 0)
-    end
     if m.action == ACT_JUMP and m.prevAction == ACT_TRIPLE_JUMP then
         smlua_anim_util_set_animation(m.marioObj, "kakbouncejump")
     end
@@ -454,7 +463,10 @@ function kaktus_update(m)
         m.marioBodyState.torsoAngle.x = 0
         m.marioBodyState.torsoAngle.z = 0
     end
-    if m.action == ACT_WALKING and m.forwardVel > 33 then
+    if m.action == ACT_WALKING and m.forwardVel > 33 and m.forwardVel < 44 then
+        m.marioBodyState.eyeState = MARIO_EYES_LOOK_DOWN
+    end
+    if m.action == ACT_WALKING and m.forwardVel > 49 then
         m.marioBodyState.eyeState = MARIO_EYES_LOOK_DOWN
     end
     if m.action == ACT_TRIPLE_JUMP then
@@ -524,6 +536,10 @@ function kaktus_update(m)
     --end
     if m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_TRIPLE_JUMP_LAND and m.marioObj.header.gfx.animInfo.animFrame < 20 then
         m.marioBodyState.eyeState = MARIO_EYES_CLOSED
+    end
+    if m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_STAR_DANCE and m.marioObj.header.gfx.animInfo.animFrame > 25 then
+        m.marioBodyState.eyeState = MARIO_EYES_LOOK_UP
+        m.marioBodyState.handState = MARIO_HAND_FISTS
     end
     --if m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_WALK_PANTING or m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_FAST_LEDGE_GRAB or m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_SLOW_LEDGE_GRAB then
     --    m.marioBodyState.eyeState = MARIO_EYES_DEAD
