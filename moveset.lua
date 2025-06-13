@@ -358,7 +358,12 @@ function kaktus_update(m)
     local e = gStateExtras[m.playerIndex]
 
     
-    if smlua_anim_util_get_current_animation_name(m.marioObj) == "kaktus_menu_pose" then
+    if smlua_anim_util_get_current_animation_name(m.marioObj) == "kaktus_menu_pose" and m.marioBodyState.capState == MARIO_HAS_DEFAULT_CAP_OFF then
+    m.marioBodyState.eyeState = MARIO_EYES_LOOK_UP
+    m.marioBodyState.capState = MARIO_HAS_DEFAULT_CAP_OFF
+    end
+
+    if smlua_anim_util_get_current_animation_name(m.marioObj) == "kaktus_menu_pose" and m.marioBodyState.capState == MARIO_HAS_DEFAULT_CAP_ON then
     m.marioBodyState.eyeState = MARIO_EYES_LOOK_UP
     m.marioBodyState.capState = MARIO_HAS_DEFAULT_CAP_OFF
     m.marioBodyState.handState = MARIO_HAND_HOLDING_CAP
@@ -554,5 +559,21 @@ function kaktus_update(m)
     --    m.marioBodyState.eyeState = MARIO_EYES_LOOK_DOWN
     --end
 end
-_G.charSelect.character_hook_moveset(CT_KAKTUS, HOOK_MARIO_UPDATE, kaktus_update)
+_G.charSelect.character_hook_moveset(CT_KAKTUS, HOOK_MARIO_UPDATE, HOOK_BEFORE_SET_MARIO_ACTION, HOOK_ON_HUD_RENDER_BEHIND, HOOK_ON_SET_MARIO_ACTION, kaktus_hud)
 end
+
+function add_moveset()
+
+function ysikle_update(m)
+    if m.action == ACT_JUMP then
+        set_mario_action(m, ACT_DOUBLE_JUMP, 0)
+    end
+    if m.action == ACT_WALKING then
+        m.marioBodyState.torsoAngle.x = 0
+        m.marioBodyState.torsoAngle.z = 0
+    end
+end
+
+_G.charSelect.character_hook_moveset(CT_YSIKLE, HOOK_MARIO_UPDATE, ysikle_update)
+end
+

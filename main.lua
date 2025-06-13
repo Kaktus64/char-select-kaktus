@@ -1,5 +1,5 @@
--- name: [CS] \\#ac50ff\\Kaktus
--- description: Kaktus arrives at Peach's Castle after taking a wrong turn on the I-35. \n\n\\#ff7777\\This Pack requires Character Select\nto use as a Library!
+-- name: [CS] \\#ac50ff\\Kaktus \\#ffffff\\+ \\#5581c4\\Ysikle
+-- description: Kaktus and Ysikle arrive at Peach's Castle after taking a wrong turn on the I-35. \n\n\\#ff7777\\This Pack requires Character Select\nto use as a Library!
 
 --[[
     API Documentation for Character Select can be found below:
@@ -9,7 +9,7 @@
 	(This is an edited version of the Template File by Squishy)
 ]]
 
-local TEXT_MOD_NAME = "[CS] Kaktus"
+local TEXT_MOD_NAME = "[CS] Kaktus + Ysikle"
 
 -- Stops mod from loading if Character Select isn't on
 if not _G.charSelectExists then
@@ -21,7 +21,7 @@ local E_MODEL_KAKTUS = smlua_model_util_get_id("kaktus_geo")
 
 local KAKTUS_ICON = get_texture_info("Kaktus-LifeIcon1")
 
-
+local E_MODEL_YSIKLE = smlua_model_util_get_id("ysikle_geo")
 
 local KAKTUS_SILHOUETTE = get_texture_info("kaksilh")
 
@@ -79,6 +79,9 @@ local VOICETABLE_KAKTUS = {
     [CHAR_SOUND_PRESS_START_TO_PLAY] = 'sm64_moneybags_jump.ogg'
 }
 
+local VOICETABLE_YSIKLE = {
+    nil
+}
 
 local ANIMTABLE_KAKTUS = {
     [_G.charSelect.CS_ANIM_MENU] = "kaktus_menu_pose",
@@ -89,6 +92,14 @@ local ANIMTABLE_KAKTUS = {
     [CHAR_ANIM_AIR_KICK] = 'roundhousekak',
     [CHAR_ANIM_SINGLE_JUMP] = 'kaktus_single_jump',
     [CHAR_ANIM_RUNNING] = 'kaktuse_run',
+
+}
+
+local ANIMTABLE_YSIKLE = {
+    [_G.charSelect.CS_ANIM_MENU] = "kaktus_menu_pose",
+    [CHAR_ANIM_IDLE_HEAD_CENTER] = "idleanimkak",
+    [CHAR_ANIM_IDLE_HEAD_RIGHT] = "lookingsidekak",
+    [CHAR_ANIM_IDLE_HEAD_LEFT] = "idleanimkak",
 
 }
 
@@ -223,7 +234,7 @@ local function on_character_select_load()
     _G.charSelect.character_add_health_meter(CT_KAKTUS, HM_KAKTUS)
     _G.charSelect.character_add_course_texture(CT_KAKTUS, COURSE_KAKTUS)
     _G.charSelect.character_add_animations(E_MODEL_KAKTUS, ANIMTABLE_KAKTUS)
-    _G.charSelect.character_hook_moveset(CT_KAKTUS, HOOK_MARIO_UPDATE, HOOK_BEFORE_SET_MARIO_ACTION, HOOK_ON_HUD_RENDER_BEHIND, HOOK_ON_SET_MARIO_ACTION, kaktus_hud)
+    
     _G.charSelect.character_set_category(CT_KAKTUS, "DXA")
     _G.charSelect.character_set_category(CT_KAKTUS, "Squishy Workshop")
 
@@ -237,6 +248,12 @@ local function on_character_select_load()
     _G.charSelect.character_add_palette_preset(E_MODEL_KAKTUS, PALETTE_FALL_BREEZE_KAK, "Fall Breeze")
     _G.charSelect.character_add_palette_preset(E_MODEL_KAKTUS, PALETTE_LOOK_GOOD_KAK, "Looking Good")
     add_moveset()
+
+    CT_YSIKLE = _G.charSelect.character_add("Ysikle", {"placeholder desc", "she is kaktus sister"}, "Kaktus64", {r = 85, g = 129, b = 196}, E_MODEL_YSIKLE, CT_YSIKLE)
+    _G.charSelect.character_add_voice(E_MODEL_YSIKLE, VOICETABLE_YSIKLE)
+    _G.charSelect.character_add_animations(E_MODEL_YSIKLE, ANIMTABLE_YSIKLE)
+
+    --zadd_moveset()
 
     CSloaded = true
 end
@@ -254,6 +271,8 @@ end
 hook_event(HOOK_ON_MODS_LOADED, on_character_select_load)
 hook_event(HOOK_CHARACTER_SOUND, on_character_sound)
 hook_event(HOOK_MARIO_UPDATE, on_character_snore)
+
+
 
 KakGB = get_texture_info("KaktusGameBoy")
 
