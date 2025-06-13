@@ -17,6 +17,7 @@ local function limit_angle(a)
     return (a + 0x8000) % 0x10000 - 0x8000
 end
 
+--kaktus actions
 ACT_SUPERJUMP_CROUCH_KAK = allocate_mario_action(ACT_GROUP_STATIONARY)
 ACT_BRELLA_FLOAT = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR)
 ACT_BRELLA_JUMP = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR)
@@ -24,6 +25,10 @@ ACT_BRELLA_POUND = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR | ACT
 ACT_BRELLA_SPIN = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR | ACT_FLAG_ATTACKING)
 ACT_TANOOKI_FLY_KAK = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR)
 ACT_SHROOM_DASH = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR | ACT_FLAG_ATTACKING)
+
+--ysikle actions
+ACT_YSIKLE_POUND = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR | ACT_FLAG_ATTACKING)
+ACT_YSIKLE_HAMMER_SPIN = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR | ACT_FLAG_ATTACKING)
 
 function act_superjump_crouch_kak (m)
     if m.controller.buttonPressed & A_BUTTON ~= 0 then
@@ -227,7 +232,37 @@ function act_brella_spin(m)
 end
 hook_mario_action(ACT_BRELLA_SPIN, act_brella_spin)
 
+--ysikle actions
 
+function act_ysikle_pound(m)
+    local e = gStateExtras[m.playerIndex]
+    local stepResult = common_air_action_step(m, ACT_GROUND_POUND_LAND, CHAR_ANIM_START_GROUND_POUND, AIR_STEP_NONE)
+    m.marioBodyState.eyeState = MARIO_EYES_DEAD
+    m.vel.y = m.vel.y * 1.2
+    m.vel.x = 0
+    m.vel.z = 0
+    if m.vel.y < -75 then
+        m.vel.y = -75
+    end
+    if m.vel.y > 0 then
+        m.vel.y = 0
+    end
+    m.actionTimer = m.actionTimer + 1
+    return false
+end
+hook_mario_action(ACT_YSIKLE_POUND, act_ysikle_pound)
+
+function act_ysikle_hammer_spin(m)
+    local stepResult = common_air_action_step(m, ACT_GROUND_POUND_LAND, CHAR_ANIM_FORWARD_SPINNING, AIR_STEP_NONE)
+    m.faceAngle.y = m.intendedYaw - approach_s32(limit_angle(m.intendedYaw - m.faceAngle.y), 0, 0x40, 0x40)
+    m.marioBodyState.eyeState = MARIO_EYES_DEAD
+    if m.actionTimer == 0 then
+        m.vel.y = 45
+    end
+
+    m.actionTimer = m.actionTimer + 1
+end
+hook_mario_action(ACT_YSIKLE_HAMMER_SPIN, act_ysikle_hammer_spin)
 -- i am so motherfucking stupid
 -- No you're not, you are very smart and an awesome human being <3
 -- thanks jer :)
@@ -554,13 +589,45 @@ function kaktus_update(m)
 end
 
 function ysikle_update(m)
-    if m.action == ACT_JUMP then
-        set_mario_action(m, ACT_DOUBLE_JUMP, 0)
+    if m.action == ACT_GROUND_POUND then
+        m.marioObj.header.gfx.pos.y = m.pos.y + -20
     end
     if m.action == ACT_WALKING then
         m.marioBodyState.torsoAngle.x = 0
         m.marioBodyState.torsoAngle.z = 0
     end
+    if m.action == ACT_GROUND_POUND_LAND and m.input & INPUT_A_PRESSED ~= 0 and m.prevAction ~= ACT_YSIKLE_HAMMER_SPIN then
+        set_mario_action(m, ACT_TRIPLE_JUMP, 0)
+        m.vel.y = 60
+    elseif m.action == ACT_GROUND_POUND_LAND and m.input & INPUT_A_PRESSED ~= 0 and m.prevAction == ACT_YSIKLE_HAMMER_SPIN then
+        set_mario_action(m, ACT_TRIPLE_JUMP, 0)
+        m.vel.y = 60
+        m.forwardVel = 48
+    end
+    if m.action == ACT_GROUND_POUND and m.input & INPUT_B_PRESSED ~= 0 then
+        set_mario_action(m, ACT_DIVE, 0)
+        set_mario_particle_flags(m, PARTICLE_MIST_CIRCLE, 0)
+        m.faceAngle.y = m.intendedYaw
+        m.vel.y = 30
+        m.forwardVel = 48
+    end
+    if m.action == ACT_DIVE and m.prevAction ~= ACT_GROUND_POUND and m.prevAction ~= ACT_GROUND_POUND_LAND then
+        set_mario_action(m, ACT_YSIKLE_HAMMER_SPIN, 0)
+    end
+    if m.action == ACT_GROUND_POUND_LAND and m.input & INPUT_B_PRESSED ~= 0 then
+        set_mario_action(m, ACT_SLIDE_KICK, 0)
+        m.vel.y = 25
+        m.forwardVel = 56
+        m.faceAngle.y = m.intendedYaw
+    end
+end
+
+function ysikle_before_set_action(m, inc)
+    if inc == ACT_SOFT_BONK and m.action == ACT_YSIKLE_HAMMER_SPIN then
+        return ACT_YSIKLE_HAMMER_SPIN
+    end
+end
+function ysikle_on_set_action(m)
 end
 
 _G.charSelect.character_hook_moveset(CT_KAKTUS, HOOK_MARIO_UPDATE, kaktus_update)
@@ -569,4 +636,6 @@ _G.charSelect.character_hook_moveset(CT_KAKTUS, HOOK_BEFORE_SET_MARIO_ACTION, ka
 _G.charSelect.character_hook_moveset(CT_KAKTUS, HOOK_ON_HUD_RENDER_BEHIND, kaktus_hud)
 
 _G.charSelect.character_hook_moveset(CT_YSIKLE, HOOK_MARIO_UPDATE, ysikle_update)
+_G.charSelect.character_hook_moveset(CT_YSIKLE, HOOK_BEFORE_SET_MARIO_ACTION, ysikle_before_set_action)
+_G.charSelect.character_hook_moveset(CT_YSIKLE, HOOK_ON_SET_MARIO_ACTION, ysikle_on_set_action)
 
