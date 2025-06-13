@@ -227,8 +227,13 @@ local CAPTABLE_KAKTUS = {
 --end
 
 local CSloaded = false
-local function on_character_select_load()
+
+if _G.charSelectExists then
     CT_KAKTUS = _G.charSelect.character_add("Kaktus", {"Kaktus arrives at Peach's Castle", "after taking a wrong turn on the", "I-35."}, "Kaktus64 & JerThePear", {r = 172, g = 80, b = 255}, E_MODEL_KAKTUS, CT_KAKTUS, KAKTUS_ICON)
+    CT_YSIKLE = _G.charSelect.character_add("Ysikle", {"placeholder desc", "she is kaktus sister"}, "Kaktus64", {r = 85, g = 129, b = 196}, E_MODEL_YSIKLE, CT_YSIKLE)
+end
+
+local function on_character_select_load()
     _G.charSelect.character_add_caps(E_MODEL_KAKTUS, CAPTABLE_KAKTUS)
     _G.charSelect.character_add_voice(E_MODEL_KAKTUS, VOICETABLE_KAKTUS)
     _G.charSelect.character_add_health_meter(CT_KAKTUS, HM_KAKTUS)
@@ -247,9 +252,7 @@ local function on_character_select_load()
     _G.charSelect.character_add_palette_preset(E_MODEL_KAKTUS, PALETTE_COOL_BREEZE_KAK, "Cool Breeze")
     _G.charSelect.character_add_palette_preset(E_MODEL_KAKTUS, PALETTE_FALL_BREEZE_KAK, "Fall Breeze")
     _G.charSelect.character_add_palette_preset(E_MODEL_KAKTUS, PALETTE_LOOK_GOOD_KAK, "Looking Good")
-    add_moveset()
 
-    CT_YSIKLE = _G.charSelect.character_add("Ysikle", {"placeholder desc", "she is kaktus sister"}, "Kaktus64", {r = 85, g = 129, b = 196}, E_MODEL_YSIKLE, CT_YSIKLE)
     _G.charSelect.character_add_voice(E_MODEL_YSIKLE, VOICETABLE_YSIKLE)
     _G.charSelect.character_add_animations(E_MODEL_YSIKLE, ANIMTABLE_YSIKLE)
 

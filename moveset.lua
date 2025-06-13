@@ -227,7 +227,6 @@ function act_brella_spin(m)
 end
 hook_mario_action(ACT_BRELLA_SPIN, act_brella_spin)
 
-function add_moveset()
 
 -- i am so motherfucking stupid
 -- No you're not, you are very smart and an awesome human being <3
@@ -258,8 +257,7 @@ function add_moveset()
 --end
 --end)
 
-charSelect.character_hook_moveset(CT_KAKTUS, HOOK_BEFORE_SET_MARIO_ACTION,
-function (m, inc)
+function kaktus_before_set_action(m, inc)
 local np = gNetworkPlayers[m.playerIndex]
 if inc == ACT_DOUBLE_JUMP then
     return ACT_JUMP
@@ -322,12 +320,7 @@ if inc == ACT_FREEFALL and m.controller.buttonDown & B_BUTTON ~= 0 and (m.flags 
     m.forwardVel = 65
     return ACT_SHROOM_DASH
 end
-end)
-
-charSelect.character_hook_moveset(CT_KAKTUS, HOOK_ON_SET_MARIO_ACTION,
-function(m)
-
-end)
+end
 
 local eyeStateTable = { -- Epic Eye States Table of Evil Swag - Jer
     [CHAR_ANIM_FIRST_PUNCH] = MARIO_EYES_DEAD,
@@ -559,10 +552,6 @@ function kaktus_update(m)
     --    m.marioBodyState.eyeState = MARIO_EYES_LOOK_DOWN
     --end
 end
-_G.charSelect.character_hook_moveset(CT_KAKTUS, HOOK_MARIO_UPDATE, HOOK_BEFORE_SET_MARIO_ACTION, HOOK_ON_HUD_RENDER_BEHIND, HOOK_ON_SET_MARIO_ACTION, kaktus_hud)
-end
-
-function add_moveset()
 
 function ysikle_update(m)
     if m.action == ACT_JUMP then
@@ -574,6 +563,10 @@ function ysikle_update(m)
     end
 end
 
+_G.charSelect.character_hook_moveset(CT_KAKTUS, HOOK_MARIO_UPDATE, kaktus_update)
+_G.charSelect.character_hook_moveset(CT_KAKTUS, HOOK_ON_SET_MARIO_ACTION, kaktus_set_action)
+_G.charSelect.character_hook_moveset(CT_KAKTUS, HOOK_BEFORE_SET_MARIO_ACTION, kaktus_before_set_action)
+_G.charSelect.character_hook_moveset(CT_KAKTUS, HOOK_ON_HUD_RENDER_BEHIND, kaktus_hud)
+
 _G.charSelect.character_hook_moveset(CT_YSIKLE, HOOK_MARIO_UPDATE, ysikle_update)
-end
 
