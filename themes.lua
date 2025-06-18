@@ -3,6 +3,8 @@ KAKTUS_TANOOKI_MUSIC = audio_stream_load("kaktus_tanooki.ogg")
 
 KAKTUS_GOLD_SHROOM_MUSIC = audio_stream_load("kaktus_golden_shroom.ogg")
 
+KAKTUS_VANISH_MUSIC = audio_stream_load("kaktus_vanish_theme.ogg")
+
 -- thank you xLuigiGamerx
 
 function cur_level_music_kak(m)
@@ -16,7 +18,12 @@ end
 
 function kaktus_gold_shroom(m)
     if not m then return end
-    return m.flags & MARIO_METAL_CAP ~= 0 -- returns true if you have a wing cap, else it returns false
+    return m.flags & MARIO_METAL_CAP ~= 0 -- returns true if you have a metal cap, else it returns false
+end
+
+function kaktus_vanish(m)
+    if not m then return end
+    return m.flags & MARIO_VANISH_CAP ~= 0 -- returns true if you have a vanish cap, else it returns false
 end
 
 function mario_update(m)
@@ -25,8 +32,9 @@ function mario_update(m)
     if kaktus_tanooki(m) and is_kaktus() then
         audio_stream_play(KAKTUS_TANOOKI_MUSIC, false, 0.9)
         play_cap_music(0)
-    else
+    elseif is_kaktus() then
         audio_stream_stop(KAKTUS_TANOOKI_MUSIC)
+        stop_cap_music()
     end
     if is_game_paused() or m.action == ACT_START_SLEEPING or m.action == ACT_SLEEPING then
         audio_stream_set_volume(KAKTUS_TANOOKI_MUSIC, 0.3)
@@ -35,11 +43,23 @@ function mario_update(m)
     if kaktus_gold_shroom(m) and is_kaktus() then
         audio_stream_play(KAKTUS_GOLD_SHROOM_MUSIC, false, 0.9)
         play_cap_music(0)
-    else
+    elseif is_kaktus() then
         audio_stream_stop(KAKTUS_GOLD_SHROOM_MUSIC)
+        stop_cap_music()
     end
     if is_game_paused() or m.action == ACT_START_SLEEPING or m.action == ACT_SLEEPING then
         audio_stream_set_volume(KAKTUS_GOLD_SHROOM_MUSIC, 0.3)
+    end
+    -- Vanish Theme
+    if kaktus_vanish(m) and is_kaktus() then
+        audio_stream_play(KAKTUS_VANISH_MUSIC, false, 0.9)
+        play_cap_music(0)
+    elseif is_kaktus() then
+        audio_stream_stop(KAKTUS_VANISH_MUSIC)
+        stop_cap_music()
+    end
+    if is_game_paused() or m.action == ACT_START_SLEEPING or m.action == ACT_SLEEPING then
+        audio_stream_set_volume(KAKTUS_VANISH_MUSIC, 0.3)
     end
 end
 

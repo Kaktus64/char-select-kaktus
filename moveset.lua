@@ -26,7 +26,7 @@ ACT_BRELLA_SPIN = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR | ACT_
 ACT_TANOOKI_FLY_KAK = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR)
 ACT_SHROOM_DASH = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR | ACT_FLAG_ATTACKING)
 
---ysikle actions
+--ysikle actions (unused, since ysikle was removed)
 ACT_YSIKLE_POUND = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR | ACT_FLAG_ATTACKING)
 ACT_YSIKLE_HAMMER_SPIN = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR | ACT_FLAG_ATTACKING)
 
@@ -355,6 +355,15 @@ if inc == ACT_FREEFALL and m.controller.buttonDown & B_BUTTON ~= 0 and (m.flags 
     m.forwardVel = 65
     return ACT_SHROOM_DASH
 end
+-- OMM compatability
+if _G.OmmEnabled == true then
+    if inc == ACT_OMM_SPIN_AIR then
+        return ACT_BRELLA_FLOAT
+    end
+    if inc == ACT_JUMP_KICK then
+        return ACT_BRELLA_SPIN
+    end
+end
 end
 
 local eyeStateTable = { -- Epic Eye States Table of Evil Swag - Jer
@@ -459,12 +468,6 @@ function kaktus_update(m)
         set_mario_action(m, ACT_BRELLA_JUMP, 0)
         m.vel.y = 40
         m.forwardVel = 30
-    end
-    if m.action == ACT_HOLD_IDLE and m.controller.buttonPressed & L_TRIG ~= 0 then
-        set_mario_action(m, ACT_HOLDING_BOWSER, 0)
-    end
-    if m.action == ACT_HOLD_HEAVY_IDLE and m.controller.buttonPressed & L_TRIG ~= 0 then
-        set_mario_action(m, ACT_HOLDING_BOWSER, 0)
     end
     if m.action == ACT_GROUND_POUND_LAND and m.controller.buttonPressed & B_BUTTON ~= 0 then
         set_mario_action(m, ACT_DIVE, 0)
@@ -588,54 +591,7 @@ function kaktus_update(m)
     --end
 end
 
-function ysikle_update(m)
-    if m.action == ACT_GROUND_POUND then
-        m.marioObj.header.gfx.pos.y = m.pos.y + -20
-    end
-    if m.action == ACT_WALKING then
-        m.marioBodyState.torsoAngle.x = 0
-        m.marioBodyState.torsoAngle.z = 0
-    end
-    if m.action == ACT_GROUND_POUND_LAND and m.input & INPUT_A_PRESSED ~= 0 and m.prevAction ~= ACT_YSIKLE_HAMMER_SPIN then
-        set_mario_action(m, ACT_TRIPLE_JUMP, 0)
-        m.vel.y = 60
-    elseif m.action == ACT_GROUND_POUND_LAND and m.input & INPUT_A_PRESSED ~= 0 and m.prevAction == ACT_YSIKLE_HAMMER_SPIN then
-        set_mario_action(m, ACT_TRIPLE_JUMP, 0)
-        m.vel.y = 60
-        m.forwardVel = 48
-    end
-    if m.action == ACT_GROUND_POUND and m.input & INPUT_B_PRESSED ~= 0 then
-        set_mario_action(m, ACT_DIVE, 0)
-        set_mario_particle_flags(m, PARTICLE_MIST_CIRCLE, 0)
-        m.faceAngle.y = m.intendedYaw
-        m.vel.y = 30
-        m.forwardVel = 48
-    end
-    if m.action == ACT_DIVE and m.prevAction ~= ACT_GROUND_POUND and m.prevAction ~= ACT_GROUND_POUND_LAND then
-        set_mario_action(m, ACT_YSIKLE_HAMMER_SPIN, 0)
-    end
-    if m.action == ACT_GROUND_POUND_LAND and m.input & INPUT_B_PRESSED ~= 0 then
-        set_mario_action(m, ACT_SLIDE_KICK, 0)
-        m.vel.y = 25
-        m.forwardVel = 56
-        m.faceAngle.y = m.intendedYaw
-    end
-end
-
-function ysikle_before_set_action(m, inc)
-    if inc == ACT_SOFT_BONK and m.action == ACT_YSIKLE_HAMMER_SPIN then
-        return ACT_YSIKLE_HAMMER_SPIN
-    end
-end
-function ysikle_on_set_action(m)
-end
-
 _G.charSelect.character_hook_moveset(CT_KAKTUS, HOOK_MARIO_UPDATE, kaktus_update)
 _G.charSelect.character_hook_moveset(CT_KAKTUS, HOOK_ON_SET_MARIO_ACTION, kaktus_set_action)
 _G.charSelect.character_hook_moveset(CT_KAKTUS, HOOK_BEFORE_SET_MARIO_ACTION, kaktus_before_set_action)
 _G.charSelect.character_hook_moveset(CT_KAKTUS, HOOK_ON_HUD_RENDER_BEHIND, kaktus_hud)
-
-_G.charSelect.character_hook_moveset(CT_YSIKLE, HOOK_MARIO_UPDATE, ysikle_update)
-_G.charSelect.character_hook_moveset(CT_YSIKLE, HOOK_BEFORE_SET_MARIO_ACTION, ysikle_before_set_action)
-_G.charSelect.character_hook_moveset(CT_YSIKLE, HOOK_ON_SET_MARIO_ACTION, ysikle_on_set_action)
-
