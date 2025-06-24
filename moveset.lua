@@ -23,6 +23,7 @@ ACT_BRELLA_FLOAT = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR)
 ACT_BRELLA_JUMP = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR)
 ACT_BRELLA_POUND = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR | ACT_FLAG_ATTACKING)
 ACT_BRELLA_SPIN = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR | ACT_FLAG_ATTACKING)
+ACT_KAK_LONG_JUMP = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR)
 ACT_BRELLA_CROUCH = allocate_mario_action(ACT_FLAG_INVULNERABLE | ACT_GROUP_STATIONARY)
 ACT_TANOOKI_FLY_KAK = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR)
 ACT_SHROOM_DASH = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR | ACT_FLAG_ATTACKING)
@@ -126,7 +127,6 @@ function act_brella_float(m)
         m.vel.y = m.vel.y/1.8
     elseif m.floor.type == SURFACE_VERTICAL_WIND then -- updraft
         m.vel.y = m.vel.y + 1
-        --djui_chat_message_create("in wind") -- for testing, get rid of it - Jer
     else
         m.vel.y = m.vel.y + 3 -- lets you bounce off goombas - Jer
     end
@@ -149,6 +149,9 @@ function act_brella_float(m)
         set_mario_action(m, ACT_BRELLA_SPIN, 0)
         m.vel.y = 45
         m.forwardVel = 48
+    end
+    if m.actionTimer > 35 then
+        m.vel.y = m.vel.y * 1.02
     end
 
     m.actionTimer = m.actionTimer + 1
@@ -244,6 +247,18 @@ hook_mario_action(ACT_BRELLA_SPIN, act_brella_spin)
 function act_brella_crouch(m)
 end
 hook_mario_action(ACT_BRELLA_CROUCH, act_brella_crouch)
+
+function act_kak_long_jump(m)
+    local e = gStateExtras[m.playerIndex]
+    local stepResult = common_air_action_step(m, ACT_LONG_JUMP_LAND, CHAR_ANIM_FAST_LONGJUMP, AIR_STEP_HIT_WALL)
+    --m.faceAngle.y = m.intendedYaw - approach_s32(limit_angle(m.intendedYaw - m.faceAngle.y), 0, 0x20, 0x20)
+    if m.actionTimer < 0 then
+        m.vel.y = 26
+        m.forwardVel = 46
+    end
+    m.actionTimer = m.actionTimer + 1
+end
+hook_mario_action(ACT_KAK_LONG_JUMP, act_kak_long_jump)
 
 --ysikle actions
 
@@ -379,9 +394,6 @@ function kaktus_set_action(m)
     if m.action == ACT_BRELLA_SPIN then
         play_sound(SOUND_ACTION_TWIRL, m.marioObj.header.gfx.cameraToObject)
     end
-    if m.action == ACT_LONG_JUMP then
-        m.vel.y = 23.5
-    end
     if m.action == ACT_SIDE_FLIP then
         m.vel.y = 45
     end
@@ -437,10 +449,14 @@ function kaktus_update(m)
         set_mario_particle_flags(m, PARTICLE_MIST_CIRCLE, 0)
         e.canBrella = false
     end
+    if m.action == ACT_LONG_JUMP then
+        m.vel.y = m.vel.y - 0.5
+    end
     if m.pos.y == m.floorHeight then
         e.canBrella = true
     end
     if m.action == ACT_CROUCHING then
+        --spawn_non_sync_object(id_bhvSparkleSpawn, E_MODEL_NONE, m.pos.x, m.pos.y, m.pos.z, nil)
         set_mario_particle_flags(m, PARTICLE_SPARKLES, 0)
     end
     if m.action == ACT_TANOOKI_FLY_KAK and m.input & INPUT_A_PRESSED ~= 0 then
