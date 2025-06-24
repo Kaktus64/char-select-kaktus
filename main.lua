@@ -1,4 +1,4 @@
--- name: [CS] \\#ac50ff\\Kaktus \\#ffffff\\+ \\#5581c4\\Ysikle
+-- name: [CS] \\#ac50ff\\Kaktus
 -- description: Kaktus and Ysikle arrive at Peach's Castle after taking a wrong turn on the I-35. \n\n\\#ff7777\\This Pack requires Character Select\nto use as a Library!
 
 --[[
@@ -9,7 +9,7 @@
 	(This is an edited version of the Template File by Squishy)
 ]]
 
-local TEXT_MOD_NAME = "[CS] Kaktus + Ysikle"
+local TEXT_MOD_NAME = "[CS] Kaktus"
 
 -- Stops mod from loading if Character Select isn't on
 if not _G.charSelectExists then
