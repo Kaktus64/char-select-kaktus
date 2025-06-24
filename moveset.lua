@@ -23,6 +23,7 @@ ACT_BRELLA_FLOAT = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR)
 ACT_BRELLA_JUMP = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR)
 ACT_BRELLA_POUND = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR | ACT_FLAG_ATTACKING)
 ACT_BRELLA_SPIN = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR | ACT_FLAG_ATTACKING)
+ACT_BRELLA_CROUCH = allocate_mario_action(ACT_FLAG_INVULNERABLE | ACT_GROUP_STATIONARY)
 ACT_TANOOKI_FLY_KAK = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR)
 ACT_SHROOM_DASH = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR | ACT_FLAG_ATTACKING)
 
@@ -59,7 +60,8 @@ local brellaActions = { -- What actions you can brella out of
 local brellaHandActions = { -- What actions you bring out the brella for
     [ACT_PUNCHING] = true,
     [ACT_MOVE_PUNCHING] = true,
-    [ACT_CROUCHING] = true
+    [ACT_CROUCHING] = true,
+    [ACT_CROUCH_SLIDE] = true
 }
 
 -- CAP ACTIONS
@@ -203,16 +205,23 @@ function act_brella_pound(m)
     if m.vel.y > -75 then --Speeding up the fall -Kaktus
         m.vel.y = m.vel.y - 0.7
     end
-    if m.marioObj.header.gfx.animInfo.animFrame < 2 then --small jump at the start of the anim -Kaktus
+    if m.marioObj.header.gfx.animInfo.animFrame < 5 then --small jump at the start of the anim -Kaktus
         m.vel.y = 35
+    end
+    if m.marioObj.header.gfx.animInfo.animFrame == 3 then
+        play_sound(SOUND_ACTION_KEY_SWISH, m.marioObj.header.gfx.cameraToObject)
     end
     if m.input & INPUT_B_PRESSED ~= 0 then
         set_mario_action(m, ACT_BRELLA_SPIN, 0)
         m.vel.y = 45
         m.forwardVel = 48
     end
+    if m.marioObj.header.gfx.animInfo.animFrame < 2 then
+        set_anim_to_frame(m, 3)
+    end
     if m.forwardVel > 75 then --slow down! -Kaktus
     m.forwardVel = m.forwardVel - 1
+    m.actionTimer = m.actionTimer + 1
     end
 end
 hook_mario_action(ACT_BRELLA_POUND, act_brella_pound)
@@ -231,6 +240,10 @@ function act_brella_spin(m)
     m.marioObj.header.gfx.angle.y = e.rotAngle
 end
 hook_mario_action(ACT_BRELLA_SPIN, act_brella_spin)
+
+function act_brella_crouch(m)
+end
+hook_mario_action(ACT_BRELLA_CROUCH, act_brella_crouch)
 
 --ysikle actions
 
@@ -297,8 +310,7 @@ local np = gNetworkPlayers[m.playerIndex]
 if inc == ACT_DOUBLE_JUMP then
     return ACT_JUMP
 end
-if inc == ACT_QUICKSAND_JUMP_LAND then 
-    m.vel.y = 30
+if inc == ACT_TRIPLE_JUMP then
     return ACT_JUMP
 end
 if inc == ACT_GROUND_POUND then
@@ -355,15 +367,27 @@ if inc == ACT_FREEFALL and m.controller.buttonDown & B_BUTTON ~= 0 and (m.flags 
     m.forwardVel = 65
     return ACT_SHROOM_DASH
 end
--- OMM compatability
-if _G.OmmEnabled == true then
-    if inc == ACT_OMM_SPIN_AIR then
-        return ACT_BRELLA_FLOAT
-    end
-    if inc == ACT_JUMP_KICK then
-        return ACT_BRELLA_SPIN
-    end
+if inc == ACT_START_CROUCHING then
+    return ACT_CROUCHING
 end
+if inc == ACT_STOP_CROUCHING then
+    return ACT_IDLE
+end
+end
+
+function kaktus_set_action(m)
+    if m.action == ACT_BRELLA_SPIN then
+        play_sound(SOUND_ACTION_TWIRL, m.marioObj.header.gfx.cameraToObject)
+    end
+    if m.action == ACT_LONG_JUMP then
+        m.vel.y = 23.5
+    end
+    if m.action == ACT_SIDE_FLIP then
+        m.vel.y = 45
+    end
+    if m.action == ACT_BUTT_SLIDE_AIR and m.prevAction == ACT_CROUCH_SLIDE then
+        play_sound(SOUND_ACTION_TWIRL, m.marioObj.header.gfx.cameraToObject)
+    end
 end
 
 local eyeStateTable = { -- Epic Eye States Table of Evil Swag - Jer
@@ -388,13 +412,15 @@ local eyeStateTable = { -- Epic Eye States Table of Evil Swag - Jer
     [CHAR_ANIM_TRIPLE_JUMP_GROUND_POUND] = MARIO_EYES_LOOK_DOWN,
     [CHAR_ANIM_FALL_OVER_BACKWARDS] = MARIO_EYES_DEAD,
     [CHAR_ANIM_BACKWARD_AIR_KB] = MARIO_EYES_DEAD,
-    [CHAR_ANIM_TIPTOE] = MARIO_EYES_LOOK_DOWN
+    [CHAR_ANIM_TIPTOE] = MARIO_EYES_LOOK_DOWN,
+    [CHAR_ANIM_CROUCHING] = MARIO_EYES_LOOK_LEFT,
+    [CHAR_ANIM_START_CROUCHING] = MARIO_EYES_LOOK_DOWN
 }
 
 function kaktus_update(m)
     local e = gStateExtras[m.playerIndex]
-
     
+
     if smlua_anim_util_get_current_animation_name(m.marioObj) == "kaktus_menu_pose" and m.marioBodyState.capState == MARIO_HAS_DEFAULT_CAP_OFF then
     m.marioBodyState.eyeState = MARIO_EYES_LOOK_UP
     m.marioBodyState.capState = MARIO_HAS_DEFAULT_CAP_OFF
@@ -406,7 +432,6 @@ function kaktus_update(m)
     m.marioBodyState.handState = MARIO_HAND_HOLDING_CAP
     end
 
-
     if brellaActions[m.action] and m.vel.y < 0 and m.input & INPUT_A_PRESSED ~= 0 and e.canBrella and (m.flags & MARIO_WING_CAP) == 0 and (m.flags & MARIO_METAL_CAP) == 0 then
         set_mario_action(m, ACT_BRELLA_FLOAT, 0)
         set_mario_particle_flags(m, PARTICLE_MIST_CIRCLE, 0)
@@ -415,8 +440,8 @@ function kaktus_update(m)
     if m.pos.y == m.floorHeight then
         e.canBrella = true
     end
-    if m.action == ACT_PUTTING_ON_CAP and (m.flags & MARIO_METAL_CAP) ~= 0 then
-        m.capTimer = 2400
+    if m.action == ACT_CROUCHING then
+        set_mario_particle_flags(m, PARTICLE_SPARKLES, 0)
     end
     if m.action == ACT_TANOOKI_FLY_KAK and m.input & INPUT_A_PRESSED ~= 0 then
         audio_sample_play(KAKTUS_TAIL, m.pos, 3)
@@ -460,6 +485,36 @@ function kaktus_update(m)
     end
     if m.action == ACT_PUNCHING and m.prevAction ~= ACT_CROUCHING then
         m.marioBodyState.handState = MARIO_HAND_PEACE_SIGN
+    end
+    -- quicksand invulnerability
+    if m.playerIndex == 0 then
+    if is_kaktus() and m.floor.type == SURFACE_QUICKSAND then
+        m.floor.type = SURFACE_CLASS_DEFAULT
+    end
+    if is_kaktus() and m.floor.type == SURFACE_DEEP_QUICKSAND then
+        m.floor.type = SURFACE_CLASS_DEFAULT
+    end
+    if is_kaktus() and m.floor.type == SURFACE_MOVING_QUICKSAND then
+        m.floor.type = SURFACE_CLASS_DEFAULT
+    end
+    if is_kaktus() and m.floor.type == SURFACE_SHALLOW_QUICKSAND then
+        m.floor.type = SURFACE_CLASS_DEFAULT
+    end
+    if is_kaktus() and m.floor.type == SURFACE_DEEP_MOVING_QUICKSAND then
+        m.floor.type = SURFACE_CLASS_DEFAULT
+    end
+    if is_kaktus() and m.floor.type == SURFACE_SHALLOW_MOVING_QUICKSAND then
+        m.floor.type = SURFACE_CLASS_DEFAULT
+    end
+    if is_kaktus() and m.floor.type == SURFACE_MOVING_QUICKSAND then
+        m.floor.type = SURFACE_CLASS_DEFAULT
+    end
+    if is_kaktus() and m.floor.type == SURFACE_INSTANT_MOVING_QUICKSAND then
+        m.floor.type = SURFACE_CLASS_DEFAULT
+    end
+    if is_kaktus() and m.floor.type == SURFACE_INSTANT_QUICKSAND then
+        m.floor.type = SURFACE_CLASS_DEFAULT
+    end
     end
     if m.action == ACT_SUPERJUMP_CROUCH_KAK then
         obj_act_squished(1.5)
@@ -530,9 +585,6 @@ function kaktus_update(m)
     if m.action == ACT_BUTT_SLIDE_AIR and m.vel.y > 50 then
         m.vel.y = 0
     end
-    if m.quicksandDepth ~= 0 and m.action ~= ACT_QUICKSAND_DEATH then
-        m.quicksandDepth = 0
-    end
     if (m.action & ACT_GROUP_MASK) == ACT_GROUP_SUBMERGED then
         m.health = m.health - 1.5
     end
@@ -595,3 +647,4 @@ _G.charSelect.character_hook_moveset(CT_KAKTUS, HOOK_MARIO_UPDATE, kaktus_update
 _G.charSelect.character_hook_moveset(CT_KAKTUS, HOOK_ON_SET_MARIO_ACTION, kaktus_set_action)
 _G.charSelect.character_hook_moveset(CT_KAKTUS, HOOK_BEFORE_SET_MARIO_ACTION, kaktus_before_set_action)
 _G.charSelect.character_hook_moveset(CT_KAKTUS, HOOK_ON_HUD_RENDER_BEHIND, kaktus_hud)
+_G.charSelect.character_hook_moveset(CT_KAKTUS, HOOK_ALLOW_HAZARD_SURFACE, kaktus_allow_hazard_surface)

@@ -92,6 +92,8 @@ local ANIMTABLE_KAKTUS = {
     [CHAR_ANIM_AIR_KICK] = 'roundhousekak',
     [CHAR_ANIM_SINGLE_JUMP] = 'kaktus_single_jump',
     [CHAR_ANIM_RUNNING] = 'kaktuse_run',
+    [CHAR_ANIM_CROUCHING] = 'kaktus_crouch',
+    [CHAR_ANIM_START_CROUCHING] = 'kaktus_crouch_slide',
 
 }
 
