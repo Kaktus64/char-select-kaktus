@@ -450,7 +450,7 @@ function kaktus_update(m)
         e.canBrella = false
     end
     if m.action == ACT_LONG_JUMP then
-        m.vel.y = m.vel.y - 0.5
+        m.vel.y = m.vel.y - 0.2
     end
     if m.pos.y == m.floorHeight then
         e.canBrella = true
