@@ -1,5 +1,6 @@
 
 local KAKTUS_TAIL = audio_sample_load("kaktus-tail.ogg")
+local KAKTUS_PIROUETTE = audio_sample_load("kaktus_pirouette.ogg")
 
 ---@diagnostic disable: undefined-global
 if not _G.charSelectExists then return end
@@ -252,11 +253,19 @@ function act_kak_long_jump(m)
     local e = gStateExtras[m.playerIndex]
     local stepResult = common_air_action_step(m, ACT_LONG_JUMP_LAND, CHAR_ANIM_FAST_LONGJUMP, AIR_STEP_HIT_WALL)
     --m.faceAngle.y = m.intendedYaw - approach_s32(limit_angle(m.intendedYaw - m.faceAngle.y), 0, 0x20, 0x20)
-    if m.actionTimer < 0 then
-        m.vel.y = 26
-        m.forwardVel = 46
+    -- if m.actionTimer < 0 then
+    --     m.vel.y = 26
+    --     m.forwardVel = 46
+    -- end
+    if m.actionTimer < 1 then
+        set_anim_to_frame(m, 1)
     end
     m.actionTimer = m.actionTimer + 1
+    m.vel.y = m.vel.y + 0.45
+    m.forwardVel = m.forwardVel + 1
+    if m.forwardVel > 50 then
+        m.forwardVel = m.forwardVel - 0.9
+    end
 end
 hook_mario_action(ACT_KAK_LONG_JUMP, act_kak_long_jump)
 
@@ -339,9 +348,6 @@ end
 if inc == ACT_FLYING then
     return ACT_TANOOKI_FLY_KAK
 end
-if inc == ACT_SIDE_FLIP then
-    m.vel.y = 60
-end
 if inc == ACT_BRELLA_SPIN then
     play_character_sound(m, CHAR_SOUND_HOOHOO)
 end
@@ -395,7 +401,14 @@ function kaktus_set_action(m)
         play_sound(SOUND_ACTION_TWIRL, m.marioObj.header.gfx.cameraToObject)
     end
     if m.action == ACT_SIDE_FLIP then
-        m.vel.y = 45
+        m.vel.y = 55
+    end
+    if m.action == ACT_LONG_JUMP then
+        audio_sample_play(KAKTUS_PIROUETTE, m.pos, 1.5)
+    end
+    if m.action == ACT_KAK_LONG_JUMP then
+        m.vel.y = 40
+        m.forwardVel = m.forwardVel + 30
     end
     if m.action == ACT_BUTT_SLIDE_AIR and m.prevAction == ACT_CROUCH_SLIDE then
         play_sound(SOUND_ACTION_TWIRL, m.marioObj.header.gfx.cameraToObject)
@@ -426,7 +439,9 @@ local eyeStateTable = { -- Epic Eye States Table of Evil Swag - Jer
     [CHAR_ANIM_BACKWARD_AIR_KB] = MARIO_EYES_DEAD,
     [CHAR_ANIM_TIPTOE] = MARIO_EYES_LOOK_DOWN,
     [CHAR_ANIM_CROUCHING] = MARIO_EYES_LOOK_LEFT,
-    [CHAR_ANIM_START_CROUCHING] = MARIO_EYES_LOOK_DOWN
+    [CHAR_ANIM_START_CROUCHING] = MARIO_EYES_LOOK_DOWN,
+    [CHAR_ANIM_FAST_LONGJUMP] = MARIO_EYES_CLOSED,
+    [CHAR_ANIM_SLOW_LONGJUMP] = MARIO_EYES_CLOSED,
 }
 
 function kaktus_update(m)
@@ -450,7 +465,13 @@ function kaktus_update(m)
         e.canBrella = false
     end
     if m.action == ACT_LONG_JUMP then
-        m.vel.y = m.vel.y - 0.2
+        m.vel.y = m.vel.y - 0.35
+        e.rotAngle = e.rotAngle + 7000
+        m.marioObj.header.gfx.angle.y = e.rotAngle
+        smlua_anim_util_set_animation(m.marioObj, 'kaktus_pirouette')
+    end
+    if m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_FAST_LONGJUMP and m.marioObj.header.gfx.animInfo.animFrame < 0 then
+        
     end
     if m.pos.y == m.floorHeight then
         e.canBrella = true
@@ -503,7 +524,6 @@ function kaktus_update(m)
         m.marioBodyState.handState = MARIO_HAND_PEACE_SIGN
     end
     -- quicksand invulnerability
-    if m.playerIndex == 0 then
     if is_kaktus() and m.floor.type == SURFACE_QUICKSAND then
         m.floor.type = SURFACE_CLASS_DEFAULT
     end
@@ -530,7 +550,6 @@ function kaktus_update(m)
     end
     if is_kaktus() and m.floor.type == SURFACE_INSTANT_QUICKSAND then
         m.floor.type = SURFACE_CLASS_DEFAULT
-    end
     end
     if m.action == ACT_SUPERJUMP_CROUCH_KAK then
         obj_act_squished(1.5)
