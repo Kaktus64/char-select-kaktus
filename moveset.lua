@@ -469,8 +469,6 @@ function kaktus_update(m)
         e.rotAngle = e.rotAngle + 7000
         m.marioObj.header.gfx.angle.y = e.rotAngle
         smlua_anim_util_set_animation(m.marioObj, 'kaktus_pirouette')
-
-        spawn_non_sync_object(id_bhvSparkle, E_MODEL_GOOMBA, m.pos.x, m.pos.y, m.pos.z, nil)
     end
     if m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_FAST_LONGJUMP and m.marioObj.header.gfx.animInfo.animFrame < 0 then
         
