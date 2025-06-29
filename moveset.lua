@@ -202,10 +202,14 @@ hook_mario_action(ACT_BRELLA_JUMP, act_brella_jump)
 function act_brella_pound(m)
     local e = gStateExtras[m.playerIndex]
     local stepResult = common_air_action_step(m, ACT_GROUND_POUND_LAND, CHAR_ANIM_START_HANDSTAND, AIR_STEP_NONE)
+    smlua_anim_util_set_animation(m.marioObj, "brella_pound")
     m.faceAngle.y = m.intendedYaw - approach_s32(limit_angle(m.intendedYaw - m.faceAngle.y), 0, 0x200, 0x200)
     m.marioBodyState.handState = MARIO_HAND_PEACE_SIGN
     m.marioBodyState.eyeState = MARIO_EYES_DEAD
     m.peakHeight = m.pos.y
+    if m.actionTimer == 1 then
+        e.rotAngle = m.faceAngle.y
+    end
     if m.vel.y > -75 then --Speeding up the fall -Kaktus
         m.vel.y = m.vel.y - 0.7
     end
@@ -220,13 +224,20 @@ function act_brella_pound(m)
         m.vel.y = 45
         m.forwardVel = 48
     end
-    if m.marioObj.header.gfx.animInfo.animFrame < 2 then
-        set_anim_to_frame(m, 3)
-    end
     if m.forwardVel > 75 then --slow down! -Kaktus
     m.forwardVel = m.forwardVel - 1
-    m.actionTimer = m.actionTimer + 1
     end
+
+    if m.vel.y < 0 then
+        e.rotAngle = e.rotAngle + (m.vel.y * -100)
+        if m.vel.y < -15 then
+            m.particleFlags = m.particleFlags | PARTICLE_DUST
+        end
+    end
+    m.marioObj.header.gfx.angle.y = e.rotAngle
+
+    m.actionTimer = m.actionTimer + 1
+    return 0
 end
 hook_mario_action(ACT_BRELLA_POUND, act_brella_pound)
 
