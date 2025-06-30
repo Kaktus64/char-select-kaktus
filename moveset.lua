@@ -154,7 +154,6 @@ function act_brella_float(m)
     if m.actionTimer > 35 then
         m.vel.y = m.vel.y * 1.02
     end
-
     m.actionTimer = m.actionTimer + 1
     return false
 end
@@ -405,6 +404,9 @@ end
 if inc == ACT_STOP_CROUCHING then
     return ACT_IDLE
 end
+if inc == ACT_BUTT_SLIDE_STOP and m.action == ACT_GROUND_POUND_LAND then
+    return ACT_IDLE
+end
 end
 
 function kaktus_set_action(m)
@@ -413,9 +415,6 @@ function kaktus_set_action(m)
     end
     if m.action == ACT_SIDE_FLIP then
         m.vel.y = 55
-    end
-    if m.action == ACT_LONG_JUMP then
-        audio_sample_play(KAKTUS_PIROUETTE, m.pos, 1.2)
     end
     if m.action == ACT_KAK_LONG_JUMP then
         m.vel.y = 40
@@ -475,14 +474,8 @@ function kaktus_update(m)
         set_mario_particle_flags(m, PARTICLE_MIST_CIRCLE, 0)
         e.canBrella = false
     end
-    if m.action == ACT_LONG_JUMP then
-        m.vel.y = m.vel.y - 0.35
-        e.rotAngle = e.rotAngle + 7000
-        m.marioObj.header.gfx.angle.y = e.rotAngle
-        smlua_anim_util_set_animation(m.marioObj, 'kaktus_pirouette')
-    end
     if m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_FAST_LONGJUMP and m.marioObj.header.gfx.animInfo.animFrame < 0 then
-        
+        m.vel.y = m.vel.y - 0.35
     end
     if m.pos.y == m.floorHeight then
         e.canBrella = true
@@ -490,6 +483,10 @@ function kaktus_update(m)
     if m.action == ACT_CROUCHING then
         --spawn_non_sync_object(id_bhvSparkleSpawn, E_MODEL_NONE, m.pos.x, m.pos.y, m.pos.z, nil)
         set_mario_particle_flags(m, PARTICLE_SPARKLES, 0)
+        smlua_anim_util_set_animation(m.marioObj, 'kaktus_crouch')
+    end
+    if m.action == ACT_CROUCH_SLIDE then
+        smlua_anim_util_set_animation(m.marioObj, 'kaktus_crouch_slide')
     end
     if m.action == ACT_TANOOKI_FLY_KAK and m.input & INPUT_A_PRESSED ~= 0 then
         audio_sample_play(KAKTUS_TAIL, m.pos, 3)
@@ -633,6 +630,11 @@ function kaktus_update(m)
     end
     if (m.action & ACT_GROUP_MASK) == ACT_GROUP_SUBMERGED then
         m.health = m.health - 1.5
+    end
+    -- Firstie anim
+    if m.action == ACT_WALL_KICK_AIR and m.prevAction == ACT_AIR_HIT_WALL then
+        smlua_anim_util_set_animation(m.marioObj, "triplejumpspin")
+        set_mario_particle_flags(m, PARTICLE_SPARKLES, 0)
     end
     -- CHANGING EYES
     if eyeStateTable[m.marioObj.header.gfx.animInfo.animID] ~= nil then

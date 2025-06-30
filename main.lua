@@ -9,6 +9,19 @@
 	(This is an edited version of the Template File by Squishy)
 ]]
 
+local gStateExtras = {}
+for i = 0, MAX_PLAYERS - 1 do
+    gStateExtras[i] = {}
+    local m = gMarioStates[i]
+    local e = gStateExtras[i]
+    e.rotAngle = 0
+    e.canBrella = true
+end
+
+local brellaHandActionsNonMS = { -- What actions you bring out the brella for (NON MOVESET)
+    [ACT_GROUND_POUND] = true,
+}
+
 local TEXT_MOD_NAME = "[CS] Kaktus"
 
 -- Stops mod from loading if Character Select isn't on
@@ -85,6 +98,7 @@ local VOICETABLE_YSIKLE = {
 
 local ANIMTABLE_KAKTUS = {
     [_G.charSelect.CS_ANIM_MENU] = "kaktus_menu_pose",
+    [CHAR_ANIM_SLIDEJUMP] = "kaktus_wallkick",
     [CHAR_ANIM_TRIPLE_JUMP] = 'triplejumpspin',
     [CHAR_ANIM_CREDITS_START_WALK_LOOK_UP] = 'endcutscenekak',
     [CHAR_ANIM_CREDITS_LOOK_BACK_THEN_RUN] = 'endcutsceneotherkak',
@@ -92,9 +106,10 @@ local ANIMTABLE_KAKTUS = {
     [CHAR_ANIM_AIR_KICK] = 'roundhousekak',
     [CHAR_ANIM_SINGLE_JUMP] = 'kaktus_single_jump',
     [CHAR_ANIM_RUNNING] = 'kaktuse_run',
-    [CHAR_ANIM_CROUCHING] = 'kaktus_crouch',
-    [CHAR_ANIM_START_CROUCHING] = 'kaktus_crouch_slide',
-
+    [CHAR_ANIM_GROUND_POUND] = 'brella_pound',
+    [CHAR_ANIM_START_GROUND_POUND] = 'brella_pound',
+    [CHAR_ANIM_SLIDEFLIP] = 'kaktus_roll_mirror',
+    [CHAR_ANIM_FORWARD_SPINNING] = 'kaktus_roll',
 }
 
 local ANIMTABLE_YSIKLE = {
@@ -283,9 +298,24 @@ local function on_character_snore(m)
     if _G.charSelect.character_get_voice(m) == VOICETABLE_KAKTUS then return _G.charSelect.voice.snore(m) end
 end
 
+local function non_moveset_anims(m)
+    local e = gStateExtras[m.playerIndex]
+if is_kaktus() then
+        if m.action == ACT_LONG_JUMP then
+        e.rotAngle = e.rotAngle + 7000
+        m.marioObj.header.gfx.angle.y = e.rotAngle
+        smlua_anim_util_set_animation(m.marioObj, 'kaktus_pirouette')
+    end
+    if brellaHandActionsNonMS[m.action] then
+        m.marioBodyState.handState = MARIO_HAND_PEACE_SIGN
+    end
+end
+end
+
 hook_event(HOOK_ON_MODS_LOADED, on_character_select_load)
 hook_event(HOOK_CHARACTER_SOUND, on_character_sound)
 hook_event(HOOK_MARIO_UPDATE, on_character_snore)
+hook_event(HOOK_MARIO_UPDATE, non_moveset_anims)
 
 
 
