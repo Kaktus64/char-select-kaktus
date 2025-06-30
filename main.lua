@@ -308,6 +308,16 @@ if is_kaktus() then
     if brellaHandActionsNonMS[m.action] then
         m.marioBodyState.handState = MARIO_HAND_PEACE_SIGN
     end
+    if smlua_anim_util_get_current_animation_name(m.marioObj) == "kaktus_menu_pose" and m.marioBodyState.capState == MARIO_HAS_DEFAULT_CAP_OFF then
+    m.marioBodyState.eyeState = MARIO_EYES_LOOK_UP
+    m.marioBodyState.capState = MARIO_HAS_DEFAULT_CAP_OFF
+    end
+
+    if smlua_anim_util_get_current_animation_name(m.marioObj) == "kaktus_menu_pose" and m.marioBodyState.capState == MARIO_HAS_DEFAULT_CAP_ON then
+    m.marioBodyState.eyeState = MARIO_EYES_LOOK_UP
+    m.marioBodyState.capState = MARIO_HAS_DEFAULT_CAP_OFF
+    m.marioBodyState.handState = MARIO_HAND_HOLDING_CAP
+    end
 end
 end
 

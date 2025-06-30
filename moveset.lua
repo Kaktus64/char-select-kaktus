@@ -452,22 +452,11 @@ local eyeStateTable = { -- Epic Eye States Table of Evil Swag - Jer
     [CHAR_ANIM_START_CROUCHING] = MARIO_EYES_LOOK_DOWN,
     [CHAR_ANIM_FAST_LONGJUMP] = MARIO_EYES_CLOSED,
     [CHAR_ANIM_SLOW_LONGJUMP] = MARIO_EYES_CLOSED,
+    [CHAR_ANIM_FIRE_LAVA_BURN] = MARIO_EYES_DEAD,
 }
 
 function kaktus_update(m)
     local e = gStateExtras[m.playerIndex]
-    
-
-    if smlua_anim_util_get_current_animation_name(m.marioObj) == "kaktus_menu_pose" and m.marioBodyState.capState == MARIO_HAS_DEFAULT_CAP_OFF then
-    m.marioBodyState.eyeState = MARIO_EYES_LOOK_UP
-    m.marioBodyState.capState = MARIO_HAS_DEFAULT_CAP_OFF
-    end
-
-    if smlua_anim_util_get_current_animation_name(m.marioObj) == "kaktus_menu_pose" and m.marioBodyState.capState == MARIO_HAS_DEFAULT_CAP_ON then
-    m.marioBodyState.eyeState = MARIO_EYES_LOOK_UP
-    m.marioBodyState.capState = MARIO_HAS_DEFAULT_CAP_OFF
-    m.marioBodyState.handState = MARIO_HAND_HOLDING_CAP
-    end
 
     if brellaActions[m.action] and m.vel.y < 0 and m.input & INPUT_A_PRESSED ~= 0 and e.canBrella and (m.flags & MARIO_WING_CAP) == 0 and (m.flags & MARIO_METAL_CAP) == 0 then
         set_mario_action(m, ACT_BRELLA_FLOAT, 0)
@@ -583,6 +572,9 @@ function kaktus_update(m)
     end
     if m.action == ACT_JUMP and m.prevAction == ACT_TRIPLE_JUMP then
         smlua_anim_util_set_animation(m.marioObj, "kakbouncejump")
+    end
+    if m.action == ACT_BUTT_SLIDE and m.input & INPUT_A_PRESSED ~= 0 then
+        set_mario_action(m, ACT_JUMP, 0)
     end
     if m.action == ACT_JUMP and smlua_anim_util_get_current_animation_name(m.marioObj) == "kakbouncejump" and m.marioObj.header.gfx.animInfo.animFrame == 1 and m.prevAction == ACT_TRIPLE_JUMP then
         play_character_sound(m, CHAR_SOUND_HOOHOO)
