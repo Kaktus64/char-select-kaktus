@@ -109,7 +109,6 @@ local ANIMTABLE_KAKTUS = {
     [CHAR_ANIM_GROUND_POUND] = 'brella_pound',
     [CHAR_ANIM_START_GROUND_POUND] = 'brella_pound',
     [CHAR_ANIM_SLIDEFLIP] = 'kaktus_roll_mirror',
-    [CHAR_ANIM_FORWARD_SPINNING] = 'kaktus_roll',
 }
 
 local ANIMTABLE_YSIKLE = {
