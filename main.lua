@@ -97,7 +97,7 @@ local VOICETABLE_YSIKLE = {
 }
 
 local ANIMTABLE_KAKTUS = {
-    [_G.charSelect.CS_ANIM_MENU] = "kaktus_menu_pose",
+    --[_G.charSelect.CS_ANIM_MENU] = "kaktus_menu_pose",
     [CHAR_ANIM_SLIDEJUMP] = "kaktus_wallkick",
     [CHAR_ANIM_TRIPLE_JUMP] = 'triplejumpspin',
     [CHAR_ANIM_CREDITS_START_WALK_LOOK_UP] = 'endcutscenekak',
@@ -122,14 +122,14 @@ local ANIMTABLE_YSIKLE = {
 local PALETTE_KAKTUS = {
 
     name = "Kaktus",
-    [PANTS]  = "313149",
-    [SHIRT]  = "791E82",
+    [PANTS]  = "8835BE",
+    [SHIRT]  = "4DA14C",
     [GLOVES] = "FF0003",
-    [SHOES]  = "D8004D",
-    [HAIR]   = "743F39",
+    [SHOES]  = "543326",
+    [HAIR]   = "7F4D39",
     [SKIN]   = "DB9C70",
-    [CAP]    = "3E8948",
-	[EMBLEM] = "D87644"
+    [CAP]    = "4DA14C",
+	[EMBLEM] = "B17156"
 }
 
 local PALETTE_JERTUS = {
@@ -255,7 +255,7 @@ if _G.charSelectExists then
                                                         "",
                                                         "His powerups are from other",
                                                         "Mario games, and as such may make",
-                                                        "some challenges impossible."}, "Kaktus64 & JerThePear", {r = 172, g = 80, b = 255}, E_MODEL_KAKTUS, CT_KAKTUS, KAKTUS_ICON)
+                                                        "some challenges impossible."}, "Kaktus64 & JerThePear", {r = 172, g = 80, b = 255}, E_MODEL_KAKTUS, CT_MARIO, KAKTUS_ICON)
 end
 
 local function on_character_select_load()
@@ -300,11 +300,11 @@ end
 local function non_moveset_anims(m)
     local e = gStateExtras[m.playerIndex]
 if is_kaktus() then
-        if m.action == ACT_LONG_JUMP then
-        e.rotAngle = e.rotAngle + 7000
-        m.marioObj.header.gfx.angle.y = e.rotAngle
-        smlua_anim_util_set_animation(m.marioObj, 'kaktus_pirouette')
-    end
+        --if m.action == ACT_LONG_JUMP then
+        --e.rotAngle = e.rotAngle + 7000
+        --m.marioObj.header.gfx.angle.y = e.rotAngle
+        --smlua_anim_util_set_animation(m.marioObj, 'kaktus_pirouette')
+    --end
     if brellaHandActionsNonMS[m.action] then
         m.marioBodyState.handState = MARIO_HAND_PEACE_SIGN
     end
