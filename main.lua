@@ -34,9 +34,13 @@ local E_MODEL_KAKTUS = smlua_model_util_get_id("kaktus_geo")
 
 local KAKTUS_ICON = get_texture_info("Kaktus-LifeIcon1")
 
-local E_MODEL_YSIKLE = smlua_model_util_get_id("ysikle_geo")
+-- local E_MODEL_YSIKLE = smlua_model_util_get_id("ysikle_geo")
 
 local KAKTUS_SILHOUETTE = get_texture_info("kaksilh")
+
+local E_MODEL_KAKTUS_GOAT = smlua_model_util_get_id("kaktus_goat_geo")
+
+local KAKTUS_ICON_GOAT = get_texture_info("Kaktus-LifeIcon-Goat")
 
 -- SPEEDOMETER
 
@@ -98,6 +102,24 @@ local VOICETABLE_YSIKLE = {
 
 local ANIMTABLE_KAKTUS = {
     [_G.charSelect.CS_ANIM_MENU] = "kaktus_menu_pose",
+    [CHAR_ANIM_SLIDEJUMP] = "kaktus_wallkick",
+    [CHAR_ANIM_TRIPLE_JUMP] = 'triplejumpspin',
+    [CHAR_ANIM_CREDITS_START_WALK_LOOK_UP] = 'endcutscenekak',
+    [CHAR_ANIM_CREDITS_LOOK_BACK_THEN_RUN] = 'endcutsceneotherkak',
+    [CHAR_ANIM_CREDITS_WAVING] = 'endcutsceneotherkak',
+    [CHAR_ANIM_AIR_KICK] = 'roundhousekak',
+    [CHAR_ANIM_SINGLE_JUMP] = 'kaktus_single_jump',
+    [CHAR_ANIM_RUNNING] = 'kaktuse_run',
+    [CHAR_ANIM_GROUND_POUND] = 'brella_pound',
+    [CHAR_ANIM_START_GROUND_POUND] = 'brella_pound',
+    [CHAR_ANIM_SLIDEFLIP] = 'kaktus_roll_mirror',
+}
+
+local ANIMTABLE_KAKTUS_GOAT = {
+    [_G.charSelect.CS_ANIM_MENU] = "kaktuse_run",
+    [CHAR_ANIM_IDLE_HEAD_CENTER] = "idleanimkak",
+    [CHAR_ANIM_IDLE_HEAD_RIGHT] = "lookingsidekak",
+    [CHAR_ANIM_IDLE_HEAD_LEFT] = "idleanimkak",
     [CHAR_ANIM_SLIDEJUMP] = "kaktus_wallkick",
     [CHAR_ANIM_TRIPLE_JUMP] = 'triplejumpspin',
     [CHAR_ANIM_CREDITS_START_WALK_LOOK_UP] = 'endcutscenekak',
@@ -205,6 +227,19 @@ local PALETTE_TRANSGENDER_KAK = {
     [EMBLEM] = { r = 0xDB, g = 0x3C, b = 0x2E }, -- DB3C2E
 }
 
+local PALETTE_GOATTUS = {
+
+    name = "Goattus",
+    [PANTS]  = "313149",
+    [SHIRT]  = "791E82",
+    [GLOVES] = "FF0003",
+    [SHOES]  = "1A1A1A",
+    [HAIR]   = "743F39",
+    [SKIN]   = "743F39",
+    [CAP]    = "3E8948",
+	[EMBLEM] = "D87644"
+}
+
 local HM_KAKTUS= {
     label = {
         left = get_texture_info("KakLeftHealth"),
@@ -255,10 +290,27 @@ if _G.charSelectExists then
                                                         "",
                                                         "His powerups are from other",
                                                         "Mario games, and as such may make",
-                                                        "some challenges impossible."}, "Kaktus64 & JerThePear", {r = 172, g = 80, b = 255}, E_MODEL_KAKTUS, CT_KAKTUS, KAKTUS_ICON)
+                                                        "some challenges impossible."}, "Kaktus64 & JerThePear", {r = 172, g = 80, b = 255}, E_MODEL_KAKTUS, CT_MARIO, KAKTUS_ICON)
+    _G.charSelect.character_add_costume(CT_KAKTUS, "Goattus", {"Cactus guy but he's a goat.",
+                                                        "",
+                                                        "Kaktus's moveset is designed",
+                                                        "around his 'Brella. Larger",
+                                                        "Gaps may be easier to cross,",
+                                                        "but his main moves are less",
+                                                        "powerful.",
+                                                        "",
+                                                        "His powerups are from other",
+                                                        "Mario games, and as such may make",
+                                                        "some challenges impossible."}, "Kaktus64 & JerThePear", {r = 172, g = 80, b = 255}, E_MODEL_KAKTUS_GOAT, CT_MARIO, KAKTUS_ICON_GOAT)
 end
 
 local function on_character_select_load()
+
+    _G.charSelect.character_add_caps(E_MODEL_KAKTUS_GOAT, CAPTABLE_KAKTUS)
+    _G.charSelect.character_add_voice(E_MODEL_KAKTUS_GOAT, VOICETABLE_KAKTUS)
+    _G.charSelect.character_add_animations(E_MODEL_KAKTUS_GOAT, ANIMTABLE_KAKTUS_GOAT)
+    --_G.charSelect.character_add_costume_health_meter(CT_KAKTUS, 1, HM_KAKTUS)
+
     _G.charSelect.character_add_caps(E_MODEL_KAKTUS, CAPTABLE_KAKTUS)
     _G.charSelect.character_add_voice(E_MODEL_KAKTUS, VOICETABLE_KAKTUS)
     _G.charSelect.character_add_health_meter(CT_KAKTUS, HM_KAKTUS)
@@ -279,9 +331,7 @@ local function on_character_select_load()
     _G.charSelect.character_add_palette_preset(E_MODEL_KAKTUS, PALETTE_FALL_BREEZE_KAK, "Fall Breeze")
     _G.charSelect.character_add_palette_preset(E_MODEL_KAKTUS, PALETTE_LOOK_GOOD_KAK, "Looking Good")
 
-    _G.charSelect.character_add_voice(E_MODEL_YSIKLE, VOICETABLE_YSIKLE)
-    _G.charSelect.character_add_animations(E_MODEL_YSIKLE, ANIMTABLE_YSIKLE)
-
+    _G.charSelect.character_add_palette_preset(E_MODEL_KAKTUS_GOAT, PALETTE_GOATTUS, "Goattus")
     --zadd_moveset()
 
     CSloaded = true
@@ -300,11 +350,6 @@ end
 local function non_moveset_anims(m)
     local e = gStateExtras[m.playerIndex]
 if is_kaktus() then
-        if m.action == ACT_LONG_JUMP then
-        e.rotAngle = e.rotAngle + 7000
-        m.marioObj.header.gfx.angle.y = e.rotAngle
-        smlua_anim_util_set_animation(m.marioObj, 'kaktus_pirouette')
-    end
     if brellaHandActionsNonMS[m.action] then
         m.marioBodyState.handState = MARIO_HAND_PEACE_SIGN
     end
