@@ -117,9 +117,9 @@ local ANIMTABLE_KAKTUS = {
 
 local ANIMTABLE_KAKTUS_GOAT = {
     [_G.charSelect.CS_ANIM_MENU] = "kaktus_goat_menu",
-    [CHAR_ANIM_IDLE_HEAD_CENTER] = "idleanimkak",
-    [CHAR_ANIM_IDLE_HEAD_RIGHT] = "lookingsidekak",
-    [CHAR_ANIM_IDLE_HEAD_LEFT] = "idleanimkak",
+    [CHAR_ANIM_IDLE_HEAD_CENTER] = "kaktus_goat_idle",
+    [CHAR_ANIM_IDLE_HEAD_RIGHT] = "kaktus_goat_idle",
+    [CHAR_ANIM_IDLE_HEAD_LEFT] = "kaktus_goat_idle",
     [CHAR_ANIM_SLIDEJUMP] = "kaktus_wallkick",
     [CHAR_ANIM_TRIPLE_JUMP] = 'triplejumpspin',
     [CHAR_ANIM_CREDITS_START_WALK_LOOK_UP] = 'endcutscenekak',
@@ -131,14 +131,6 @@ local ANIMTABLE_KAKTUS_GOAT = {
     [CHAR_ANIM_GROUND_POUND] = 'brella_pound',
     [CHAR_ANIM_START_GROUND_POUND] = 'brella_pound',
     [CHAR_ANIM_SLIDEFLIP] = 'kaktus_roll_mirror',
-}
-
-local ANIMTABLE_YSIKLE = {
-    [_G.charSelect.CS_ANIM_MENU] = "kaktus_menu_pose",
-    [CHAR_ANIM_IDLE_HEAD_CENTER] = "idleanimkak",
-    [CHAR_ANIM_IDLE_HEAD_RIGHT] = "lookingsidekak",
-    [CHAR_ANIM_IDLE_HEAD_LEFT] = "idleanimkak",
-
 }
 
 local PALETTE_KAKTUS = {
@@ -366,8 +358,6 @@ if is_kaktus() then
 
     if smlua_anim_util_get_current_animation_name(m.marioObj) == "kaktus_goat_menu" then
     m.marioBodyState.eyeState = MARIO_EYES_LOOK_LEFT
-
-    -- a
     end
 end
 end
