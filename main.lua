@@ -116,7 +116,7 @@ local ANIMTABLE_KAKTUS = {
 }
 
 local ANIMTABLE_KAKTUS_GOAT = {
-    [_G.charSelect.CS_ANIM_MENU] = "kaktuse_run",
+    [_G.charSelect.CS_ANIM_MENU] = "kaktus_goat_menu",
     [CHAR_ANIM_IDLE_HEAD_CENTER] = "idleanimkak",
     [CHAR_ANIM_IDLE_HEAD_RIGHT] = "lookingsidekak",
     [CHAR_ANIM_IDLE_HEAD_LEFT] = "idleanimkak",
@@ -362,6 +362,10 @@ if is_kaktus() then
     m.marioBodyState.eyeState = MARIO_EYES_LOOK_UP
     m.marioBodyState.capState = MARIO_HAS_DEFAULT_CAP_OFF
     m.marioBodyState.handState = MARIO_HAND_HOLDING_CAP
+    end
+
+    if smlua_anim_util_get_current_animation_name(m.marioObj) == "kaktus_goat_menu" then
+    m.marioBodyState.eyeState = MARIO_EYES_LOOK_LEFT
     end
 end
 end
