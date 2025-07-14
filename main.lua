@@ -283,7 +283,7 @@ if _G.charSelectExists then
                                                         "His powerups are from other",
                                                         "Mario games, and as such may make",
                                                         "some challenges impossible."}, "Kaktus64 & JerThePear", {r = 172, g = 80, b = 255}, E_MODEL_KAKTUS, CT_MARIO, KAKTUS_ICON)
-    _G.charSelect.character_add_costume(CT_KAKTUS, "Goattus", {"Cactus guy but he's a goat.",
+    _G.charSelect.character_add_costume(CT_KAKTUS, "Goattus", {"goat simulator",
                                                         "",
                                                         "Kaktus's moveset is designed",
                                                         "around his 'Brella. Larger",
@@ -293,7 +293,7 @@ if _G.charSelectExists then
                                                         "",
                                                         "His powerups are from other",
                                                         "Mario games, and as such may make",
-                                                        "some challenges impossible."}, "Kaktus64 & JerThePear", {r = 172, g = 80, b = 255}, E_MODEL_KAKTUS_GOAT, CT_MARIO, KAKTUS_ICON_GOAT)
+                                                        "some challenges impossible."}, "Kaktus64 & JerThePear", {r = 153, g = 80, b = 72}, E_MODEL_KAKTUS_GOAT, CT_MARIO, KAKTUS_ICON_GOAT)
 end
 
 local function on_character_select_load()
