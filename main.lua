@@ -366,6 +366,8 @@ if is_kaktus() then
 
     if smlua_anim_util_get_current_animation_name(m.marioObj) == "kaktus_goat_menu" then
     m.marioBodyState.eyeState = MARIO_EYES_LOOK_LEFT
+
+    -- a
     end
 end
 end
