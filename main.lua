@@ -120,6 +120,7 @@ local ANIMTABLE_KAKTUS_GOAT = {
     [CHAR_ANIM_IDLE_HEAD_CENTER] = "kaktus_goat_idle",
     [CHAR_ANIM_IDLE_HEAD_RIGHT] = "kaktus_goat_idle",
     [CHAR_ANIM_IDLE_HEAD_LEFT] = "kaktus_goat_idle",
+    [CHAR_ANIM_FIRST_PERSON] = "kaktus_goat_idle",
     [CHAR_ANIM_SLIDEJUMP] = "kaktus_wallkick",
     [CHAR_ANIM_TRIPLE_JUMP] = 'triplejumpspin',
     [CHAR_ANIM_CREDITS_START_WALK_LOOK_UP] = 'endcutscenekak',
