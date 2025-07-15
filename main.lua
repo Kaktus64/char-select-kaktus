@@ -156,8 +156,8 @@ local PALETTE_JERTUS = {
     [SHOES]  = "462c1e",
     [HAIR]   = "462c1e",
     [SKIN]   = "DB9C70",
-    [CAP]    = "00ff00",
-	[EMBLEM] = "4c4c4c"
+    [CAP]    = "4c4c4c",
+	[EMBLEM] = "00ff00"
 }
 
 local PALETTE_TRANSGENDER_KAK = {
@@ -284,24 +284,24 @@ if _G.charSelectExists then
                                                         "His powerups are from other",
                                                         "Mario games, and as such may make",
                                                         "some challenges impossible."}, "Kaktus64 & JerThePear", {r = 172, g = 80, b = 255}, E_MODEL_KAKTUS, CT_MARIO, KAKTUS_ICON)
-    _G.charSelect.character_add_costume(CT_KAKTUS, "Goattus", {"goat simulator",
-                                                        "",
-                                                        "Kaktus's moveset is designed",
-                                                        "around his 'Brella. Larger",
-                                                        "Gaps may be easier to cross,",
-                                                        "but his main moves are less",
-                                                        "powerful.",
-                                                        "",
-                                                        "His powerups are from other",
-                                                        "Mario games, and as such may make",
-                                                        "some challenges impossible."}, "Kaktus64 & JerThePear", {r = 153, g = 80, b = 72}, E_MODEL_KAKTUS_GOAT, CT_MARIO, KAKTUS_ICON_GOAT)
+    --_G.charSelect.character_add_costume(CT_KAKTUS, "Goattus", {"goat simulator",
+    --                                                    "",
+    --                                                    "Kaktus's moveset is designed",
+    --                                                    "around his 'Brella. Larger",
+    --                                                    "Gaps may be easier to cross,",
+    --                                                    "but his main moves are less",
+    --                                                    "powerful.",
+    --                                                    "",
+    --                                                    "His powerups are from other",
+    --                                                    "Mario games, and as such may make",
+    --                                                    "some challenges impossible."}, "Kaktus64 & JerThePear", {r = 153, g = 80, b = 72}, E_MODEL_KAKTUS_GOAT, CT_MARIO, KAKTUS_ICON_GOAT)
 end
 
 local function on_character_select_load()
 
-    _G.charSelect.character_add_caps(E_MODEL_KAKTUS_GOAT, CAPTABLE_KAKTUS)
-    _G.charSelect.character_add_voice(E_MODEL_KAKTUS_GOAT, VOICETABLE_KAKTUS)
-    _G.charSelect.character_add_animations(E_MODEL_KAKTUS_GOAT, ANIMTABLE_KAKTUS_GOAT)
+    --_G.charSelect.character_add_caps(E_MODEL_KAKTUS_GOAT, CAPTABLE_KAKTUS)
+    --_G.charSelect.character_add_voice(E_MODEL_KAKTUS_GOAT, VOICETABLE_KAKTUS)
+    --_G.charSelect.character_add_animations(E_MODEL_KAKTUS_GOAT, ANIMTABLE_KAKTUS_GOAT)
     --_G.charSelect.character_add_costume_health_meter(CT_KAKTUS, 1, HM_KAKTUS)
 
     _G.charSelect.character_add_caps(E_MODEL_KAKTUS, CAPTABLE_KAKTUS)

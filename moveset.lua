@@ -571,7 +571,7 @@ function kaktus_update(m)
     if m.action == ACT_JUMP and m.prevAction == ACT_TRIPLE_JUMP then
         smlua_anim_util_set_animation(m.marioObj, "kakbouncejump")
     end
-    if m.action == ACT_BUTT_SLIDE and m.input & INPUT_A_PRESSED ~= 0 then
+    if m.action == ACT_BUTT_SLIDE and m.input & INPUT_A_PRESSED ~= 0 and m.prevAction == ACT_BUTT_SLIDE_AIR then
         set_mario_action(m, ACT_JUMP, 0)
     end
     if m.action == ACT_JUMP and smlua_anim_util_get_current_animation_name(m.marioObj) == "kakbouncejump" and m.marioObj.header.gfx.animInfo.animFrame == 1 and m.prevAction == ACT_TRIPLE_JUMP then
