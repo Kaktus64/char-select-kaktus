@@ -34,6 +34,8 @@ local E_MODEL_KAKTUS = smlua_model_util_get_id("kaktus_geo")
 
 local KAKTUS_ICON = get_texture_info("Kaktus-LifeIcon1")
 
+local KAKTUS_TUNE = audio_stream_load("kaktus-menu-theme.ogg")
+
 -- local E_MODEL_YSIKLE = smlua_model_util_get_id("ysikle_geo")
 
 local KAKTUS_SILHOUETTE = get_texture_info("kaksilh")
@@ -309,6 +311,7 @@ local function on_character_select_load()
     _G.charSelect.character_add_health_meter(CT_KAKTUS, HM_KAKTUS)
     _G.charSelect.character_add_course_texture(CT_KAKTUS, COURSE_KAKTUS)
     _G.charSelect.character_add_animations(E_MODEL_KAKTUS, ANIMTABLE_KAKTUS)
+    _G.charSelect.character_add_menu_instrumental(CT_KAKTUS, KAKTUS_TUNE)
     
     _G.charSelect.character_set_category(CT_KAKTUS, "DXA")
     _G.charSelect.character_set_category(CT_KAKTUS, "Squishy Workshop")
