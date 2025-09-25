@@ -389,7 +389,7 @@ and pressing A in mid-air!\
 You can also press A\
 multiple times while\
 falling to slow your fall!\
-\nGood luck!"), true)
+\nGood luck!"))
 
 charSelect.character_replace_dialog(CT_KAKTUS, DIALOG_130, 1, 5, 40, 200, (
 "This isn't Mario Kart!\
@@ -397,7 +397,7 @@ Kaktus can now boost\
 forward and trick in\
 mid-air using the\
 Golden 'Shroom!\
-\nGood luck!"), true)
+\nGood luck!"))
 
 --[[
 charSelect.character_replace_dialog(CT_KAKTUS, DIALOG_007, 1, 5, 30, 200, (
@@ -415,5 +415,5 @@ Fuck I dropped my star...\
 Whatever, you can scurry\
 for it, broke ass.\
 \
-Fuck you."), true)
+Fuck you."))
 ]]
