@@ -380,6 +380,21 @@ function is_kaktus()
 end
 
 -- Dialog
+charSelect.character_replace_dialog(DIALOG_020, 1, 6, 95, 150, (
+"Dear Mario:\
+Please come to the\
+castle. I've baked\
+a cake for you.\
+Yours truly--\
+Princess Toadstool"))
+
+charSelect.character_replace_dialog(DIALOG_021, 1, 5, 95, 200, (
+"Welcome.\
+No one's home!\
+Now.. scra..\
+Wait, who the hell\
+are you?! Where's\
+Mario??.."))
 
 charSelect.character_replace_dialog(CT_KAKTUS, DIALOG_131, 1, 5, 40, 200, (
 "You're a Racoon Dog now!\
@@ -399,21 +414,64 @@ mid-air using the\
 Golden 'Shroom!\
 \nGood luck!"))
 
---[[
+charSelect.character_replace_dialog(DIALOG_017, 1, 4, 30, 200, (
+"I'm the Big Bob-omb, lord\
+of all blasting matter,\
+king of ka-booms the\
+world over!\
+How dare you scale my\
+mountain? By what right\
+do you set foot on my\
+imperial mountaintop?\
+You may have eluded my\
+guards, but you'll never\
+escape my grasp...\
+\
+...and you'll never take\
+away my Power Star. I\
+hereby challenge you,\
+you... Weird cactus guy.\
+If you want the Star I\
+hold, you must prove\
+yourself in battle.\
+\
+Can you pick me up from\
+the back and hurl me to\
+this royal turf? I think\
+that you cannot!"))
+
+charSelect.character_replace_dialog(CT_KAKTUS, DIALOG_005, 1, 3, 30, 200, (
+"Hey, green hat! Bet\
+you can't beat me on\
+a race up to the\
+mountain! You wanna\
+go? Bet you don't\
+wanna, pussy!\
+\
+//Sure////No??"))
+
+charSelect.character_replace_dialog(CT_KAKTUS, DIALOG_006, 1, 3, 30, 200, (
+"Hey, Asshole! I knew\
+you'd cheat! You're\
+a little pussy,\
+y'know that!\
+\
+Fuck you."))
+
+-- i am adding this its funny as fuck
 charSelect.character_replace_dialog(CT_KAKTUS, DIALOG_007, 1, 5, 30, 200, (
-"You're a pussy ass bitch\
+"You're a pussy ass bitch,\
 you small prickly fuck!\
 I know damn well you did\
 some bullshit with that\
 umbrella!\
 You better have a good\
 fucking lawyer, 'cuz I\
-am definatly sueing\
+am definatly suing\
 your bitchass!\
 \
-Fuck I dropped my star...\
+Fuck, I dropped my star...\
 Whatever, you can scurry\
 for it, broke ass.\
 \
 Fuck you."))
-]]
