@@ -1,0 +1,18 @@
+--if is_kaktus() then
+    --smlua_text_utils_dialog_replace(DIALOG_131, 1, 5, 40, 200, (
+--"You're a Racoon Dog now!\
+--Kaktus can fly up in the\
+--air by running fast enough\
+--and pressing A in mid-air!\
+--You can also press A\
+--multiple times while\
+--falling to slow your fall!\
+--\nGood luck!"))
+--    smlua_text_utils_dialog_replace(DIALOG_130, 1, 5, 40, 200, (
+--"This isn't Mario Kart!\
+--Kaktus can now boost\
+--forward and trick in\
+--mid-air using the\
+--Golden 'Shroom!\
+--\nGood luck!"))
+--end
