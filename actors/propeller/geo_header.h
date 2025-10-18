@@ -1,0 +1,12 @@
+extern const GeoLayout propeller_geo[];
+extern Lights1 propeller_Handle_lights;
+extern u8 propeller_propeller1_rgba16[];
+extern Vtx propeller_Propeller_mesh_layer_1_vtx_0[9];
+extern Gfx propeller_Propeller_mesh_layer_1_tri_0[];
+extern Vtx propeller_Propeller_mesh_layer_4_vtx_0[4];
+extern Gfx propeller_Propeller_mesh_layer_4_tri_0[];
+extern Gfx mat_propeller_Handle[];
+extern Gfx mat_propeller_Propeller1[];
+extern Gfx mat_revert_propeller_Propeller1[];
+extern Gfx propeller_Propeller_mesh_layer_1[];
+extern Gfx propeller_Propeller_mesh_layer_4[];

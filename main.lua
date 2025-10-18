@@ -36,7 +36,9 @@ local KAKTUS_ICON = get_texture_info("Kaktus-LifeIcon1")
 
 local KAKTUS_TUNE = audio_stream_load("kaktus-menu-theme.ogg")
 
--- local E_MODEL_YSIKLE = smlua_model_util_get_id("ysikle_geo")
+local E_MODEL_ISIKLE = smlua_model_util_get_id("isikle_geo")
+
+--local ISIKLE_ICON = get_texture_info("isikle_icon") -- when icon is added
 
 local KAKTUS_SILHOUETTE = get_texture_info("kaksilh")
 
@@ -235,6 +237,28 @@ local PALETTE_GOATTUS = {
 	[EMBLEM] = "D87644"
 }
 
+local PALETTE_ISIKLE = {
+    [PANTS]  = "777777",
+    [SHIRT]  = "620002",
+    [GLOVES] = "27446E",
+    [SHOES]  = "20232A",
+    [HAIR]   = "FFFFFF",
+    [SKIN]   = "FFBF96",
+    [CAP]    = "C3EBFF",
+	[EMBLEM] = "667D92"
+}
+
+local PALETTE_ISIKLE_LEGACY = {
+    [PANTS]  = "473A5F",
+    [SHIRT]  = "CD5F4E",
+    [GLOVES] = "473A5F",
+    [SHOES]  = "670400",
+    [HAIR]   = "E4AC63",
+    [SKIN]   = "E6B693",
+    [CAP]    = "6384BB",
+	[EMBLEM] = "AAAABC"
+}
+
 local HM_KAKTUS= {
     label = {
         left = get_texture_info("KakLeftHealth"),
@@ -259,6 +283,12 @@ local COURSE_KAKTUS = {
 
 local CAPTABLE_KAKTUS = {
     normal = smlua_model_util_get_id("kakcap_geo"),
+    wing = smlua_model_util_get_id("kakwingcap_geo"),
+    metal = smlua_model_util_get_id("kakmetalcap_geo"),
+    --metalWing = smlua_model_util_get_id("custom_model_cap_wing_geo")
+}
+local CAPTABLE_ISIKLE = {
+    normal = smlua_model_util_get_id("isikle_cap_geo"),
     wing = smlua_model_util_get_id("kakwingcap_geo"),
     metal = smlua_model_util_get_id("kakmetalcap_geo"),
     --metalWing = smlua_model_util_get_id("custom_model_cap_wing_geo")
@@ -297,6 +327,7 @@ if _G.charSelectExists then
     --                                                    "His powerups are from other",
     --                                                    "Mario games, and as such may make",
     --                                                    "some challenges impossible."}, "Kaktus64 & JerThePear", {r = 153, g = 80, b = 72}, E_MODEL_KAKTUS_GOAT, CT_MARIO, KAKTUS_ICON_GOAT)
+    CT_ISIKLE = _G.charSelect.character_add_costume(CT_KAKTUS, "Isikle", "Kaktus' cool sister.", "Kaktus64 & JerThePear", {r = 102, g = 125, b = 146}, E_MODEL_ISIKLE, CT_LUIGI, nil) -- no icon yet, replace nil with ISIKLE_ICON
 end
 
 local function on_character_select_load()
@@ -312,6 +343,10 @@ local function on_character_select_load()
     _G.charSelect.character_add_course_texture(CT_KAKTUS, COURSE_KAKTUS)
     _G.charSelect.character_add_animations(E_MODEL_KAKTUS, ANIMTABLE_KAKTUS)
     _G.charSelect.character_add_menu_instrumental(CT_KAKTUS, KAKTUS_TUNE)
+
+    _G.charSelect.character_add_caps(E_MODEL_ISIKLE, CAPTABLE_ISIKLE)
+    --_G.charSelect.character_add_voice(E_MODEL_ISIKLE, VOICETABLE_ISIKLE) -- when voice added
+    _G.charSelect.character_add_animations(E_MODEL_ISIKLE, ANIMTABLE_KAKTUS)
     
     _G.charSelect.character_set_category(CT_KAKTUS, "DXA")
     _G.charSelect.character_set_category(CT_KAKTUS, "Squishy Workshop")
@@ -328,7 +363,9 @@ local function on_character_select_load()
     _G.charSelect.character_add_palette_preset(E_MODEL_KAKTUS, PALETTE_LOOK_GOOD_KAK, "Looking Good")
 
     _G.charSelect.character_add_palette_preset(E_MODEL_KAKTUS_GOAT, PALETTE_GOATTUS, "Goattus")
-    --zadd_moveset()
+
+    _G.charSelect.character_add_palette_preset(E_MODEL_ISIKLE, PALETTE_ISIKLE, "Isikle")
+    _G.charSelect.character_add_palette_preset(E_MODEL_ISIKLE, PALETTE_ISIKLE_LEGACY, "Ysikle")
 
     CSloaded = true
 end
@@ -380,7 +417,7 @@ function is_kaktus()
 end
 
 -- Dialog
-charSelect.character_replace_dialog(DIALOG_020, 1, 6, 95, 150, (
+charSelect.character_replace_dialog(CT_KAKTUS, DIALOG_020, 1, 6, 95, 150, (
 "Dear Mario:\
 Please come to the\
 castle. I've baked\
@@ -388,7 +425,7 @@ a cake for you.\
 Yours truly--\
 Princess Toadstool"))
 
-charSelect.character_replace_dialog(DIALOG_021, 1, 5, 95, 200, (
+charSelect.character_replace_dialog(CT_KAKTUS, DIALOG_021, 1, 5, 95, 200, (
 "Welcome.\
 No one's home!\
 Now.. scra..\
@@ -414,7 +451,7 @@ mid-air using the\
 Golden 'Shroom!\
 \nGood luck!"))
 
-charSelect.character_replace_dialog(DIALOG_017, 1, 4, 30, 200, (
+charSelect.character_replace_dialog(CT_KAKTUS, DIALOG_017, 1, 4, 30, 200, (
 "I'm the Big Bob-omb, lord\
 of all blasting matter,\
 king of ka-booms the\

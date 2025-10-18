@@ -2,6 +2,8 @@
 local KAKTUS_TAIL = audio_sample_load("kaktus-tail.ogg")
 local KAKTUS_PIROUETTE = audio_sample_load("kaktus_pirouette.ogg")
 
+local E_MODEL_PROPELLER = smlua_model_util_get_id("propeller_geo")
+
 ---@diagnostic disable: undefined-global
 if not _G.charSelectExists then return end
 
@@ -12,6 +14,7 @@ for i = 0, MAX_PLAYERS - 1 do
     local e = gStateExtras[i]
     e.rotAngle = 0
     e.canBrella = true
+    e.charArg = 0
 end
 
 local function limit_angle(a)
@@ -66,6 +69,40 @@ local brellaHandActions = { -- What actions you bring out the brella for
     [ACT_CROUCH_SLIDE] = true
 }
 
+function propeller_int(o)
+    o.oFlags = OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE
+
+    o.header.gfx.scale.x = 0.2
+    o.header.gfx.scale.y = 0.2
+    o.header.gfx.scale.z = 0.2
+end
+
+function propeller_loop(o)
+    local index = network_local_index_from_global(o.globalPlayerIndex) or 255
+    if index == 255 then
+        obj_mark_for_deletion(o)
+        return
+    end
+    local m = gMarioStates[index]
+
+    if m.action ~= ACT_BRELLA_FLOAT then
+        obj_mark_for_deletion(o)
+    end
+
+    if o.header.gfx.scale.y < 2 then
+        o.header.gfx.scale.x = o.header.gfx.scale.x * 1.2
+        o.header.gfx.scale.y = o.header.gfx.scale.y * 1.2
+        o.header.gfx.scale.z = o.header.gfx.scale.z * 1.2
+    end
+    o.oFaceAngleYaw = o.oFaceAngleYaw + 0x1500
+    o.oPosX = m.marioObj.header.gfx.pos.x
+    o.oPosY = m.marioObj.header.gfx.pos.y + 100
+    o.oPosZ = m.marioObj.header.gfx.pos.z
+end
+
+id_bhvPropeller = hook_behavior(nil, OBJ_LIST_UNIMPORTANT, true, propeller_int, propeller_loop,
+  "bhvPropeller")
+
 -- CAP ACTIONS
 
 function act_tanooki_fly_kak(m)
@@ -91,7 +128,7 @@ function act_tanooki_fly_kak(m)
         set_mario_action(m, ACT_TANOOKI_FLY_KAK, 0)
     end
     smlua_anim_util_set_animation(m.marioObj, "kaktus_tanookifly")
-    if m.input & INPUT_Z_PRESSED ~= 0 then -- added this too - Jer
+    if m.input & INPUT_Z_PRESSED ~= 0 then
         set_mario_action(m, ACT_GROUND_POUND, 0)
     elseif m.input & INPUT_B_PRESSED ~= 0 then
         set_mario_action(m, ACT_BRELLA_SPIN, 0)
@@ -117,19 +154,31 @@ hook_mario_action(ACT_SHROOM_DASH, act_shroom_dash)
 -- BRELLA ACTIONS
 
 function act_brella_float(m)
-    m.particleFlags = m.particleFlags | PARTICLE_SPARKLES
-    local stepResult = common_air_action_step(m, ACT_FREEFALL_LAND, CHAR_ANIM_HANG_ON_CEILING, AIR_STEP_CHECK_LEDGE_GRAB)
+    local anim = CHAR_ANIM_HANG_ON_CEILING
+    
     m.faceAngle.y = m.intendedYaw - approach_s32(limit_angle(m.intendedYaw - m.faceAngle.y), 0, 0x200, 0x200)
-    m.marioBodyState.handState = MARIO_HAND_PEACE_SIGN
     m.marioBodyState.eyeState = MARIO_EYES_LOOK_DOWN
     m.peakHeight = m.pos.y -- no fall sound
+
+    if m.character.type == CT_LUIGI then
+        m.particleFlags = m.particleFlags | PARTICLE_DUST
+        anim = CHAR_ANIM_SLOW_LONGJUMP
+        if m.actionTimer == 2 then
+            spawn_non_sync_object(id_bhvPropeller, E_MODEL_PROPELLER, m.pos.x, m.pos.y, m.pos.z, nil)
+        end
+    else
+        m.particleFlags = m.particleFlags | PARTICLE_SPARKLES
+        m.marioBodyState.handState = MARIO_HAND_PEACE_SIGN
+    end
+
+    local stepResult = common_air_action_step(m, ACT_FREEFALL_LAND, anim, AIR_STEP_CHECK_LEDGE_GRAB)
     
     if m.vel.y < 0 then
         m.vel.y = m.vel.y/1.8
     elseif m.floor.type == SURFACE_VERTICAL_WIND then -- updraft
         m.vel.y = m.vel.y + 1
     else
-        m.vel.y = m.vel.y + 3 -- lets you bounce off goombas - Jer
+        m.vel.y = m.vel.y + 3 -- lets you bounce off goombas
     end
     if m.forwardVel > 40 then
     m.forwardVel = m.forwardVel - 1
@@ -140,11 +189,12 @@ function act_brella_float(m)
     if stepResult == AIR_STEP_HIT_WALL and m.forwardVel ~= 0 then
         mario_bonk_reflection(m, 1)
         set_mario_action(m, ACT_BRELLA_FLOAT, 0)
+        m.actionTimer = 10
     end
     if m.input & INPUT_A_DOWN == 0 then
         set_mario_action(m, ACT_FREEFALL, 0)
     end
-    if m.input & INPUT_Z_PRESSED ~= 0 then -- added this too - Jer
+    if m.input & INPUT_Z_PRESSED ~= 0 then
         set_mario_action(m, ACT_GROUND_POUND, 0)
     elseif m.input & INPUT_B_PRESSED ~= 0 then
         set_mario_action(m, ACT_BRELLA_SPIN, 0)
@@ -161,10 +211,18 @@ hook_mario_action(ACT_BRELLA_FLOAT, act_brella_float)
 
 function act_brella_jump(m)
     local e = gStateExtras[m.playerIndex]
-    local stepResult = common_air_action_step(m, ACT_FREEFALL_LAND, CHAR_ANIM_HANG_ON_CEILING, AIR_STEP_CHECK_LEDGE_GRAB)
-    m.marioBodyState.handState = MARIO_HAND_PEACE_SIGN
+    local anim = CHAR_ANIM_HANG_ON_CEILING
+
     m.marioBodyState.eyeState = MARIO_EYES_LOOK_DOWN
     m.vel.y = m.vel.y + 2
+
+    if m.character.type == CT_LUIGI then
+        anim = CHAR_ANIM_DOUBLE_JUMP_RISE
+    else
+        m.marioBodyState.handState = MARIO_HAND_PEACE_SIGN
+    end
+
+    local stepResult = common_air_action_step(m, ACT_FREEFALL_LAND, anim, AIR_STEP_CHECK_LEDGE_GRAB)
 
     if m.vel.y > 10 then
         m.particleFlags = m.particleFlags | PARTICLE_DUST
@@ -198,6 +256,7 @@ function act_brella_jump(m)
     return false
 end
 hook_mario_action(ACT_BRELLA_JUMP, act_brella_jump)
+
 function act_brella_pound(m)
     local e = gStateExtras[m.playerIndex]
     local stepResult = common_air_action_step(m, ACT_GROUND_POUND_LAND, CHAR_ANIM_START_HANDSTAND, AIR_STEP_NONE)
@@ -242,12 +301,21 @@ hook_mario_action(ACT_BRELLA_POUND, act_brella_pound)
 
 function act_brella_spin(m)
     local e = gStateExtras[m.playerIndex]
-    local stepResult = common_air_action_step(m, ACT_FREEFALL_LAND, CHAR_ANIM_SKID_ON_GROUND, AIR_STEP_NONE)
+    local anim = CHAR_ANIM_SKID_ON_GROUND
     m.faceAngle.y = m.intendedYaw - approach_s32(limit_angle(m.intendedYaw - m.faceAngle.y), 0, 0x20, 0x20)
-    m.marioBodyState.handState = MARIO_HAND_PEACE_SIGN
-    m.marioBodyState.eyeState = MARIO_EYES_DEAD
+
+    if m.character.type == CT_LUIGI then
+        anim = CHAR_ANIM_TWIRL
+        m.marioBodyState.handState = MARIO_HAND_OPEN
+    else
+        m.marioBodyState.handState = MARIO_HAND_PEACE_SIGN
+        m.marioBodyState.eyeState = MARIO_EYES_DEAD
+    end
+
+    local stepResult = common_air_action_step(m, ACT_FREEFALL_LAND, anim, AIR_STEP_NONE)
+
     if m.forwardVel > 75 then --slow down! -Kaktus
-    m.forwardVel = m.forwardVel - 1
+        m.forwardVel = m.forwardVel - 1
     end
 
     e.rotAngle = e.rotAngle + (m.forwardVel * 200)
@@ -340,73 +408,73 @@ hook_mario_action(ACT_YSIKLE_HAMMER_SPIN, act_ysikle_hammer_spin)
 --end)
 
 function kaktus_before_set_action(m, inc)
-local np = gNetworkPlayers[m.playerIndex]
-if inc == ACT_DOUBLE_JUMP then
-    return ACT_JUMP
-end
-if inc == ACT_TRIPLE_JUMP then
-    return ACT_JUMP
-end
-if inc == ACT_GROUND_POUND then
-    return ACT_BRELLA_POUND
-end
-if inc == ACT_SLIDE_KICK then
-    m.vel.y = 65
-    m.forwardVel = 55
-    return ACT_BUTT_SLIDE_AIR
-end
-if inc == ACT_FLYING then
-    return ACT_TANOOKI_FLY_KAK
-end
-if inc == ACT_BRELLA_SPIN then
-    play_character_sound(m, CHAR_SOUND_HOOHOO)
-end
-if inc == ACT_BACKFLIP then
-    m.pos.y = m.pos.y + 10
-    return ACT_BRELLA_JUMP
-end
-if inc == ACT_JUMP and m.prevAction == ACT_JUMP then
-    m.vel.y = 0
-    smlua_anim_util_set_animation(m.marioObj, "triplejumpspin")
-end
-if inc == ACT_JUMP and m.forwardVel > 40 and (m.flags & MARIO_WING_CAP) ~= 0 then
-    m.vel.y = 100
-    return ACT_TANOOKI_FLY_KAK
-end
-if inc == ACT_DIVE and (m.flags & MARIO_METAL_CAP) ~= 0 then
-    set_mario_particle_flags(m, PARTICLE_VERTICAL_STAR, 0)
-    m.forwardVel = 65
-    return ACT_SHROOM_DASH
-end
-if inc == ACT_MOVE_PUNCHING and (m.flags & MARIO_METAL_CAP) ~= 0 then
-    set_mario_particle_flags(m, PARTICLE_VERTICAL_STAR, 0)
-    m.forwardVel = 65
-    return ACT_SHROOM_DASH
-end
-if inc == ACT_BRELLA_FLOAT and (m.flags & MARIO_METAL_CAP) ~= 0 then
-    return ACT_FREEFALL
-end
-if inc == ACT_WATER_PLUNGE and m.controller.buttonDown & B_BUTTON ~= 0 and (m.flags & MARIO_METAL_CAP) ~= 0 then
-    smlua_anim_util_set_animation(m.marioObj, "triplejumpspin")
-    m.vel.y = 60
-    m.forwardVel = 65
-    return ACT_SHROOM_DASH
-end
-if inc == ACT_FREEFALL and m.controller.buttonDown & B_BUTTON ~= 0 and (m.flags & MARIO_METAL_CAP) ~= 0 then
-    smlua_anim_util_set_animation(m.marioObj, "triplejumpspin")
-    m.vel.y = 60
-    m.forwardVel = 65
-    return ACT_SHROOM_DASH
-end
-if inc == ACT_START_CROUCHING then
-    return ACT_CROUCHING
-end
-if inc == ACT_STOP_CROUCHING then
-    return ACT_IDLE
-end
-if inc == ACT_BUTT_SLIDE_STOP and m.action == ACT_GROUND_POUND_LAND then
-    return ACT_IDLE
-end
+    local np = gNetworkPlayers[m.playerIndex]
+    if inc == ACT_DOUBLE_JUMP then
+        return ACT_JUMP
+    end
+    if inc == ACT_TRIPLE_JUMP then
+        return ACT_JUMP
+    end
+    if inc == ACT_GROUND_POUND then
+        return ACT_BRELLA_POUND
+    end
+    if inc == ACT_SLIDE_KICK then
+        m.vel.y = 65
+        m.forwardVel = 55
+        return ACT_BUTT_SLIDE_AIR
+    end
+    if inc == ACT_FLYING then
+        return ACT_TANOOKI_FLY_KAK
+    end
+    if inc == ACT_BRELLA_SPIN then
+        play_character_sound(m, CHAR_SOUND_HOOHOO)
+    end
+    if inc == ACT_BACKFLIP then
+        m.pos.y = m.pos.y + 10
+        return ACT_BRELLA_JUMP
+    end
+    if inc == ACT_JUMP and m.prevAction == ACT_JUMP then
+        m.vel.y = 0
+        smlua_anim_util_set_animation(m.marioObj, "triplejumpspin")
+    end
+    if inc == ACT_JUMP and m.forwardVel > 40 and (m.flags & MARIO_WING_CAP) ~= 0 then
+        m.vel.y = 100
+        return ACT_TANOOKI_FLY_KAK
+    end
+    if inc == ACT_DIVE and (m.flags & MARIO_METAL_CAP) ~= 0 then
+        set_mario_particle_flags(m, PARTICLE_VERTICAL_STAR, 0)
+        m.forwardVel = 65
+        return ACT_SHROOM_DASH
+    end
+    if inc == ACT_MOVE_PUNCHING and (m.flags & MARIO_METAL_CAP) ~= 0 then
+        set_mario_particle_flags(m, PARTICLE_VERTICAL_STAR, 0)
+        m.forwardVel = 65
+        return ACT_SHROOM_DASH
+    end
+    if inc == ACT_BRELLA_FLOAT and (m.flags & MARIO_METAL_CAP) ~= 0 then
+        return ACT_FREEFALL
+    end
+    if inc == ACT_WATER_PLUNGE and m.controller.buttonDown & B_BUTTON ~= 0 and (m.flags & MARIO_METAL_CAP) ~= 0 then
+        smlua_anim_util_set_animation(m.marioObj, "triplejumpspin")
+        m.vel.y = 60
+        m.forwardVel = 65
+        return ACT_SHROOM_DASH
+    end
+    if inc == ACT_FREEFALL and m.controller.buttonDown & B_BUTTON ~= 0 and (m.flags & MARIO_METAL_CAP) ~= 0 then
+        smlua_anim_util_set_animation(m.marioObj, "triplejumpspin")
+        m.vel.y = 60
+        m.forwardVel = 65
+        return ACT_SHROOM_DASH
+    end
+    if inc == ACT_START_CROUCHING then
+        return ACT_CROUCHING
+    end
+    if inc == ACT_STOP_CROUCHING then
+        return ACT_IDLE
+    end
+    if inc == ACT_BUTT_SLIDE_STOP and m.action == ACT_GROUND_POUND_LAND then
+        return ACT_IDLE
+    end
 end
 
 function kaktus_set_action(m)
