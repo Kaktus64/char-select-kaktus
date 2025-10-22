@@ -160,7 +160,7 @@ function act_brella_float(m)
     m.marioBodyState.eyeState = MARIO_EYES_LOOK_DOWN
     m.peakHeight = m.pos.y -- no fall sound
 
-    if m.character.type == CT_LUIGI then
+    if m.character.type == CT_LUIGI and (m.playerIndex == 0 or is_player_active(m) ~= 0) and m.marioObj.header.gfx.node.flags & GRAPH_RENDER_ACTIVE ~= 0 then
         m.particleFlags = m.particleFlags | PARTICLE_DUST
         anim = CHAR_ANIM_SLOW_LONGJUMP
         if m.actionTimer == 2 then
