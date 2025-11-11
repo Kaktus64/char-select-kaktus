@@ -59,6 +59,8 @@ local brellaActions = { -- What actions you can brella out of
     [ACT_BACKFLIP] = true,
     [ACT_WALL_KICK_AIR] = true,
     [ACT_TOP_OF_POLE_JUMP] = true,
+    [ACT_SHOT_FROM_CANNON] = true,
+    [ACT_WATER_JUMP] = true,
     [ACT_SHROOM_DASH] = true
 }
 
@@ -521,6 +523,7 @@ local eyeStateTable = { -- Epic Eye States Table of Evil Swag - Jer
     [CHAR_ANIM_FIRE_LAVA_BURN] = MARIO_EYES_DEAD,
 }
 
+---@param m MarioState
 function kaktus_update(m)
     local e = gStateExtras[m.playerIndex]
 
@@ -528,6 +531,15 @@ function kaktus_update(m)
         set_mario_action(m, ACT_BRELLA_FLOAT, 0)
         set_mario_particle_flags(m, PARTICLE_MIST_CIRCLE, 0)
         e.canBrella = false
+        -- Fix Camera from acts like Cannon
+        if m.playerIndex == 0 then
+            if (not camera_config_is_free_cam_enabled()) then
+                set_camera_mode(m.area.camera, m.area.camera.defMode, 1);
+            else
+                m.area.camera.mode = CAMERA_MODE_NEWCAM;
+                gLakituState.mode = CAMERA_MODE_NEWCAM;
+            end
+        end
     end
     if m.marioObj.header.gfx.animInfo.animID == CHAR_ANIM_FAST_LONGJUMP and m.marioObj.header.gfx.animInfo.animFrame < 0 then
         m.vel.y = m.vel.y - 0.35
