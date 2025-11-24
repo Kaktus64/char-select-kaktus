@@ -15,6 +15,7 @@ for i = 0, MAX_PLAYERS - 1 do
     e.rotAngle = 0
     e.canBrella = true
     e.charArg = 0
+    e.flyFloor = 0
 end
 
 local function limit_angle(a)
@@ -28,7 +29,6 @@ ACT_BRELLA_JUMP = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR)
 ACT_BRELLA_POUND = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR | ACT_FLAG_ATTACKING)
 ACT_BRELLA_SPIN = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR | ACT_FLAG_ATTACKING)
 ACT_KAK_LONG_JUMP = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR)
-ACT_BRELLA_CROUCH = allocate_mario_action(ACT_FLAG_INVULNERABLE | ACT_GROUP_STATIONARY)
 ACT_TANOOKI_FLY_KAK = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR)
 ACT_SHROOM_DASH = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR | ACT_FLAG_ATTACKING)
 
@@ -108,6 +108,7 @@ id_bhvPropeller = hook_behavior(nil, OBJ_LIST_UNIMPORTANT, true, propeller_int, 
 -- CAP ACTIONS
 
 function act_tanooki_fly_kak(m)
+    local e = gStateExtras[m.playerIndex]
     local stepResult = common_air_action_step(m, ACT_FREEFALL_LAND, CHAR_ANIM_FLY_FROM_CANNON, AIR_STEP_CHECK_LEDGE_GRAB)
     m.faceAngle.y = m.intendedYaw - approach_s32(limit_angle(m.intendedYaw - m.faceAngle.y), 0, 0x400, 0x400)
     m.peakHeight = m.pos.y -- no fall sound
@@ -117,28 +118,41 @@ function act_tanooki_fly_kak(m)
     if m.forwardVel > 40 then
         m.forwardVel = m.forwardVel - 1
     end
-    if m.controller.buttonPressed & A_BUTTON ~= 0 and m.prevAction ~= ACT_JUMP then
-        m.vel.y = 40
-        set_mario_action(m, ACT_TANOOKI_FLY_KAK, 0)
-        set_mario_particle_flags(m, PARTICLE_MIST_CIRCLE, 0)
+    if m.pos.y < e.flyFloor + 1000 then
+        if m.controller.buttonPressed & A_BUTTON ~= 0 and m.prevAction ~= ACT_JUMP and m.actionTimer > 5 then
+            m.vel.y = 30
+            audio_sample_play(KAKTUS_TAIL, m.pos, 1)
+            set_mario_particle_flags(m, PARTICLE_MIST_CIRCLE, 0)
+            set_mario_action(m, ACT_TANOOKI_FLY_KAK, 0)
+        end
+        m.marioBodyState.eyeState = MARIO_EYES_LOOK_DOWN
+    else
+        m.marioBodyState.eyeState = MARIO_EYES_DEAD
     end
     if stepResult == AIR_STEP_LANDED then
-        set_mario_action(m, ACT_FREEFALL_LAND, 0)
+        return set_mario_action(m, ACT_FREEFALL_LAND, 0)
     end
     if stepResult == AIR_STEP_HIT_WALL then
-        mario_bonk_reflection(m, 1)
-        set_mario_action(m, ACT_TANOOKI_FLY_KAK, 0)
+        mario_bonk_reflection(m, 0)
+        return set_mario_action(m, ACT_TANOOKI_FLY_KAK, 0)
     end
     smlua_anim_util_set_animation(m.marioObj, "kaktus_tanookifly")
     if m.input & INPUT_Z_PRESSED ~= 0 then
-        set_mario_action(m, ACT_GROUND_POUND, 0)
+        return set_mario_action(m, ACT_GROUND_POUND, 0)
     elseif m.input & INPUT_B_PRESSED ~= 0 then
-        set_mario_action(m, ACT_BRELLA_SPIN, 0)
         m.vel.y = 45
         m.forwardVel = 48
+        return set_mario_action(m, ACT_BRELLA_SPIN, 0)
     end
+
+    m.actionTimer = m.actionTimer + 1
 end
-hook_mario_action(ACT_TANOOKI_FLY_KAK, act_tanooki_fly_kak)
+
+function act_tanooki_fly_kak_gravity(m)
+    m.vel.y = math.max(m.vel.y - 3, -50)
+end
+
+hook_mario_action(ACT_TANOOKI_FLY_KAK, {every_frame = act_tanooki_fly_kak, gravity = act_tanooki_fly_kak_gravity})
 
 function act_shroom_dash(m)
     local stepResult = common_air_action_step(m, ACT_FREEFALL_LAND, CHAR_ANIM_BACKFLIP, ACT_FLAG_AIR)
@@ -174,16 +188,17 @@ function act_brella_float(m)
     end
 
     local stepResult = common_air_action_step(m, ACT_FREEFALL_LAND, anim, AIR_STEP_CHECK_LEDGE_GRAB)
-    
+    --[[
     if m.vel.y < 0 then
-        m.vel.y = m.vel.y/1.8
+        m.vel.y = math.lerp(m.vel.y, -m.actionTimer/300, 0.1)
     elseif m.floor.type == SURFACE_VERTICAL_WIND then -- updraft
         m.vel.y = m.vel.y + 1
     else
         m.vel.y = m.vel.y + 3 -- lets you bounce off goombas
     end
+    ]]
     if m.forwardVel > 40 then
-    m.forwardVel = m.forwardVel - 1
+        m.forwardVel = m.forwardVel - 1
     end
     if stepResult == AIR_STEP_LANDED then
         set_mario_action(m, ACT_FREEFALL_LAND, 0)
@@ -209,7 +224,19 @@ function act_brella_float(m)
     m.actionTimer = m.actionTimer + 1
     return false
 end
-hook_mario_action(ACT_BRELLA_FLOAT, act_brella_float)
+
+function act_brella_float_gravity(m)
+    if m.floor.type == SURFACE_VERTICAL_WIND then -- updraft
+        m.vel.y = math.min(m.vel.y + 1, 50)
+        m.actionTimer = 0
+    else
+        m.vel.y = math.lerp(m.vel.y, -m.actionTimer*0.1 - 0.5, 0.1)
+    end
+    return false
+end
+
+
+hook_mario_action(ACT_BRELLA_FLOAT, {every_frame = act_brella_float, gravity = act_brella_float_gravity})
 
 function act_brella_jump(m)
     local e = gStateExtras[m.playerIndex]
@@ -325,10 +352,6 @@ function act_brella_spin(m)
 end
 hook_mario_action(ACT_BRELLA_SPIN, act_brella_spin)
 
-function act_brella_crouch(m)
-end
-hook_mario_action(ACT_BRELLA_CROUCH, act_brella_crouch)
-
 function act_kak_long_jump(m)
     local e = gStateExtras[m.playerIndex]
     local stepResult = common_air_action_step(m, ACT_LONG_JUMP_LAND, CHAR_ANIM_FAST_LONGJUMP, AIR_STEP_HIT_WALL)
@@ -410,6 +433,7 @@ hook_mario_action(ACT_YSIKLE_HAMMER_SPIN, act_ysikle_hammer_spin)
 --end)
 
 function kaktus_before_set_action(m, inc)
+    local e = gStateExtras[m.playerIndex]
     local np = gNetworkPlayers[m.playerIndex]
     if inc == ACT_DOUBLE_JUMP then
         return ACT_JUMP
@@ -440,7 +464,9 @@ function kaktus_before_set_action(m, inc)
         smlua_anim_util_set_animation(m.marioObj, "triplejumpspin")
     end
     if inc == ACT_JUMP and m.forwardVel > 40 and (m.flags & MARIO_WING_CAP) ~= 0 then
-        m.vel.y = 100
+        m.vel.y = 50
+        e.flyFloor = m.floorHeight
+        audio_sample_play(KAKTUS_TAIL, m.pos, 1)
         return ACT_TANOOKI_FLY_KAK
     end
     if inc == ACT_DIVE and (m.flags & MARIO_METAL_CAP) ~= 0 then
@@ -554,9 +580,6 @@ function kaktus_update(m)
     end
     if m.action == ACT_CROUCH_SLIDE then
         smlua_anim_util_set_animation(m.marioObj, 'kaktus_crouch_slide')
-    end
-    if m.action == ACT_TANOOKI_FLY_KAK and m.input & INPUT_A_PRESSED ~= 0 then
-        audio_sample_play(KAKTUS_TAIL, m.pos, 3)
     end
     if m.action == ACT_TANOOKI_FLY_KAK and (m.flags & MARIO_WING_CAP) == 0 then
         set_mario_action(m, ACT_FREEFALL, 0)
