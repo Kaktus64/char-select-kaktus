@@ -151,6 +151,45 @@ local PALETTE_KAKTUS = {
 	[EMBLEM] = "D87644"
 }
 
+local PALETTE_KAKTUSP2 = {
+
+    name = "P2",
+    [PANTS]  = "50321a",
+    [SHIRT]  = "f9b108",
+    [GLOVES] = "fff200",
+    [SHOES]  = "d8004d",
+    [HAIR]   = "743F39",
+    [SKIN]   = "DB9C70",
+    [CAP]    = "82893e",
+	[EMBLEM] = "f9b108"
+}
+
+local PALETTE_KAKTUSP3 = {
+
+    name = "P3",
+    [PANTS]  = "1a503a",
+    [SHIRT]  = "1fb617",
+    [GLOVES] = "00ff2d",
+    [SHOES]  = "D8004D",
+    [HAIR]   = "743F39",
+    [SKIN]   = "DB9C70",
+    [CAP]    = "3e8942",
+	[EMBLEM] = "1fb617"
+}
+
+local PALETTE_KAKTUSP4 = {
+
+    name = "P4",
+    [PANTS]  = "501a1a",
+    [SHIRT]  = "ff1214",
+    [GLOVES] = "000000",
+    [SHOES]  = "D8004D",
+    [HAIR]   = "743F39",
+    [SKIN]   = "DB9C70",
+    [CAP]    = "a22222",
+	[EMBLEM] = "f9281d"
+}
+
 local PALETTE_JERTUS = {
 
     name = "Jertus",
@@ -165,6 +204,7 @@ local PALETTE_JERTUS = {
 }
 
 local PALETTE_TRANSGENDER_KAK = {
+
         name = "Transgender",
         [PANTS] = "398FBE",
         [SHIRT] = "B96C86",
@@ -175,6 +215,20 @@ local PALETTE_TRANSGENDER_KAK = {
         [CAP] = "398FBE",
         [EMBLEM] = "FFFFFF"
     }
+
+local PALETTE_RETROTUS = {
+
+    name = "Retro",
+    [PANTS]  = "794100",
+    [SHIRT]  = "329c45",
+    [GLOVES] = "329c45",
+    [SHOES]  = "329c45",
+    [HAIR]   = "794100",
+    [SKIN]   = "DB9C70",
+    [CAP]    = "329c45",
+	[EMBLEM] = "DB9C70"
+}
+
 
     local PALETTE_WARM_BREEZE_KAK = {
         name = "Warm Breeze",
@@ -355,8 +409,12 @@ local function on_character_select_load()
     -- PALETTES
 
     _G.charSelect.character_add_palette_preset(E_MODEL_KAKTUS, PALETTE_KAKTUS, "Kaktus")
+    _G.charSelect.character_add_palette_preset(E_MODEL_KAKTUS, PALETTE_KAKTUSP2, "P2")
+    _G.charSelect.character_add_palette_preset(E_MODEL_KAKTUS, PALETTE_KAKTUSP3, "P3")
+    _G.charSelect.character_add_palette_preset(E_MODEL_KAKTUS, PALETTE_KAKTUSP4, "P4")
     _G.charSelect.character_add_palette_preset(E_MODEL_KAKTUS, PALETTE_JERTUS, "Jertus")
     _G.charSelect.character_add_palette_preset(E_MODEL_KAKTUS, PALETTE_TRANSGENDER_KAK, "Trans")
+    _G.charSelect.character_add_palette_preset(E_MODEL_KAKTUS, PALETTE_RETROTUS, "Retro")
     _G.charSelect.character_add_palette_preset(E_MODEL_KAKTUS, PALETTE_WARM_BREEZE_KAK, "Warm Breeze")
     _G.charSelect.character_add_palette_preset(E_MODEL_KAKTUS, PALETTE_COOL_BREEZE_KAK, "Cool Breeze")
     _G.charSelect.character_add_palette_preset(E_MODEL_KAKTUS, PALETTE_FALL_BREEZE_KAK, "Fall Breeze")
