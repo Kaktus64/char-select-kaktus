@@ -2,8 +2,6 @@
 local KAKTUS_TAIL = audio_sample_load("kaktus-tail.ogg")
 local KAKTUS_PIROUETTE = audio_sample_load("kaktus_pirouette.ogg")
 
-local E_MODEL_PROPELLER = smlua_model_util_get_id("propeller_geo")
-
 ---@diagnostic disable: undefined-global
 if not _G.charSelectExists then return end
 
@@ -70,40 +68,6 @@ local brellaHandActions = { -- What actions you bring out the brella for
     [ACT_CROUCHING] = true,
     [ACT_CROUCH_SLIDE] = true
 }
-
-function propeller_int(o)
-    o.oFlags = OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE
-
-    o.header.gfx.scale.x = 0.2
-    o.header.gfx.scale.y = 0.2
-    o.header.gfx.scale.z = 0.2
-end
-
-function propeller_loop(o)
-    local index = network_local_index_from_global(o.globalPlayerIndex) or 255
-    if index == 255 then
-        obj_mark_for_deletion(o)
-        return
-    end
-    local m = gMarioStates[index]
-
-    if m.action ~= ACT_BRELLA_FLOAT then
-        obj_mark_for_deletion(o)
-    end
-
-    if o.header.gfx.scale.y < 2 then
-        o.header.gfx.scale.x = o.header.gfx.scale.x * 1.2
-        o.header.gfx.scale.y = o.header.gfx.scale.y * 1.2
-        o.header.gfx.scale.z = o.header.gfx.scale.z * 1.2
-    end
-    o.oFaceAngleYaw = o.oFaceAngleYaw + 0x1500
-    o.oPosX = m.marioObj.header.gfx.pos.x
-    o.oPosY = m.marioObj.header.gfx.pos.y + 100
-    o.oPosZ = m.marioObj.header.gfx.pos.z
-end
-
-id_bhvPropeller = hook_behavior(nil, OBJ_LIST_UNIMPORTANT, true, propeller_int, propeller_loop,
-  "bhvPropeller")
 
 -- CAP ACTIONS
 
@@ -176,12 +140,9 @@ function act_brella_float(m)
     m.marioBodyState.eyeState = MARIO_EYES_LOOK_DOWN
     m.peakHeight = m.pos.y -- no fall sound
 
-    if m.character.type == CT_LUIGI and (m.playerIndex == 0 or is_player_active(m) ~= 0) and m.marioObj.header.gfx.node.flags & GRAPH_RENDER_ACTIVE ~= 0 then
+    if m.character.type == CT_LUIGI then
         m.particleFlags = m.particleFlags | PARTICLE_DUST
         anim = CHAR_ANIM_SLOW_LONGJUMP
-        if m.actionTimer == 2 then
-            spawn_non_sync_object(id_bhvPropeller, E_MODEL_PROPELLER, m.pos.x, m.pos.y, m.pos.z, nil)
-        end
     else
         m.particleFlags = m.particleFlags | PARTICLE_SPARKLES
         m.marioBodyState.handState = MARIO_HAND_PEACE_SIGN

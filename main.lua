@@ -36,6 +36,8 @@ local KAKTUS_ICON = get_texture_info("Kaktus-LifeIcon1")
 
 local KAKTUS_TUNE = audio_stream_load("kaktus-menu-theme.ogg")
 
+local KAKTUS_ART = get_texture_info("graffiti_kaktus")
+
 local E_MODEL_ISIKLE = smlua_model_util_get_id("isikle_geo")
 
 --local ISIKLE_ICON = get_texture_info("isikle_icon") -- when icon is added
@@ -97,7 +99,7 @@ local VOICETABLE_KAKTUS = {
 	[CHAR_SOUND_DROWNING] = 'Silent.ogg', -- Running out of air underwater
     [CHAR_SOUND_MAMA_MIA] = 'kakuhoh.ogg', -- Booted out of level
 --EXTRAS
-    [CHAR_SOUND_PRESS_START_TO_PLAY] = 'sm64_moneybags_jump.ogg'
+    --[CHAR_SOUND_PRESS_START_TO_PLAY] = 'sm64_moneybags_jump.ogg'
 }
 
 local VOICETABLE_YSIKLE = {
@@ -397,6 +399,7 @@ local function on_character_select_load()
     _G.charSelect.character_add_course_texture(CT_KAKTUS, COURSE_KAKTUS)
     _G.charSelect.character_add_animations(E_MODEL_KAKTUS, ANIMTABLE_KAKTUS)
     _G.charSelect.character_add_menu_instrumental(CT_KAKTUS, KAKTUS_TUNE)
+    _G.charSelect.character_add_graffiti(CT_KAKTUS, KAKTUS_ART)
 
     _G.charSelect.character_add_caps(E_MODEL_ISIKLE, CAPTABLE_ISIKLE)
     --_G.charSelect.character_add_voice(E_MODEL_ISIKLE, VOICETABLE_ISIKLE) -- when voice added
