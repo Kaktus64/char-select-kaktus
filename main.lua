@@ -383,7 +383,7 @@ if _G.charSelectExists then
     --                                                    "His powerups are from other",
     --                                                    "Mario games, and as such may make",
     --                                                    "some challenges impossible."}, "Kaktus64 & JerThePear", {r = 153, g = 80, b = 72}, E_MODEL_KAKTUS_GOAT, CT_MARIO, KAKTUS_ICON_GOAT)
-    CT_ISIKLE = _G.charSelect.character_add_costume(CT_KAKTUS, "Isikle", "Kaktus' cool sister.", "Kaktus64 & JerThePear", {r = 102, g = 125, b = 146}, E_MODEL_ISIKLE, CT_LUIGI, nil) -- no icon yet, replace nil with ISIKLE_ICON
+    CT_ISIKLE = _G.charSelect.character_add("Isikle", "Kaktus' cool sister.", "Kaktus64 & JerThePear", {r = 102, g = 125, b = 146}, E_MODEL_ISIKLE, CT_LUIGI, nil) -- no icon yet, replace nil with ISIKLE_ICON
 end
 
 local function on_character_select_load()
