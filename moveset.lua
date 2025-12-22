@@ -30,9 +30,9 @@ ACT_KAK_LONG_JUMP = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR)
 ACT_TANOOKI_FLY_KAK = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR)
 ACT_SHROOM_DASH = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR | ACT_FLAG_ATTACKING)
 
---ysikle actions (unused, since ysikle was removed)
-ACT_YSIKLE_POUND = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR | ACT_FLAG_ATTACKING)
-ACT_YSIKLE_HAMMER_SPIN = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR | ACT_FLAG_ATTACKING)
+--isikle actions
+ACT_ISIKLE_POUND = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR | ACT_FLAG_ATTACKING)
+ACT_ISIKLE_HAMMER_SPIN = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR | ACT_FLAG_ATTACKING)
 
 function act_superjump_crouch_kak (m)
     if m.controller.buttonPressed & A_BUTTON ~= 0 then
@@ -333,37 +333,41 @@ function act_kak_long_jump(m)
 end
 hook_mario_action(ACT_KAK_LONG_JUMP, act_kak_long_jump)
 
---ysikle actions
+--isikle actions
 
-function act_ysikle_pound(m)
+function act_isikle_pound(m)
     local e = gStateExtras[m.playerIndex]
-    local stepResult = common_air_action_step(m, ACT_GROUND_POUND_LAND, CHAR_ANIM_START_GROUND_POUND, AIR_STEP_NONE)
+    local stepResult = common_air_action_step(m, ACT_GROUND_POUND_LAND, CHAR_ANIM_GROUND_POUND, AIR_STEP_NONE)
     m.marioBodyState.eyeState = MARIO_EYES_DEAD
-    m.vel.y = m.vel.y * 1.2
-    m.vel.x = 0
-    m.vel.z = 0
-    if m.vel.y < -75 then
-        m.vel.y = -75
+    if m.actionTimer == 0 then
+        m.vel.y = 45
     end
-    if m.vel.y > 0 then
-        m.vel.y = 0
-    end
+    m.vel.y = m.vel.y - 2
+        e.rotAngle = e.rotAngle + 5000
+    m.marioObj.header.gfx.angle.y = e.rotAngle
+
     m.actionTimer = m.actionTimer + 1
     return false
 end
-hook_mario_action(ACT_YSIKLE_POUND, act_ysikle_pound)
+hook_mario_action(ACT_ISIKLE_POUND, act_isikle_pound)
 
-function act_ysikle_hammer_spin(m)
+function act_isikle_hammer_spin(m)
     local stepResult = common_air_action_step(m, ACT_GROUND_POUND_LAND, CHAR_ANIM_FORWARD_SPINNING, AIR_STEP_NONE)
     m.faceAngle.y = m.intendedYaw - approach_s32(limit_angle(m.intendedYaw - m.faceAngle.y), 0, 0x40, 0x40)
     m.marioBodyState.eyeState = MARIO_EYES_DEAD
     if m.actionTimer == 0 then
         m.vel.y = 45
+        m.forwardVel = 50
+    end
+
+    if m.input & INPUT_Z_PRESSED ~= 0 then
+        set_mario_action(m, ACT_ISIKLE_POUND, 0)
+        m.actionTimer = -1
     end
 
     m.actionTimer = m.actionTimer + 1
 end
-hook_mario_action(ACT_YSIKLE_HAMMER_SPIN, act_ysikle_hammer_spin)
+hook_mario_action(ACT_ISIKLE_HAMMER_SPIN, act_isikle_hammer_spin)
 -- i am so motherfucking stupid
 -- No you're not, you are very smart and an awesome human being <3
 -- thanks jer :)
@@ -745,8 +749,35 @@ function kaktus_update(m)
     --end
 end
 
+--isikle
+function isikle_update(m)
+    local e = gStateExtras[m.playerIndex]
+end
+
+function isikle_before_set_action(m, inc)
+    local e = gStateExtras[m.playerIndex]
+    if inc == ACT_DIVE and m.input & INPUT_A_DOWN ~= 0 then
+        return ACT_ISIKLE_HAMMER_SPIN
+    end
+    if inc == ACT_GROUND_POUND then
+        return ACT_ISIKLE_POUND
+    end
+end
+
+function isikle_set_action(m)
+    local e = gStateExtras[m.playerIndex]
+    if m.action == ACT_GROUND_POUND_LAND then
+        play_sound(SOUND_ACTION_METAL_HEAVY_LANDING, m.marioObj.header.gfx.cameraToObject)
+    end
+end
+
 _G.charSelect.character_hook_moveset(CT_KAKTUS, HOOK_MARIO_UPDATE, kaktus_update)
 _G.charSelect.character_hook_moveset(CT_KAKTUS, HOOK_ON_SET_MARIO_ACTION, kaktus_set_action)
 _G.charSelect.character_hook_moveset(CT_KAKTUS, HOOK_BEFORE_SET_MARIO_ACTION, kaktus_before_set_action)
 _G.charSelect.character_hook_moveset(CT_KAKTUS, HOOK_ON_HUD_RENDER_BEHIND, kaktus_hud)
 _G.charSelect.character_hook_moveset(CT_KAKTUS, HOOK_ALLOW_HAZARD_SURFACE, kaktus_allow_hazard_surface)
+
+--isikle
+_G.charSelect.character_hook_moveset(CT_ISIKLE, HOOK_MARIO_UPDATE, isikle_update)
+_G.charSelect.character_hook_moveset(CT_ISIKLE, HOOK_ON_SET_MARIO_ACTION, isikle_set_action)
+_G.charSelect.character_hook_moveset(CT_ISIKLE, HOOK_BEFORE_SET_MARIO_ACTION, isikle_before_set_action)

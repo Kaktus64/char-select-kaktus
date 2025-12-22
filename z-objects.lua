@@ -1,3 +1,7 @@
+--[[
+--
+-- turned off for now because new object code
+--
 if not _G.charSelectExists then return end
 
 local E_MODEL_PROPELLER = smlua_model_util_get_id("propeller_geo")
@@ -102,3 +106,4 @@ end
 
 hook_event(HOOK_ON_OBJECT_RENDER, on_object_render)
 hook_event(HOOK_ON_SYNC_VALID, on_sync_valid)
+--]]
