@@ -337,17 +337,15 @@ hook_mario_action(ACT_KAK_LONG_JUMP, act_kak_long_jump)
 
 function act_isikle_pound(m)
     local e = gStateExtras[m.playerIndex]
-    local stepResult = common_air_action_step(m, ACT_GROUND_POUND_LAND, CHAR_ANIM_START_GROUND_POUND, AIR_STEP_NONE)
+    local stepResult = common_air_action_step(m, ACT_GROUND_POUND_LAND, CHAR_ANIM_GROUND_POUND, AIR_STEP_NONE)
     m.marioBodyState.eyeState = MARIO_EYES_DEAD
-    m.vel.y = m.vel.y * 1.2
-    m.vel.x = 0
-    m.vel.z = 0
-    if m.vel.y < -75 then
-        m.vel.y = -75
+    if m.actionTimer == 0 then
+        m.vel.y = 45
     end
-    if m.vel.y > 0 then
-        m.vel.y = 0
-    end
+    m.vel.y = m.vel.y - 2
+        e.rotAngle = e.rotAngle + 5000
+    m.marioObj.header.gfx.angle.y = e.rotAngle
+
     m.actionTimer = m.actionTimer + 1
     return false
 end
@@ -359,6 +357,12 @@ function act_isikle_hammer_spin(m)
     m.marioBodyState.eyeState = MARIO_EYES_DEAD
     if m.actionTimer == 0 then
         m.vel.y = 45
+        m.forwardVel = 50
+    end
+
+    if m.input & INPUT_Z_PRESSED ~= 0 then
+        set_mario_action(m, ACT_ISIKLE_POUND, 0)
+        m.actionTimer = -1
     end
 
     m.actionTimer = m.actionTimer + 1
@@ -754,6 +758,16 @@ function isikle_before_set_action(m, inc)
     local e = gStateExtras[m.playerIndex]
     if inc == ACT_DIVE and m.input & INPUT_A_DOWN ~= 0 then
         return ACT_ISIKLE_HAMMER_SPIN
+    end
+    if inc == ACT_GROUND_POUND then
+        return ACT_ISIKLE_POUND
+    end
+end
+
+function isikle_set_action(m)
+    local e = gStateExtras[m.playerIndex]
+    if m.action == ACT_GROUND_POUND_LAND then
+        play_sound(SOUND_ACTION_METAL_HEAVY_LANDING, m.marioObj.header.gfx.cameraToObject)
     end
 end
 
