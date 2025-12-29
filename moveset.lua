@@ -484,6 +484,9 @@ function kaktus_set_action(m)
     if m.action == ACT_BUTT_SLIDE_AIR and m.prevAction == ACT_CROUCH_SLIDE then
         play_sound(SOUND_ACTION_TWIRL, m.marioObj.header.gfx.cameraToObject)
     end
+    if m.action == ACT_GROUND_POUND then
+        set_mario_action(m, ACT_BRELLA_POUND, 0)
+    end
 end
 
 local eyeStateTable = { -- Epic Eye States Table of Evil Swag - Jer
@@ -663,11 +666,6 @@ function kaktus_update(m)
     end
     if m.action == ACT_TRIPLE_JUMP then
         smlua_anim_util_set_animation(m.marioObj, "kakroll")
-    end
-    if m.action == ACT_GROUND_POUND and m.controller.buttonPressed & B_BUTTON ~= 0 and m.flags & MARIO_WING_CAP == 0 then
-        set_mario_action(m, ACT_SLIDE_KICK, 0)
-        m.vel.y = 65
-        m.faceAngle.y = m.intendedYaw
     end
     if m.action == ACT_GROUND_POUND and m.controller.buttonPressed & B_BUTTON ~= 0 and m.flags & MARIO_WING_CAP ~= 0 then
         set_mario_action(m, ACT_VERTICAL_WIND, 0)
