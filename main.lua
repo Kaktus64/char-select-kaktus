@@ -34,9 +34,13 @@ local E_MODEL_KAKTUS = smlua_model_util_get_id("kaktus_geo")
 
 local KAKTUS_ICON = get_texture_info("Kaktus-LifeIcon1")
 
+local ISIKLE_ICON = get_texture_info("Isikle-LifeIcon")
+
 local KAKTUS_TUNE = audio_stream_load("kaktus-menu-theme.ogg")
 
 local KAKTUS_ART = get_texture_info("graffiti_kaktus")
+
+local ISIKLE_ART = get_texture_info("graffiti_isikle")
 
 local E_MODEL_ISIKLE = smlua_model_util_get_id("isikle_geo")
 
@@ -59,7 +63,7 @@ SPEEDOMETER_MAX = get_texture_info("Speedometer5")
 -- All Located in "sound" Name them whatever you want. Remember to include the .ogg extension
 local VOICETABLE_KAKTUS = {
     [CHAR_SOUND_OKEY_DOKEY] = 'Silent.ogg', -- Starting game
-	[CHAR_SOUND_LETS_A_GO] = 'Silent.ogg', -- Starting level
+	[CHAR_SOUND_LETS_A_GO] = 'kakwoohoo.ogg', -- Starting level
 	[CHAR_SOUND_PUNCH_YAH] = 'kakhey.ogg', -- Punch 1
 	[CHAR_SOUND_PUNCH_WAH] = 'kakyip.ogg', -- Punch 2
 	[CHAR_SOUND_PUNCH_HOO] = 'kakyeah.ogg', -- Punch 3
@@ -102,7 +106,7 @@ local VOICETABLE_KAKTUS = {
     --[CHAR_SOUND_PRESS_START_TO_PLAY] = 'sm64_moneybags_jump.ogg'
 }
 
-local VOICETABLE_YSIKLE = {
+local VOICETABLE_ISIKLE = {
     nil
 }
 
@@ -383,7 +387,7 @@ if _G.charSelectExists then
     --                                                    "His powerups are from other",
     --                                                    "Mario games, and as such may make",
     --                                                    "some challenges impossible."}, "Kaktus64 & JerThePear", {r = 153, g = 80, b = 72}, E_MODEL_KAKTUS_GOAT, CT_MARIO, KAKTUS_ICON_GOAT)
-    CT_ISIKLE = _G.charSelect.character_add("Isikle", "Kaktus' cool sister.", "Kaktus64 & JerThePear", {r = 102, g = 125, b = 146}, E_MODEL_ISIKLE, CT_LUIGI, nil) -- no icon yet, replace nil with ISIKLE_ICON
+    CT_ISIKLE = _G.charSelect.character_add("Isikle", "Kaktus' cool sister.", "Kaktus64 & JerThePear", {r = 102, g = 125, b = 146}, E_MODEL_ISIKLE, CT_LUIGI, ISIKLE_ICON) -- no icon yet, replace nil with ISIKLE_ICON
 end
 
 local function on_character_select_load()
@@ -395,6 +399,7 @@ local function on_character_select_load()
 
     _G.charSelect.character_add_caps(E_MODEL_KAKTUS, CAPTABLE_KAKTUS)
     _G.charSelect.character_add_voice(E_MODEL_KAKTUS, VOICETABLE_KAKTUS)
+    _G.charSelect.character_add_voice(E_MODEL_ISIKLE, VOICETABLE_ISIKLE)
     _G.charSelect.character_add_health_meter(CT_KAKTUS, HM_KAKTUS)
     _G.charSelect.character_add_course_texture(CT_KAKTUS, COURSE_KAKTUS)
     _G.charSelect.character_add_animations(E_MODEL_KAKTUS, ANIMTABLE_KAKTUS)
@@ -402,11 +407,14 @@ local function on_character_select_load()
     _G.charSelect.character_add_graffiti(CT_KAKTUS, KAKTUS_ART)
 
     _G.charSelect.character_add_caps(E_MODEL_ISIKLE, CAPTABLE_ISIKLE)
+    _G.charSelect.character_add_graffiti(CT_ISIKLE, ISIKLE_ART)
     --_G.charSelect.character_add_voice(E_MODEL_ISIKLE, VOICETABLE_ISIKLE) -- when voice added
     --_G.charSelect.character_add_animations(E_MODEL_ISIKLE, ANIMTABLE_KAKTUS)
     
     _G.charSelect.character_set_category(CT_KAKTUS, "DXA")
     _G.charSelect.character_set_category(CT_KAKTUS, "Squishy Workshop")
+    _G.charSelect.character_set_category(CT_ISIKLE, "DXA")
+    _G.charSelect.character_set_category(CT_ISIKLE, "Squishy Workshop")
 
 
     -- PALETTES
@@ -434,11 +442,13 @@ end
 local function on_character_sound(m, sound)
     if not CSloaded then return end
     if _G.charSelect.character_get_voice(m) == VOICETABLE_KAKTUS then return _G.charSelect.voice.sound(m, sound) end
+    if _G.charSelect.character_get_voice(m) == VOICETABLE_ISIKLE then return _G.charSelect.voice.sound(m, sound) end
 end
 
 local function on_character_snore(m)
     if not CSloaded then return end
     if _G.charSelect.character_get_voice(m) == VOICETABLE_KAKTUS then return _G.charSelect.voice.snore(m) end
+    if _G.charSelect.character_get_voice(m) == VOICETABLE_ISIKLE then return _G.charSelect.voice.snore(m) end
 end
 
 local function non_moveset_anims(m)
@@ -546,7 +556,7 @@ mountain! You wanna\
 go? Bet you don't\
 wanna, pussy!\
 \
-//Sure////No??"))
+//Sure?////No??"))
 
 charSelect.character_replace_dialog(CT_KAKTUS, DIALOG_006, 1, 3, 30, 200, (
 "Hey, Asshole! I knew\
@@ -573,3 +583,50 @@ Whatever, you can scurry\
 for it, broke ass.\
 \
 Fuck you."))
+
+
+charSelect.character_replace_dialog(CT_KAKTUS, DIALOG_009, 1, 5, 30, 200, (
+"Oh my god.. Not you\
+again! You're a little\
+bitch, you know that?\
+We could've had a fun\
+and fair race last\
+time, but NOOOO...\
+you had to cheat with\
+your pussy ass\
+umbrella. Okay, how\
+about a rematch?\
+I'll beat your\
+fuckin' ass this\
+time, you prickly\
+asshole!\
+\
+\
+//Okay?///Hell no."))
+
+charSelect.character_replace_dialog(CT_KAKTUS, DIALOG_031, 1, 5, 30, 200, (
+"FUUUCKK!!!\
+FUCK YOU. I just spent\
+my entire college\
+funds on these\
+Koopa Mach 1 Sprint\
+shoes, and I STILL\
+lost. Fuck you and\
+your stupid-ass\
+umbrella. You piss\
+me off so bad, you\
+tiny piece of shit.\
+Take the fuckin' star\
+already, you dick."))
+
+charSelect.character_replace_dialog(CT_KAKTUS, DIALOG_041, 1, 4, 30, 200, (
+"YESS!! FUCK YESS!!\
+I DID IT!! FUCK YOU,\
+YOU LITTLE GREEN\
+ASSHOLE!! Now, go\
+fuck yourself and\
+leave me alone.\
+Better luck next time,\
+bitch!!!"))
+
+

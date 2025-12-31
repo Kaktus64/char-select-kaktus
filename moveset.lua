@@ -14,6 +14,7 @@ for i = 0, MAX_PLAYERS - 1 do
     e.canBrella = true
     e.charArg = 0
     e.flyFloor = 0
+    e.canIsikleDrill = true
 end
 
 local function limit_angle(a)
@@ -33,6 +34,7 @@ ACT_SHROOM_DASH = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR | ACT_
 --isikle actions
 ACT_ISIKLE_POUND = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR | ACT_FLAG_ATTACKING)
 ACT_ISIKLE_HAMMER_SPIN = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR | ACT_FLAG_ATTACKING)
+ACT_ISIKLE_DRILL_AIR = allocate_mario_action(ACT_GROUP_AIRBORNE | ACT_FLAG_AIR | ACT_FLAG_ATTACKING)
 
 function act_superjump_crouch_kak (m)
     if m.controller.buttonPressed & A_BUTTON ~= 0 then
@@ -346,12 +348,18 @@ function act_isikle_pound(m)
         e.rotAngle = e.rotAngle + 5000
     m.marioObj.header.gfx.angle.y = e.rotAngle
 
+    if m.input & INPUT_B_PRESSED ~= 0 and e.canIsikleDrill == true then
+        set_mario_action(m, ACT_ISIKLE_DRILL_AIR, 0)
+        m.actionTimer = -1
+    end
+
     m.actionTimer = m.actionTimer + 1
     return false
 end
 hook_mario_action(ACT_ISIKLE_POUND, act_isikle_pound)
 
 function act_isikle_hammer_spin(m)
+    local e = gStateExtras[m.playerIndex]
     local stepResult = common_air_action_step(m, ACT_GROUND_POUND_LAND, CHAR_ANIM_FORWARD_SPINNING, AIR_STEP_NONE)
     m.faceAngle.y = m.intendedYaw - approach_s32(limit_angle(m.intendedYaw - m.faceAngle.y), 0, 0x40, 0x40)
     m.marioBodyState.eyeState = MARIO_EYES_DEAD
@@ -368,6 +376,32 @@ function act_isikle_hammer_spin(m)
     m.actionTimer = m.actionTimer + 1
 end
 hook_mario_action(ACT_ISIKLE_HAMMER_SPIN, act_isikle_hammer_spin)
+
+function act_isikle_drill_air(m)
+    local e = gStateExtras[m.playerIndex]
+    local stepResult = common_air_action_step(m, ACT_BRAKING, CHAR_ANIM_WING_CAP_FLY, AIR_STEP_HIT_WALL)
+    m.faceAngle.y = m.intendedYaw - approach_s32(limit_angle(m.intendedYaw - m.faceAngle.y), 0, 0x40, 0x40)
+    m.marioBodyState.eyeState = MARIO_EYES_DEAD
+    m.forwardVel = 60
+    m.vel.y = -5
+    e.canIsikleDrill = false
+
+    if m.actionTimer > 17 then
+        set_mario_action(m, ACT_FREEFALL, 0)
+        m.vel.y = 0
+    end
+
+    m.actionTimer = m.actionTimer + 1
+
+    e.rotAngle = e.rotAngle + 7000
+    m.marioObj.header.gfx.angle.z = e.rotAngle
+
+    if m.actionTimer % 5 == 0 then
+        play_sound(SOUND_ACTION_SPIN, m.marioObj.header.gfx.cameraToObject)
+    end
+
+end
+hook_mario_action(ACT_ISIKLE_DRILL_AIR, act_isikle_drill_air)
 -- i am so motherfucking stupid
 -- No you're not, you are very smart and an awesome human being <3
 -- thanks jer :)
@@ -750,11 +784,27 @@ end
 --isikle
 function isikle_update(m)
     local e = gStateExtras[m.playerIndex]
+    if m.forwardVel < 20 and m.action == ACT_WALKING then
+        m.marioBodyState.torsoAngle.z = 0
+        m.marioBodyState.torsoAngle.x = -2500
+    end
+    if m.forwardVel > 20 and m.forwardVel < 27 and m.action == ACT_WALKING then
+        m.marioBodyState.torsoAngle.x = -1200
+    end
+    if m.forwardVel > 28 and m.action == ACT_WALKING then
+        m.marioBodyState.torsoAngle.x = 1000
+    end
+    if m.pos.y == m.floorHeight then
+        e.canIsikleDrill = true
+    end
 end
 
 function isikle_before_set_action(m, inc)
     local e = gStateExtras[m.playerIndex]
     if inc == ACT_DIVE and m.input & INPUT_A_DOWN ~= 0 then
+        return ACT_ISIKLE_HAMMER_SPIN
+    end
+    if inc == ACT_JUMP_KICK and m.input & INPUT_A_DOWN ~= 0 then
         return ACT_ISIKLE_HAMMER_SPIN
     end
     if inc == ACT_GROUND_POUND then
@@ -767,6 +817,7 @@ function isikle_set_action(m)
     if m.action == ACT_GROUND_POUND_LAND then
         play_sound(SOUND_ACTION_METAL_HEAVY_LANDING, m.marioObj.header.gfx.cameraToObject)
     end
+    
 end
 
 _G.charSelect.character_hook_moveset(CT_KAKTUS, HOOK_MARIO_UPDATE, kaktus_update)
