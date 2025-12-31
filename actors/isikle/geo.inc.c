@@ -1,5 +1,3 @@
-#include "src/game/envfx_snow.h"
-
 const GeoLayout isikle_B_LoD_Switch_opt0_Cap_State_Switch_opt0_Capless_Switch_opt1_Capless_Head_Eye_State_Switch_opt1[] = {
 	GEO_NODE_START(),
 	GEO_OPEN_NODE(),
@@ -98,6 +96,9 @@ const GeoLayout isikle_Right_Hand_Peace[] = {
 	GEO_NODE_START(),
 	GEO_OPEN_NODE(),
 		GEO_ANIMATED_PART(LAYER_OPAQUE, 60, 0, 0, isikle_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_1),
+		GEO_OPEN_NODE(),
+			GEO_DISPLAY_LIST(LAYER_TRANSPARENT_INTER, isikle_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_7),
+		GEO_CLOSE_NODE(),
 	GEO_CLOSE_NODE(),
 	GEO_RETURN(),
 };
@@ -619,6 +620,9 @@ const GeoLayout isikle_B_LoD_Switch_opt0_Cap_State_Switch_opt1_jump_isikle_Right
 	GEO_NODE_START(),
 	GEO_OPEN_NODE(),
 		GEO_ANIMATED_PART(LAYER_TRANSPARENT, 60, 0, 0, isikle_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_1),
+		GEO_OPEN_NODE(),
+			GEO_DISPLAY_LIST(LAYER_TRANSPARENT, isikle_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_7),
+		GEO_CLOSE_NODE(),
 	GEO_CLOSE_NODE(),
 	GEO_RETURN(),
 };
@@ -1158,6 +1162,7 @@ const GeoLayout isikle_geo[] = {
 		GEO_DISPLAY_LIST(LAYER_OPAQUE, isikle_material_revert_render_settings),
 		GEO_DISPLAY_LIST(LAYER_ALPHA, isikle_material_revert_render_settings),
 		GEO_DISPLAY_LIST(LAYER_TRANSPARENT, isikle_material_revert_render_settings),
+		GEO_DISPLAY_LIST(LAYER_TRANSPARENT_INTER, isikle_material_revert_render_settings),
 	GEO_CLOSE_NODE(),
 	GEO_END(),
 };

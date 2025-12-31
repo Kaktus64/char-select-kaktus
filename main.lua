@@ -319,6 +319,54 @@ local PALETTE_ISIKLE_LEGACY = {
 	[EMBLEM] = "AAAABC"
 }
 
+local PALETTE_JESSIKLE = {
+    [PANTS]  = "bbff4d",
+    [SHIRT]  = "bbff4d",
+    [GLOVES] = "8cc6ff",
+    [SHOES]  = "462c1e",
+    [HAIR]   = "462c1e",
+    [SKIN]   = "ffba90",
+    [CAP]    = "8cc6ff",
+    [EMBLEM] = "ffffff",
+}
+
+local PALETTE_TRANSGENDER_ISIKLE = {
+
+        name = "Transgender",
+        [PANTS] = "FFFFFF",
+        [SHIRT] = "B96C86",
+        [GLOVES] = "FFFFFF",
+        [SHOES] = "620E22",
+        [HAIR] = "FF9BCD",
+        [SKIN] = "DB9C70",
+        [CAP] = "398FBE",
+        [EMBLEM] = "FFFFFF"
+}
+
+local PALETTE_ISIKLETUS = {
+
+    [PANTS]  = "313149",
+    [SHIRT]  = "791E82",
+    [GLOVES] = "D8004D",
+    [SHOES]  = "D8004D",
+    [HAIR]   = "743F39",
+    [SKIN]   = "DB9C70",
+    [CAP]    = "3E8948",
+	[EMBLEM] = "D87644"
+}
+
+local PALETTE_RETRO_ISIKLE = {
+
+    [PANTS]  = "ffdba2",
+    [SHIRT]  = "b21030",
+    [GLOVES] = "a2baff",
+    [SHOES]  = "b21030",
+    [HAIR]   = "a2baff",
+    [SKIN]   = "ffdba2",
+    [CAP]    = "a2baff",
+	[EMBLEM] = "ffdba2"
+}
+
 local HM_KAKTUS= {
     label = {
         left = get_texture_info("KakLeftHealth"),
@@ -405,7 +453,7 @@ local function on_character_select_load()
     _G.charSelect.character_add_animations(E_MODEL_KAKTUS, ANIMTABLE_KAKTUS)
     _G.charSelect.character_add_menu_instrumental(CT_KAKTUS, KAKTUS_TUNE)
     _G.charSelect.character_add_graffiti(CT_KAKTUS, KAKTUS_ART)
-    _G.charSelect.character_add_nickname(CT_KAKTUS, "Kaktus", false)
+    --_G.charSelect.character_add_nickname(CT_KAKTUS, "Kaktus", false)
 
     _G.charSelect.character_add_caps(E_MODEL_ISIKLE, CAPTABLE_ISIKLE)
     _G.charSelect.character_add_graffiti(CT_ISIKLE, ISIKLE_ART)
@@ -424,8 +472,10 @@ local function on_character_select_load()
     _G.charSelect.character_add_palette_preset(E_MODEL_KAKTUS, PALETTE_KAKTUSP2, "P2")
     _G.charSelect.character_add_palette_preset(E_MODEL_KAKTUS, PALETTE_KAKTUSP3, "P3")
     _G.charSelect.character_add_palette_preset(E_MODEL_KAKTUS, PALETTE_KAKTUSP4, "P4")
+    
     _G.charSelect.character_add_palette_preset(E_MODEL_KAKTUS, PALETTE_JERTUS, "Jertus")
     _G.charSelect.character_add_palette_preset(E_MODEL_KAKTUS, PALETTE_TRANSGENDER_KAK, "Trans")
+    _G.charSelect.character_add_palette_preset(E_MODEL_KAKTUS, PALETTE_ISIKLE, "Sibling")
     _G.charSelect.character_add_palette_preset(E_MODEL_KAKTUS, PALETTE_RETROTUS, "Retro")
     _G.charSelect.character_add_palette_preset(E_MODEL_KAKTUS, PALETTE_WARM_BREEZE_KAK, "Warm Breeze")
     _G.charSelect.character_add_palette_preset(E_MODEL_KAKTUS, PALETTE_COOL_BREEZE_KAK, "Cool Breeze")
@@ -436,6 +486,11 @@ local function on_character_select_load()
 
     _G.charSelect.character_add_palette_preset(E_MODEL_ISIKLE, PALETTE_ISIKLE, "Isikle")
     _G.charSelect.character_add_palette_preset(E_MODEL_ISIKLE, PALETTE_ISIKLE_LEGACY, "Ysikle")
+    _G.charSelect.character_add_palette_preset(E_MODEL_ISIKLE, PALETTE_JESSIKLE, "Jessikle")
+    _G.charSelect.character_add_palette_preset(E_MODEL_ISIKLE, PALETTE_TRANSGENDER_ISIKLE, "Trans")
+    _G.charSelect.character_add_palette_preset(E_MODEL_ISIKLE, PALETTE_ISIKLETUS, "Sibling")
+    _G.charSelect.character_add_palette_preset(E_MODEL_ISIKLE, PALETTE_RETRO_ISIKLE, "Retro")
+    _G.charSelect.character_add_palette_preset(E_MODEL_ISIKLE, PALETTE_LOOK_GOOD_KAK, "Looking Good")
 
     CSloaded = true
 end
@@ -489,6 +544,7 @@ function is_kaktus()
 end
 
 -- Dialog
+if is_kaktus() == true then
 charSelect.character_replace_dialog(CT_KAKTUS, DIALOG_020, 1, 6, 95, 150, (
 "Dear Mario:\
 Please come to the\
@@ -694,7 +750,7 @@ charSelect.character_replace_dialog(CT_KAKTUS, DIALOG_136, 1, 2, 30, 200, (
 "The paintings show me\
 terrible things."))
 
-charSelect.character_replace_dialog(CT_KAKTUS, DIALOG_076, 1, 6, 30, 200, (
+charSelect.character_replace_dialog(CT_KAKTUS, DIALOG_141, 1, 5, 30, 200, (
 "The cave's entrance.\
 It's talking to me. I\
 SWEAR I'm not crazy.\
@@ -707,3 +763,4 @@ RIGHT??"))
 charSelect.character_replace_dialog(CT_KAKTUS, DIALOG_082, 1, 2, 30, 200, (
 "Thank you for believing\
 me."))
+end

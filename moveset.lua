@@ -71,6 +71,22 @@ local brellaHandActions = { -- What actions you bring out the brella for
     [ACT_CROUCH_SLIDE] = true
 }
 
+local isikleSlipperySurfaces = {
+    [SURFACE_CLASS_SLIPPERY] = true,
+    [SURFACE_SLIPPERY] = true,
+    [SURFACE_ICE] = true,
+    [SURFACE_VERY_SLIPPERY] = true,
+    [SURFACE_HARD_SLIPPERY] = true,
+    [SURFACE_NOISE_SLIPPERY] = true,
+    [SURFACE_NO_CAM_COL_SLIPPERY] = true,
+    [SURFACE_HARD_VERY_SLIPPERY] = true,
+    [SURFACE_CLASS_VERY_SLIPPERY] = true,
+    [SURFACE_NO_CAM_COL_VERY_SLIPPERY] = true,
+    [SURFACE_NOISE_VERY_SLIPPERY_73] = true,
+    [SURFACE_NOISE_VERY_SLIPPERY_74] = true,
+}
+
+
 -- CAP ACTIONS
 
 function act_tanooki_fly_kak(m)
@@ -339,14 +355,15 @@ hook_mario_action(ACT_KAK_LONG_JUMP, act_kak_long_jump)
 
 function act_isikle_pound(m)
     local e = gStateExtras[m.playerIndex]
-    local stepResult = common_air_action_step(m, ACT_GROUND_POUND_LAND, CHAR_ANIM_GROUND_POUND, AIR_STEP_NONE)
+    local stepResult = common_air_action_step(m, ACT_GROUND_POUND_LAND, CHAR_ANIM_START_HANDSTAND, AIR_STEP_NONE)
     m.marioBodyState.eyeState = MARIO_EYES_DEAD
     if m.actionTimer == 0 then
         m.vel.y = 45
     end
+    m.marioBodyState.handState = MARIO_HAND_PEACE_SIGN
     m.vel.y = m.vel.y - 2
-        e.rotAngle = e.rotAngle + 5000
-    m.marioObj.header.gfx.angle.y = e.rotAngle
+        --e.rotAngle = e.rotAngle + 5000
+    --m.marioObj.header.gfx.angle.y = e.rotAngle
 
     if m.input & INPUT_B_PRESSED ~= 0 and e.canIsikleDrill == true then
         set_mario_action(m, ACT_ISIKLE_DRILL_AIR, 0)
@@ -363,11 +380,12 @@ function act_isikle_hammer_spin(m)
     local stepResult = common_air_action_step(m, ACT_GROUND_POUND_LAND, CHAR_ANIM_FORWARD_SPINNING, AIR_STEP_NONE)
     m.faceAngle.y = m.intendedYaw - approach_s32(limit_angle(m.intendedYaw - m.faceAngle.y), 0, 0x40, 0x40)
     m.marioBodyState.eyeState = MARIO_EYES_DEAD
+
     if m.actionTimer == 0 then
         m.vel.y = 45
         m.forwardVel = 50
     end
-
+    m.marioBodyState.handState = MARIO_HAND_PEACE_SIGN
     if m.input & INPUT_Z_PRESSED ~= 0 then
         set_mario_action(m, ACT_ISIKLE_POUND, 0)
         m.actionTimer = -1
@@ -386,11 +404,17 @@ function act_isikle_drill_air(m)
     m.vel.y = -5
     e.canIsikleDrill = false
 
-    if m.actionTimer > 17 then
+    if m.actionTimer > 17 and (m.flags & MARIO_WING_CAP) == 0 then
         set_mario_action(m, ACT_FREEFALL, 0)
         m.vel.y = 0
     end
 
+    if m.actionTimer > 17 and (m.flags & MARIO_WING_CAP) ~= 0 then
+        set_mario_action(m, ACT_FLYING, 0)
+        m.vel.y = 0
+    end
+
+    m.marioBodyState.handState = MARIO_HAND_PEACE_SIGN
     m.actionTimer = m.actionTimer + 1
 
     e.rotAngle = e.rotAngle + 7000
@@ -791,20 +815,35 @@ function isikle_update(m)
     if m.forwardVel > 20 and m.forwardVel < 27 and m.action == ACT_WALKING then
         m.marioBodyState.torsoAngle.x = -1200
     end
-    if m.forwardVel > 28 and m.action == ACT_WALKING then
+    if m.forwardVel > 28 and m.forwardVel < 33 and m.action == ACT_WALKING then
         m.marioBodyState.torsoAngle.x = 1000
+    end
+    if m.forwardVel > 34 and m.action == ACT_WALKING then
+        
     end
     if m.pos.y == m.floorHeight then
         e.canIsikleDrill = true
+    end
+    if isikleSlipperySurfaces[m.floor.type] == true then
+        m.floor.type = SURFACE_CLASS_DEFAULT
+    end
+    if m.action == ACT_PUNCHING and m.prevAction ~= ACT_CROUCHING then
+        m.marioBodyState.handState = MARIO_HAND_PEACE_SIGN
+    end
+    if m.action == ACT_MOVE_PUNCHING then
+        m.marioBodyState.handState = MARIO_HAND_PEACE_SIGN
+    end
+    if m.action == ACT_GROUND_POUND_LAND and m.prevAction == ACT_ISIKLE_POUND then
+        m.marioBodyState.handState = MARIO_HAND_PEACE_SIGN
     end
 end
 
 function isikle_before_set_action(m, inc)
     local e = gStateExtras[m.playerIndex]
-    if inc == ACT_DIVE and m.input & INPUT_A_DOWN ~= 0 then
+    if inc == ACT_DIVE then
         return ACT_ISIKLE_HAMMER_SPIN
     end
-    if inc == ACT_JUMP_KICK and m.input & INPUT_A_DOWN ~= 0 and m.forwardVel > 5 then
+    if inc == ACT_JUMP_KICK and m.forwardVel > 10 then
         return ACT_ISIKLE_HAMMER_SPIN
     end
     if inc == ACT_GROUND_POUND then
