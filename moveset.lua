@@ -804,7 +804,7 @@ function isikle_before_set_action(m, inc)
     if inc == ACT_DIVE and m.input & INPUT_A_DOWN ~= 0 then
         return ACT_ISIKLE_HAMMER_SPIN
     end
-    if inc == ACT_JUMP_KICK and m.input & INPUT_A_DOWN ~= 0 then
+    if inc == ACT_JUMP_KICK and m.input & INPUT_A_DOWN ~= 0 and m.forwardVel > 5 then
         return ACT_ISIKLE_HAMMER_SPIN
     end
     if inc == ACT_GROUND_POUND then

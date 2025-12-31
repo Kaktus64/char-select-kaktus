@@ -405,6 +405,7 @@ local function on_character_select_load()
     _G.charSelect.character_add_animations(E_MODEL_KAKTUS, ANIMTABLE_KAKTUS)
     _G.charSelect.character_add_menu_instrumental(CT_KAKTUS, KAKTUS_TUNE)
     _G.charSelect.character_add_graffiti(CT_KAKTUS, KAKTUS_ART)
+    _G.charSelect.character_add_nickname(CT_KAKTUS, "Kaktus", false)
 
     _G.charSelect.character_add_caps(E_MODEL_ISIKLE, CAPTABLE_ISIKLE)
     _G.charSelect.character_add_graffiti(CT_ISIKLE, ISIKLE_ART)
@@ -522,32 +523,6 @@ mid-air using the\
 Golden 'Shroom!\
 \nGood luck!"))
 
-charSelect.character_replace_dialog(CT_KAKTUS, DIALOG_017, 1, 4, 30, 200, (
-"I'm the Big Bob-omb, lord\
-of all blasting matter,\
-king of ka-booms the\
-world over!\
-How dare you scale my\
-mountain? By what right\
-do you set foot on my\
-imperial mountaintop?\
-You may have eluded my\
-guards, but you'll never\
-escape my grasp...\
-\
-...and you'll never take\
-away my Power Star. I\
-hereby challenge you,\
-you... Weird cactus guy.\
-If you want the Star I\
-hold, you must prove\
-yourself in battle.\
-\
-Can you pick me up from\
-the back and hurl me to\
-this royal turf? I think\
-that you cannot!"))
-
 charSelect.character_replace_dialog(CT_KAKTUS, DIALOG_005, 1, 3, 30, 200, (
 "Hey, green hat! Bet\
 you can't beat me on\
@@ -629,4 +604,106 @@ leave me alone.\
 Better luck next time,\
 bitch!!!"))
 
+charSelect.character_replace_dialog(CT_KAKTUS, DIALOG_001, 1, 4, 95, 200, (
+"Who are you? Where's the\
+red fatass?... You don't\
+know who that is? Uhh..\
+well.. can you go beat\
+the shit outta the guy\
+at the top of the\
+mountain? He stole our\
+Power Star.\
+..Sure? Nice! By the\
+way, watch out for\
+the enemy Bob-ombs and\
+the water bombs."))
 
+charSelect.character_replace_dialog(CT_KAKTUS, DIALOG_002, 1, 4, 95, 200, (
+"Ey, prickly freak,\
+the pasta-lovin'\
+fat guy hasn't\
+shown up yet, so I\
+presume you're gonna\
+get us our star back?\
+...Yes? well,\
+The Big Bob-omb at the\
+top of the mountain is\
+very powerful--don't let\
+him grab you!"))
+
+charSelect.character_replace_dialog(CT_KAKTUS, DIALOG_017, 1, 4, 30, 200, (
+"I'm the Big Bob-omb, lord\
+of all blast..ing..\
+Wait, who are you?\
+Bowser told me that..\
+this 'Mario' guy\
+should've shown up..\
+and you don't look\
+anything like him.\
+Let me check the\
+Group chat... Oh.\
+So... you showed up and\
+not him. Uhh.. do you\
+still want my Star?\
+...yes? Umm..\
+Well then.. I\
+hereby challenge you..\
+weird.. green thing..\
+If you want the Star I\
+hold, you must prove\
+yourself in battle.\
+Can you pick me up from\
+the back and hurl me to\
+this royal turf? I think\
+that you cannot!"))
+
+charSelect.character_replace_dialog(CT_KAKTUS, DIALOG_116, 1, 1, 95, 200, (
+"FUUUCK!! MY BACK!!"))
+
+charSelect.character_replace_dialog(CT_KAKTUS, DIALOG_014, 1, 4, 30, 200, (
+"Wow! Another Power Star!\
+Kaktus gains nothing\
+from the castle because\
+it doesn't like them.\
+Do you want to Save?\
+\
+//Yeah!!// No."))
+
+charSelect.character_replace_dialog(CT_KAKTUS, DIALOG_114, 1, 5, 95, 200, (
+"Dude, who the fuck are\
+you?? Wheres the fatass?\
+Oh, whatever! I don't\
+care! I just wanna\
+kill someone!"))
+
+charSelect.character_replace_dialog(CT_KAKTUS, DIALOG_115, 1, 3, 95, 200, (
+"OW! ACK!.. Hey, I..\
+apologize about my anger\
+issues. Sorry."))
+
+charSelect.character_replace_dialog(CT_KAKTUS, DIALOG_133, 1, 7, 30, 200, (
+"Hey, you! Uhh.. don't\
+think you live here, but\
+I don't care. Have you\
+seen a 'Mario'? He's\
+about yay high, fat,\
+wearing overalls... No?\
+Alright. Carry on then."))
+
+charSelect.character_replace_dialog(CT_KAKTUS, DIALOG_136, 1, 2, 30, 200, (
+"The paintings show me\
+terrible things."))
+
+charSelect.character_replace_dialog(CT_KAKTUS, DIALOG_076, 1, 6, 30, 200, (
+"The cave's entrance.\
+It's talking to me. I\
+SWEAR I'm not crazy.\
+I SWEAR. It's whispering\
+to me. If you believe me\
+I'll give you a star.\
+You believe me right?\
+RIGHT??"))
+
+charSelect.character_replace_dialog(CT_KAKTUS, DIALOG_082, 1, 2, 30, 200, (
+"Thank you for believing\
+me."))
