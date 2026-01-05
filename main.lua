@@ -460,7 +460,7 @@ local function on_character_select_load()
     --_G.charSelect.character_add_voice(E_MODEL_ISIKLE, VOICETABLE_ISIKLE) -- when voice added
     --_G.charSelect.character_add_animations(E_MODEL_ISIKLE, ANIMTABLE_KAKTUS)
     
-    _G.charSelect.character_set_category(CT_KAKTUS, "DXA")
+    _G.charSelect.character_set_category(CT_KAKTUS, "DXA", true)
     _G.charSelect.character_set_category(CT_KAKTUS, "Squishy Workshop")
     _G.charSelect.character_set_category(CT_ISIKLE, "DXA")
     _G.charSelect.character_set_category(CT_ISIKLE, "Squishy Workshop")
