@@ -1,72 +1,72 @@
-Lights1 kaktus_Bottom_001_lights = gdSPDefLights1(
-	0xE, 0xE, 0xE,
-	0x79, 0x1E, 0x82, 0x28, 0x28, 0x28);
+Lights1 kaktus_tour_Bottom_002_lights = gdSPDefLights1(
+	0x4D, 0x4D, 0x4D,
+	0xA1, 0xA1, 0xA1, 0x28, 0x28, 0x28);
 
-Lights1 kaktus_Sweater__SHIRT__001_lights = gdSPDefLights1(
-	0x39, 0x9, 0x3E,
-	0x79, 0x1E, 0x82, 0x28, 0x28, 0x28);
-
-Lights1 kaktus_Skin__SKIN__001_lights = gdSPDefLights1(
-	0x6C, 0x4B, 0x34,
-	0xDA, 0x9B, 0x70, 0x28, 0x28, 0x28);
-
-Lights1 kaktus_Hat__CAP__001_lights = gdSPDefLights1(
-	0x1A, 0x41, 0x1F,
-	0x3E, 0x89, 0x48, 0x28, 0x28, 0x28);
-
-Lights1 kaktus_Brim__EMBLEM__001_lights = gdSPDefLights1(
-	0x6B, 0x37, 0x1D,
-	0xD8, 0x76, 0x44, 0x28, 0x28, 0x28);
-
-Lights1 kaktus_Hair__HAIR__001_lights = gdSPDefLights1(
-	0x36, 0x1A, 0x17,
-	0x74, 0x3F, 0x39, 0x28, 0x28, 0x28);
-
-Lights1 kaktus_Skin__SKIN__lights = gdSPDefLights1(
-	0x6C, 0x4B, 0x34,
-	0xDA, 0x9B, 0x70, 0x28, 0x28, 0x28);
-
-Lights1 kaktus_Hair__HAIR__lights = gdSPDefLights1(
-	0x36, 0x1A, 0x17,
-	0x74, 0x3F, 0x39, 0x28, 0x28, 0x28);
-
-Lights1 kaktus_Umbrella_2_lights = gdSPDefLights1(
+Lights1 kaktus_tour_f3dlite_material_003_lights = gdSPDefLights1(
 	0x7F, 0x7F, 0x7F,
 	0xFF, 0xFF, 0xFF, 0x28, 0x28, 0x28);
 
-Lights1 kaktus_Umbrella_1_lights = gdSPDefLights1(
-	0x7F, 0x0, 0x1,
-	0xFF, 0x0, 0x3, 0x28, 0x28, 0x28);
-
-Lights1 kaktus_Handle_lights = gdSPDefLights1(
-	0x7F, 0x7F, 0x7F,
-	0xFF, 0xFF, 0xFF, 0x28, 0x28, 0x28);
-
-Lights1 kaktus_Hat__CAP__lights = gdSPDefLights1(
-	0x1A, 0x41, 0x1F,
-	0x3E, 0x89, 0x48, 0x28, 0x28, 0x28);
-
-Lights1 kaktus_Brim__EMBLEM__lights = gdSPDefLights1(
-	0x6B, 0x37, 0x1D,
-	0xD8, 0x76, 0x44, 0x28, 0x28, 0x28);
-
-Lights1 kaktus_Bottom_lights = gdSPDefLights1(
-	0x0, 0x0, 0x0,
-	0x0, 0x0, 0x0, 0x28, 0x28, 0x28);
-
-Lights1 kaktus_Pants__PANTS__001_lights = gdSPDefLights1(
-	0x13, 0x13, 0x20,
-	0x31, 0x31, 0x49, 0x28, 0x28, 0x28);
-
-Lights1 kaktus_f3dlite_material_001_lights = gdSPDefLights1(
-	0x0, 0x0, 0x0,
-	0x31, 0x31, 0x49, 0x28, 0x28, 0x28);
-
-Lights1 kaktus_Shoes__SHOES__001_lights = gdSPDefLights1(
+Lights1 kaktus_tour_Shoes__SHOES__002_lights = gdSPDefLights1(
 	0x6B, 0x0, 0x22,
 	0xD8, 0x0, 0x4D, 0x28, 0x28, 0x28);
 
-Texture kaktus_ball_goldenorange_rgba16[] = {
+Lights1 kaktus_tour_Sweater__SHIRT__002_lights = gdSPDefLights1(
+	0x39, 0x9, 0x3E,
+	0x79, 0x1E, 0x82, 0x28, 0x28, 0x28);
+
+Lights1 kaktus_tour_Skin__SKIN__002_lights = gdSPDefLights1(
+	0x6C, 0x4B, 0x34,
+	0xDA, 0x9B, 0x70, 0x28, 0x28, 0x28);
+
+Lights1 kaktus_tour_Hat__CAP__002_lights = gdSPDefLights1(
+	0x1A, 0x41, 0x1F,
+	0x3E, 0x89, 0x48, 0x28, 0x28, 0x28);
+
+Lights1 kaktus_tour_Brim__EMBLEM__002_lights = gdSPDefLights1(
+	0x6B, 0x37, 0x1D,
+	0xD8, 0x76, 0x44, 0x28, 0x28, 0x28);
+
+Lights1 kaktus_tour_Hair__HAIR__002_lights = gdSPDefLights1(
+	0x36, 0x1A, 0x17,
+	0x74, 0x3F, 0x39, 0x28, 0x28, 0x28);
+
+Lights1 kaktus_tour_Skin__SKIN__lights = gdSPDefLights1(
+	0x6C, 0x4B, 0x34,
+	0xDA, 0x9B, 0x70, 0x28, 0x28, 0x28);
+
+Lights1 kaktus_tour_Hair__HAIR__lights = gdSPDefLights1(
+	0x36, 0x1A, 0x17,
+	0x74, 0x3F, 0x39, 0x28, 0x28, 0x28);
+
+Lights1 kaktus_tour_Pants__PANTS__002_lights = gdSPDefLights1(
+	0x13, 0x13, 0x20,
+	0x31, 0x31, 0x49, 0x28, 0x28, 0x28);
+
+Lights1 kaktus_tour_Umbrella_2_lights = gdSPDefLights1(
+	0x7F, 0x7F, 0x7F,
+	0xFF, 0xFF, 0xFF, 0x28, 0x28, 0x28);
+
+Lights1 kaktus_tour_Umbrella_1_lights = gdSPDefLights1(
+	0x7F, 0x0, 0x1,
+	0xFF, 0x0, 0x3, 0x28, 0x28, 0x28);
+
+Lights1 kaktus_tour_Handle_lights = gdSPDefLights1(
+	0x7F, 0x7F, 0x7F,
+	0xFF, 0xFF, 0xFF, 0x28, 0x28, 0x28);
+
+Lights1 kaktus_tour_Hat__CAP__lights = gdSPDefLights1(
+	0x1A, 0x41, 0x1F,
+	0x3E, 0x89, 0x48, 0x28, 0x28, 0x28);
+
+Lights1 kaktus_tour_Brim__EMBLEM__lights = gdSPDefLights1(
+	0x6B, 0x37, 0x1D,
+	0xD8, 0x76, 0x44, 0x28, 0x28, 0x28);
+
+Lights1 kaktus_tour_Bottom_lights = gdSPDefLights1(
+	0x0, 0x0, 0x0,
+	0x0, 0x0, 0x0, 0x28, 0x28, 0x28);
+
+Texture kaktus_tour_ball_goldenorange_rgba16[] = {
 	0xbc, 0x4f, 0xbc, 0x4f, 0xbc, 0x4f, 0xbc, 0x4f, 
 	0xbc, 0x4f, 0x82, 0xcf, 0x9b, 0x0b, 0xab, 0x4d, 
 	0xb4, 0x0f, 0xc4, 0xd3, 0xd5, 0x57, 0xd5, 0x99, 
@@ -326,7 +326,7 @@ Texture kaktus_ball_goldenorange_rgba16[] = {
 	
 };
 
-Texture kaktus_kaktuseyes1_ia8[] = {
+Texture kaktus_tour_kaktuseyes1_ia8[] = {
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
@@ -458,7 +458,7 @@ Texture kaktus_kaktuseyes1_ia8[] = {
 	
 };
 
-Texture kaktus_flwowerera_ci4[] = {
+Texture kaktus_tour_flwowerera2_ci4[] = {
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
@@ -526,14 +526,14 @@ Texture kaktus_flwowerera_ci4[] = {
 	
 };
 
-Texture kaktus_flwowerera_pal_rgba16[] = {
-	0x00, 0x00, 0x98, 0x03, 0xb0, 0x8f, 0xd1, 0x55, 
-	0xe1, 0xdb, 0xc1, 0x91, 0xda, 0xcb, 0xdb, 0x43, 
+Texture kaktus_tour_flwowerera2_pal_rgba16[] = {
+	0x00, 0x00, 0x18, 0xc9, 0x21, 0x0b, 0x21, 0x0d, 
+	0x31, 0x93, 0xc1, 0x91, 0xda, 0xcb, 0xdb, 0x43, 
 	0xe4, 0x0d, 0xf4, 0x91, 0xcd, 0x09, 0x73, 0x89, 
 	
 };
 
-Texture kaktus_kakspike_ia8[] = {
+Texture kaktus_tour_kakspike_ia8[] = {
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
@@ -569,7 +569,7 @@ Texture kaktus_kakspike_ia8[] = {
 	
 };
 
-Texture kaktus_kakspike_ia8_copy[] = {
+Texture kaktus_tour_kakspike_ia8_copy[] = {
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
@@ -605,7 +605,7 @@ Texture kaktus_kakspike_ia8_copy[] = {
 	
 };
 
-Texture kaktus_texture_7__ia8[] = {
+Texture kaktus_tour_texture_7__ia8[] = {
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
@@ -737,7 +737,7 @@ Texture kaktus_texture_7__ia8[] = {
 	
 };
 
-Texture kaktus_texture_1__ci4[] = {
+Texture kaktus_tour_texture_1__ci4[] = {
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
@@ -805,11 +805,11 @@ Texture kaktus_texture_1__ci4[] = {
 	
 };
 
-Texture kaktus_texture_1__pal_rgba16[] = {
+Texture kaktus_tour_texture_1__pal_rgba16[] = {
 	0x00, 0x00, 0x00, 0x01, 0x30, 0x80, 
 };
 
-Texture kaktus_texture_3__ci4[] = {
+Texture kaktus_tour_texture_3__ci4[] = {
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
@@ -877,12 +877,12 @@ Texture kaktus_texture_3__ci4[] = {
 	
 };
 
-Texture kaktus_texture_3__pal_rgba16[] = {
+Texture kaktus_tour_texture_3__pal_rgba16[] = {
 	0x00, 0x00, 0x30, 0x80, 0x00, 0x01, 0xd6, 0xb5, 
 	0xff, 0xff, 0xff, 0xfe, 
 };
 
-Texture kaktus_texture_6__ci4[] = {
+Texture kaktus_tour_texture_6__ci4[] = {
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
@@ -950,12 +950,12 @@ Texture kaktus_texture_6__ci4[] = {
 	
 };
 
-Texture kaktus_texture_6__pal_rgba16[] = {
+Texture kaktus_tour_texture_6__pal_rgba16[] = {
 	0x00, 0x00, 0x30, 0x80, 0x00, 0x01, 0xd6, 0xb5, 
 	0xff, 0xff, 0xff, 0xfe, 
 };
 
-Texture kaktus_texture_5__ci4[] = {
+Texture kaktus_tour_texture_5__ci4[] = {
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
@@ -1023,12 +1023,12 @@ Texture kaktus_texture_5__ci4[] = {
 	
 };
 
-Texture kaktus_texture_5__pal_rgba16[] = {
+Texture kaktus_tour_texture_5__pal_rgba16[] = {
 	0x00, 0x00, 0x30, 0x80, 0x00, 0x01, 0xd6, 0xb5, 
 	0xaa, 0x8e, 0xff, 0xff, 0xff, 0xfe, 
 };
 
-Texture kaktus_texture_4__ci4[] = {
+Texture kaktus_tour_texture_4__ci4[] = {
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
@@ -1096,12 +1096,12 @@ Texture kaktus_texture_4__ci4[] = {
 	
 };
 
-Texture kaktus_texture_4__pal_rgba16[] = {
+Texture kaktus_tour_texture_4__pal_rgba16[] = {
 	0x00, 0x00, 0x30, 0x80, 0x00, 0x01, 0xd6, 0xb5, 
 	0xff, 0xff, 0xff, 0xfe, 0xaa, 0x8e, 
 };
 
-Texture kaktus_kaktuseyes4_ia8[] = {
+Texture kaktus_tour_kaktuseyes4_ia8[] = {
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
@@ -1233,7 +1233,7 @@ Texture kaktus_kaktuseyes4_ia8[] = {
 	
 };
 
-Texture kaktus_kaktus_wing_ci4[] = {
+Texture kaktus_tour_kaktus_wing_ci4[] = {
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
@@ -1301,11 +1301,11 @@ Texture kaktus_kaktus_wing_ci4[] = {
 	
 };
 
-Texture kaktus_kaktus_wing_pal_rgba16[] = {
+Texture kaktus_tour_kaktus_wing_pal_rgba16[] = {
 	0x00, 0x00, 0x00, 0x01, 
 };
 
-Texture kaktus_brellahandle_rgba16[] = {
+Texture kaktus_tour_brellahandle_rgba16[] = {
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
 	0x00, 0x00, 0x00, 0x00, 0xf6, 0x9f, 0xff, 0xff, 
@@ -1373,7 +1373,7 @@ Texture kaktus_brellahandle_rgba16[] = {
 	
 };
 
-Texture kaktus_flwowerera_ci4_copy[] = {
+Texture kaktus_tour_flwowerera_ci4[] = {
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
@@ -1441,14 +1441,14 @@ Texture kaktus_flwowerera_ci4_copy[] = {
 	
 };
 
-Texture kaktus_flwowerera_pal_rgba16_copy[] = {
+Texture kaktus_tour_flwowerera_pal_rgba16[] = {
 	0x00, 0x00, 0x98, 0x03, 0xb0, 0x8f, 0xd1, 0x55, 
 	0xe1, 0xdb, 0xc1, 0x91, 0xda, 0xcb, 0xdb, 0x43, 
 	0xe4, 0x0d, 0xf4, 0x91, 0xcd, 0x09, 0x73, 0x89, 
 	
 };
 
-Texture kaktus_kakspike_ia8_copy_copy[] = {
+Texture kaktus_tour_kakspike_ia8_copy_copy[] = {
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
@@ -1484,7 +1484,7 @@ Texture kaktus_kakspike_ia8_copy_copy[] = {
 	
 };
 
-Texture kaktus_kakspike_ia8_copy_copy_copy[] = {
+Texture kaktus_tour_kakspike_ia8_copy_copy_copy[] = {
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
@@ -1520,7 +1520,7 @@ Texture kaktus_kakspike_ia8_copy_copy_copy[] = {
 	
 };
 
-Texture kaktus_kaktus_wing_ci4_copy[] = {
+Texture kaktus_tour_kaktus_wing_ci4_copy[] = {
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
@@ -1588,406 +1588,539 @@ Texture kaktus_kaktus_wing_ci4_copy[] = {
 	
 };
 
-Texture kaktus_kaktus_wing_pal_rgba16_copy[] = {
+Texture kaktus_tour_kaktus_wing_pal_rgba16_copy[] = {
 	0x00, 0x00, 0x00, 0x01, 
 };
 
-Vtx kaktus_Butt_mesh_layer_1_vtx_0[11] = {
-	{{{-37, -113, -1}, 0, {752, 506}, {0xB9, 0x97, 0x00, 0xFF}}},
-	{{{-37, -93, 60}, 0, {896, 553}, {0xB9, 0xAB, 0x3E, 0xFF}}},
-	{{{-26, -9, -1}, 0, {903, 752}, {0x81, 0x00, 0x00, 0xFF}}},
-	{{{-37, -41, 98}, 0, {986, 676}, {0xB9, 0xDF, 0x64, 0xFF}}},
-	{{{-37, 23, 98}, 0, {986, 828}, {0xB9, 0x20, 0x64, 0xFF}}},
-	{{{-37, 75, 60}, 0, {896, 951}, {0xB9, 0x55, 0x3E, 0xFF}}},
-	{{{-37, 95, -1}, 0, {752, 998}, {0xB9, 0x69, 0x00, 0xFF}}},
-	{{{-37, 75, -62}, 0, {896, 951}, {0xB9, 0x55, 0xC2, 0xFF}}},
-	{{{-37, 23, -100}, 0, {986, 828}, {0xB9, 0x20, 0x9C, 0xFF}}},
-	{{{-37, -41, -100}, 0, {986, 676}, {0xB9, 0xDF, 0x9C, 0xFF}}},
-	{{{-37, -93, -62}, 0, {896, 553}, {0xB9, 0xAB, 0xC2, 0xFF}}},
+Vtx kaktus_tour_Butt_mesh_layer_1_vtx_0[11] = {
+	{{{-36, -88, 0}, 0, {752, 506}, {0xA9, 0xA4, 0x00, 0xFF}}},
+	{{{-36, -73, 56}, 0, {896, 553}, {0xAF, 0xB2, 0x3B, 0xFF}}},
+	{{{-28, -9, 0}, 0, {903, 752}, {0x81, 0x00, 0x00, 0xFF}}},
+	{{{-36, -33, 84}, 0, {986, 676}, {0xB3, 0xE2, 0x60, 0xFF}}},
+	{{{-36, 16, 84}, 0, {986, 828}, {0xB2, 0x1E, 0x60, 0xFF}}},
+	{{{-36, 55, 56}, 0, {896, 951}, {0xAE, 0x4D, 0x3B, 0xFF}}},
+	{{{-36, 71, 0}, 0, {752, 998}, {0xA8, 0x5C, 0x00, 0xFF}}},
+	{{{-36, 55, -56}, 0, {896, 951}, {0xAE, 0x4D, 0xC5, 0xFF}}},
+	{{{-36, 16, -84}, 0, {986, 828}, {0xB2, 0x1E, 0xA0, 0xFF}}},
+	{{{-36, -33, -84}, 0, {986, 676}, {0xB3, 0xE2, 0xA0, 0xFF}}},
+	{{{-36, -73, -56}, 0, {896, 553}, {0xAF, 0xB2, 0xC5, 0xFF}}},
 };
 
-Gfx kaktus_Butt_mesh_layer_1_tri_0[] = {
-	gsSPVertex(kaktus_Butt_mesh_layer_1_vtx_0 + 0, 11, 0),
+Gfx kaktus_tour_Butt_mesh_layer_1_tri_0[] = {
+	gsSPVertex(kaktus_tour_Butt_mesh_layer_1_vtx_0 + 0, 11, 0),
 	gsSP2Triangles(0, 1, 2, 0, 1, 3, 2, 0),
 	gsSP2Triangles(3, 4, 2, 0, 4, 5, 2, 0),
-	gsSP2Triangles(5, 6, 2, 0, 6, 7, 2, 0),
-	gsSP2Triangles(7, 8, 2, 0, 8, 9, 2, 0),
-	gsSP2Triangles(9, 10, 2, 0, 10, 0, 2, 0),
+	gsSP2Triangles(5, 6, 2, 0, 7, 2, 6, 0),
+	gsSP2Triangles(8, 2, 7, 0, 9, 2, 8, 0),
+	gsSP2Triangles(10, 2, 9, 0, 0, 2, 10, 0),
 	gsSPEndDisplayList(),
 };
 
-Vtx kaktus_Butt_mesh_layer_1_vtx_1[30] = {
-	{{{7, -98, -1}, 0, {240, 568}, {0x29, 0x88, 0x00, 0xFF}}},
-	{{{-37, -113, -1}, 0, {240, 506}, {0xB9, 0x97, 0x00, 0xFF}}},
-	{{{-37, -93, -62}, 0, {384, 553}, {0xB9, 0xAB, 0xC2, 0xFF}}},
-	{{{7, -81, -54}, 0, {312, 653}, {0x29, 0x9F, 0xB9, 0xFF}}},
-	{{{7, -98, -1}, 0, {240, 629}, {0x29, 0x88, 0x00, 0xFF}}},
-	{{{-37, -93, 60}, 0, {384, 553}, {0xB9, 0xAB, 0x3E, 0xFF}}},
-	{{{7, -81, 52}, 0, {348, 603}, {0x29, 0x9F, 0x47, 0xFF}}},
-	{{{7, -81, 52}, 0, {312, 653}, {0x29, 0x9F, 0x47, 0xFF}}},
-	{{{7, -36, 84}, 0, {415, 695}, {0x29, 0xDB, 0x72, 0xFF}}},
-	{{{-37, -41, 98}, 0, {474, 676}, {0xB9, 0xDF, 0x64, 0xFF}}},
-	{{{7, -36, 84}, 0, {357, 714}, {0x29, 0xDB, 0x72, 0xFF}}},
-	{{{7, 19, 84}, 0, {415, 809}, {0x29, 0x25, 0x72, 0xFF}}},
-	{{{-37, 23, 98}, 0, {474, 828}, {0xB9, 0x20, 0x64, 0xFF}}},
-	{{{7, 19, 84}, 0, {357, 790}, {0x29, 0x25, 0x72, 0xFF}}},
-	{{{7, 64, 52}, 0, {348, 901}, {0x29, 0x61, 0x47, 0xFF}}},
-	{{{-37, 75, 60}, 0, {384, 951}, {0xB9, 0x55, 0x3E, 0xFF}}},
-	{{{-37, 95, -1}, 0, {240, 998}, {0xB9, 0x69, 0x00, 0xFF}}},
-	{{{7, 64, 52}, 0, {312, 851}, {0x29, 0x61, 0x47, 0xFF}}},
-	{{{7, 82, -1}, 0, {240, 936}, {0x28, 0x78, 0x00, 0xFF}}},
-	{{{7, 64, -54}, 0, {348, 901}, {0x28, 0x61, 0xB9, 0xFF}}},
-	{{{-37, 75, -62}, 0, {384, 951}, {0xB9, 0x55, 0xC2, 0xFF}}},
-	{{{7, 82, -1}, 0, {240, 875}, {0x28, 0x78, 0x00, 0xFF}}},
-	{{{7, -81, -54}, 0, {348, 603}, {0x29, 0x9F, 0xB9, 0xFF}}},
-	{{{-37, -41, -100}, 0, {474, 676}, {0xB9, 0xDF, 0x9C, 0xFF}}},
-	{{{7, -36, -87}, 0, {357, 714}, {0x29, 0xDB, 0x8E, 0xFF}}},
-	{{{7, -36, -87}, 0, {415, 695}, {0x29, 0xDB, 0x8E, 0xFF}}},
-	{{{-37, 23, -100}, 0, {474, 828}, {0xB9, 0x20, 0x9C, 0xFF}}},
-	{{{7, 19, -87}, 0, {357, 790}, {0x28, 0x25, 0x8E, 0xFF}}},
-	{{{7, 19, -87}, 0, {415, 809}, {0x28, 0x25, 0x8E, 0xFF}}},
-	{{{7, 64, -54}, 0, {312, 851}, {0x28, 0x61, 0xB9, 0xFF}}},
+Vtx kaktus_tour_Butt_mesh_layer_1_vtx_1[31] = {
+	{{{-36, -73, 56}, 0, {384, 553}, {0xAF, 0xB2, 0x3B, 0xFF}}},
+	{{{7, -74, 47}, 0, {312, 653}, {0x08, 0x96, 0x45, 0xFF}}},
+	{{{7, -33, 77}, 0, {415, 695}, {0x15, 0xD8, 0x77, 0xFF}}},
+	{{{-36, -33, 84}, 0, {474, 676}, {0xB3, 0xE2, 0x60, 0xFF}}},
+	{{{7, -89, 0}, 0, {240, 629}, {0x00, 0x81, 0x00, 0xFF}}},
+	{{{7, -74, 47}, 0, {348, 603}, {0x08, 0x96, 0x45, 0xFF}}},
+	{{{-36, -88, 0}, 0, {240, 506}, {0xA9, 0xA4, 0x00, 0xFF}}},
+	{{{-36, -73, -56}, 0, {384, 553}, {0xAF, 0xB2, 0xC5, 0xFF}}},
+	{{{7, -74, -47}, 0, {348, 603}, {0x08, 0x96, 0xBB, 0xFF}}},
+	{{{7, -33, 77}, 0, {357, 714}, {0x15, 0xD8, 0x77, 0xFF}}},
+	{{{7, 17, 77}, 0, {415, 809}, {0x15, 0x28, 0x77, 0xFF}}},
+	{{{-36, 16, 84}, 0, {474, 828}, {0xB2, 0x1E, 0x60, 0xFF}}},
+	{{{7, 17, 77}, 0, {357, 790}, {0x15, 0x28, 0x77, 0xFF}}},
+	{{{7, 57, 47}, 0, {348, 901}, {0x0D, 0x6F, 0x3C, 0xFF}}},
+	{{{-36, 55, 56}, 0, {384, 951}, {0xAE, 0x4D, 0x3B, 0xFF}}},
+	{{{-36, 71, 0}, 0, {240, 998}, {0xA8, 0x5C, 0x00, 0xFF}}},
+	{{{7, 57, 47}, 0, {312, 851}, {0x0D, 0x6F, 0x3C, 0xFF}}},
+	{{{7, 73, 0}, 0, {240, 936}, {0x0E, 0x7E, 0x00, 0xFF}}},
+	{{{7, 57, -47}, 0, {312, 851}, {0x0D, 0x6F, 0xC4, 0xFF}}},
+	{{{-36, 55, -56}, 0, {384, 951}, {0xAE, 0x4D, 0xC5, 0xFF}}},
+	{{{7, 73, 0}, 0, {240, 875}, {0x0E, 0x7E, 0x00, 0xFF}}},
+	{{{54, 49, 40}, 0, {305, 841}, {0x20, 0x76, 0x24, 0xFF}}},
+	{{{54, 49, -40}, 0, {305, 841}, {0x20, 0x76, 0xDC, 0xFF}}},
+	{{{-36, -33, -84}, 0, {474, 676}, {0xB3, 0xE2, 0xA0, 0xFF}}},
+	{{{7, -33, -77}, 0, {415, 695}, {0x15, 0xD8, 0x89, 0xFF}}},
+	{{{7, -74, -47}, 0, {312, 653}, {0x08, 0x96, 0xBB, 0xFF}}},
+	{{{-36, 16, -84}, 0, {474, 828}, {0xB2, 0x1E, 0xA0, 0xFF}}},
+	{{{7, 17, -77}, 0, {415, 809}, {0x15, 0x28, 0x89, 0xFF}}},
+	{{{7, -33, -77}, 0, {357, 714}, {0x15, 0xD8, 0x89, 0xFF}}},
+	{{{7, 57, -47}, 0, {348, 901}, {0x0D, 0x6F, 0xC4, 0xFF}}},
+	{{{7, 17, -77}, 0, {357, 790}, {0x15, 0x28, 0x89, 0xFF}}},
 };
 
-Gfx kaktus_Butt_mesh_layer_1_tri_1[] = {
-	gsSPVertex(kaktus_Butt_mesh_layer_1_vtx_1 + 0, 30, 0),
+Gfx kaktus_tour_Butt_mesh_layer_1_tri_1[] = {
+	gsSPVertex(kaktus_tour_Butt_mesh_layer_1_vtx_1 + 0, 31, 0),
 	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
-	gsSP2Triangles(4, 5, 1, 0, 4, 6, 5, 0),
-	gsSP2Triangles(5, 7, 8, 0, 5, 8, 9, 0),
-	gsSP2Triangles(9, 10, 11, 0, 9, 11, 12, 0),
+	gsSP2Triangles(4, 5, 0, 0, 4, 0, 6, 0),
+	gsSP2Triangles(4, 6, 7, 0, 4, 7, 8, 0),
+	gsSP2Triangles(3, 9, 10, 0, 3, 10, 11, 0),
+	gsSP2Triangles(11, 12, 13, 0, 11, 13, 14, 0),
+	gsSP2Triangles(15, 14, 16, 0, 15, 16, 17, 0),
+	gsSP2Triangles(15, 17, 18, 0, 15, 18, 19, 0),
+	gsSP2Triangles(20, 16, 21, 0, 20, 22, 18, 0),
+	gsSP2Triangles(7, 23, 24, 0, 7, 24, 25, 0),
+	gsSP2Triangles(23, 26, 27, 0, 23, 27, 28, 0),
+	gsSP2Triangles(26, 19, 29, 0, 26, 29, 30, 0),
+	gsSPEndDisplayList(),
+};
+
+Vtx kaktus_tour_Butt_mesh_layer_1_vtx_2[56] = {
+	{{{7, 17, 77}, 0, {415, 809}, {0x81, 0x00, 0x00, 0xFF}}},
+	{{{7, -33, 77}, 0, {357, 714}, {0x81, 0x00, 0x00, 0xFF}}},
+	{{{7, -40, 107}, 0, {357, 714}, {0x81, 0x00, 0x00, 0xFF}}},
+	{{{7, 30, 107}, 0, {415, 809}, {0x81, 0x00, 0x00, 0xFF}}},
+	{{{7, -33, 77}, 0, {415, 695}, {0x81, 0x00, 0x00, 0xFF}}},
+	{{{7, -74, 47}, 0, {312, 653}, {0x81, 0x00, 0x00, 0xFF}}},
+	{{{7, -95, 66}, 0, {312, 653}, {0x81, 0x00, 0x00, 0xFF}}},
+	{{{7, -40, 107}, 0, {415, 695}, {0x81, 0x00, 0x00, 0xFF}}},
+	{{{7, 57, 47}, 0, {348, 901}, {0x81, 0x00, 0x00, 0xFF}}},
+	{{{7, 17, 77}, 0, {357, 790}, {0x81, 0x00, 0x00, 0xFF}}},
+	{{{7, 30, 107}, 0, {357, 790}, {0x81, 0x00, 0x00, 0xFF}}},
+	{{{7, 85, 66}, 0, {348, 901}, {0x81, 0x00, 0x00, 0xFF}}},
+	{{{60, 72, 51}, 0, {303, 839}, {0xF5, 0x40, 0x93, 0xFF}}},
+	{{{54, 49, 40}, 0, {305, 841}, {0xF5, 0x40, 0x93, 0xFF}}},
+	{{{7, 57, 47}, 0, {312, 851}, {0xF5, 0x40, 0x93, 0xFF}}},
+	{{{7, 85, 66}, 0, {312, 851}, {0xF5, 0x40, 0x93, 0xFF}}},
+	{{{7, -74, 47}, 0, {348, 603}, {0x81, 0x00, 0x00, 0xFF}}},
+	{{{7, -117, 0}, 0, {240, 629}, {0x81, 0x00, 0x00, 0xFF}}},
+	{{{7, -95, 66}, 0, {348, 603}, {0x81, 0x00, 0x00, 0xFF}}},
+	{{{7, -89, 0}, 0, {240, 629}, {0x81, 0x00, 0x00, 0xFF}}},
+	{{{7, -74, -47}, 0, {348, 603}, {0x81, 0x00, 0x00, 0xFF}}},
+	{{{7, -95, -66}, 0, {348, 603}, {0x81, 0x00, 0x00, 0xFF}}},
+	{{{7, 30, 107}, 0, {357, 790}, {0x30, 0x24, 0x70, 0xFF}}},
+	{{{60, 72, 51}, 0, {303, 839}, {0x2D, 0x46, 0x60, 0xFF}}},
+	{{{7, 85, 66}, 0, {312, 851}, {0x2D, 0x46, 0x60, 0xFF}}},
+	{{{60, 24, 85}, 0, {342, 785}, {0x30, 0x25, 0x70, 0xFF}}},
+	{{{60, -34, 85}, 0, {342, 719}, {0x30, 0xDB, 0x6F, 0xFF}}},
+	{{{7, -40, 107}, 0, {357, 714}, {0x30, 0xDC, 0x70, 0xFF}}},
+	{{{60, -82, 51}, 0, {303, 665}, {0x2B, 0x9F, 0x45, 0xFF}}},
+	{{{7, -95, 66}, 0, {312, 653}, {0x2C, 0xA1, 0x48, 0xFF}}},
+	{{{7, -117, 0}, 0, {240, 629}, {0x28, 0x88, 0x00, 0xFF}}},
+	{{{60, -100, 0}, 0, {240, 644}, {0x28, 0x88, 0x00, 0xFF}}},
+	{{{60, -82, -51}, 0, {303, 665}, {0x2B, 0x9F, 0xBB, 0xFF}}},
+	{{{7, -95, -66}, 0, {312, 653}, {0x2C, 0xA1, 0xB8, 0xFF}}},
+	{{{7, -40, -107}, 0, {357, 714}, {0x30, 0xDC, 0x90, 0xFF}}},
+	{{{60, -34, -85}, 0, {342, 719}, {0x30, 0xDB, 0x91, 0xFF}}},
+	{{{7, 30, -107}, 0, {357, 790}, {0x30, 0x24, 0x90, 0xFF}}},
+	{{{60, 24, -85}, 0, {342, 785}, {0x30, 0x25, 0x90, 0xFF}}},
+	{{{60, 72, -51}, 0, {303, 839}, {0x2D, 0x46, 0xA0, 0xFF}}},
+	{{{7, 85, -66}, 0, {312, 851}, {0x2D, 0x46, 0xA0, 0xFF}}},
+	{{{7, 17, -77}, 0, {415, 809}, {0x81, 0x00, 0x00, 0xFF}}},
+	{{{7, -40, -107}, 0, {357, 714}, {0x81, 0x00, 0x00, 0xFF}}},
+	{{{7, -33, -77}, 0, {357, 714}, {0x81, 0x00, 0x00, 0xFF}}},
+	{{{7, 30, -107}, 0, {415, 809}, {0x81, 0x00, 0x00, 0xFF}}},
+	{{{7, -33, -77}, 0, {415, 695}, {0x81, 0x00, 0x00, 0xFF}}},
+	{{{7, -40, -107}, 0, {415, 695}, {0x81, 0x00, 0x00, 0xFF}}},
+	{{{7, -95, -66}, 0, {312, 653}, {0x81, 0x00, 0x00, 0xFF}}},
+	{{{7, -74, -47}, 0, {312, 653}, {0x81, 0x00, 0x00, 0xFF}}},
+	{{{7, 57, -47}, 0, {348, 901}, {0x81, 0x00, 0x00, 0xFF}}},
+	{{{7, 85, -66}, 0, {348, 901}, {0x81, 0x00, 0x00, 0xFF}}},
+	{{{7, 30, -107}, 0, {357, 790}, {0x81, 0x00, 0x00, 0xFF}}},
+	{{{7, 17, -77}, 0, {357, 790}, {0x81, 0x00, 0x00, 0xFF}}},
+	{{{60, 72, -51}, 0, {303, 839}, {0xF5, 0x40, 0x6D, 0xFF}}},
+	{{{7, 85, -66}, 0, {312, 851}, {0xF5, 0x40, 0x6D, 0xFF}}},
+	{{{7, 57, -47}, 0, {312, 851}, {0xF5, 0x40, 0x6D, 0xFF}}},
+	{{{54, 49, -40}, 0, {305, 841}, {0xF5, 0x40, 0x6D, 0xFF}}},
+};
+
+Gfx kaktus_tour_Butt_mesh_layer_1_tri_2[] = {
+	gsSPVertex(kaktus_tour_Butt_mesh_layer_1_vtx_2 + 0, 56, 0),
+	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
+	gsSP2Triangles(4, 5, 6, 0, 4, 6, 7, 0),
+	gsSP2Triangles(8, 9, 10, 0, 8, 10, 11, 0),
 	gsSP2Triangles(12, 13, 14, 0, 12, 14, 15, 0),
-	gsSP2Triangles(16, 15, 17, 0, 16, 17, 18, 0),
-	gsSP2Triangles(19, 20, 16, 0, 19, 16, 21, 0),
-	gsSP2Triangles(22, 2, 23, 0, 22, 23, 24, 0),
-	gsSP2Triangles(25, 23, 26, 0, 25, 26, 27, 0),
-	gsSP2Triangles(28, 26, 20, 0, 28, 20, 29, 0),
+	gsSP2Triangles(16, 17, 18, 0, 16, 19, 17, 0),
+	gsSP2Triangles(20, 17, 19, 0, 20, 21, 17, 0),
+	gsSP2Triangles(22, 23, 24, 0, 22, 25, 23, 0),
+	gsSP2Triangles(22, 26, 25, 0, 22, 27, 26, 0),
+	gsSP2Triangles(27, 28, 26, 0, 27, 29, 28, 0),
+	gsSP2Triangles(30, 28, 29, 0, 30, 31, 28, 0),
+	gsSP2Triangles(30, 32, 31, 0, 30, 33, 32, 0),
+	gsSP2Triangles(34, 32, 33, 0, 34, 35, 32, 0),
+	gsSP2Triangles(36, 35, 34, 0, 36, 37, 35, 0),
+	gsSP2Triangles(36, 38, 37, 0, 36, 39, 38, 0),
+	gsSP2Triangles(40, 41, 42, 0, 40, 43, 41, 0),
+	gsSP2Triangles(44, 45, 46, 0, 44, 46, 47, 0),
+	gsSP2Triangles(48, 49, 50, 0, 48, 50, 51, 0),
+	gsSP2Triangles(52, 53, 54, 0, 52, 54, 55, 0),
 	gsSPEndDisplayList(),
 };
 
-Vtx kaktus_Torso_skinned_mesh_layer_1_vtx_0[10] = {
-	{{{7, 19, 84}, 0, {357, 790}, {0x29, 0x25, 0x72, 0xFF}}},
-	{{{7, -36, 84}, 0, {357, 714}, {0x29, 0xDB, 0x72, 0xFF}}},
-	{{{7, -81, 52}, 0, {312, 653}, {0x29, 0x9F, 0x47, 0xFF}}},
-	{{{7, -98, -1}, 0, {240, 629}, {0x29, 0x88, 0x00, 0xFF}}},
-	{{{7, 82, -1}, 0, {240, 875}, {0x28, 0x78, 0x00, 0xFF}}},
-	{{{7, 64, 52}, 0, {312, 851}, {0x29, 0x61, 0x47, 0xFF}}},
-	{{{7, -36, -87}, 0, {357, 714}, {0x29, 0xDB, 0x8E, 0xFF}}},
-	{{{7, 19, -87}, 0, {357, 790}, {0x28, 0x25, 0x8E, 0xFF}}},
-	{{{7, -81, -54}, 0, {312, 653}, {0x29, 0x9F, 0xB9, 0xFF}}},
-	{{{7, 64, -54}, 0, {312, 851}, {0x28, 0x61, 0xB9, 0xFF}}},
+Vtx kaktus_tour_Torso_skinned_mesh_layer_1_vtx_0[13] = {
+	{{{60, 72, 51}, 0, {303, 839}, {0xFC, 0x3A, 0x8F, 0xFF}}},
+	{{{60, 72, 51}, 0, {303, 839}, {0x34, 0x44, 0x5E, 0xFF}}},
+	{{{60, 24, 85}, 0, {342, 785}, {0x36, 0x24, 0x6D, 0xFF}}},
+	{{{60, -34, 85}, 0, {342, 719}, {0x36, 0xDC, 0x6D, 0xFF}}},
+	{{{60, -82, 51}, 0, {303, 665}, {0x38, 0xA4, 0x43, 0xFF}}},
+	{{{60, -100, 0}, 0, {240, 644}, {0x3A, 0x8F, 0x00, 0xFF}}},
+	{{{60, -82, -51}, 0, {303, 665}, {0x38, 0xA4, 0xBD, 0xFF}}},
+	{{{54, 49, 40}, 0, {305, 841}, {0xFC, 0x3A, 0x8F, 0xFF}}},
+	{{{60, 72, -51}, 0, {303, 839}, {0xFC, 0x3A, 0x71, 0xFF}}},
+	{{{54, 49, -40}, 0, {305, 841}, {0xFC, 0x3A, 0x71, 0xFF}}},
+	{{{60, 72, -51}, 0, {303, 839}, {0x34, 0x44, 0xA2, 0xFF}}},
+	{{{60, 24, -85}, 0, {342, 785}, {0x36, 0x24, 0x93, 0xFF}}},
+	{{{60, -34, -85}, 0, {342, 719}, {0x36, 0xDC, 0x93, 0xFF}}},
 };
 
-Gfx kaktus_Torso_skinned_mesh_layer_1_tri_0[] = {
-	gsSPVertex(kaktus_Torso_skinned_mesh_layer_1_vtx_0 + 0, 10, 0),
+Gfx kaktus_tour_Torso_skinned_mesh_layer_1_tri_0[] = {
+	gsSPVertex(kaktus_tour_Torso_skinned_mesh_layer_1_vtx_0 + 0, 13, 0),
 	gsSPEndDisplayList(),
 };
 
-Vtx kaktus_Torso_mesh_layer_1_vtx_0[10] = {
-	{{{82, -19, 33}, 0, {298, 733}, {0x61, 0xE7, 0x4D, 0xFF}}},
-	{{{82, -37, 20}, 0, {276, 702}, {0x61, 0xBE, 0x30, 0xFF}}},
-	{{{82, -44, -1}, 0, {240, 691}, {0x61, 0xAF, 0x00, 0xFF}}},
-	{{{82, -37, -22}, 0, {276, 702}, {0x61, 0xBE, 0xD0, 0xFF}}},
-	{{{82, -19, -35}, 0, {298, 733}, {0x61, 0xE7, 0xB3, 0xFF}}},
-	{{{82, 3, -35}, 0, {298, 771}, {0x62, 0x1A, 0xB3, 0xFF}}},
-	{{{82, 21, -22}, 0, {276, 802}, {0x60, 0x43, 0xCF, 0xFF}}},
-	{{{82, 27, -1}, 0, {240, 813}, {0x62, 0x51, 0x00, 0xFF}}},
-	{{{82, 21, 20}, 0, {276, 802}, {0x60, 0x43, 0x31, 0xFF}}},
-	{{{82, 3, 33}, 0, {298, 771}, {0x62, 0x1A, 0x4D, 0xFF}}},
+Vtx kaktus_tour_Torso_skinned_mesh_layer_1_vtx_1[3] = {
+	{{{54, 49, 40}, 0, {305, 841}, {0x20, 0x76, 0x24, 0xFF}}},
+	{{{7, 73, 0}, 0, {240, 875}, {0x0E, 0x7E, 0x00, 0xFF}}},
+	{{{54, 49, -40}, 0, {305, 841}, {0x20, 0x76, 0xDC, 0xFF}}},
 };
 
-Gfx kaktus_Torso_mesh_layer_1_tri_0[] = {
-	gsSPVertex(kaktus_Torso_mesh_layer_1_vtx_0 + 0, 10, 10),
-	gsSP2Triangles(0, 1, 10, 0, 1, 11, 10, 0),
-	gsSP2Triangles(1, 2, 11, 0, 3, 11, 2, 0),
-	gsSP2Triangles(3, 12, 11, 0, 13, 12, 3, 0),
-	gsSP2Triangles(13, 3, 8, 0, 14, 13, 8, 0),
-	gsSP2Triangles(14, 8, 6, 0, 14, 6, 7, 0),
-	gsSP2Triangles(14, 7, 15, 0, 16, 15, 7, 0),
-	gsSP2Triangles(16, 7, 9, 0, 4, 16, 9, 0),
-	gsSP2Triangles(4, 17, 16, 0, 4, 18, 17, 0),
-	gsSP2Triangles(4, 5, 18, 0, 0, 18, 5, 0),
-	gsSP2Triangles(0, 19, 18, 0, 0, 10, 19, 0),
+Gfx kaktus_tour_Torso_skinned_mesh_layer_1_tri_1[] = {
+	gsSPVertex(kaktus_tour_Torso_skinned_mesh_layer_1_vtx_1 + 0, 3, 13),
 	gsSPEndDisplayList(),
 };
 
-Vtx kaktus_Torso_mesh_layer_1_vtx_1[11] = {
-	{{{82, 3, 33}, 0, {298, 771}, {0x62, 0x1A, 0x4D, 0xFF}}},
-	{{{82, -19, 33}, 0, {298, 733}, {0x61, 0xE7, 0x4D, 0xFF}}},
-	{{{82, -8, -1}, 0, {278, 752}, {0x7F, 0x01, 0x00, 0xFF}}},
-	{{{82, -37, 20}, 0, {276, 702}, {0x61, 0xBE, 0x30, 0xFF}}},
-	{{{82, -44, -1}, 0, {240, 691}, {0x61, 0xAF, 0x00, 0xFF}}},
-	{{{82, -37, -22}, 0, {276, 702}, {0x61, 0xBE, 0xD0, 0xFF}}},
-	{{{82, -19, -35}, 0, {298, 733}, {0x61, 0xE7, 0xB3, 0xFF}}},
-	{{{82, 3, -35}, 0, {298, 771}, {0x62, 0x1A, 0xB3, 0xFF}}},
-	{{{82, 21, -22}, 0, {276, 802}, {0x60, 0x43, 0xCF, 0xFF}}},
-	{{{82, 27, -1}, 0, {240, 813}, {0x62, 0x51, 0x00, 0xFF}}},
-	{{{82, 21, 20}, 0, {276, 802}, {0x60, 0x43, 0x31, 0xFF}}},
+Vtx kaktus_tour_Torso_mesh_layer_1_vtx_0[13] = {
+	{{{82, 9, 42}, 0, {298, 771}, {0x36, 0x23, 0x6E, 0xFF}}},
+	{{{82, 31, 26}, 0, {276, 802}, {0x34, 0x44, 0x5E, 0xFF}}},
+	{{{82, -19, 42}, 0, {298, 733}, {0x36, 0xDD, 0x6D, 0xFF}}},
+	{{{82, -41, 26}, 0, {276, 702}, {0x38, 0xA5, 0x45, 0xFF}}},
+	{{{82, -49, 0}, 0, {240, 691}, {0x3A, 0x8F, 0x00, 0xFF}}},
+	{{{82, -41, -26}, 0, {276, 702}, {0x38, 0xA5, 0xBB, 0xFF}}},
+	{{{82, -19, -42}, 0, {298, 733}, {0x36, 0xDD, 0x93, 0xFF}}},
+	{{{82, 9, -42}, 0, {298, 771}, {0x36, 0x23, 0x92, 0xFF}}},
+	{{{82, 31, -26}, 0, {276, 802}, {0x34, 0x44, 0xA2, 0xFF}}},
+	{{{47, 31, 27}, 0, {285, 814}, {0xFC, 0x3A, 0x8F, 0xFF}}},
+	{{{82, 31, 26}, 0, {276, 802}, {0xFC, 0x3A, 0x8F, 0xFF}}},
+	{{{82, 31, -26}, 0, {276, 802}, {0xFC, 0x3A, 0x71, 0xFF}}},
+	{{{47, 31, -27}, 0, {285, 814}, {0xFC, 0x3A, 0x71, 0xFF}}},
 };
 
-Gfx kaktus_Torso_mesh_layer_1_tri_1[] = {
-	gsSPVertex(kaktus_Torso_mesh_layer_1_vtx_1 + 0, 11, 0),
-	gsSP2Triangles(0, 1, 2, 0, 1, 3, 2, 0),
-	gsSP2Triangles(3, 4, 2, 0, 4, 5, 2, 0),
-	gsSP2Triangles(5, 6, 2, 0, 6, 7, 2, 0),
-	gsSP2Triangles(7, 8, 2, 0, 8, 9, 2, 0),
-	gsSP2Triangles(9, 10, 2, 0, 10, 0, 2, 0),
+Gfx kaktus_tour_Torso_mesh_layer_1_tri_0[] = {
+	gsSPVertex(kaktus_tour_Torso_mesh_layer_1_vtx_0 + 0, 13, 16),
+	gsSP2Triangles(16, 17, 1, 0, 16, 1, 2, 0),
+	gsSP2Triangles(18, 16, 2, 0, 18, 2, 3, 0),
+	gsSP2Triangles(19, 18, 3, 0, 19, 3, 4, 0),
+	gsSP2Triangles(20, 19, 4, 0, 20, 4, 5, 0),
+	gsSP2Triangles(20, 5, 6, 0, 20, 6, 21, 0),
+	gsSP2Triangles(21, 6, 12, 0, 21, 12, 22, 0),
+	gsSP2Triangles(22, 12, 11, 0, 22, 11, 23, 0),
+	gsSP2Triangles(23, 11, 10, 0, 23, 10, 24, 0),
+	gsSP2Triangles(25, 7, 0, 0, 25, 0, 26, 0),
+	gsSP2Triangles(27, 8, 9, 0, 27, 9, 28, 0),
 	gsSPEndDisplayList(),
 };
 
-Vtx kaktus_Torso_mesh_layer_1_vtx_2[82] = {
-	{{{83, -40, 60}, 0, {581, 325}, {0x7D, 0x00, 0x16, 0xFF}}},
-	{{{94, -8, -1}, 0, {496, 155}, {0x7F, 0x0B, 0x00, 0xFF}}},
+Vtx kaktus_tour_Torso_mesh_layer_1_vtx_1[3] = {
+	{{{34, 44, 0}, 0, {240, 833}, {0x26, 0x79, 0x00, 0xFF}}},
+	{{{47, 31, 27}, 0, {285, 814}, {0x26, 0x73, 0x25, 0xFF}}},
+	{{{47, 31, -27}, 0, {285, 814}, {0x26, 0x73, 0xDB, 0xFF}}},
+};
+
+Gfx kaktus_tour_Torso_mesh_layer_1_tri_1[] = {
+	gsSPVertex(kaktus_tour_Torso_mesh_layer_1_vtx_1 + 0, 3, 16),
+	gsSP2Triangles(16, 13, 17, 0, 16, 14, 13, 0),
+	gsSP2Triangles(16, 15, 14, 0, 16, 18, 15, 0),
+	gsSPEndDisplayList(),
+};
+
+Vtx kaktus_tour_Torso_mesh_layer_1_vtx_2[17] = {
+	{{{34, 44, 0}, 0, {240, 833}, {0x26, 0x79, 0x00, 0xFF}}},
+	{{{47, 31, 27}, 0, {285, 814}, {0x26, 0x73, 0x25, 0xFF}}},
+	{{{82, 21, 20}, 0, {276, 802}, {0x29, 0x72, 0x27, 0xFF}}},
+	{{{82, 27, 0}, 0, {240, 813}, {0x2B, 0x77, 0x00, 0xFF}}},
+	{{{82, 21, -20}, 0, {276, 802}, {0x29, 0x72, 0xD9, 0xFF}}},
+	{{{47, 31, -27}, 0, {285, 814}, {0x26, 0x73, 0xDB, 0xFF}}},
+	{{{82, 3, 33}, 0, {298, 771}, {0x7F, 0x01, 0xFF, 0xFF}}},
+	{{{82, -19, 33}, 0, {298, 733}, {0x7F, 0x00, 0x00, 0xFF}}},
+	{{{82, -8, 0}, 0, {278, 752}, {0x7F, 0x01, 0x00, 0xFF}}},
+	{{{82, -37, 20}, 0, {276, 702}, {0x7F, 0x00, 0x00, 0xFF}}},
+	{{{82, -44, 0}, 0, {240, 691}, {0x7F, 0x00, 0x00, 0xFF}}},
+	{{{82, -37, -20}, 0, {276, 702}, {0x7F, 0x00, 0x00, 0xFF}}},
+	{{{82, -19, -33}, 0, {298, 733}, {0x7F, 0x00, 0x00, 0xFF}}},
+	{{{82, 3, -33}, 0, {298, 771}, {0x7F, 0x01, 0x01, 0xFF}}},
+	{{{82, 21, -20}, 0, {276, 802}, {0x7F, 0x01, 0xFF, 0xFF}}},
+	{{{82, 27, 0}, 0, {240, 813}, {0x7F, 0x00, 0x00, 0xFF}}},
+	{{{82, 21, 20}, 0, {276, 802}, {0x7F, 0x01, 0x01, 0xFF}}},
+};
+
+Gfx kaktus_tour_Torso_mesh_layer_1_tri_2[] = {
+	gsSPVertex(kaktus_tour_Torso_mesh_layer_1_vtx_2 + 0, 17, 0),
+	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
+	gsSP2Triangles(0, 3, 4, 0, 0, 4, 5, 0),
+	gsSP2Triangles(6, 7, 8, 0, 7, 9, 8, 0),
+	gsSP2Triangles(9, 10, 8, 0, 11, 8, 10, 0),
+	gsSP2Triangles(12, 8, 11, 0, 13, 8, 12, 0),
+	gsSP2Triangles(14, 8, 13, 0, 15, 8, 14, 0),
+	gsSP2Triangles(15, 16, 8, 0, 16, 6, 8, 0),
+	gsSPEndDisplayList(),
+};
+
+Vtx kaktus_tour_Torso_mesh_layer_1_vtx_3[24] = {
+	{{{82, 31, 26}, 0, {276, 802}, {0xFC, 0x3A, 0x8F, 0xFF}}},
+	{{{82, 21, 20}, 0, {276, 802}, {0xFC, 0x3A, 0x8F, 0xFF}}},
+	{{{47, 31, 27}, 0, {285, 814}, {0xFC, 0x3A, 0x8F, 0xFF}}},
+	{{{47, 31, -27}, 0, {285, 814}, {0xFC, 0x3A, 0x71, 0xFF}}},
+	{{{82, 21, -20}, 0, {276, 802}, {0xFC, 0x3A, 0x71, 0xFF}}},
+	{{{82, 31, -26}, 0, {276, 802}, {0xFC, 0x3A, 0x71, 0xFF}}},
+	{{{82, 3, 33}, 0, {298, 771}, {0x7F, 0x01, 0xFF, 0xFF}}},
+	{{{82, 21, 20}, 0, {276, 802}, {0x7F, 0x02, 0xFE, 0xFF}}},
+	{{{82, 31, 26}, 0, {276, 802}, {0x7F, 0x02, 0xFE, 0xFF}}},
+	{{{82, 9, 42}, 0, {298, 771}, {0x7F, 0x01, 0xFF, 0xFF}}},
+	{{{82, -19, 33}, 0, {298, 733}, {0x7F, 0x00, 0x00, 0xFF}}},
+	{{{82, -19, 42}, 0, {298, 733}, {0x7F, 0x00, 0x00, 0xFF}}},
+	{{{82, -37, 20}, 0, {276, 702}, {0x7F, 0x00, 0x00, 0xFF}}},
+	{{{82, -41, 26}, 0, {276, 702}, {0x7F, 0x00, 0x00, 0xFF}}},
+	{{{82, -44, 0}, 0, {240, 691}, {0x7F, 0x00, 0x00, 0xFF}}},
+	{{{82, -49, 0}, 0, {240, 691}, {0x7F, 0x00, 0x00, 0xFF}}},
+	{{{82, -41, -26}, 0, {276, 702}, {0x7F, 0x00, 0x00, 0xFF}}},
+	{{{82, -37, -20}, 0, {276, 702}, {0x7F, 0x00, 0x00, 0xFF}}},
+	{{{82, -19, -42}, 0, {298, 733}, {0x7F, 0x00, 0x00, 0xFF}}},
+	{{{82, -19, -33}, 0, {298, 733}, {0x7F, 0x00, 0x00, 0xFF}}},
+	{{{82, 9, -42}, 0, {298, 771}, {0x7F, 0x01, 0x01, 0xFF}}},
+	{{{82, 3, -33}, 0, {298, 771}, {0x7F, 0x01, 0x01, 0xFF}}},
+	{{{82, 31, -26}, 0, {276, 802}, {0x7F, 0x02, 0x02, 0xFF}}},
+	{{{82, 21, -20}, 0, {276, 802}, {0x7F, 0x02, 0x02, 0xFF}}},
+};
+
+Gfx kaktus_tour_Torso_mesh_layer_1_tri_3[] = {
+	gsSPVertex(kaktus_tour_Torso_mesh_layer_1_vtx_3 + 0, 24, 0),
+	gsSP2Triangles(0, 1, 2, 0, 3, 4, 5, 0),
+	gsSP2Triangles(6, 7, 8, 0, 6, 8, 9, 0),
+	gsSP2Triangles(10, 6, 9, 0, 10, 9, 11, 0),
+	gsSP2Triangles(12, 10, 11, 0, 12, 11, 13, 0),
+	gsSP2Triangles(14, 12, 13, 0, 14, 13, 15, 0),
+	gsSP2Triangles(14, 15, 16, 0, 14, 16, 17, 0),
+	gsSP2Triangles(17, 16, 18, 0, 17, 18, 19, 0),
+	gsSP2Triangles(19, 18, 20, 0, 19, 20, 21, 0),
+	gsSP2Triangles(21, 20, 22, 0, 21, 22, 23, 0),
+	gsSPEndDisplayList(),
+};
+
+Vtx kaktus_tour_Torso_mesh_layer_1_vtx_4[57] = {
+	{{{83, -40, 60}, 0, {581, 325}, {0x7D, 0x00, 0x17, 0xFF}}},
+	{{{94, -8, 0}, 0, {496, 155}, {0x7A, 0x24, 0x00, 0xFF}}},
 	{{{80, -5, 70}, 0, {496, 325}, {0x7C, 0x0D, 0x19, 0xFF}}},
-	{{{94, -8, -1}, 0, {411, 155}, {0x7F, 0x0B, 0x00, 0xFF}}},
+	{{{94, -8, 0}, 0, {411, 155}, {0x7A, 0x24, 0x00, 0xFF}}},
 	{{{76, 30, 60}, 0, {411, 325}, {0x7B, 0x19, 0x15, 0xFF}}},
-	{{{94, -8, -1}, 0, {667, 155}, {0x7F, 0x0B, 0x00, 0xFF}}},
-	{{{86, -66, -36}, 0, {667, 325}, {0x7E, 0xF6, 0xF3, 0xFF}}},
-	{{{83, -40, -62}, 0, {581, 325}, {0x7D, 0x00, 0xEA, 0xFF}}},
 	{{{86, -66, 34}, 0, {667, 325}, {0x7E, 0xF6, 0x0D, 0xFF}}},
-	{{{94, -8, -1}, 0, {581, 155}, {0x7F, 0x0B, 0x00, 0xFF}}},
-	{{{94, -8, -1}, 0, {325, 155}, {0x7F, 0x0B, 0x00, 0xFF}}},
-	{{{73, 56, 34}, 0, {325, 325}, {0x7A, 0x21, 0x0C, 0xFF}}},
-	{{{76, 30, -62}, 0, {411, 325}, {0x7B, 0x19, 0xEB, 0xFF}}},
-	{{{73, 56, -36}, 0, {325, 325}, {0x7A, 0x21, 0xF4, 0xFF}}},
-	{{{80, -5, -72}, 0, {496, 325}, {0x7C, 0x0D, 0xE7, 0xFF}}},
-	{{{73, 66, -1}, 0, {240, 325}, {0x7A, 0x24, 0x00, 0xFF}}},
-	{{{94, -8, -1}, 0, {752, 155}, {0x7F, 0x0B, 0x00, 0xFF}}},
-	{{{87, -75, -1}, 0, {752, 325}, {0x7E, 0xF2, 0x00, 0xFF}}},
-	{{{94, -8, -1}, 0, {240, 155}, {0x7F, 0x0B, 0x00, 0xFF}}},
-	{{{57, -8, -1}, 0, {325, 837}, {0x82, 0xF3, 0x00, 0xFF}}},
-	{{{46, 53, 34}, 0, {325, 667}, {0x83, 0xEC, 0xFC, 0xFF}}},
-	{{{45, 63, -1}, 0, {240, 667}, {0x83, 0xEB, 0x00, 0xFF}}},
-	{{{53, -8, -72}, 0, {496, 667}, {0x82, 0xF3, 0x09, 0xFF}}},
-	{{{56, -43, -62}, 0, {581, 667}, {0x82, 0xF8, 0x07, 0xFF}}},
-	{{{57, -8, -1}, 0, {496, 837}, {0x82, 0xF3, 0x00, 0xFF}}},
-	{{{57, -8, -1}, 0, {667, 837}, {0x82, 0xF3, 0x00, 0xFF}}},
-	{{{59, -69, -36}, 0, {667, 667}, {0x81, 0xFB, 0x04, 0xFF}}},
-	{{{60, -78, -1}, 0, {752, 667}, {0x81, 0xFC, 0x00, 0xFF}}},
-	{{{46, 53, -36}, 0, {325, 667}, {0x83, 0xEC, 0x04, 0xFF}}},
-	{{{57, -8, -1}, 0, {240, 837}, {0x82, 0xF3, 0x00, 0xFF}}},
-	{{{57, -8, -1}, 0, {411, 837}, {0x82, 0xF3, 0x00, 0xFF}}},
-	{{{49, 28, -62}, 0, {411, 667}, {0x82, 0xEF, 0x07, 0xFF}}},
-	{{{57, -8, -1}, 0, {581, 837}, {0x82, 0xF3, 0x00, 0xFF}}},
+	{{{94, -8, 0}, 0, {581, 155}, {0x7A, 0x24, 0x00, 0xFF}}},
+	{{{86, -66, -34}, 0, {667, 325}, {0x7E, 0xF6, 0xF3, 0xFF}}},
+	{{{83, -40, -60}, 0, {581, 325}, {0x7D, 0x00, 0xE9, 0xFF}}},
+	{{{80, -5, -70}, 0, {496, 325}, {0x7C, 0x0D, 0xE7, 0xFF}}},
+	{{{76, 30, -60}, 0, {411, 325}, {0x7B, 0x19, 0xEB, 0xFF}}},
+	{{{57, -8, 0}, 0, {667, 837}, {0x84, 0x1C, 0x00, 0xFF}}},
 	{{{59, -69, 34}, 0, {667, 667}, {0x81, 0xFB, 0xFC, 0xFF}}},
-	{{{56, -43, 60}, 0, {581, 667}, {0x99, 0xD4, 0x3B, 0xFF}}},
-	{{{57, -8, -1}, 0, {752, 837}, {0x82, 0xF3, 0x00, 0xFF}}},
-	{{{49, 28, 60}, 0, {411, 667}, {0x82, 0xEF, 0xF9, 0xFF}}},
+	{{{56, -43, 60}, 0, {581, 667}, {0x98, 0xD4, 0x3B, 0xFF}}},
+	{{{57, -8, 0}, 0, {496, 837}, {0x84, 0x1C, 0x00, 0xFF}}},
 	{{{53, -8, 70}, 0, {496, 667}, {0x95, 0xF5, 0x44, 0xFF}}},
-	{{{66, -6, 78}, 0, {496, 496}, {0x00, 0x00, 0x7F, 0xFF}}},
-	{{{70, -45, 67}, 0, {581, 496}, {0x06, 0xC1, 0x6E, 0xFF}}},
-	{{{59, -69, 34}, 0, {667, 667}, {0xCA, 0x9B, 0x37, 0xFF}}},
+	{{{49, 28, 60}, 0, {411, 667}, {0x82, 0xEF, 0xF9, 0xFF}}},
+	{{{56, -43, -60}, 0, {581, 667}, {0x98, 0xD4, 0xC5, 0xFF}}},
+	{{{59, -69, -34}, 0, {667, 667}, {0x81, 0xFB, 0x04, 0xFF}}},
+	{{{49, 28, -60}, 0, {411, 667}, {0x82, 0xEF, 0x07, 0xFF}}},
+	{{{53, -8, -70}, 0, {496, 667}, {0x95, 0xF5, 0xBC, 0xFF}}},
+	{{{94, -8, 0}, 0, {325, 155}, {0x7A, 0x24, 0x00, 0xFF}}},
+	{{{73, 56, 34}, 0, {325, 325}, {0x4A, 0x62, 0xE2, 0xFF}}},
+	{{{59, 61, 38}, 0, {325, 496}, {0xF6, 0x7F, 0xFD, 0xFF}}},
+	{{{46, 53, 34}, 0, {325, 667}, {0x9F, 0x4B, 0xDE, 0xFF}}},
+	{{{57, -8, 0}, 0, {411, 837}, {0x84, 0x1C, 0x00, 0xFF}}},
+	{{{59, 61, -38}, 0, {325, 496}, {0xF6, 0x7F, 0x03, 0xFF}}},
+	{{{73, 56, -34}, 0, {325, 325}, {0x4A, 0x62, 0x1E, 0xFF}}},
+	{{{62, 33, -67}, 0, {411, 496}, {0xFA, 0x3F, 0x92, 0xFF}}},
+	{{{46, 53, -34}, 0, {325, 667}, {0x9F, 0x4B, 0x22, 0xFF}}},
+	{{{49, 28, -60}, 0, {411, 667}, {0xBB, 0x30, 0xA1, 0xFF}}},
+	{{{66, -6, -78}, 0, {496, 496}, {0x00, 0x00, 0x81, 0xFF}}},
+	{{{80, -5, -70}, 0, {496, 325}, {0x3F, 0x06, 0x92, 0xFF}}},
+	{{{76, 30, -60}, 0, {411, 325}, {0x3A, 0x3D, 0xA1, 0xFF}}},
+	{{{70, -45, -67}, 0, {581, 496}, {0x06, 0xC1, 0x92, 0xFF}}},
+	{{{59, -69, -34}, 0, {667, 667}, {0xCA, 0x9B, 0xC9, 0xFF}}},
+	{{{73, -74, -38}, 0, {667, 496}, {0x0B, 0x93, 0xC0, 0xFF}}},
+	{{{86, -66, -34}, 0, {667, 325}, {0x49, 0xA8, 0xC9, 0xFF}}},
+	{{{83, -40, -60}, 0, {581, 325}, {0x45, 0xD0, 0xA1, 0xFF}}},
+	{{{87, -75, 0}, 0, {752, 325}, {0x4A, 0x99, 0x00, 0xFF}}},
+	{{{74, -84, 0}, 0, {752, 496}, {0x0D, 0x82, 0x00, 0xFF}}},
 	{{{73, -74, 38}, 0, {667, 496}, {0x0B, 0x93, 0x40, 0xFF}}},
-	{{{60, -78, -1}, 0, {752, 667}, {0xCC, 0x8C, 0x00, 0xFF}}},
-	{{{74, -84, -1}, 0, {752, 496}, {0x0D, 0x82, 0x00, 0xFF}}},
-	{{{73, -74, -40}, 0, {667, 496}, {0x0B, 0x93, 0xC0, 0xFF}}},
-	{{{59, -69, -36}, 0, {667, 667}, {0xCA, 0x9B, 0xC9, 0xFF}}},
-	{{{70, -45, -69}, 0, {581, 496}, {0x06, 0xC1, 0x92, 0xFF}}},
-	{{{56, -43, -62}, 0, {581, 667}, {0xC6, 0xC3, 0xA1, 0xFF}}},
-	{{{66, -6, -80}, 0, {496, 496}, {0x00, 0x00, 0x81, 0xFF}}},
-	{{{53, -8, -72}, 0, {496, 667}, {0xC1, 0xFA, 0x92, 0xFF}}},
-	{{{49, 28, -62}, 0, {411, 667}, {0xBB, 0x30, 0xA1, 0xFF}}},
-	{{{62, 33, -69}, 0, {411, 496}, {0xFA, 0x3F, 0x92, 0xFF}}},
-	{{{46, 53, -36}, 0, {325, 667}, {0xB7, 0x58, 0xC9, 0xFF}}},
-	{{{59, 61, -40}, 0, {325, 496}, {0xF5, 0x6D, 0xC0, 0xFF}}},
-	{{{58, 72, -1}, 0, {240, 496}, {0xF3, 0x7E, 0x00, 0xFF}}},
-	{{{45, 63, -1}, 0, {240, 667}, {0xB6, 0x67, 0x00, 0xFF}}},
-	{{{46, 53, 34}, 0, {325, 667}, {0xB7, 0x58, 0x37, 0xFF}}},
-	{{{59, 61, 38}, 0, {325, 496}, {0xF5, 0x6D, 0x40, 0xFF}}},
-	{{{62, 33, 67}, 0, {411, 496}, {0xFA, 0x3F, 0x6E, 0xFF}}},
-	{{{49, 28, 60}, 0, {411, 667}, {0xBB, 0x30, 0x5F, 0xFF}}},
-	{{{80, -5, 70}, 0, {496, 325}, {0x3F, 0x06, 0x6E, 0xFF}}},
-	{{{83, -40, 60}, 0, {581, 325}, {0x45, 0xD0, 0x5F, 0xFF}}},
 	{{{86, -66, 34}, 0, {667, 325}, {0x49, 0xA8, 0x37, 0xFF}}},
-	{{{87, -75, -1}, 0, {752, 325}, {0x4A, 0x99, 0x00, 0xFF}}},
-	{{{73, -74, -40}, 0, {667, 496}, {0x0B, 0x93, 0xC0, 0xFF}}},
-	{{{86, -66, -36}, 0, {667, 325}, {0x49, 0xA8, 0xC9, 0xFF}}},
-	{{{87, -75, -1}, 0, {752, 325}, {0x4A, 0x99, 0x00, 0xFF}}},
-	{{{70, -45, -69}, 0, {581, 496}, {0x06, 0xC1, 0x92, 0xFF}}},
-	{{{83, -40, -62}, 0, {581, 325}, {0x45, 0xD0, 0xA1, 0xFF}}},
-	{{{80, -5, -72}, 0, {496, 325}, {0x3F, 0x06, 0x92, 0xFF}}},
-	{{{66, -6, -80}, 0, {496, 496}, {0x00, 0x00, 0x81, 0xFF}}},
-	{{{76, 30, -62}, 0, {411, 325}, {0x3A, 0x3D, 0xA1, 0xFF}}},
-	{{{62, 33, -69}, 0, {411, 496}, {0xFA, 0x3F, 0x92, 0xFF}}},
-	{{{73, 56, -36}, 0, {325, 325}, {0x36, 0x65, 0xC9, 0xFF}}},
-	{{{59, 61, -40}, 0, {325, 496}, {0xF5, 0x6D, 0xC0, 0xFF}}},
-	{{{73, 66, -1}, 0, {240, 325}, {0x34, 0x74, 0x00, 0xFF}}},
-	{{{58, 72, -1}, 0, {240, 496}, {0xF3, 0x7E, 0x00, 0xFF}}},
-	{{{73, 56, 34}, 0, {325, 325}, {0x36, 0x65, 0x37, 0xFF}}},
-	{{{59, 61, 38}, 0, {325, 496}, {0xF5, 0x6D, 0x40, 0xFF}}},
+	{{{70, -45, 67}, 0, {581, 496}, {0x06, 0xC1, 0x6E, 0xFF}}},
+	{{{83, -40, 60}, 0, {581, 325}, {0x45, 0xD0, 0x5F, 0xFF}}},
+	{{{80, -5, 70}, 0, {496, 325}, {0x3F, 0x06, 0x6E, 0xFF}}},
+	{{{66, -6, 78}, 0, {496, 496}, {0x00, 0x00, 0x7F, 0xFF}}},
 	{{{62, 33, 67}, 0, {411, 496}, {0xFA, 0x3F, 0x6E, 0xFF}}},
 	{{{76, 30, 60}, 0, {411, 325}, {0x3A, 0x3D, 0x5F, 0xFF}}},
-	{{{80, -5, 70}, 0, {496, 325}, {0x3F, 0x06, 0x6E, 0xFF}}},
+	{{{49, 28, 60}, 0, {411, 667}, {0xBB, 0x30, 0x5F, 0xFF}}},
+	{{{57, -8, 0}, 0, {581, 837}, {0x84, 0x1C, 0x00, 0xFF}}},
+	{{{59, -69, 34}, 0, {667, 667}, {0xCA, 0x9B, 0x37, 0xFF}}},
+	{{{60, -78, 0}, 0, {752, 667}, {0xCC, 0x8C, 0x00, 0xFF}}},
+	{{{87, -75, 0}, 0, {752, 325}, {0x7E, 0xF2, 0x00, 0xFF}}},
+	{{{94, -8, 0}, 0, {667, 155}, {0x7A, 0x24, 0x00, 0xFF}}},
+	{{{57, -8, 0}, 0, {752, 837}, {0x84, 0x1C, 0x00, 0xFF}}},
+	{{{60, -78, 0}, 0, {752, 667}, {0x81, 0xFC, 0x00, 0xFF}}},
 };
 
-Gfx kaktus_Torso_mesh_layer_1_tri_2[] = {
-	gsSPVertex(kaktus_Torso_mesh_layer_1_vtx_2 + 0, 64, 0),
+Gfx kaktus_tour_Torso_mesh_layer_1_tri_4[] = {
+	gsSPVertex(kaktus_tour_Torso_mesh_layer_1_vtx_4 + 0, 57, 0),
 	gsSP2Triangles(0, 1, 2, 0, 2, 3, 4, 0),
-	gsSP2Triangles(5, 6, 7, 0, 8, 9, 0, 0),
-	gsSP2Triangles(4, 10, 11, 0, 3, 12, 13, 0),
-	gsSP2Triangles(1, 14, 12, 0, 10, 13, 15, 0),
-	gsSP2Triangles(16, 17, 6, 0, 17, 5, 8, 0),
-	gsSP2Triangles(11, 18, 15, 0, 9, 7, 14, 0),
-	gsSP2Triangles(19, 20, 21, 0, 22, 23, 24, 0),
-	gsSP2Triangles(25, 26, 27, 0, 21, 28, 29, 0),
-	gsSP2Triangles(30, 31, 22, 0, 32, 23, 26, 0),
-	gsSP2Triangles(25, 33, 34, 0, 35, 27, 33, 0),
-	gsSP2Triangles(28, 31, 19, 0, 30, 36, 20, 0),
-	gsSP2Triangles(24, 37, 36, 0, 32, 34, 37, 0),
-	gsSP2Triangles(34, 38, 37, 0, 34, 39, 38, 0),
-	gsSP2Triangles(40, 39, 34, 0, 40, 41, 39, 0),
-	gsSP2Triangles(42, 41, 40, 0, 42, 43, 41, 0),
-	gsSP2Triangles(44, 43, 42, 0, 44, 42, 45, 0),
-	gsSP2Triangles(46, 44, 45, 0, 46, 45, 47, 0),
-	gsSP2Triangles(48, 46, 47, 0, 48, 47, 49, 0),
-	gsSP2Triangles(50, 48, 49, 0, 50, 51, 48, 0),
-	gsSP2Triangles(52, 51, 50, 0, 52, 53, 51, 0),
-	gsSP2Triangles(54, 53, 52, 0, 54, 52, 55, 0),
-	gsSP2Triangles(56, 54, 55, 0, 56, 57, 54, 0),
-	gsSP2Triangles(56, 58, 57, 0, 56, 59, 58, 0),
-	gsSP2Triangles(59, 38, 58, 0, 59, 37, 38, 0),
-	gsSP2Triangles(58, 38, 60, 0, 39, 60, 38, 0),
-	gsSP2Triangles(39, 61, 60, 0, 39, 62, 61, 0),
-	gsSP2Triangles(39, 41, 62, 0, 41, 63, 62, 0),
-	gsSP2Triangles(41, 43, 63, 0, 44, 63, 43, 0),
-	gsSPVertex(kaktus_Torso_mesh_layer_1_vtx_2 + 64, 18, 0),
-	gsSP2Triangles(0, 1, 2, 0, 3, 1, 0, 0),
-	gsSP2Triangles(3, 4, 1, 0, 5, 4, 3, 0),
-	gsSP2Triangles(5, 3, 6, 0, 7, 5, 6, 0),
-	gsSP2Triangles(7, 6, 8, 0, 9, 7, 8, 0),
-	gsSP2Triangles(9, 8, 10, 0, 11, 9, 10, 0),
-	gsSP2Triangles(11, 10, 12, 0, 12, 13, 11, 0),
-	gsSP2Triangles(12, 14, 13, 0, 15, 13, 14, 0),
-	gsSP2Triangles(15, 16, 13, 0, 15, 17, 16, 0),
+	gsSP2Triangles(5, 6, 0, 0, 7, 8, 6, 0),
+	gsSP2Triangles(8, 9, 1, 0, 9, 10, 3, 0),
+	gsSP2Triangles(11, 12, 13, 0, 14, 15, 16, 0),
+	gsSP2Triangles(11, 17, 18, 0, 14, 19, 20, 0),
+	gsSP2Triangles(4, 21, 22, 0, 23, 22, 21, 0),
+	gsSP2Triangles(21, 24, 23, 0, 21, 25, 24, 0),
+	gsSP2Triangles(26, 25, 21, 0, 21, 27, 26, 0),
+	gsSP2Triangles(10, 27, 21, 0, 28, 26, 27, 0),
+	gsSP2Triangles(29, 26, 28, 0, 29, 28, 30, 0),
+	gsSP2Triangles(30, 28, 31, 0, 28, 32, 31, 0),
+	gsSP2Triangles(28, 33, 32, 0, 28, 27, 33, 0),
+	gsSP2Triangles(34, 31, 32, 0, 17, 31, 34, 0),
+	gsSP2Triangles(35, 17, 34, 0, 35, 34, 36, 0),
+	gsSP2Triangles(34, 37, 36, 0, 34, 38, 37, 0),
+	gsSP2Triangles(34, 32, 38, 0, 36, 37, 39, 0),
+	gsSP2Triangles(36, 39, 40, 0, 41, 40, 39, 0),
+	gsSP2Triangles(41, 39, 42, 0, 43, 41, 42, 0),
+	gsSP2Triangles(43, 42, 44, 0, 43, 44, 45, 0),
+	gsSP2Triangles(43, 45, 46, 0, 47, 46, 45, 0),
+	gsSP2Triangles(47, 45, 48, 0, 47, 48, 22, 0),
+	gsSP2Triangles(47, 22, 23, 0, 24, 47, 23, 0),
+	gsSP2Triangles(24, 49, 47, 0, 49, 46, 47, 0),
+	gsSP2Triangles(49, 15, 46, 0, 13, 46, 15, 0),
+	gsSP2Triangles(50, 13, 15, 0, 13, 43, 46, 0),
+	gsSP2Triangles(51, 43, 13, 0, 51, 41, 43, 0),
+	gsSP2Triangles(52, 41, 51, 0, 52, 40, 41, 0),
+	gsSP2Triangles(52, 36, 40, 0, 52, 35, 36, 0),
+	gsSP2Triangles(25, 16, 24, 0, 53, 54, 5, 0),
+	gsSP2Triangles(53, 7, 54, 0, 55, 56, 12, 0),
+	gsSP2Triangles(55, 18, 56, 0, 50, 20, 17, 0),
+	gsSP2Triangles(17, 20, 31, 0, 30, 31, 20, 0),
+	gsSP2Triangles(26, 29, 25, 0, 25, 29, 19, 0),
 	gsSPEndDisplayList(),
 };
 
-Vtx kaktus_Head_DL_mesh_layer_1_vtx_0[45] = {
+Vtx kaktus_tour_Head_DL_mesh_layer_1_vtx_0[44] = {
 	{{{193, -9, 110}, 0, {496, 189}, {0x5F, 0x01, 0x54, 0xFF}}},
-	{{{235, -31, -1}, 0, {432, -16}, {0x7F, 0xFB, 0x00, 0xFF}}},
+	{{{235, -31, 0}, 0, {432, -16}, {0x7F, 0xFB, 0x00, 0xFF}}},
 	{{{203, 74, 51}, 0, {368, 189}, {0x5D, 0x44, 0x35, 0xFF}}},
-	{{{163, 81, 79}, 0, {368, 240}, {0x04, 0x64, 0x4E, 0xFF}}},
-	{{{208, 95, -1}, 0, {240, 189}, {0x5A, 0x59, 0x00, 0xFF}}},
-	{{{235, -31, -1}, 0, {304, -16}, {0x7F, 0xFB, 0x00, 0xFF}}},
-	{{{203, 74, -53}, 0, {368, 189}, {0x5D, 0x44, 0xCB, 0xFF}}},
-	{{{163, 81, -81}, 0, {368, 240}, {0x04, 0x64, 0xB2, 0xFF}}},
-	{{{193, -9, -112}, 0, {496, 189}, {0x5F, 0x01, 0xAC, 0xFF}}},
-	{{{159, 9, -133}, 0, {496, 240}, {0x1B, 0x24, 0x89, 0xFF}}},
-	{{{147, -122, -103}, 0, {624, 240}, {0x2E, 0xC2, 0x9B, 0xFF}}},
-	{{{187, -100, -79}, 0, {624, 189}, {0x5C, 0xD6, 0xB3, 0xFF}}},
-	{{{235, -31, -1}, 0, {688, -16}, {0x7F, 0xFB, 0x00, 0xFF}}},
-	{{{222, -97, -1}, 0, {668, 131}, {0x7B, 0xDF, 0x00, 0xFF}}},
-	{{{190, -147, -46}, 0, {688, 189}, {0x59, 0xB4, 0xCF, 0xFF}}},
-	{{{191, -157, -1}, 0, {752, 189}, {0x58, 0xA4, 0x00, 0xFF}}},
-	{{{190, -147, 44}, 0, {688, 189}, {0x59, 0xB4, 0x31, 0xFF}}},
+	{{{163, 81, 79}, 0, {368, 240}, {0x04, 0x64, 0x4F, 0xFF}}},
+	{{{208, 95, 0}, 0, {240, 189}, {0x5A, 0x59, 0x00, 0xFF}}},
+	{{{235, -31, 0}, 0, {304, -16}, {0x7F, 0xFB, 0x00, 0xFF}}},
+	{{{203, 74, -51}, 0, {368, 189}, {0x5D, 0x44, 0xCB, 0xFF}}},
+	{{{163, 81, -79}, 0, {368, 240}, {0x04, 0x64, 0xB1, 0xFF}}},
+	{{{193, -9, -110}, 0, {496, 189}, {0x5F, 0x01, 0xAC, 0xFF}}},
+	{{{159, 9, -131}, 0, {496, 240}, {0x1B, 0x24, 0x89, 0xFF}}},
+	{{{147, -122, -101}, 0, {624, 240}, {0x2E, 0xC2, 0x9B, 0xFF}}},
+	{{{187, -100, -77}, 0, {624, 189}, {0x5C, 0xD6, 0xB3, 0xFF}}},
+	{{{235, -31, 0}, 0, {560, -16}, {0x7F, 0xFB, 0x00, 0xFF}}},
+	{{{222, -97, 0}, 0, {668, 131}, {0x7B, 0xDF, 0x00, 0xFF}}},
 	{{{187, -100, 77}, 0, {624, 189}, {0x5C, 0xD6, 0x4D, 0xFF}}},
-	{{{235, -31, -1}, 0, {560, -16}, {0x7F, 0xFB, 0x00, 0xFF}}},
 	{{{147, -122, 101}, 0, {624, 240}, {0x2E, 0xC2, 0x65, 0xFF}}},
 	{{{159, 9, 131}, 0, {496, 240}, {0x1B, 0x24, 0x77, 0xFF}}},
 	{{{114, 60, 66}, 0, {368, 291}, {0xC8, 0x5C, 0x44, 0xFF}}},
-	{{{163, 109, -1}, 0, {240, 240}, {0xF5, 0x7F, 0x00, 0xFF}}},
-	{{{114, 60, -69}, 0, {368, 291}, {0xC8, 0x5C, 0xBC, 0xFF}}},
-	{{{125, -9, -133}, 0, {496, 291}, {0xEF, 0x19, 0x85, 0xFF}}},
-	{{{98, -122, -121}, 0, {624, 291}, {0xF3, 0xC7, 0x8F, 0xFF}}},
-	{{{83, -172, -59}, 0, {688, 291}, {0xE1, 0x94, 0xC5, 0xFF}}},
-	{{{133, -176, -53}, 0, {688, 240}, {0x20, 0x92, 0xC9, 0xFF}}},
-	{{{129, -188, -1}, 0, {752, 240}, {0x19, 0x83, 0x00, 0xFF}}},
-	{{{79, -186, -1}, 0, {752, 291}, {0xD8, 0x87, 0x00, 0xFF}}},
-	{{{133, -176, 50}, 0, {688, 240}, {0x20, 0x92, 0x37, 0xFF}}},
+	{{{163, 109, 0}, 0, {240, 240}, {0xF5, 0x7F, 0x00, 0xFF}}},
+	{{{114, 60, -66}, 0, {368, 291}, {0xC8, 0x5C, 0xBC, 0xFF}}},
+	{{{125, -9, -131}, 0, {496, 291}, {0xEF, 0x19, 0x85, 0xFF}}},
+	{{{98, -122, -119}, 0, {624, 291}, {0xF3, 0xC7, 0x8F, 0xFF}}},
+	{{{83, -172, -57}, 0, {688, 291}, {0xE1, 0x94, 0xC5, 0xFF}}},
+	{{{133, -176, -50}, 0, {688, 240}, {0x21, 0x92, 0xC9, 0xFF}}},
+	{{{190, -147, -44}, 0, {688, 189}, {0x59, 0xB4, 0xCE, 0xFF}}},
+	{{{191, -157, 0}, 0, {752, 189}, {0x58, 0xA4, 0x00, 0xFF}}},
+	{{{190, -147, 44}, 0, {688, 189}, {0x59, 0xB4, 0x32, 0xFF}}},
+	{{{133, -176, 50}, 0, {688, 240}, {0x21, 0x92, 0x37, 0xFF}}},
 	{{{83, -172, 57}, 0, {688, 291}, {0xE1, 0x94, 0x3B, 0xFF}}},
-	{{{38, -158, -1}, 0, {752, 394}, {0x91, 0xC2, 0x00, 0xFF}}},
-	{{{43, -141, 71}, 0, {688, 394}, {0x99, 0xCC, 0x36, 0xFF}}},
 	{{{98, -122, 119}, 0, {624, 291}, {0xF3, 0xC7, 0x71, 0xFF}}},
 	{{{125, -9, 131}, 0, {496, 291}, {0xEF, 0x19, 0x7B, 0xFF}}},
 	{{{92, -9, 117}, 0, {496, 394}, {0xD0, 0x27, 0x6F, 0xFF}}},
 	{{{59, -88, 109}, 0, {624, 394}, {0xA2, 0x01, 0x55, 0xFF}}},
 	{{{52, -92, 82}, 0, {624, 496}, {0x85, 0x14, 0x1A, 0xFF}}},
-	{{{35, -127, -1}, 0, {752, 496}, {0x81, 0x06, 0x00, 0xFF}}},
-	{{{43, -141, -73}, 0, {688, 394}, {0x99, 0xCC, 0xCA, 0xFF}}},
-	{{{52, -92, -85}, 0, {624, 496}, {0x85, 0x14, 0xE6, 0xFF}}},
-	{{{59, -88, -111}, 0, {624, 394}, {0xA2, 0x01, 0xAB, 0xFF}}},
-	{{{92, -9, -119}, 0, {496, 394}, {0xD0, 0x27, 0x91, 0xFF}}},
-	{{{125, 82, -1}, 0, {240, 291}, {0xBF, 0x6D, 0x00, 0xFF}}},
+	{{{43, -141, 71}, 0, {688, 394}, {0x9A, 0xCC, 0x36, 0xFF}}},
+	{{{35, -127, 0}, 0, {752, 496}, {0x81, 0x06, 0x00, 0xFF}}},
+	{{{38, -158, 0}, 0, {752, 394}, {0x91, 0xC2, 0x00, 0xFF}}},
+	{{{43, -141, -71}, 0, {688, 394}, {0x9A, 0xCC, 0xCA, 0xFF}}},
+	{{{52, -92, -82}, 0, {624, 496}, {0x85, 0x14, 0xE6, 0xFF}}},
+	{{{59, -88, -109}, 0, {624, 394}, {0xA2, 0x01, 0xAB, 0xFF}}},
+	{{{92, -9, -117}, 0, {496, 394}, {0xD0, 0x27, 0x91, 0xFF}}},
+	{{{79, -186, 0}, 0, {752, 291}, {0xD8, 0x87, 0x00, 0xFF}}},
+	{{{129, -188, 0}, 0, {752, 240}, {0x19, 0x83, 0x00, 0xFF}}},
+	{{{125, 82, 0}, 0, {240, 291}, {0xBF, 0x6D, 0x00, 0xFF}}},
 };
 
-Gfx kaktus_Head_DL_mesh_layer_1_tri_0[] = {
-	gsSPVertex(kaktus_Head_DL_mesh_layer_1_vtx_0 + 0, 45, 0),
+Gfx kaktus_tour_Head_DL_mesh_layer_1_tri_0[] = {
+	gsSPVertex(kaktus_tour_Head_DL_mesh_layer_1_vtx_0 + 0, 44, 0),
 	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
 	gsSP2Triangles(3, 2, 4, 0, 2, 5, 4, 0),
 	gsSP2Triangles(6, 4, 5, 0, 7, 4, 6, 0),
-	gsSP2Triangles(7, 6, 8, 0, 8, 6, 1, 0),
-	gsSP2Triangles(7, 8, 9, 0, 10, 9, 8, 0),
+	gsSP2Triangles(8, 7, 6, 0, 8, 6, 1, 0),
+	gsSP2Triangles(8, 9, 7, 0, 10, 9, 8, 0),
 	gsSP2Triangles(10, 8, 11, 0, 12, 11, 8, 0),
-	gsSP2Triangles(12, 13, 11, 0, 14, 11, 13, 0),
-	gsSP2Triangles(15, 14, 13, 0, 16, 15, 13, 0),
-	gsSP2Triangles(17, 16, 13, 0, 18, 17, 13, 0),
-	gsSP2Triangles(18, 0, 17, 0, 19, 17, 0, 0),
-	gsSP2Triangles(19, 0, 20, 0, 0, 3, 20, 0),
-	gsSP2Triangles(21, 20, 3, 0, 21, 3, 22, 0),
-	gsSP2Triangles(3, 4, 22, 0, 7, 22, 4, 0),
-	gsSP2Triangles(23, 22, 7, 0, 9, 23, 7, 0),
-	gsSP2Triangles(9, 24, 23, 0, 24, 9, 10, 0),
-	gsSP2Triangles(24, 10, 25, 0, 26, 25, 10, 0),
-	gsSP2Triangles(26, 10, 27, 0, 10, 14, 27, 0),
-	gsSP2Triangles(10, 11, 14, 0, 28, 27, 14, 0),
-	gsSP2Triangles(29, 27, 28, 0, 29, 28, 30, 0),
-	gsSP2Triangles(28, 16, 30, 0, 28, 15, 16, 0),
-	gsSP2Triangles(28, 14, 15, 0, 16, 19, 30, 0),
-	gsSP2Triangles(16, 17, 19, 0, 31, 30, 19, 0),
-	gsSP2Triangles(29, 30, 31, 0, 32, 29, 31, 0),
-	gsSP2Triangles(32, 31, 33, 0, 33, 31, 34, 0),
-	gsSP2Triangles(31, 19, 34, 0, 19, 35, 34, 0),
-	gsSP2Triangles(19, 20, 35, 0, 21, 35, 20, 0),
-	gsSP2Triangles(36, 35, 21, 0, 37, 35, 36, 0),
-	gsSP2Triangles(38, 37, 36, 0, 33, 37, 38, 0),
-	gsSP2Triangles(39, 33, 38, 0, 39, 32, 33, 0),
-	gsSP2Triangles(39, 40, 32, 0, 39, 41, 40, 0),
-	gsSP2Triangles(41, 42, 40, 0, 41, 43, 42, 0),
-	gsSP2Triangles(42, 43, 24, 0, 43, 23, 24, 0),
-	gsSP2Triangles(42, 24, 25, 0, 40, 42, 25, 0),
-	gsSP2Triangles(40, 25, 26, 0, 32, 40, 26, 0),
-	gsSP2Triangles(32, 26, 29, 0, 29, 26, 27, 0),
-	gsSP2Triangles(33, 34, 37, 0, 37, 34, 35, 0),
-	gsSP2Triangles(21, 22, 44, 0, 23, 44, 22, 0),
+	gsSP2Triangles(12, 13, 11, 0, 12, 14, 13, 0),
+	gsSP2Triangles(12, 0, 14, 0, 15, 14, 0, 0),
+	gsSP2Triangles(15, 0, 16, 0, 0, 3, 16, 0),
+	gsSP2Triangles(17, 16, 3, 0, 17, 3, 18, 0),
+	gsSP2Triangles(3, 4, 18, 0, 7, 18, 4, 0),
+	gsSP2Triangles(19, 18, 7, 0, 19, 7, 9, 0),
+	gsSP2Triangles(19, 9, 20, 0, 10, 20, 9, 0),
+	gsSP2Triangles(10, 21, 20, 0, 22, 21, 10, 0),
+	gsSP2Triangles(22, 10, 23, 0, 24, 23, 10, 0),
+	gsSP2Triangles(24, 10, 11, 0, 11, 13, 24, 0),
+	gsSP2Triangles(24, 13, 25, 0, 26, 25, 13, 0),
+	gsSP2Triangles(14, 26, 13, 0, 26, 14, 15, 0),
+	gsSP2Triangles(26, 15, 27, 0, 28, 27, 15, 0),
+	gsSP2Triangles(28, 15, 29, 0, 15, 30, 29, 0),
+	gsSP2Triangles(15, 16, 30, 0, 17, 30, 16, 0),
+	gsSP2Triangles(31, 30, 17, 0, 32, 30, 31, 0),
+	gsSP2Triangles(33, 32, 31, 0, 34, 32, 33, 0),
+	gsSP2Triangles(35, 34, 33, 0, 35, 36, 34, 0),
+	gsSP2Triangles(35, 37, 36, 0, 35, 38, 37, 0),
+	gsSP2Triangles(37, 38, 39, 0, 38, 40, 39, 0),
+	gsSP2Triangles(39, 40, 20, 0, 40, 19, 20, 0),
+	gsSP2Triangles(39, 20, 21, 0, 37, 39, 21, 0),
+	gsSP2Triangles(37, 21, 22, 0, 36, 37, 22, 0),
+	gsSP2Triangles(36, 22, 41, 0, 41, 22, 23, 0),
+	gsSP2Triangles(41, 23, 42, 0, 42, 23, 24, 0),
+	gsSP2Triangles(42, 24, 25, 0, 42, 25, 26, 0),
+	gsSP2Triangles(42, 26, 27, 0, 41, 42, 27, 0),
+	gsSP2Triangles(41, 27, 28, 0, 36, 41, 28, 0),
+	gsSP2Triangles(36, 28, 34, 0, 34, 28, 29, 0),
+	gsSP2Triangles(34, 29, 32, 0, 32, 29, 30, 0),
+	gsSP2Triangles(17, 18, 43, 0, 19, 43, 18, 0),
 	gsSPEndDisplayList(),
 };
 
-Vtx kaktus_Head_DL_mesh_layer_1_vtx_1[32] = {
-	{{{-40, -9, -1}, 0, {560, 1008}, {0x81, 0xF9, 0x00, 0xFF}}},
+Vtx kaktus_tour_Head_DL_mesh_layer_1_vtx_1[32] = {
+	{{{-40, -9, 0}, 0, {560, 1008}, {0x81, 0xF9, 0x00, 0xFF}}},
 	{{{-15, -60, 51}, 0, {624, 803}, {0x90, 0xE3, 0x34, 0xFF}}},
 	{{{-15, -9, 72}, 0, {496, 803}, {0x9D, 0x03, 0x50, 0xFF}}},
 	{{{52, -9, 117}, 0, {496, 598}, {0xBF, 0x15, 0x6B, 0xFF}}},
 	{{{11, -92, 82}, 0, {624, 598}, {0x99, 0xE5, 0x46, 0xFF}}},
-	{{{-15, -82, -1}, 0, {752, 803}, {0x88, 0xD6, 0x00, 0xFF}}},
-	{{{-40, -9, -1}, 0, {688, 1008}, {0x81, 0xF9, 0x00, 0xFF}}},
-	{{{-15, -60, -53}, 0, {624, 803}, {0x90, 0xE3, 0xCC, 0xFF}}},
-	{{{11, -92, -85}, 0, {624, 598}, {0x99, 0xE5, 0xBA, 0xFF}}},
-	{{{52, -9, -119}, 0, {496, 598}, {0xBF, 0x15, 0x95, 0xFF}}},
-	{{{-15, -9, -74}, 0, {496, 803}, {0x9D, 0x03, 0xB0, 0xFF}}},
-	{{{-20, 54, -53}, 0, {368, 803}, {0x9D, 0x34, 0xC5, 0xFF}}},
-	{{{-40, -9, -1}, 0, {432, 1008}, {0x81, 0xF9, 0x00, 0xFF}}},
-	{{{46, 33, -102}, 0, {432, 598}, {0xD8, 0x2B, 0x90, 0xFF}}},
-	{{{46, 86, -85}, 0, {368, 598}, {0x05, 0x5E, 0xAB, 0xFF}}},
-	{{{46, 120, -1}, 0, {240, 598}, {0x0B, 0x7F, 0x00, 0xFF}}},
-	{{{-20, 75, -1}, 0, {240, 803}, {0x9C, 0x4F, 0x00, 0xFF}}},
-	{{{-40, -9, -1}, 0, {304, 1008}, {0x81, 0xF9, 0x00, 0xFF}}},
+	{{{-15, -82, 0}, 0, {752, 803}, {0x88, 0xD6, 0x00, 0xFF}}},
+	{{{-40, -9, 0}, 0, {688, 1008}, {0x81, 0xF9, 0x00, 0xFF}}},
+	{{{-15, -60, -51}, 0, {624, 803}, {0x90, 0xE3, 0xCC, 0xFF}}},
+	{{{11, -92, -82}, 0, {624, 598}, {0x99, 0xE5, 0xBA, 0xFF}}},
+	{{{52, -9, -117}, 0, {496, 598}, {0xBF, 0x15, 0x95, 0xFF}}},
+	{{{-15, -9, -72}, 0, {496, 803}, {0x9D, 0x03, 0xB0, 0xFF}}},
+	{{{-20, 54, -51}, 0, {368, 803}, {0x9D, 0x34, 0xC5, 0xFF}}},
+	{{{-40, -9, 0}, 0, {432, 1008}, {0x81, 0xF9, 0x00, 0xFF}}},
+	{{{46, 33, -100}, 0, {432, 598}, {0xD8, 0x2B, 0x90, 0xFF}}},
+	{{{46, 86, -82}, 0, {368, 598}, {0x05, 0x5E, 0xAA, 0xFF}}},
+	{{{46, 120, 0}, 0, {240, 598}, {0x0B, 0x7F, 0x00, 0xFF}}},
+	{{{-20, 75, 0}, 0, {240, 803}, {0x9D, 0x4F, 0x00, 0xFF}}},
+	{{{-40, -9, 0}, 0, {304, 1008}, {0x81, 0xF9, 0x00, 0xFF}}},
 	{{{-20, 54, 51}, 0, {368, 803}, {0x9D, 0x34, 0x3B, 0xFF}}},
-	{{{46, 86, 82}, 0, {368, 598}, {0x05, 0x5E, 0x55, 0xFF}}},
+	{{{46, 86, 82}, 0, {368, 598}, {0x05, 0x5E, 0x56, 0xFF}}},
 	{{{46, 33, 100}, 0, {432, 598}, {0xD8, 0x2B, 0x70, 0xFF}}},
-	{{{52, 75, 82}, 0, {368, 496}, {0x2B, 0x4C, 0x5C, 0xFF}}},
-	{{{69, 103, -1}, 0, {240, 496}, {0x31, 0x75, 0x00, 0xFF}}},
-	{{{92, 100, -1}, 0, {240, 394}, {0x06, 0x7F, 0x00, 0xFF}}},
-	{{{82, 75, 82}, 0, {368, 394}, {0xFD, 0x63, 0x50, 0xFF}}},
+	{{{52, 75, 82}, 0, {368, 496}, {0x2B, 0x4C, 0x5D, 0xFF}}},
+	{{{69, 103, 0}, 0, {240, 496}, {0x31, 0x75, 0x00, 0xFF}}},
+	{{{92, 100, 0}, 0, {240, 394}, {0x06, 0x7F, 0x00, 0xFF}}},
+	{{{82, 75, 82}, 0, {368, 394}, {0xFD, 0x62, 0x50, 0xFF}}},
 	{{{72, 33, 105}, 0, {432, 445}, {0xF2, 0x35, 0x73, 0xFF}}},
 	{{{52, -9, 117}, 0, {496, 496}, {0xBF, 0x15, 0x6B, 0xFF}}},
-	{{{52, 75, -85}, 0, {368, 496}, {0x2B, 0x4C, 0xA4, 0xFF}}},
-	{{{72, 33, -107}, 0, {432, 445}, {0xF2, 0x35, 0x8D, 0xFF}}},
-	{{{82, 75, -85}, 0, {368, 394}, {0xFD, 0x63, 0xB0, 0xFF}}},
-	{{{52, -9, -119}, 0, {496, 496}, {0xBF, 0x15, 0x95, 0xFF}}},
-	{{{-5, -127, -1}, 0, {752, 598}, {0x88, 0xD6, 0x00, 0xFF}}},
+	{{{52, 75, -82}, 0, {368, 496}, {0x2B, 0x4C, 0xA3, 0xFF}}},
+	{{{72, 33, -105}, 0, {432, 445}, {0xF2, 0x35, 0x8D, 0xFF}}},
+	{{{82, 75, -82}, 0, {368, 394}, {0xFD, 0x62, 0xB0, 0xFF}}},
+	{{{52, -9, -117}, 0, {496, 496}, {0xBF, 0x15, 0x95, 0xFF}}},
+	{{{-5, -127, 0}, 0, {752, 598}, {0x88, 0xD6, 0x00, 0xFF}}},
 };
 
-Gfx kaktus_Head_DL_mesh_layer_1_tri_1[] = {
-	gsSPVertex(kaktus_Head_DL_mesh_layer_1_vtx_1 + 0, 32, 0),
+Gfx kaktus_tour_Head_DL_mesh_layer_1_tri_1[] = {
+	gsSPVertex(kaktus_tour_Head_DL_mesh_layer_1_vtx_1 + 0, 32, 0),
 	gsSP2Triangles(0, 1, 2, 0, 1, 3, 2, 0),
 	gsSP2Triangles(1, 4, 3, 0, 5, 4, 1, 0),
 	gsSP2Triangles(6, 5, 1, 0, 6, 7, 5, 0),
@@ -2012,21 +2145,21 @@ Gfx kaktus_Head_DL_mesh_layer_1_tri_1[] = {
 	gsSPEndDisplayList(),
 };
 
-Vtx kaktus_Head_DL_mesh_layer_1_vtx_2[50] = {
+Vtx kaktus_tour_Head_DL_mesh_layer_1_vtx_2[50] = {
 	{{{52, -9, 117}, 0, {496, 496}, {0x96, 0x21, 0xC3, 0xFF}}},
 	{{{11, -92, 82}, 0, {624, 598}, {0x94, 0x3E, 0xE7, 0xFF}}},
 	{{{-2, -111, 100}, 0, {624, 598}, {0x94, 0x3E, 0xEA, 0xFF}}},
-	{{{-18, -153, -1}, 0, {752, 598}, {0x91, 0x3E, 0x00, 0xFF}}},
-	{{{-5, -127, -1}, 0, {752, 598}, {0x91, 0x3E, 0x00, 0xFF}}},
-	{{{11, -92, -85}, 0, {624, 598}, {0x94, 0x3E, 0x19, 0xFF}}},
-	{{{-2, -111, -102}, 0, {624, 598}, {0x94, 0x3E, 0x16, 0xFF}}},
-	{{{52, -9, -119}, 0, {496, 496}, {0x96, 0x21, 0x3D, 0xFF}}},
-	{{{36, -9, -144}, 0, {496, 496}, {0x96, 0x29, 0x38, 0xFF}}},
-	{{{75, 83, -102}, 0, {368, 394}, {0x90, 0xFA, 0x3C, 0xFF}}},
-	{{{72, 33, -107}, 0, {432, 445}, {0x99, 0x09, 0x4A, 0xFF}}},
-	{{{82, 75, -85}, 0, {368, 394}, {0x8B, 0xEC, 0x2E, 0xFF}}},
-	{{{92, 100, -1}, 0, {240, 394}, {0x87, 0xDB, 0x00, 0xFF}}},
-	{{{85, 122, -1}, 0, {240, 394}, {0x87, 0xDB, 0x00, 0xFF}}},
+	{{{-18, -153, 0}, 0, {752, 598}, {0x91, 0x3E, 0x00, 0xFF}}},
+	{{{-5, -127, 0}, 0, {752, 598}, {0x91, 0x3E, 0x00, 0xFF}}},
+	{{{11, -92, -82}, 0, {624, 598}, {0x94, 0x3E, 0x19, 0xFF}}},
+	{{{-2, -111, -100}, 0, {624, 598}, {0x94, 0x3E, 0x16, 0xFF}}},
+	{{{52, -9, -117}, 0, {496, 496}, {0x96, 0x21, 0x3D, 0xFF}}},
+	{{{36, -9, -142}, 0, {496, 496}, {0x96, 0x29, 0x38, 0xFF}}},
+	{{{75, 83, -100}, 0, {368, 394}, {0x90, 0xFA, 0x3C, 0xFF}}},
+	{{{72, 33, -105}, 0, {432, 445}, {0x99, 0x09, 0x4A, 0xFF}}},
+	{{{82, 75, -82}, 0, {368, 394}, {0x8B, 0xEC, 0x2E, 0xFF}}},
+	{{{92, 100, 0}, 0, {240, 394}, {0x87, 0xDB, 0x00, 0xFF}}},
+	{{{85, 122, 0}, 0, {240, 394}, {0x87, 0xDB, 0x00, 0xFF}}},
 	{{{75, 83, 100}, 0, {368, 394}, {0x90, 0xFA, 0xC4, 0xFF}}},
 	{{{82, 75, 82}, 0, {368, 394}, {0x8B, 0xEC, 0xD2, 0xFF}}},
 	{{{72, 33, 105}, 0, {432, 445}, {0x99, 0x09, 0xB6, 0xFF}}},
@@ -2036,37 +2169,37 @@ Vtx kaktus_Head_DL_mesh_layer_1_vtx_2[50] = {
 	{{{85, -9, 142}, 0, {496, 394}, {0x77, 0xD6, 0x0D, 0xFF}}},
 	{{{115, 72, 91}, 0, {368, 291}, {0x7C, 0xE9, 0x13, 0xFF}}},
 	{{{114, 60, 66}, 0, {368, 291}, {0x7D, 0xEE, 0x10, 0xFF}}},
-	{{{125, 102, -1}, 0, {240, 291}, {0x7E, 0xF3, 0x00, 0xFF}}},
-	{{{125, 82, -1}, 0, {240, 291}, {0x7E, 0xF3, 0x00, 0xFF}}},
-	{{{114, 60, -69}, 0, {368, 291}, {0x7D, 0xEE, 0xF0, 0xFF}}},
-	{{{115, 72, -93}, 0, {368, 291}, {0x7C, 0xE9, 0xED, 0xFF}}},
-	{{{92, -9, -119}, 0, {496, 394}, {0x78, 0xD9, 0xF1, 0xFF}}},
-	{{{85, -9, -144}, 0, {496, 394}, {0x77, 0xD6, 0xF3, 0xFF}}},
-	{{{52, -92, -85}, 0, {624, 496}, {0x78, 0xD7, 0x02, 0xFF}}},
-	{{{47, -111, -102}, 0, {624, 496}, {0x79, 0xD8, 0x02, 0xFF}}},
-	{{{35, -127, -1}, 0, {752, 496}, {0x7C, 0xE3, 0x00, 0xFF}}},
-	{{{31, -153, -1}, 0, {752, 496}, {0x7C, 0xE3, 0x00, 0xFF}}},
-	{{{47, -111, 100}, 0, {624, 496}, {0x79, 0xD8, 0xFE, 0xFF}}},
-	{{{-18, -153, -1}, 0, {752, 598}, {0x00, 0x81, 0x00, 0xFF}}},
-	{{{31, -153, -1}, 0, {752, 496}, {0x00, 0x81, 0x00, 0xFF}}},
+	{{{125, 102, 0}, 0, {240, 291}, {0x7E, 0xF3, 0x00, 0xFF}}},
+	{{{125, 82, 0}, 0, {240, 291}, {0x7E, 0xF3, 0x00, 0xFF}}},
+	{{{114, 60, -66}, 0, {368, 291}, {0x7D, 0xEE, 0xF0, 0xFF}}},
+	{{{115, 72, -91}, 0, {368, 291}, {0x7C, 0xE9, 0xED, 0xFF}}},
+	{{{92, -9, -117}, 0, {496, 394}, {0x78, 0xD9, 0xF1, 0xFF}}},
+	{{{85, -9, -142}, 0, {496, 394}, {0x77, 0xD6, 0xF3, 0xFF}}},
+	{{{52, -92, -82}, 0, {624, 496}, {0x78, 0xD7, 0x02, 0xFF}}},
+	{{{47, -111, -100}, 0, {624, 496}, {0x79, 0xD8, 0x03, 0xFF}}},
+	{{{35, -127, 0}, 0, {752, 496}, {0x7C, 0xE3, 0x00, 0xFF}}},
+	{{{31, -153, 0}, 0, {752, 496}, {0x7C, 0xE3, 0x00, 0xFF}}},
+	{{{47, -111, 100}, 0, {624, 496}, {0x79, 0xD8, 0xFD, 0xFF}}},
+	{{{-18, -153, 0}, 0, {752, 598}, {0x00, 0x81, 0x00, 0xFF}}},
+	{{{31, -153, 0}, 0, {752, 496}, {0x00, 0x81, 0x00, 0xFF}}},
 	{{{47, -111, 100}, 0, {624, 496}, {0x00, 0xAC, 0x5F, 0xFF}}},
-	{{{47, -111, -102}, 0, {624, 496}, {0x00, 0xAC, 0xA1, 0xFF}}},
-	{{{-2, -111, -102}, 0, {624, 598}, {0x00, 0xA0, 0xAC, 0xFF}}},
-	{{{85, -9, -144}, 0, {496, 394}, {0x0C, 0x0E, 0x82, 0xFF}}},
-	{{{36, -9, -144}, 0, {496, 496}, {0x08, 0xF6, 0x82, 0xFF}}},
-	{{{75, 83, -102}, 0, {368, 394}, {0x21, 0x54, 0xA7, 0xFF}}},
-	{{{115, 72, -93}, 0, {368, 291}, {0x25, 0x5B, 0xB0, 0xFF}}},
-	{{{125, 102, -1}, 0, {240, 291}, {0x33, 0x74, 0x00, 0xFF}}},
-	{{{85, 122, -1}, 0, {240, 394}, {0x33, 0x74, 0x00, 0xFF}}},
+	{{{47, -111, -100}, 0, {624, 496}, {0x00, 0xAC, 0xA1, 0xFF}}},
+	{{{-2, -111, -100}, 0, {624, 598}, {0x00, 0xA1, 0xAC, 0xFF}}},
+	{{{85, -9, -142}, 0, {496, 394}, {0x0C, 0x0E, 0x82, 0xFF}}},
+	{{{36, -9, -142}, 0, {496, 496}, {0x08, 0xF6, 0x82, 0xFF}}},
+	{{{75, 83, -100}, 0, {368, 394}, {0x21, 0x54, 0xA7, 0xFF}}},
+	{{{115, 72, -91}, 0, {368, 291}, {0x25, 0x5B, 0xB0, 0xFF}}},
+	{{{125, 102, 0}, 0, {240, 291}, {0x33, 0x74, 0x00, 0xFF}}},
+	{{{85, 122, 0}, 0, {240, 394}, {0x33, 0x74, 0x00, 0xFF}}},
 	{{{75, 83, 100}, 0, {368, 394}, {0x21, 0x54, 0x59, 0xFF}}},
 	{{{115, 72, 91}, 0, {368, 291}, {0x25, 0x5B, 0x50, 0xFF}}},
 	{{{85, -9, 142}, 0, {496, 394}, {0x0C, 0x0E, 0x7E, 0xFF}}},
 	{{{36, -9, 142}, 0, {496, 496}, {0x08, 0xF6, 0x7E, 0xFF}}},
-	{{{-2, -111, 100}, 0, {624, 598}, {0x00, 0xA0, 0x54, 0xFF}}},
+	{{{-2, -111, 100}, 0, {624, 598}, {0x00, 0xA1, 0x54, 0xFF}}},
 };
 
-Gfx kaktus_Head_DL_mesh_layer_1_tri_2[] = {
-	gsSPVertex(kaktus_Head_DL_mesh_layer_1_vtx_2 + 0, 50, 0),
+Gfx kaktus_tour_Head_DL_mesh_layer_1_tri_2[] = {
+	gsSPVertex(kaktus_tour_Head_DL_mesh_layer_1_vtx_2 + 0, 50, 0),
 	gsSP2Triangles(0, 1, 2, 0, 1, 3, 2, 0),
 	gsSP2Triangles(1, 4, 3, 0, 5, 3, 4, 0),
 	gsSP2Triangles(5, 6, 3, 0, 7, 6, 5, 0),
@@ -2095,21 +2228,21 @@ Gfx kaktus_Head_DL_mesh_layer_1_tri_2[] = {
 	gsSPEndDisplayList(),
 };
 
-Vtx kaktus_Head_DL_mesh_layer_1_vtx_3[30] = {
+Vtx kaktus_tour_Head_DL_mesh_layer_1_vtx_3[30] = {
 	{{{11, -92, 82}, 0, {624, 598}, {0xFC, 0xAE, 0x61, 0xFF}}},
 	{{{52, -9, 117}, 0, {496, 598}, {0x09, 0xFF, 0x7F, 0xFF}}},
 	{{{-4, 13, 122}, 0, {496, 598}, {0x0A, 0x02, 0x7F, 0xFF}}},
 	{{{-42, -50, 100}, 0, {560, 598}, {0xFF, 0xD2, 0x76, 0xFF}}},
 	{{{-27, -92, 82}, 0, {624, 598}, {0x09, 0xA2, 0x55, 0xFF}}},
-	{{{-5, -127, -1}, 0, {752, 598}, {0xF8, 0x81, 0x00, 0xFF}}},
-	{{{-39, -122, -1}, 0, {752, 598}, {0x1D, 0x84, 0x00, 0xFF}}},
-	{{{-63, -133, 41}, 0, {688, 598}, {0x52, 0xA1, 0x16, 0xFF}}},
-	{{{-27, -92, -85}, 0, {624, 598}, {0x09, 0xA2, 0xAB, 0xFF}}},
-	{{{11, -92, -85}, 0, {624, 598}, {0xFC, 0xAE, 0x9F, 0xFF}}},
-	{{{-42, -50, -102}, 0, {560, 598}, {0xFF, 0xD2, 0x8A, 0xFF}}},
-	{{{-4, 13, -124}, 0, {496, 598}, {0x0A, 0x02, 0x81, 0xFF}}},
-	{{{52, -9, -119}, 0, {496, 598}, {0x09, 0xFF, 0x81, 0xFF}}},
-	{{{-63, -133, -43}, 0, {688, 598}, {0x52, 0xA1, 0xEA, 0xFF}}},
+	{{{-5, -127, 0}, 0, {752, 598}, {0xF8, 0x81, 0x00, 0xFF}}},
+	{{{-39, -122, 0}, 0, {752, 598}, {0x1D, 0x84, 0x00, 0xFF}}},
+	{{{-63, -133, 41}, 0, {688, 598}, {0x51, 0xA1, 0x16, 0xFF}}},
+	{{{-27, -92, -82}, 0, {624, 598}, {0x09, 0xA2, 0xAB, 0xFF}}},
+	{{{-63, -133, -41}, 0, {688, 598}, {0x51, 0xA1, 0xEA, 0xFF}}},
+	{{{11, -92, -82}, 0, {624, 598}, {0xFC, 0xAE, 0x9F, 0xFF}}},
+	{{{-42, -50, -100}, 0, {560, 598}, {0xFF, 0xD2, 0x8A, 0xFF}}},
+	{{{-4, 13, -122}, 0, {496, 598}, {0x0A, 0x02, 0x81, 0xFF}}},
+	{{{52, -9, -117}, 0, {496, 598}, {0x09, 0xFF, 0x81, 0xFF}}},
 	{{{72, 33, 105}, 0, {432, 445}, {0x14, 0x2C, 0x75, 0xFF}}},
 	{{{-4, 13, 122}, 0, {496, 496}, {0x0A, 0x02, 0x7F, 0xFF}}},
 	{{{52, -9, 117}, 0, {496, 496}, {0x09, 0xFF, 0x7F, 0xFF}}},
@@ -2118,47 +2251,47 @@ Vtx kaktus_Head_DL_mesh_layer_1_vtx_3[30] = {
 	{{{82, 75, 82}, 0, {368, 394}, {0x14, 0x30, 0x74, 0xFF}}},
 	{{{28, 96, 80}, 0, {368, 394}, {0x0C, 0x2C, 0x77, 0xFF}}},
 	{{{44, 108, 81}, 0, {368, 394}, {0x0C, 0x2C, 0x77, 0xFF}}},
-	{{{-4, 13, -124}, 0, {496, 496}, {0x0A, 0x02, 0x81, 0xFF}}},
-	{{{72, 33, -107}, 0, {432, 445}, {0x14, 0x2C, 0x8B, 0xFF}}},
-	{{{52, -9, -119}, 0, {496, 496}, {0x09, 0xFF, 0x81, 0xFF}}},
-	{{{-19, 61, -106}, 0, {432, 445}, {0x10, 0x27, 0x88, 0xFF}}},
-	{{{43, 63, -100}, 0, {368, 394}, {0x10, 0x2B, 0x8A, 0xFF}}},
-	{{{82, 75, -85}, 0, {368, 394}, {0x14, 0x30, 0x8C, 0xFF}}},
-	{{{28, 96, -82}, 0, {368, 394}, {0x0C, 0x2C, 0x89, 0xFF}}},
-	{{{44, 108, -83}, 0, {368, 394}, {0x0C, 0x2C, 0x89, 0xFF}}},
+	{{{72, 33, -105}, 0, {432, 445}, {0x14, 0x2C, 0x8B, 0xFF}}},
+	{{{52, -9, -117}, 0, {496, 496}, {0x09, 0xFF, 0x81, 0xFF}}},
+	{{{-4, 13, -122}, 0, {496, 496}, {0x0A, 0x02, 0x81, 0xFF}}},
+	{{{-19, 61, -104}, 0, {432, 445}, {0x10, 0x27, 0x88, 0xFF}}},
+	{{{43, 63, -98}, 0, {368, 394}, {0x10, 0x2B, 0x8A, 0xFF}}},
+	{{{82, 75, -82}, 0, {368, 394}, {0x14, 0x30, 0x8C, 0xFF}}},
+	{{{28, 96, -80}, 0, {368, 394}, {0x0C, 0x2C, 0x89, 0xFF}}},
+	{{{44, 108, -81}, 0, {368, 394}, {0x0C, 0x2C, 0x89, 0xFF}}},
 };
 
-Gfx kaktus_Head_DL_mesh_layer_1_tri_3[] = {
-	gsSPVertex(kaktus_Head_DL_mesh_layer_1_vtx_3 + 0, 30, 0),
+Gfx kaktus_tour_Head_DL_mesh_layer_1_tri_3[] = {
+	gsSPVertex(kaktus_tour_Head_DL_mesh_layer_1_vtx_3 + 0, 30, 0),
 	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
 	gsSP2Triangles(4, 0, 3, 0, 5, 0, 4, 0),
 	gsSP2Triangles(5, 4, 6, 0, 4, 7, 6, 0),
-	gsSP2Triangles(8, 5, 6, 0, 8, 9, 5, 0),
-	gsSP2Triangles(8, 10, 9, 0, 11, 9, 10, 0),
-	gsSP2Triangles(11, 12, 9, 0, 8, 6, 13, 0),
+	gsSP2Triangles(5, 6, 8, 0, 8, 6, 9, 0),
+	gsSP2Triangles(5, 8, 10, 0, 8, 11, 10, 0),
+	gsSP2Triangles(10, 11, 12, 0, 10, 12, 13, 0),
 	gsSP2Triangles(14, 15, 16, 0, 14, 17, 15, 0),
 	gsSP2Triangles(18, 17, 14, 0, 18, 14, 19, 0),
 	gsSP2Triangles(20, 18, 19, 0, 20, 19, 21, 0),
-	gsSP2Triangles(22, 23, 24, 0, 22, 25, 23, 0),
-	gsSP2Triangles(26, 23, 25, 0, 26, 27, 23, 0),
+	gsSP2Triangles(22, 23, 24, 0, 22, 24, 25, 0),
+	gsSP2Triangles(26, 22, 25, 0, 26, 27, 22, 0),
 	gsSP2Triangles(28, 27, 26, 0, 28, 29, 27, 0),
 	gsSPEndDisplayList(),
 };
 
-Vtx kaktus_Head_DL_mesh_layer_4_vtx_0[9] = {
-	{{{-1, 115, -1}, 0, {495, 1001}, {0xEF, 0x7E, 0x00, 0xFF}}},
-	{{{-1, 102, 87}, 0, {1007, 1007}, {0xEF, 0x7C, 0x13, 0xFF}}},
-	{{{87, 113, 87}, 0, {1001, 496}, {0x00, 0x7E, 0x13, 0xFF}}},
-	{{{87, 127, -1}, 0, {495, 496}, {0x00, 0x7F, 0x00, 0xFF}}},
-	{{{176, 102, 87}, 0, {1007, -15}, {0x11, 0x7C, 0x13, 0xFF}}},
-	{{{176, 115, -1}, 0, {495, -9}, {0x11, 0x7E, 0x00, 0xFF}}},
-	{{{176, 102, -89}, 0, {-17, -15}, {0x11, 0x7C, 0xED, 0xFF}}},
-	{{{87, 113, -89}, 0, {-12, 496}, {0x00, 0x7E, 0xED, 0xFF}}},
-	{{{-1, 102, -89}, 0, {-17, 1007}, {0xEF, 0x7C, 0xED, 0xFF}}},
+Vtx kaktus_tour_Head_DL_mesh_layer_4_vtx_0[9] = {
+	{{{-1, 115, 0}, 0, {491, 1003}, {0xEF, 0x7E, 0x00, 0xFF}}},
+	{{{-1, 102, 87}, 0, {999, 1008}, {0xEF, 0x7C, 0x13, 0xFF}}},
+	{{{87, 113, 87}, 0, {994, 496}, {0x00, 0x7D, 0x14, 0xFF}}},
+	{{{87, 127, 0}, 0, {491, 496}, {0x00, 0x7F, 0x00, 0xFF}}},
+	{{{176, 102, 87}, 0, {999, -16}, {0x11, 0x7C, 0x13, 0xFF}}},
+	{{{176, 115, 0}, 0, {491, -11}, {0x11, 0x7E, 0x00, 0xFF}}},
+	{{{176, 102, -87}, 0, {-16, -16}, {0x11, 0x7C, 0xED, 0xFF}}},
+	{{{87, 113, -87}, 0, {-11, 496}, {0x00, 0x7D, 0xEC, 0xFF}}},
+	{{{-1, 102, -87}, 0, {-16, 1008}, {0xEF, 0x7C, 0xED, 0xFF}}},
 };
 
-Gfx kaktus_Head_DL_mesh_layer_4_tri_0[] = {
-	gsSPVertex(kaktus_Head_DL_mesh_layer_4_vtx_0 + 0, 9, 0),
+Gfx kaktus_tour_Head_DL_mesh_layer_4_tri_0[] = {
+	gsSPVertex(kaktus_tour_Head_DL_mesh_layer_4_vtx_0 + 0, 9, 0),
 	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
 	gsSP2Triangles(3, 2, 4, 0, 3, 4, 5, 0),
 	gsSP2Triangles(3, 5, 6, 0, 3, 6, 7, 0),
@@ -2166,20 +2299,20 @@ Gfx kaktus_Head_DL_mesh_layer_4_tri_0[] = {
 	gsSPEndDisplayList(),
 };
 
-Vtx kaktus_Head_DL_mesh_layer_4_vtx_1[4] = {
+Vtx kaktus_tour_Head_DL_mesh_layer_4_vtx_1[4] = {
 	{{{234, 84, 38}, 0, {52, 940}, {0x4F, 0x2A, 0x5A, 0xFF}}},
 	{{{132, 88, 125}, 0, {940, 940}, {0x4F, 0x2A, 0x5A, 0xFF}}},
 	{{{158, -39, 161}, 0, {940, 52}, {0x4F, 0x2A, 0x5A, 0xFF}}},
 	{{{260, -43, 74}, 0, {52, 52}, {0x4F, 0x2A, 0x5A, 0xFF}}},
 };
 
-Gfx kaktus_Head_DL_mesh_layer_4_tri_1[] = {
-	gsSPVertex(kaktus_Head_DL_mesh_layer_4_vtx_1 + 0, 4, 0),
+Gfx kaktus_tour_Head_DL_mesh_layer_4_tri_1[] = {
+	gsSPVertex(kaktus_tour_Head_DL_mesh_layer_4_vtx_1 + 0, 4, 0),
 	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
 	gsSPEndDisplayList(),
 };
 
-Vtx kaktus_Head_DL_mesh_layer_4_vtx_2[8] = {
+Vtx kaktus_tour_Head_DL_mesh_layer_4_vtx_2[8] = {
 	{{{130, -35, 115}, 0, {-16, 496}, {0x00, 0x7F, 0x00, 0xFF}}},
 	{{{130, -35, 179}, 0, {496, 496}, {0x00, 0x7F, 0x00, 0xFF}}},
 	{{{193, -35, 179}, 0, {496, -16}, {0x00, 0x7F, 0x00, 0xFF}}},
@@ -2190,14 +2323,14 @@ Vtx kaktus_Head_DL_mesh_layer_4_vtx_2[8] = {
 	{{{130, -35, -179}, 0, {496, 496}, {0x00, 0x7F, 0x00, 0xFF}}},
 };
 
-Gfx kaktus_Head_DL_mesh_layer_4_tri_2[] = {
-	gsSPVertex(kaktus_Head_DL_mesh_layer_4_vtx_2 + 0, 8, 0),
+Gfx kaktus_tour_Head_DL_mesh_layer_4_tri_2[] = {
+	gsSPVertex(kaktus_tour_Head_DL_mesh_layer_4_vtx_2 + 0, 8, 0),
 	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
 	gsSP2Triangles(4, 5, 6, 0, 4, 6, 7, 0),
 	gsSPEndDisplayList(),
 };
 
-Vtx kaktus_Head_DL_mesh_layer_4_vtx_3[8] = {
+Vtx kaktus_tour_Head_DL_mesh_layer_4_vtx_3[8] = {
 	{{{152, -35, 116}, 0, {-16, 496}, {0x00, 0x81, 0x00, 0xFF}}},
 	{{{152, -35, 180}, 0, {496, 496}, {0x00, 0x81, 0x00, 0xFF}}},
 	{{{89, -35, 180}, 0, {496, -16}, {0x00, 0x81, 0x00, 0xFF}}},
@@ -2208,14 +2341,14 @@ Vtx kaktus_Head_DL_mesh_layer_4_vtx_3[8] = {
 	{{{152, -35, -180}, 0, {496, 496}, {0x00, 0x81, 0x00, 0xFF}}},
 };
 
-Gfx kaktus_Head_DL_mesh_layer_4_tri_3[] = {
-	gsSPVertex(kaktus_Head_DL_mesh_layer_4_vtx_3 + 0, 8, 0),
+Gfx kaktus_tour_Head_DL_mesh_layer_4_tri_3[] = {
+	gsSPVertex(kaktus_tour_Head_DL_mesh_layer_4_vtx_3 + 0, 8, 0),
 	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
 	gsSP2Triangles(4, 5, 6, 0, 4, 6, 7, 0),
 	gsSPEndDisplayList(),
 };
 
-Vtx kaktus_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_vtx_0[35] = {
+Vtx kaktus_tour_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_vtx_0[35] = {
 	{{{-32, -3, -2}, 0, {560, 1008}, {0x81, 0xF9, 0x00, 0xFF}}},
 	{{{-7, -55, 50}, 0, {624, 803}, {0x94, 0xD5, 0x34, 0xFF}}},
 	{{{-7, -3, 71}, 0, {496, 803}, {0x9C, 0x02, 0x4E, 0xFF}}},
@@ -2253,8 +2386,8 @@ Vtx kaktus_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_vtx_0[35] = {
 	{{{19, -121, -2}, 0, {752, 598}, {0xCF, 0x8B, 0x00, 0xFF}}},
 };
 
-Gfx kaktus_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_tri_0[] = {
-	gsSPVertex(kaktus_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_vtx_0 + 0, 35, 0),
+Gfx kaktus_tour_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_tri_0[] = {
+	gsSPVertex(kaktus_tour_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_vtx_0 + 0, 35, 0),
 	gsSP2Triangles(0, 1, 2, 0, 1, 3, 2, 0),
 	gsSP2Triangles(1, 4, 3, 0, 5, 4, 1, 0),
 	gsSP2Triangles(6, 5, 1, 0, 6, 7, 5, 0),
@@ -2281,7 +2414,7 @@ Gfx kaktus_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_tri_0[] = {
 	gsSPEndDisplayList(),
 };
 
-Vtx kaktus_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_vtx_1[78] = {
+Vtx kaktus_tour_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_vtx_1[78] = {
 	{{{57, -5, 125}, 0, {496, 598}, {0xD3, 0x0E, 0x76, 0xFF}}},
 	{{{38, -87, 91}, 0, {624, 598}, {0xBF, 0xAD, 0x46, 0xFF}}},
 	{{{50, -100, 132}, 0, {496, 598}, {0xD1, 0xA8, 0x4F, 0xFF}}},
@@ -2362,8 +2495,8 @@ Vtx kaktus_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_vtx_1[78] = {
 	{{{238, 115, -12}, 0, {432, 445}, {0x60, 0x53, 0x05, 0xFF}}},
 };
 
-Gfx kaktus_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_tri_1[] = {
-	gsSPVertex(kaktus_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_vtx_1 + 0, 64, 0),
+Gfx kaktus_tour_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_tri_1[] = {
+	gsSPVertex(kaktus_tour_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_vtx_1 + 0, 64, 0),
 	gsSP2Triangles(0, 1, 2, 0, 1, 0, 3, 0),
 	gsSP2Triangles(4, 1, 3, 0, 5, 1, 4, 0),
 	gsSP2Triangles(6, 1, 5, 0, 7, 6, 5, 0),
@@ -2397,7 +2530,7 @@ Gfx kaktus_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_tri_1[] = {
 	gsSP2Triangles(59, 56, 58, 0, 59, 60, 56, 0),
 	gsSP2Triangles(61, 60, 59, 0, 62, 61, 59, 0),
 	gsSP2Triangles(56, 60, 63, 0, 56, 63, 55, 0),
-	gsSPVertex(kaktus_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_vtx_1 + 64, 14, 0),
+	gsSPVertex(kaktus_tour_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_vtx_1 + 64, 14, 0),
 	gsSP2Triangles(0, 1, 2, 0, 1, 3, 2, 0),
 	gsSP2Triangles(1, 4, 3, 0, 3, 4, 5, 0),
 	gsSP2Triangles(4, 6, 5, 0, 2, 3, 7, 0),
@@ -2407,7 +2540,7 @@ Gfx kaktus_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_tri_1[] = {
 	gsSPEndDisplayList(),
 };
 
-Vtx kaktus_Capless_Head_Switch_Option_Capless_Head_mesh_layer_4_vtx_0[9] = {
+Vtx kaktus_tour_Capless_Head_Switch_Option_Capless_Head_mesh_layer_4_vtx_0[9] = {
 	{{{7, 121, -2}, 0, {495, 1001}, {0xEF, 0x7E, 0x00, 0xFF}}},
 	{{{7, 107, 87}, 0, {1007, 1007}, {0xEF, 0x7C, 0x13, 0xFF}}},
 	{{{95, 119, 87}, 0, {1001, 496}, {0x00, 0x7E, 0x13, 0xFF}}},
@@ -2419,8 +2552,8 @@ Vtx kaktus_Capless_Head_Switch_Option_Capless_Head_mesh_layer_4_vtx_0[9] = {
 	{{{7, 107, -90}, 0, {-17, 1007}, {0xEF, 0x7C, 0xED, 0xFF}}},
 };
 
-Gfx kaktus_Capless_Head_Switch_Option_Capless_Head_mesh_layer_4_tri_0[] = {
-	gsSPVertex(kaktus_Capless_Head_Switch_Option_Capless_Head_mesh_layer_4_vtx_0 + 0, 9, 0),
+Gfx kaktus_tour_Capless_Head_Switch_Option_Capless_Head_mesh_layer_4_tri_0[] = {
+	gsSPVertex(kaktus_tour_Capless_Head_Switch_Option_Capless_Head_mesh_layer_4_vtx_0 + 0, 9, 0),
 	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
 	gsSP2Triangles(3, 2, 4, 0, 3, 4, 5, 0),
 	gsSP2Triangles(3, 5, 6, 0, 3, 6, 7, 0),
@@ -2428,7 +2561,7 @@ Gfx kaktus_Capless_Head_Switch_Option_Capless_Head_mesh_layer_4_tri_0[] = {
 	gsSPEndDisplayList(),
 };
 
-Vtx kaktus_Left_Wing_DL_mesh_layer_4_vtx_0[6] = {
+Vtx kaktus_tour_Left_Wing_DL_mesh_layer_4_vtx_0[6] = {
 	{{{136, 87, 34}, 0, {999, -16}, {0xE9, 0x01, 0x7D, 0xFF}}},
 	{{{61, -63, 22}, 0, {491, 1007}, {0xEA, 0x01, 0x7D, 0xFF}}},
 	{{{135, -64, 35}, 0, {1001, 1008}, {0xE9, 0x01, 0x7D, 0xFF}}},
@@ -2437,54 +2570,54 @@ Vtx kaktus_Left_Wing_DL_mesh_layer_4_vtx_0[6] = {
 	{{{-13, -63, 8}, 0, {-16, 1008}, {0xEA, 0x01, 0x7D, 0xFF}}},
 };
 
-Gfx kaktus_Left_Wing_DL_mesh_layer_4_tri_0[] = {
-	gsSPVertex(kaktus_Left_Wing_DL_mesh_layer_4_vtx_0 + 0, 6, 0),
+Gfx kaktus_tour_Left_Wing_DL_mesh_layer_4_tri_0[] = {
+	gsSPVertex(kaktus_tour_Left_Wing_DL_mesh_layer_4_vtx_0 + 0, 6, 0),
 	gsSP2Triangles(0, 1, 2, 0, 0, 3, 1, 0),
 	gsSP2Triangles(4, 1, 3, 0, 4, 5, 1, 0),
 	gsSPEndDisplayList(),
 };
 
-Vtx kaktus_Right_Wing_DL_mesh_layer_4_vtx_0[6] = {
-	{{{136, 87, -34}, 0, {999, -16}, {0x17, 0xFF, 0x7D, 0xFF}}},
-	{{{61, -63, -22}, 0, {491, 1007}, {0x16, 0xFF, 0x7D, 0xFF}}},
-	{{{135, -64, -35}, 0, {1001, 1008}, {0x17, 0xFF, 0x7D, 0xFF}}},
-	{{{62, 88, -21}, 0, {492, -15}, {0x16, 0xFF, 0x7D, 0xFF}}},
-	{{{-11, 88, -8}, 0, {-15, -15}, {0x16, 0xFF, 0x7D, 0xFF}}},
-	{{{-13, -63, -8}, 0, {-16, 1008}, {0x16, 0xFF, 0x7D, 0xFF}}},
+Vtx kaktus_tour_Right_Wing_DL_mesh_layer_4_vtx_0[6] = {
+	{{{136, 87, -34}, 0, {999, -16}, {0xE9, 0x01, 0x83, 0xFF}}},
+	{{{135, -64, -35}, 0, {1001, 1008}, {0xE9, 0x01, 0x83, 0xFF}}},
+	{{{61, -63, -22}, 0, {491, 1007}, {0xEA, 0x01, 0x83, 0xFF}}},
+	{{{62, 88, -21}, 0, {492, -15}, {0xEA, 0x01, 0x83, 0xFF}}},
+	{{{-11, 88, -8}, 0, {-15, -15}, {0xEA, 0x01, 0x83, 0xFF}}},
+	{{{-13, -63, -8}, 0, {-16, 1008}, {0xEA, 0x01, 0x83, 0xFF}}},
 };
 
-Gfx kaktus_Right_Wing_DL_mesh_layer_4_tri_0[] = {
-	gsSPVertex(kaktus_Right_Wing_DL_mesh_layer_4_vtx_0 + 0, 6, 0),
-	gsSP2Triangles(0, 1, 2, 0, 0, 3, 1, 0),
-	gsSP2Triangles(4, 1, 3, 0, 4, 5, 1, 0),
+Gfx kaktus_tour_Right_Wing_DL_mesh_layer_4_tri_0[] = {
+	gsSPVertex(kaktus_tour_Right_Wing_DL_mesh_layer_4_vtx_0 + 0, 6, 0),
+	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
+	gsSP2Triangles(4, 3, 2, 0, 4, 2, 5, 0),
 	gsSPEndDisplayList(),
 };
 
-Vtx kaktus_Left_Arm_Color_mesh_layer_1_vtx_0[20] = {
-	{{{64, 40, 0}, 0, {1008, 496}, {0x2E, 0x76, 0x00, 0xFF}}},
-	{{{-10, -2, -23}, 0, {752, -16}, {0xCB, 0x00, 0x8D, 0xFF}}},
-	{{{-10, 24, 0}, 0, {1008, -16}, {0xC8, 0x72, 0x00, 0xFF}}},
-	{{{64, -2, -38}, 0, {752, 496}, {0x2E, 0x00, 0x8A, 0xFF}}},
-	{{{-10, -28, 0}, 0, {496, -16}, {0xC8, 0x8E, 0x00, 0xFF}}},
-	{{{64, -43, 0}, 0, {496, 496}, {0x2E, 0x8A, 0x00, 0xFF}}},
-	{{{-10, -2, 24}, 0, {240, -16}, {0xCB, 0x00, 0x73, 0xFF}}},
-	{{{64, -2, 38}, 0, {240, 496}, {0x2E, 0x00, 0x76, 0xFF}}},
-	{{{-10, 24, 0}, 0, {-16, -16}, {0xC8, 0x72, 0x00, 0xFF}}},
-	{{{64, 40, 0}, 0, {-16, 496}, {0x2E, 0x76, 0x00, 0xFF}}},
-	{{{64, 40, 0}, 0, {752, 506}, {0x2E, 0x76, 0x00, 0xFF}}},
-	{{{64, -2, 38}, 0, {506, 752}, {0x2E, 0x00, 0x76, 0xFF}}},
-	{{{83, -2, 0}, 0, {752, 752}, {0x7F, 0x00, 0x00, 0xFF}}},
-	{{{64, -43, 0}, 0, {752, 998}, {0x2E, 0x8A, 0x00, 0xFF}}},
-	{{{64, -2, -38}, 0, {998, 752}, {0x2E, 0x00, 0x8A, 0xFF}}},
-	{{{-10, -2, -23}, 0, {486, 752}, {0xCB, 0x00, 0x8D, 0xFF}}},
-	{{{-34, -2, 0}, 0, {240, 752}, {0x81, 0x00, 0x00, 0xFF}}},
-	{{{-10, 24, 0}, 0, {240, 506}, {0xC8, 0x72, 0x00, 0xFF}}},
-	{{{-10, -28, 0}, 0, {240, 998}, {0xC8, 0x8E, 0x00, 0xFF}}},
-	{{{-10, -2, 24}, 0, {-6, 752}, {0xCB, 0x00, 0x73, 0xFF}}},
+Vtx kaktus_tour_Left_Arm_Color_mesh_layer_1_vtx_0[20] = {
+	{{{65, 40, -2}, 0, {1008, 496}, {0x2E, 0x76, 0x00, 0xFF}}},
+	{{{-8, -2, -26}, 0, {752, -16}, {0xCB, 0x00, 0x8D, 0xFF}}},
+	{{{-8, 24, -2}, 0, {1008, -16}, {0xC8, 0x72, 0x00, 0xFF}}},
+	{{{65, -2, -40}, 0, {752, 496}, {0x2E, 0x00, 0x8A, 0xFF}}},
+	{{{-8, -28, -2}, 0, {496, -16}, {0xC8, 0x8E, 0x00, 0xFF}}},
+	{{{65, -43, -2}, 0, {496, 496}, {0x2E, 0x8A, 0x00, 0xFF}}},
+	{{{-8, -2, 21}, 0, {240, -16}, {0xCB, 0x00, 0x73, 0xFF}}},
+	{{{65, -2, 35}, 0, {240, 496}, {0x2E, 0x00, 0x76, 0xFF}}},
+	{{{-8, 24, -2}, 0, {-16, -16}, {0xC8, 0x72, 0x00, 0xFF}}},
+	{{{65, 40, -2}, 0, {-16, 496}, {0x2E, 0x76, 0x00, 0xFF}}},
+	{{{65, 40, -2}, 0, {752, 506}, {0x2E, 0x76, 0x00, 0xFF}}},
+	{{{65, -2, 35}, 0, {506, 752}, {0x2E, 0x00, 0x76, 0xFF}}},
+	{{{84, -2, -2}, 0, {752, 752}, {0x7F, 0x00, 0x00, 0xFF}}},
+	{{{65, -43, -2}, 0, {752, 998}, {0x2E, 0x8A, 0x00, 0xFF}}},
+	{{{65, -2, -40}, 0, {998, 752}, {0x2E, 0x00, 0x8A, 0xFF}}},
+	{{{-8, -2, -26}, 0, {486, 752}, {0xCB, 0x00, 0x8D, 0xFF}}},
+	{{{-32, -2, -2}, 0, {240, 752}, {0x81, 0x00, 0x00, 0xFF}}},
+	{{{-8, 24, -2}, 0, {240, 506}, {0xC8, 0x72, 0x00, 0xFF}}},
+	{{{-8, -28, -2}, 0, {240, 998}, {0xC8, 0x8E, 0x00, 0xFF}}},
+	{{{-8, -2, 21}, 0, {-6, 752}, {0xCB, 0x00, 0x73, 0xFF}}},
 };
 
-Gfx kaktus_Left_Arm_Color_mesh_layer_1_tri_0[] = {
-	gsSPVertex(kaktus_Left_Arm_Color_mesh_layer_1_vtx_0 + 0, 20, 0),
+Gfx kaktus_tour_Left_Arm_Color_mesh_layer_1_tri_0[] = {
+	gsSPVertex(kaktus_tour_Left_Arm_Color_mesh_layer_1_vtx_0 + 0, 20, 0),
 	gsSP2Triangles(0, 1, 2, 0, 0, 3, 1, 0),
 	gsSP2Triangles(3, 4, 1, 0, 3, 5, 4, 0),
 	gsSP2Triangles(5, 6, 4, 0, 5, 7, 6, 0),
@@ -2496,41 +2629,55 @@ Gfx kaktus_Left_Arm_Color_mesh_layer_1_tri_0[] = {
 	gsSPEndDisplayList(),
 };
 
-Vtx kaktus_Left_Forearm_mesh_layer_1_vtx_0[5] = {
-	{{{95, -2, 58}, 0, {506, 752}, {0x4A, 0x00, 0x67, 0xFF}}},
-	{{{95, -66, -3}, 0, {752, 998}, {0x48, 0x97, 0x00, 0xFF}}},
-	{{{76, -2, -3}, 0, {752, 752}, {0x7F, 0x00, 0x00, 0xFF}}},
-	{{{95, -2, -65}, 0, {998, 752}, {0x49, 0x00, 0x98, 0xFF}}},
-	{{{95, 62, -3}, 0, {752, 506}, {0x48, 0x69, 0x00, 0xFF}}},
+Vtx kaktus_tour_Left_Forearm_mesh_layer_1_vtx_0[15] = {
+	{{{97, -2, 55}, 0, {240, 496}, {0xE4, 0x00, 0x7C, 0xFF}}},
+	{{{97, 62, -6}, 0, {-16, 496}, {0xE2, 0x7B, 0x00, 0xFF}}},
+	{{{49, 51, -6}, 0, {-16, 240}, {0xE2, 0x7B, 0x00, 0xFF}}},
+	{{{49, -2, 45}, 0, {240, 240}, {0xE4, 0x00, 0x7C, 0xFF}}},
+	{{{97, -66, -6}, 0, {496, 496}, {0xE2, 0x85, 0x00, 0xFF}}},
+	{{{49, -54, -6}, 0, {496, 240}, {0xE2, 0x85, 0x00, 0xFF}}},
+	{{{97, -2, -67}, 0, {752, 496}, {0xE2, 0x00, 0x85, 0xFF}}},
+	{{{49, -2, -56}, 0, {752, 240}, {0xE2, 0x00, 0x85, 0xFF}}},
+	{{{97, 62, -6}, 0, {1008, 496}, {0xE2, 0x7B, 0x00, 0xFF}}},
+	{{{49, 51, -6}, 0, {1008, 240}, {0xE2, 0x7B, 0x00, 0xFF}}},
+	{{{97, -2, 55}, 0, {506, 752}, {0x7A, 0x00, 0xDB, 0xFF}}},
+	{{{97, -66, -6}, 0, {752, 998}, {0x7A, 0x23, 0x00, 0xFF}}},
+	{{{78, -2, -6}, 0, {752, 752}, {0x7F, 0x00, 0x00, 0xFF}}},
+	{{{97, -2, -67}, 0, {998, 752}, {0x7A, 0x00, 0x25, 0xFF}}},
+	{{{97, 62, -6}, 0, {752, 506}, {0x7A, 0xDD, 0x00, 0xFF}}},
 };
 
-Gfx kaktus_Left_Forearm_mesh_layer_1_tri_0[] = {
-	gsSPVertex(kaktus_Left_Forearm_mesh_layer_1_vtx_0 + 0, 5, 0),
-	gsSP2Triangles(0, 1, 2, 0, 1, 3, 2, 0),
-	gsSP2Triangles(3, 4, 2, 0, 4, 0, 2, 0),
+Gfx kaktus_tour_Left_Forearm_mesh_layer_1_tri_0[] = {
+	gsSPVertex(kaktus_tour_Left_Forearm_mesh_layer_1_vtx_0 + 0, 15, 0),
+	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
+	gsSP2Triangles(4, 0, 3, 0, 4, 3, 5, 0),
+	gsSP2Triangles(6, 4, 5, 0, 6, 5, 7, 0),
+	gsSP2Triangles(8, 6, 7, 0, 8, 7, 9, 0),
+	gsSP2Triangles(10, 11, 12, 0, 11, 13, 12, 0),
+	gsSP2Triangles(13, 14, 12, 0, 14, 10, 12, 0),
 	gsSPEndDisplayList(),
 };
 
-Vtx kaktus_Left_Forearm_mesh_layer_1_vtx_1[15] = {
-	{{{95, 62, -3}, 0, {1008, 496}, {0x48, 0x69, 0x00, 0xFF}}},
-	{{{0, -2, -41}, 0, {752, -16}, {0xBE, 0x00, 0x94, 0xFF}}},
-	{{{0, 39, -2}, 0, {1008, -16}, {0xBD, 0x6C, 0x00, 0xFF}}},
-	{{{95, -2, -65}, 0, {752, 496}, {0x49, 0x00, 0x98, 0xFF}}},
-	{{{0, -42, -2}, 0, {496, -16}, {0xBD, 0x94, 0x00, 0xFF}}},
-	{{{95, -66, -3}, 0, {496, 496}, {0x48, 0x97, 0x00, 0xFF}}},
-	{{{0, -2, 37}, 0, {240, -16}, {0xBF, 0x00, 0x6D, 0xFF}}},
-	{{{95, -2, 58}, 0, {240, 496}, {0x4A, 0x00, 0x67, 0xFF}}},
-	{{{0, 39, -2}, 0, {-16, -16}, {0xBD, 0x6C, 0x00, 0xFF}}},
-	{{{95, 62, -3}, 0, {-16, 496}, {0x48, 0x69, 0x00, 0xFF}}},
-	{{{0, -2, -41}, 0, {486, 752}, {0xBE, 0x00, 0x94, 0xFF}}},
-	{{{-24, -2, -2}, 0, {240, 752}, {0x81, 0x00, 0x00, 0xFF}}},
-	{{{0, 39, -2}, 0, {240, 506}, {0xBD, 0x6C, 0x00, 0xFF}}},
-	{{{0, -42, -2}, 0, {240, 998}, {0xBD, 0x94, 0x00, 0xFF}}},
-	{{{0, -2, 37}, 0, {-6, 752}, {0xBF, 0x00, 0x6D, 0xFF}}},
+Vtx kaktus_tour_Left_Forearm_mesh_layer_1_vtx_1[15] = {
+	{{{49, 51, -6}, 0, {1008, 240}, {0xE2, 0x7B, 0x00, 0xFF}}},
+	{{{1, -2, -44}, 0, {752, -16}, {0xBE, 0x00, 0x94, 0xFF}}},
+	{{{1, 39, -5}, 0, {1008, -16}, {0xBD, 0x6C, 0x00, 0xFF}}},
+	{{{49, -2, -56}, 0, {752, 240}, {0xE2, 0x00, 0x85, 0xFF}}},
+	{{{1, -42, -5}, 0, {496, -16}, {0xBD, 0x94, 0x00, 0xFF}}},
+	{{{49, -54, -6}, 0, {496, 240}, {0xE2, 0x85, 0x00, 0xFF}}},
+	{{{1, -2, 34}, 0, {240, -16}, {0xBF, 0x00, 0x6D, 0xFF}}},
+	{{{49, -2, 45}, 0, {240, 240}, {0xE4, 0x00, 0x7C, 0xFF}}},
+	{{{1, 39, -5}, 0, {-16, -16}, {0xBD, 0x6C, 0x00, 0xFF}}},
+	{{{49, 51, -6}, 0, {-16, 240}, {0xE2, 0x7B, 0x00, 0xFF}}},
+	{{{1, -2, -44}, 0, {486, 752}, {0xBE, 0x00, 0x94, 0xFF}}},
+	{{{-22, -2, -5}, 0, {240, 752}, {0x81, 0x00, 0x00, 0xFF}}},
+	{{{1, 39, -5}, 0, {240, 506}, {0xBD, 0x6C, 0x00, 0xFF}}},
+	{{{1, -42, -5}, 0, {240, 998}, {0xBD, 0x94, 0x00, 0xFF}}},
+	{{{1, -2, 34}, 0, {-6, 752}, {0xBF, 0x00, 0x6D, 0xFF}}},
 };
 
-Gfx kaktus_Left_Forearm_mesh_layer_1_tri_1[] = {
-	gsSPVertex(kaktus_Left_Forearm_mesh_layer_1_vtx_1 + 0, 15, 0),
+Gfx kaktus_tour_Left_Forearm_mesh_layer_1_tri_1[] = {
+	gsSPVertex(kaktus_tour_Left_Forearm_mesh_layer_1_vtx_1 + 0, 15, 0),
 	gsSP2Triangles(0, 1, 2, 0, 0, 3, 1, 0),
 	gsSP2Triangles(3, 4, 1, 0, 3, 5, 4, 0),
 	gsSP2Triangles(5, 6, 4, 0, 5, 7, 6, 0),
@@ -2540,169 +2687,212 @@ Gfx kaktus_Left_Forearm_mesh_layer_1_tri_1[] = {
 	gsSPEndDisplayList(),
 };
 
-Vtx kaktus_Left_Hand_DL_mesh_layer_1_vtx_0[18] = {
-	{{{-15, 0, 2}, 0, {543, 1008}, {0x81, 0x00, 0x00, 0xFF}}},
-	{{{11, 29, 42}, 0, {449, 847}, {0xC4, 0x42, 0x5B, 0xFF}}},
-	{{{11, 47, -13}, 0, {636, 847}, {0xC4, 0x6A, 0xDD, 0xFF}}},
-	{{{60, 47, 17}, 0, {543, 686}, {0x3C, 0x6A, 0x23, 0xFF}}},
-	{{{60, 0, 51}, 0, {356, 686}, {0x3C, 0x00, 0x70, 0xFF}}},
-	{{{11, -29, 42}, 0, {263, 847}, {0xC4, 0xBE, 0x5B, 0xFF}}},
-	{{{-15, 0, 2}, 0, {170, 1008}, {0x81, 0x00, 0x00, 0xFF}}},
-	{{{11, -47, -13}, 0, {77, 847}, {0xC4, 0x96, 0xDD, 0xFF}}},
-	{{{60, -47, 17}, 0, {170, 686}, {0x3C, 0x96, 0x23, 0xFF}}},
-	{{{60, -29, -38}, 0, {-16, 686}, {0x3C, 0xBE, 0xA5, 0xFF}}},
-	{{{86, 0, 2}, 0, {449, 524}, {0x7F, 0x00, 0x00, 0xFF}}},
-	{{{86, 0, 2}, 0, {636, 524}, {0x7F, 0x00, 0x00, 0xFF}}},
-	{{{60, 29, -38}, 0, {729, 686}, {0x3C, 0x42, 0xA5, 0xFF}}},
-	{{{11, 0, -48}, 0, {822, 847}, {0xC4, 0x00, 0x90, 0xFF}}},
-	{{{60, -29, -38}, 0, {915, 686}, {0x3C, 0xBE, 0xA5, 0xFF}}},
-	{{{86, 0, 2}, 0, {77, 524}, {0x7F, 0x00, 0x00, 0xFF}}},
-	{{{11, -47, -13}, 0, {1008, 847}, {0xC4, 0x96, 0xDD, 0xFF}}},
-	{{{-15, 0, 2}, 0, {729, 1008}, {0x81, 0x00, 0x00, 0xFF}}},
+Vtx kaktus_tour_Left_Hand_DL_mesh_layer_1_vtx_0[16] = {
+	{{{-13, 0, -1}, 0, {543, 1008}, {0x81, 0x00, 0x00, 0xFF}}},
+	{{{12, 29, 39}, 0, {449, 847}, {0xC4, 0x42, 0x5B, 0xFF}}},
+	{{{12, 47, -16}, 0, {636, 847}, {0xC4, 0x6A, 0xDD, 0xFF}}},
+	{{{62, 47, 15}, 0, {543, 686}, {0x3C, 0x6A, 0x23, 0xFF}}},
+	{{{62, 0, 49}, 0, {356, 686}, {0x3C, 0x00, 0x70, 0xFF}}},
+	{{{12, -29, 39}, 0, {263, 847}, {0xC4, 0xBE, 0x5B, 0xFF}}},
+	{{{-13, 0, -1}, 0, {170, 1008}, {0x81, 0x00, 0x00, 0xFF}}},
+	{{{12, -47, -16}, 0, {77, 847}, {0xC4, 0x96, 0xDD, 0xFF}}},
+	{{{62, -47, 15}, 0, {170, 686}, {0x3C, 0x96, 0x23, 0xFF}}},
+	{{{62, -29, -41}, 0, {-16, 686}, {0x3C, 0xBE, 0xA5, 0xFF}}},
+	{{{87, 0, -1}, 0, {449, 524}, {0x7F, 0x00, 0x00, 0xFF}}},
+	{{{-13, 0, -1}, 0, {729, 1008}, {0x81, 0x00, 0x00, 0xFF}}},
+	{{{12, 0, -50}, 0, {822, 847}, {0xC4, 0x00, 0x90, 0xFF}}},
+	{{{62, 29, -41}, 0, {729, 686}, {0x3C, 0x42, 0xA5, 0xFF}}},
+	{{{62, -29, -41}, 0, {915, 686}, {0x3C, 0xBE, 0xA5, 0xFF}}},
+	{{{12, -47, -16}, 0, {1008, 847}, {0xC4, 0x96, 0xDD, 0xFF}}},
 };
 
-Gfx kaktus_Left_Hand_DL_mesh_layer_1_tri_0[] = {
-	gsSPVertex(kaktus_Left_Hand_DL_mesh_layer_1_vtx_0 + 0, 18, 0),
+Gfx kaktus_tour_Left_Hand_DL_mesh_layer_1_tri_0[] = {
+	gsSPVertex(kaktus_tour_Left_Hand_DL_mesh_layer_1_vtx_0 + 0, 16, 0),
 	gsSP2Triangles(0, 1, 2, 0, 1, 3, 2, 0),
 	gsSP2Triangles(1, 4, 3, 0, 5, 4, 1, 0),
 	gsSP2Triangles(5, 1, 6, 0, 5, 6, 7, 0),
 	gsSP2Triangles(7, 8, 5, 0, 7, 9, 8, 0),
 	gsSP2Triangles(5, 8, 4, 0, 10, 4, 8, 0),
-	gsSP2Triangles(10, 3, 4, 0, 3, 11, 12, 0),
-	gsSP2Triangles(2, 3, 12, 0, 2, 12, 13, 0),
-	gsSP2Triangles(13, 12, 14, 0, 15, 14, 12, 0),
-	gsSP2Triangles(15, 8, 14, 0, 13, 14, 16, 0),
-	gsSP2Triangles(17, 13, 16, 0, 17, 2, 13, 0),
+	gsSP2Triangles(10, 3, 4, 0, 11, 2, 12, 0),
+	gsSP2Triangles(2, 13, 12, 0, 2, 3, 13, 0),
+	gsSP2Triangles(12, 13, 14, 0, 12, 14, 15, 0),
+	gsSP1Triangle(11, 12, 15, 0),
 	gsSPEndDisplayList(),
 };
 
-Vtx kaktus_Left_Hand_Open_Switch_Option_Left_Hand_Open_mesh_layer_1_vtx_0[25] = {
+Vtx kaktus_tour_Left_Hand_DL_mesh_layer_1_vtx_1[6] = {
+	{{{62, 47, 15}, 0, {543, 686}, {0x3C, 0x6A, 0x23, 0xFF}}},
+	{{{87, 0, -1}, 0, {636, 524}, {0x7F, 0x00, 0x00, 0xFF}}},
+	{{{62, 29, -41}, 0, {729, 686}, {0x3C, 0x42, 0xA5, 0xFF}}},
+	{{{87, 0, -1}, 0, {77, 524}, {0x7F, 0x00, 0x00, 0xFF}}},
+	{{{62, -29, -41}, 0, {915, 686}, {0x3C, 0xBE, 0xA5, 0xFF}}},
+	{{{62, -47, 15}, 0, {170, 686}, {0x3C, 0x96, 0x23, 0xFF}}},
+};
+
+Gfx kaktus_tour_Left_Hand_DL_mesh_layer_1_tri_1[] = {
+	gsSPVertex(kaktus_tour_Left_Hand_DL_mesh_layer_1_vtx_1 + 0, 6, 0),
+	gsSP2Triangles(0, 1, 2, 0, 3, 4, 2, 0),
+	gsSP1Triangle(3, 5, 4, 0),
+	gsSPEndDisplayList(),
+};
+
+Vtx kaktus_tour_Left_Hand_Open_Switch_Option_Left_Hand_Open_mesh_layer_1_vtx_0[13] = {
 	{{{90, 74, -21}, 0, {-16, -16}, {0x4C, 0x5F, 0x22, 0xFF}}},
 	{{{38, 90, -20}, 0, {-16, -16}, {0xF0, 0x7E, 0xF8, 0xFF}}},
 	{{{45, 41, 21}, 0, {-16, -16}, {0x14, 0x28, 0x77, 0xFF}}},
 	{{{88, 71, -43}, 0, {-16, -16}, {0x33, 0x41, 0x9F, 0xFF}}},
 	{{{110, 34, -7}, 0, {-16, -16}, {0x74, 0xF7, 0x34, 0xFF}}},
 	{{{51, -18, 10}, 0, {-16, -16}, {0x43, 0xC1, 0x58, 0xFF}}},
-	{{{-7, 16, 29}, 0, {-16, -16}, {0xDE, 0x0D, 0x7A, 0xFF}}},
-	{{{-27, 54, -9}, 0, {-16, -16}, {0xAC, 0x5C, 0x17, 0xFF}}},
-	{{{-7, 41, -42}, 0, {-16, -16}, {0xF5, 0x41, 0x94, 0xFF}}},
-	{{{46, 60, -35}, 0, {-16, -16}, {0xF6, 0x16, 0x83, 0xFF}}},
 	{{{102, 28, -41}, 0, {-16, -16}, {0x50, 0xD8, 0xA6, 0xFF}}},
 	{{{57, -6, -27}, 0, {-16, -16}, {0x64, 0xE3, 0xB8, 0xFF}}},
 	{{{57, -48, -38}, 0, {-16, -16}, {0x4B, 0xA4, 0xD4, 0xFF}}},
 	{{{13, -35, 10}, 0, {-16, -16}, {0xFF, 0x9F, 0x52, 0xFF}}},
-	{{{-7, -33, 6}, 0, {-16, -16}, {0xBD, 0xA3, 0x37, 0xFF}}},
-	{{{-22, 5, 17}, 0, {-16, -16}, {0x9E, 0xE4, 0x4C, 0xFF}}},
-	{{{-36, 35, -9}, 0, {-16, -16}, {0x85, 0x17, 0x18, 0xFF}}},
-	{{{-22, 29, -53}, 0, {-16, -16}, {0xDB, 0x1E, 0x8B, 0xFF}}},
-	{{{-8, -1, -45}, 0, {-16, -16}, {0xDF, 0xE2, 0x89, 0xFF}}},
-	{{{44, -19, -49}, 0, {-16, -16}, {0x2D, 0x03, 0x89, 0xFF}}},
-	{{{37, 10, -37}, 0, {-16, -16}, {0x34, 0x1D, 0x90, 0xFF}}},
 	{{{8, -38, -37}, 0, {-16, -16}, {0xD8, 0x9D, 0xBB, 0xFF}}},
-	{{{-13, -28, -27}, 0, {-16, -16}, {0xA4, 0xB1, 0xD9, 0xFF}}},
-	{{{-22, -1, -10}, 0, {-16, -16}, {0x8B, 0xD0, 0x0D, 0xFF}}},
-	{{{-32, 15, -38}, 0, {-16, -16}, {0x8E, 0xE4, 0xCF, 0xFF}}},
+	{{{44, -19, -49}, 0, {-16, -16}, {0x2D, 0x03, 0x89, 0xFF}}},
+	{{{46, 60, -35}, 0, {-16, -16}, {0xF6, 0x16, 0x83, 0xFF}}},
 };
 
-Gfx kaktus_Left_Hand_Open_Switch_Option_Left_Hand_Open_mesh_layer_1_tri_0[] = {
-	gsSPVertex(kaktus_Left_Hand_Open_Switch_Option_Left_Hand_Open_mesh_layer_1_vtx_0 + 0, 25, 0),
+Gfx kaktus_tour_Left_Hand_Open_Switch_Option_Left_Hand_Open_mesh_layer_1_tri_0[] = {
+	gsSPVertex(kaktus_tour_Left_Hand_Open_Switch_Option_Left_Hand_Open_mesh_layer_1_vtx_0 + 0, 13, 0),
 	gsSP2Triangles(0, 1, 2, 0, 1, 0, 3, 0),
 	gsSP2Triangles(0, 4, 3, 0, 4, 0, 2, 0),
-	gsSP2Triangles(5, 4, 2, 0, 5, 2, 6, 0),
-	gsSP2Triangles(6, 2, 1, 0, 6, 1, 7, 0),
-	gsSP2Triangles(8, 7, 1, 0, 1, 9, 8, 0),
-	gsSP2Triangles(3, 9, 1, 0, 9, 3, 10, 0),
-	gsSP2Triangles(3, 4, 10, 0, 10, 4, 5, 0),
-	gsSP2Triangles(11, 10, 5, 0, 12, 11, 5, 0),
-	gsSP2Triangles(12, 5, 13, 0, 13, 5, 6, 0),
-	gsSP2Triangles(14, 13, 6, 0, 6, 15, 14, 0),
-	gsSP2Triangles(16, 15, 6, 0, 16, 6, 7, 0),
-	gsSP2Triangles(16, 7, 17, 0, 7, 8, 17, 0),
-	gsSP2Triangles(18, 17, 8, 0, 19, 18, 8, 0),
-	gsSP2Triangles(19, 8, 20, 0, 8, 9, 20, 0),
-	gsSP2Triangles(20, 9, 11, 0, 9, 10, 11, 0),
-	gsSP2Triangles(19, 20, 11, 0, 19, 11, 12, 0),
-	gsSP2Triangles(12, 21, 19, 0, 13, 21, 12, 0),
-	gsSP2Triangles(14, 21, 13, 0, 14, 22, 21, 0),
-	gsSP2Triangles(22, 14, 23, 0, 14, 15, 23, 0),
-	gsSP2Triangles(15, 16, 23, 0, 16, 24, 23, 0),
-	gsSP2Triangles(17, 24, 16, 0, 24, 17, 18, 0),
-	gsSP2Triangles(22, 24, 18, 0, 22, 18, 21, 0),
-	gsSP2Triangles(21, 18, 19, 0, 24, 22, 23, 0),
+	gsSP2Triangles(5, 4, 2, 0, 6, 4, 5, 0),
+	gsSP2Triangles(7, 6, 5, 0, 8, 7, 5, 0),
+	gsSP2Triangles(8, 5, 9, 0, 9, 10, 8, 0),
+	gsSP2Triangles(8, 10, 11, 0, 11, 7, 8, 0),
+	gsSP2Triangles(12, 6, 7, 0, 12, 3, 6, 0),
+	gsSP2Triangles(3, 12, 1, 0, 3, 4, 6, 0),
 	gsSPEndDisplayList(),
 };
 
-Vtx kaktus_Right_Arm_Color_mesh_layer_1_vtx_0[20] = {
-	{{{67, 40, 0}, 0, {1008, 496}, {0x2E, 0x76, 0x00, 0xFF}}},
-	{{{-7, 24, 0}, 0, {1008, -16}, {0xC8, 0x72, 0x00, 0xFF}}},
-	{{{-7, -2, 24}, 0, {752, -16}, {0xCB, 0x00, 0x73, 0xFF}}},
-	{{{67, -2, 38}, 0, {752, 496}, {0x2E, 0x00, 0x76, 0xFF}}},
-	{{{-7, -28, 0}, 0, {496, -16}, {0xC8, 0x8E, 0x00, 0xFF}}},
-	{{{67, -43, 0}, 0, {496, 496}, {0x2E, 0x8A, 0x00, 0xFF}}},
-	{{{-7, -2, -24}, 0, {240, -16}, {0xCB, 0x00, 0x8D, 0xFF}}},
-	{{{67, -2, -38}, 0, {240, 496}, {0x2E, 0x00, 0x8A, 0xFF}}},
-	{{{-7, 24, 0}, 0, {-16, -16}, {0xC8, 0x72, 0x00, 0xFF}}},
-	{{{67, 40, 0}, 0, {-16, 496}, {0x2E, 0x76, 0x00, 0xFF}}},
-	{{{67, 40, 0}, 0, {752, 506}, {0x2E, 0x76, 0x00, 0xFF}}},
-	{{{67, -2, 38}, 0, {998, 752}, {0x2E, 0x00, 0x76, 0xFF}}},
-	{{{86, -2, 0}, 0, {752, 752}, {0x7F, 0x00, 0x00, 0xFF}}},
-	{{{67, -43, 0}, 0, {752, 998}, {0x2E, 0x8A, 0x00, 0xFF}}},
-	{{{67, -2, -38}, 0, {506, 752}, {0x2E, 0x00, 0x8A, 0xFF}}},
-	{{{-7, -2, 24}, 0, {486, 752}, {0xCB, 0x00, 0x73, 0xFF}}},
-	{{{-7, 24, 0}, 0, {240, 506}, {0xC8, 0x72, 0x00, 0xFF}}},
-	{{{-31, -2, 0}, 0, {240, 752}, {0x81, 0x00, 0x00, 0xFF}}},
-	{{{-7, -2, -24}, 0, {-6, 752}, {0xCB, 0x00, 0x8D, 0xFF}}},
-	{{{-7, -28, 0}, 0, {240, 998}, {0xC8, 0x8E, 0x00, 0xFF}}},
+Vtx kaktus_tour_Left_Hand_Open_Switch_Option_Left_Hand_Open_mesh_layer_1_vtx_1[20] = {
+	{{{51, -18, 10}, 0, {-16, -16}, {0x43, 0xC1, 0x58, 0xFF}}},
+	{{{45, 41, 21}, 0, {-16, -16}, {0x14, 0x28, 0x77, 0xFF}}},
+	{{{-7, 16, 29}, 0, {-16, -16}, {0xDE, 0x0D, 0x7A, 0xFF}}},
+	{{{38, 90, -20}, 0, {-16, -16}, {0xF0, 0x7E, 0xF8, 0xFF}}},
+	{{{-27, 54, -9}, 0, {-16, -16}, {0xAC, 0x5C, 0x17, 0xFF}}},
+	{{{-7, 41, -42}, 0, {-16, -16}, {0xF5, 0x41, 0x94, 0xFF}}},
+	{{{46, 60, -35}, 0, {-16, -16}, {0xF6, 0x16, 0x83, 0xFF}}},
+	{{{37, 10, -37}, 0, {-16, -16}, {0x34, 0x1D, 0x90, 0xFF}}},
+	{{{57, -6, -27}, 0, {-16, -16}, {0x64, 0xE3, 0xB8, 0xFF}}},
+	{{{44, -19, -49}, 0, {-16, -16}, {0x2D, 0x03, 0x89, 0xFF}}},
+	{{{-8, -1, -45}, 0, {-16, -16}, {0xDF, 0xE2, 0x89, 0xFF}}},
+	{{{8, -38, -37}, 0, {-16, -16}, {0xD8, 0x9D, 0xBB, 0xFF}}},
+	{{{-13, -28, -27}, 0, {-16, -16}, {0xA4, 0xB1, 0xD9, 0xFF}}},
+	{{{-7, -33, 6}, 0, {-16, -16}, {0xBD, 0xA3, 0x37, 0xFF}}},
+	{{{13, -35, 10}, 0, {-16, -16}, {0xFF, 0x9F, 0x52, 0xFF}}},
+	{{{-22, 5, 17}, 0, {-16, -16}, {0x9E, 0xE4, 0x4C, 0xFF}}},
+	{{{-36, 35, -9}, 0, {-16, -16}, {0x85, 0x17, 0x18, 0xFF}}},
+	{{{-22, 29, -53}, 0, {-16, -16}, {0xDB, 0x1E, 0x8B, 0xFF}}},
+	{{{-32, 15, -38}, 0, {-16, -16}, {0x8E, 0xE4, 0xCF, 0xFF}}},
+	{{{-22, -1, -10}, 0, {-16, -16}, {0x8B, 0xD0, 0x0D, 0xFF}}},
 };
 
-Gfx kaktus_Right_Arm_Color_mesh_layer_1_tri_0[] = {
-	gsSPVertex(kaktus_Right_Arm_Color_mesh_layer_1_vtx_0 + 0, 20, 0),
+Gfx kaktus_tour_Left_Hand_Open_Switch_Option_Left_Hand_Open_mesh_layer_1_tri_1[] = {
+	gsSPVertex(kaktus_tour_Left_Hand_Open_Switch_Option_Left_Hand_Open_mesh_layer_1_vtx_1 + 0, 20, 0),
+	gsSP2Triangles(0, 1, 2, 0, 2, 1, 3, 0),
+	gsSP2Triangles(2, 3, 4, 0, 5, 4, 3, 0),
+	gsSP2Triangles(3, 6, 5, 0, 5, 6, 7, 0),
+	gsSP2Triangles(7, 6, 8, 0, 9, 7, 8, 0),
+	gsSP2Triangles(9, 5, 7, 0, 9, 10, 5, 0),
+	gsSP2Triangles(11, 10, 9, 0, 12, 10, 11, 0),
+	gsSP2Triangles(13, 12, 11, 0, 13, 11, 14, 0),
+	gsSP2Triangles(13, 14, 2, 0, 14, 0, 2, 0),
+	gsSP2Triangles(2, 15, 13, 0, 16, 15, 2, 0),
+	gsSP2Triangles(16, 2, 4, 0, 16, 4, 17, 0),
+	gsSP2Triangles(4, 5, 17, 0, 10, 17, 5, 0),
+	gsSP2Triangles(18, 17, 10, 0, 12, 18, 10, 0),
+	gsSP2Triangles(18, 12, 19, 0, 12, 13, 19, 0),
+	gsSP2Triangles(13, 15, 19, 0, 15, 16, 19, 0),
+	gsSP2Triangles(16, 18, 19, 0, 17, 18, 16, 0),
+	gsSPEndDisplayList(),
+};
+
+Vtx kaktus_tour_Right_Arm_Color_mesh_layer_1_vtx_0[20] = {
+	{{{64, 40, 2}, 0, {1008, 496}, {0x2E, 0x76, 0x00, 0xFF}}},
+	{{{-9, 24, 2}, 0, {1008, -16}, {0xC8, 0x72, 0x00, 0xFF}}},
+	{{{-9, -2, 25}, 0, {752, -16}, {0xCB, 0x00, 0x73, 0xFF}}},
+	{{{64, -2, 39}, 0, {752, 496}, {0x2E, 0x00, 0x76, 0xFF}}},
+	{{{-9, -28, 2}, 0, {496, -16}, {0xC8, 0x8E, 0x00, 0xFF}}},
+	{{{64, -43, 2}, 0, {496, 496}, {0x2E, 0x8A, 0x00, 0xFF}}},
+	{{{-9, -2, -22}, 0, {240, -16}, {0xCB, 0x00, 0x8D, 0xFF}}},
+	{{{64, -2, -36}, 0, {240, 496}, {0x2E, 0x00, 0x8A, 0xFF}}},
+	{{{-9, 24, 2}, 0, {-16, -16}, {0xC8, 0x72, 0x00, 0xFF}}},
+	{{{64, 40, 2}, 0, {-16, 496}, {0x2E, 0x76, 0x00, 0xFF}}},
+	{{{64, 40, 2}, 0, {752, 506}, {0x2E, 0x76, 0x00, 0xFF}}},
+	{{{83, -2, 2}, 0, {752, 752}, {0x7F, 0x00, 0x00, 0xFF}}},
+	{{{64, -2, -36}, 0, {506, 752}, {0x2E, 0x00, 0x8A, 0xFF}}},
+	{{{64, -2, 39}, 0, {998, 752}, {0x2E, 0x00, 0x76, 0xFF}}},
+	{{{64, -43, 2}, 0, {752, 998}, {0x2E, 0x8A, 0x00, 0xFF}}},
+	{{{-9, -2, 25}, 0, {486, 752}, {0xCB, 0x00, 0x73, 0xFF}}},
+	{{{-9, 24, 2}, 0, {240, 506}, {0xC8, 0x72, 0x00, 0xFF}}},
+	{{{-33, -2, 2}, 0, {240, 752}, {0x81, 0x00, 0x00, 0xFF}}},
+	{{{-9, -2, -22}, 0, {-6, 752}, {0xCB, 0x00, 0x8D, 0xFF}}},
+	{{{-9, -28, 2}, 0, {240, 998}, {0xC8, 0x8E, 0x00, 0xFF}}},
+};
+
+Gfx kaktus_tour_Right_Arm_Color_mesh_layer_1_tri_0[] = {
+	gsSPVertex(kaktus_tour_Right_Arm_Color_mesh_layer_1_vtx_0 + 0, 20, 0),
 	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
 	gsSP2Triangles(3, 2, 4, 0, 3, 4, 5, 0),
 	gsSP2Triangles(5, 4, 6, 0, 5, 6, 7, 0),
 	gsSP2Triangles(7, 6, 8, 0, 7, 8, 9, 0),
-	gsSP2Triangles(10, 11, 12, 0, 11, 13, 12, 0),
-	gsSP2Triangles(13, 14, 12, 0, 14, 10, 12, 0),
+	gsSP2Triangles(10, 11, 12, 0, 13, 11, 10, 0),
+	gsSP2Triangles(14, 11, 13, 0, 12, 11, 14, 0),
 	gsSP2Triangles(15, 16, 17, 0, 16, 18, 17, 0),
 	gsSP2Triangles(18, 19, 17, 0, 19, 15, 17, 0),
 	gsSPEndDisplayList(),
 };
 
-Vtx kaktus_Right_Forearm_mesh_layer_1_vtx_0[5] = {
-	{{{98, -2, 64}, 0, {998, 752}, {0x49, 0x00, 0x68, 0xFF}}},
-	{{{98, -66, 2}, 0, {752, 998}, {0x48, 0x97, 0x00, 0xFF}}},
-	{{{80, -2, 2}, 0, {752, 752}, {0x7F, 0x00, 0x00, 0xFF}}},
-	{{{98, -2, -59}, 0, {506, 752}, {0x4A, 0x00, 0x99, 0xFF}}},
-	{{{98, 62, 2}, 0, {752, 506}, {0x48, 0x69, 0x00, 0xFF}}},
+Vtx kaktus_tour_Right_Forearm_mesh_layer_1_vtx_0[15] = {
+	{{{95, -2, -58}, 0, {240, 496}, {0xE4, 0x00, 0x84, 0xFF}}},
+	{{{48, 51, 3}, 0, {-16, 240}, {0xE2, 0x7B, 0x00, 0xFF}}},
+	{{{95, 62, 4}, 0, {-16, 496}, {0xE2, 0x7B, 0x00, 0xFF}}},
+	{{{48, -2, -47}, 0, {240, 240}, {0xE4, 0x00, 0x84, 0xFF}}},
+	{{{95, -66, 4}, 0, {496, 496}, {0xE2, 0x85, 0x00, 0xFF}}},
+	{{{48, -54, 3}, 0, {496, 240}, {0xE2, 0x85, 0x00, 0xFF}}},
+	{{{95, -2, 65}, 0, {752, 496}, {0xE2, 0x00, 0x7B, 0xFF}}},
+	{{{48, -2, 53}, 0, {752, 240}, {0xE2, 0x00, 0x7B, 0xFF}}},
+	{{{95, 62, 4}, 0, {1008, 496}, {0xE2, 0x7B, 0x00, 0xFF}}},
+	{{{48, 51, 3}, 0, {1008, 240}, {0xE2, 0x7B, 0x00, 0xFF}}},
+	{{{95, -2, -58}, 0, {506, 752}, {0x7A, 0x00, 0x25, 0xFF}}},
+	{{{77, -2, 4}, 0, {752, 752}, {0x7F, 0x00, 0x00, 0xFF}}},
+	{{{95, -66, 4}, 0, {752, 998}, {0x7A, 0x23, 0x00, 0xFF}}},
+	{{{95, 62, 4}, 0, {752, 506}, {0x7A, 0xDD, 0x00, 0xFF}}},
+	{{{95, -2, 65}, 0, {998, 752}, {0x7A, 0x00, 0xDB, 0xFF}}},
 };
 
-Gfx kaktus_Right_Forearm_mesh_layer_1_tri_0[] = {
-	gsSPVertex(kaktus_Right_Forearm_mesh_layer_1_vtx_0 + 0, 5, 0),
-	gsSP2Triangles(0, 1, 2, 0, 1, 3, 2, 0),
-	gsSP2Triangles(3, 4, 2, 0, 4, 0, 2, 0),
+Gfx kaktus_tour_Right_Forearm_mesh_layer_1_tri_0[] = {
+	gsSPVertex(kaktus_tour_Right_Forearm_mesh_layer_1_vtx_0 + 0, 15, 0),
+	gsSP2Triangles(0, 1, 2, 0, 0, 3, 1, 0),
+	gsSP2Triangles(4, 3, 0, 0, 4, 5, 3, 0),
+	gsSP2Triangles(6, 5, 4, 0, 6, 7, 5, 0),
+	gsSP2Triangles(8, 7, 6, 0, 8, 9, 7, 0),
+	gsSP2Triangles(10, 11, 12, 0, 13, 11, 10, 0),
+	gsSP2Triangles(14, 11, 13, 0, 12, 11, 14, 0),
 	gsSPEndDisplayList(),
 };
 
-Vtx kaktus_Right_Forearm_mesh_layer_1_vtx_1[15] = {
-	{{{98, 62, 2}, 0, {1008, 496}, {0x48, 0x69, 0x00, 0xFF}}},
-	{{{3, 39, 1}, 0, {1008, -16}, {0xBD, 0x6C, 0x00, 0xFF}}},
-	{{{3, -2, 40}, 0, {752, -16}, {0xBE, 0x00, 0x6C, 0xFF}}},
-	{{{98, -2, 64}, 0, {752, 496}, {0x49, 0x00, 0x68, 0xFF}}},
-	{{{3, -42, 1}, 0, {496, -16}, {0xBD, 0x94, 0x00, 0xFF}}},
-	{{{98, -66, 2}, 0, {496, 496}, {0x48, 0x97, 0x00, 0xFF}}},
-	{{{3, -2, -38}, 0, {240, -16}, {0xBF, 0x00, 0x93, 0xFF}}},
-	{{{98, -2, -59}, 0, {240, 496}, {0x4A, 0x00, 0x99, 0xFF}}},
-	{{{3, 39, 1}, 0, {-16, -16}, {0xBD, 0x6C, 0x00, 0xFF}}},
-	{{{98, 62, 2}, 0, {-16, 496}, {0x48, 0x69, 0x00, 0xFF}}},
-	{{{3, -2, 40}, 0, {486, 752}, {0xBE, 0x00, 0x6C, 0xFF}}},
-	{{{3, 39, 1}, 0, {240, 506}, {0xBD, 0x6C, 0x00, 0xFF}}},
-	{{{-21, -2, 1}, 0, {240, 752}, {0x81, 0x00, 0x00, 0xFF}}},
-	{{{3, -2, -38}, 0, {-6, 752}, {0xBF, 0x00, 0x93, 0xFF}}},
-	{{{3, -42, 1}, 0, {240, 998}, {0xBD, 0x94, 0x00, 0xFF}}},
+Vtx kaktus_tour_Right_Forearm_mesh_layer_1_vtx_1[15] = {
+	{{{48, 51, 3}, 0, {1008, 240}, {0xE2, 0x7B, 0x00, 0xFF}}},
+	{{{0, 39, 3}, 0, {1008, -16}, {0xBD, 0x6C, 0x00, 0xFF}}},
+	{{{0, -2, 42}, 0, {752, -16}, {0xBE, 0x00, 0x6C, 0xFF}}},
+	{{{48, -2, 53}, 0, {752, 240}, {0xE2, 0x00, 0x7B, 0xFF}}},
+	{{{0, -42, 3}, 0, {496, -16}, {0xBD, 0x94, 0x00, 0xFF}}},
+	{{{48, -54, 3}, 0, {496, 240}, {0xE2, 0x85, 0x00, 0xFF}}},
+	{{{0, -2, -36}, 0, {240, -16}, {0xBF, 0x00, 0x93, 0xFF}}},
+	{{{48, -2, -47}, 0, {240, 240}, {0xE4, 0x00, 0x84, 0xFF}}},
+	{{{0, 39, 3}, 0, {-16, -16}, {0xBD, 0x6C, 0x00, 0xFF}}},
+	{{{48, 51, 3}, 0, {-16, 240}, {0xE2, 0x7B, 0x00, 0xFF}}},
+	{{{0, -2, 42}, 0, {486, 752}, {0xBE, 0x00, 0x6C, 0xFF}}},
+	{{{0, 39, 3}, 0, {240, 506}, {0xBD, 0x6C, 0x00, 0xFF}}},
+	{{{-23, -2, 3}, 0, {240, 752}, {0x81, 0x00, 0x00, 0xFF}}},
+	{{{0, -2, -36}, 0, {-6, 752}, {0xBF, 0x00, 0x93, 0xFF}}},
+	{{{0, -42, 3}, 0, {240, 998}, {0xBD, 0x94, 0x00, 0xFF}}},
 };
 
-Gfx kaktus_Right_Forearm_mesh_layer_1_tri_1[] = {
-	gsSPVertex(kaktus_Right_Forearm_mesh_layer_1_vtx_1 + 0, 15, 0),
+Gfx kaktus_tour_Right_Forearm_mesh_layer_1_tri_1[] = {
+	gsSPVertex(kaktus_tour_Right_Forearm_mesh_layer_1_vtx_1 + 0, 15, 0),
 	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
 	gsSP2Triangles(3, 2, 4, 0, 3, 4, 5, 0),
 	gsSP2Triangles(5, 4, 6, 0, 5, 6, 7, 0),
@@ -2712,43 +2902,56 @@ Gfx kaktus_Right_Forearm_mesh_layer_1_tri_1[] = {
 	gsSPEndDisplayList(),
 };
 
-Vtx kaktus_Right_Hand_DL_mesh_layer_1_vtx_0[18] = {
-	{{{-11, 0, -3}, 0, {170, 1008}, {0x81, 0x00, 0x00, 0xFF}}},
-	{{{14, -29, -43}, 0, {263, 847}, {0xC4, 0xBE, 0xA5, 0xFF}}},
-	{{{14, -47, 13}, 0, {77, 847}, {0xC4, 0x96, 0x23, 0xFF}}},
-	{{{64, -47, -18}, 0, {170, 686}, {0x3C, 0x96, 0xDD, 0xFF}}},
-	{{{64, 0, -52}, 0, {356, 686}, {0x3C, 0x00, 0x90, 0xFF}}},
-	{{{14, 29, -43}, 0, {449, 847}, {0xC4, 0x42, 0xA5, 0xFF}}},
-	{{{-11, 0, -3}, 0, {543, 1008}, {0x81, 0x00, 0x00, 0xFF}}},
-	{{{14, 47, 13}, 0, {636, 847}, {0xC4, 0x6A, 0x23, 0xFF}}},
-	{{{64, 47, -18}, 0, {543, 686}, {0x3C, 0x6A, 0xDD, 0xFF}}},
-	{{{64, 29, 38}, 0, {729, 686}, {0x3C, 0x42, 0x5B, 0xFF}}},
-	{{{14, 0, 47}, 0, {822, 847}, {0xC4, 0x00, 0x70, 0xFF}}},
-	{{{-11, 0, -3}, 0, {915, 1008}, {0x81, 0x00, 0x00, 0xFF}}},
-	{{{14, -47, 13}, 0, {1008, 847}, {0xC4, 0x96, 0x23, 0xFF}}},
-	{{{64, -29, 38}, 0, {915, 686}, {0x3C, 0xBE, 0x5B, 0xFF}}},
-	{{{89, 0, -3}, 0, {636, 524}, {0x7F, 0x00, 0x00, 0xFF}}},
-	{{{64, -29, 38}, 0, {-16, 686}, {0x3C, 0xBE, 0x5B, 0xFF}}},
-	{{{89, 0, -3}, 0, {822, 524}, {0x7F, 0x00, 0x00, 0xFF}}},
-	{{{89, 0, -3}, 0, {263, 524}, {0x7F, 0x00, 0x00, 0xFF}}},
+Vtx kaktus_tour_Right_Hand_DL_mesh_layer_1_vtx_0[16] = {
+	{{{-14, 0, -1}, 0, {543, 1008}, {0x81, 0x00, 0x00, 0xFF}}},
+	{{{11, 47, 14}, 0, {636, 847}, {0xC4, 0x6A, 0x23, 0xFF}}},
+	{{{11, 29, -42}, 0, {449, 847}, {0xC4, 0x42, 0xA5, 0xFF}}},
+	{{{61, 47, -17}, 0, {543, 686}, {0x3C, 0x6A, 0xDD, 0xFF}}},
+	{{{61, 29, 39}, 0, {729, 686}, {0x3C, 0x42, 0x5B, 0xFF}}},
+	{{{11, 0, 48}, 0, {822, 847}, {0xC4, 0x00, 0x70, 0xFF}}},
+	{{{-14, 0, -1}, 0, {729, 1008}, {0x81, 0x00, 0x00, 0xFF}}},
+	{{{11, -47, 14}, 0, {1008, 847}, {0xC4, 0x96, 0x23, 0xFF}}},
+	{{{61, -29, 39}, 0, {915, 686}, {0x3C, 0xBE, 0x5B, 0xFF}}},
+	{{{61, 0, -51}, 0, {356, 686}, {0x3C, 0x00, 0x90, 0xFF}}},
+	{{{86, 0, -1}, 0, {449, 524}, {0x7F, 0x00, 0x00, 0xFF}}},
+	{{{61, -47, -17}, 0, {170, 686}, {0x3C, 0x96, 0xDD, 0xFF}}},
+	{{{11, -29, -42}, 0, {263, 847}, {0xC4, 0xBE, 0xA5, 0xFF}}},
+	{{{11, -47, 14}, 0, {77, 847}, {0xC4, 0x96, 0x23, 0xFF}}},
+	{{{61, -29, 39}, 0, {-16, 686}, {0x3C, 0xBE, 0x5B, 0xFF}}},
+	{{{-14, 0, -1}, 0, {170, 1008}, {0x81, 0x00, 0x00, 0xFF}}},
 };
 
-Gfx kaktus_Right_Hand_DL_mesh_layer_1_tri_0[] = {
-	gsSPVertex(kaktus_Right_Hand_DL_mesh_layer_1_vtx_0 + 0, 18, 0),
+Gfx kaktus_tour_Right_Hand_DL_mesh_layer_1_tri_0[] = {
+	gsSPVertex(kaktus_tour_Right_Hand_DL_mesh_layer_1_vtx_0 + 0, 16, 0),
 	gsSP2Triangles(0, 1, 2, 0, 2, 1, 3, 0),
 	gsSP2Triangles(1, 4, 3, 0, 1, 5, 4, 0),
 	gsSP2Triangles(6, 5, 1, 0, 6, 7, 5, 0),
-	gsSP2Triangles(5, 7, 8, 0, 7, 9, 8, 0),
-	gsSP2Triangles(7, 10, 9, 0, 10, 7, 11, 0),
-	gsSP2Triangles(10, 11, 12, 0, 10, 12, 13, 0),
-	gsSP2Triangles(10, 13, 9, 0, 8, 9, 14, 0),
-	gsSP2Triangles(2, 3, 15, 0, 15, 3, 16, 0),
-	gsSP2Triangles(15, 16, 9, 0, 5, 8, 4, 0),
-	gsSP2Triangles(4, 8, 17, 0, 4, 17, 3, 0),
+	gsSP2Triangles(5, 7, 8, 0, 5, 8, 4, 0),
+	gsSP2Triangles(2, 3, 9, 0, 10, 9, 3, 0),
+	gsSP2Triangles(10, 11, 9, 0, 12, 9, 11, 0),
+	gsSP2Triangles(13, 12, 11, 0, 13, 11, 14, 0),
+	gsSP2Triangles(12, 13, 15, 0, 12, 15, 2, 0),
+	gsSP1Triangle(12, 2, 9, 0),
 	gsSPEndDisplayList(),
 };
 
-Vtx kaktus_Right_Hand_Open_Switch_Option_Right_Hand_Open_mesh_layer_1_vtx_0[25] = {
+Vtx kaktus_tour_Right_Hand_DL_mesh_layer_1_vtx_1[6] = {
+	{{{61, 47, -17}, 0, {543, 686}, {0x3C, 0x6A, 0xDD, 0xFF}}},
+	{{{61, 29, 39}, 0, {729, 686}, {0x3C, 0x42, 0x5B, 0xFF}}},
+	{{{86, 0, -1}, 0, {636, 524}, {0x7F, 0x00, 0x00, 0xFF}}},
+	{{{86, 0, -1}, 0, {77, 524}, {0x7F, 0x00, 0x00, 0xFF}}},
+	{{{61, -29, 39}, 0, {915, 686}, {0x3C, 0xBE, 0x5B, 0xFF}}},
+	{{{61, -47, -17}, 0, {170, 686}, {0x3C, 0x96, 0xDD, 0xFF}}},
+};
+
+Gfx kaktus_tour_Right_Hand_DL_mesh_layer_1_tri_1[] = {
+	gsSPVertex(kaktus_tour_Right_Hand_DL_mesh_layer_1_vtx_1 + 0, 6, 0),
+	gsSP2Triangles(0, 1, 2, 0, 3, 1, 4, 0),
+	gsSP1Triangle(3, 4, 5, 0),
+	gsSPEndDisplayList(),
+};
+
+Vtx kaktus_tour_Right_Hand_Open_Switch_Option_Right_Hand_Open_mesh_layer_1_vtx_0[14] = {
 	{{{105, 28, 32}, 0, {-16, -16}, {0x51, 0xDD, 0x5B, 0xFF}}},
 	{{{93, 70, 31}, 0, {-16, -16}, {0x39, 0x46, 0x5A, 0xFF}}},
 	{{{52, 60, 25}, 0, {-16, -16}, {0xFD, 0x21, 0x7B, 0xFF}}},
@@ -2756,55 +2959,73 @@ Vtx kaktus_Right_Hand_Open_Switch_Option_Right_Hand_Open_mesh_layer_1_vtx_0[25] 
 	{{{54, -20, -13}, 0, {-16, -16}, {0x3E, 0xB9, 0xAB, 0xFF}}},
 	{{{61, -6, 22}, 0, {-16, -16}, {0x68, 0xE6, 0x45, 0xFF}}},
 	{{{43, 11, 33}, 0, {-16, -16}, {0x3D, 0x24, 0x69, 0xFF}}},
-	{{{1, 43, 37}, 0, {-16, -16}, {0xFD, 0x4A, 0x67, 0xFF}}},
+	{{{61, -46, 37}, 0, {-16, -16}, {0x4C, 0xA7, 0x31, 0xFF}}},
+	{{{49, -16, 46}, 0, {-16, -16}, {0x35, 0x0C, 0x73, 0xFF}}},
+	{{{14, -36, 38}, 0, {-16, -16}, {0xD8, 0xA4, 0x4E, 0xFF}}},
+	{{{16, -36, -9}, 0, {-16, -16}, {0xF7, 0x99, 0xB6, 0xFF}}},
 	{{{44, 89, 9}, 0, {-16, -16}, {0xF3, 0x7E, 0xFE, 0xFF}}},
 	{{{94, 72, 9}, 0, {-16, -16}, {0x4E, 0x5A, 0xD4, 0xFF}}},
 	{{{49, 37, -29}, 0, {-16, -16}, {0x11, 0x1D, 0x86, 0xFF}}},
-	{{{-3, 13, -31}, 0, {-16, -16}, {0xD7, 0x03, 0x88, 0xFF}}},
-	{{{16, -36, -9}, 0, {-16, -16}, {0xF7, 0x99, 0xB6, 0xFF}}},
-	{{{61, -46, 37}, 0, {-16, -16}, {0x4C, 0xA7, 0x31, 0xFF}}},
-	{{{49, -16, 46}, 0, {-16, -16}, {0x35, 0x0C, 0x73, 0xFF}}},
-	{{{-1, 2, 44}, 0, {-16, -16}, {0xE2, 0xED, 0x7A, 0xFF}}},
-	{{{-13, 33, 49}, 0, {-16, -16}, {0xE2, 0x2A, 0x74, 0xFF}}},
-	{{{-20, 54, 5}, 0, {-16, -16}, {0xAE, 0x5E, 0xE7, 0xFF}}},
-	{{{-30, 36, 6}, 0, {-16, -16}, {0x85, 0x1A, 0xEB, 0xFF}}},
-	{{{-17, 4, -17}, 0, {-16, -16}, {0x99, 0xDF, 0xBD, 0xFF}}},
-	{{{-3, -33, -4}, 0, {-16, -16}, {0xB6, 0xA2, 0xD5, 0xFF}}},
-	{{{14, -36, 38}, 0, {-16, -16}, {0xD8, 0xA4, 0x4E, 0xFF}}},
-	{{{-7, -25, 29}, 0, {-16, -16}, {0xA1, 0xBA, 0x30, 0xFF}}},
-	{{{-24, 18, 36}, 0, {-16, -16}, {0x91, 0xEB, 0x39, 0xFF}}},
-	{{{-16, 0, 10}, 0, {-16, -16}, {0x8A, 0xD1, 0xFD, 0xFF}}},
 };
 
-Gfx kaktus_Right_Hand_Open_Switch_Option_Right_Hand_Open_mesh_layer_1_tri_0[] = {
-	gsSPVertex(kaktus_Right_Hand_Open_Switch_Option_Right_Hand_Open_mesh_layer_1_vtx_0 + 0, 25, 0),
+Gfx kaktus_tour_Right_Hand_Open_Switch_Option_Right_Hand_Open_mesh_layer_1_tri_0[] = {
+	gsSPVertex(kaktus_tour_Right_Hand_Open_Switch_Option_Right_Hand_Open_mesh_layer_1_vtx_0 + 0, 14, 0),
 	gsSP2Triangles(0, 1, 2, 0, 0, 3, 1, 0),
 	gsSP2Triangles(4, 3, 0, 0, 4, 0, 5, 0),
 	gsSP2Triangles(5, 0, 2, 0, 5, 2, 6, 0),
-	gsSP2Triangles(6, 2, 7, 0, 7, 2, 8, 0),
-	gsSP2Triangles(8, 2, 1, 0, 1, 9, 8, 0),
-	gsSP2Triangles(1, 3, 9, 0, 10, 9, 3, 0),
-	gsSP2Triangles(10, 3, 4, 0, 11, 10, 4, 0),
-	gsSP2Triangles(11, 4, 12, 0, 12, 4, 13, 0),
-	gsSP2Triangles(4, 5, 13, 0, 13, 5, 14, 0),
-	gsSP2Triangles(5, 6, 14, 0, 6, 7, 14, 0),
-	gsSP2Triangles(7, 15, 14, 0, 7, 16, 15, 0),
-	gsSP2Triangles(16, 7, 17, 0, 8, 17, 7, 0),
-	gsSP2Triangles(17, 8, 11, 0, 8, 10, 11, 0),
-	gsSP2Triangles(10, 8, 9, 0, 17, 11, 18, 0),
-	gsSP2Triangles(11, 19, 18, 0, 20, 19, 11, 0),
-	gsSP2Triangles(11, 12, 20, 0, 12, 21, 20, 0),
-	gsSP2Triangles(13, 21, 12, 0, 14, 21, 13, 0),
-	gsSP2Triangles(14, 15, 21, 0, 21, 15, 22, 0),
-	gsSP2Triangles(15, 23, 22, 0, 15, 16, 23, 0),
-	gsSP2Triangles(18, 23, 16, 0, 16, 17, 18, 0),
-	gsSP2Triangles(23, 18, 24, 0, 18, 19, 24, 0),
-	gsSP2Triangles(19, 20, 24, 0, 20, 22, 24, 0),
-	gsSP2Triangles(21, 22, 20, 0, 22, 23, 24, 0),
+	gsSP2Triangles(4, 5, 7, 0, 7, 5, 8, 0),
+	gsSP2Triangles(8, 9, 7, 0, 7, 9, 10, 0),
+	gsSP2Triangles(10, 4, 7, 0, 11, 2, 1, 0),
+	gsSP2Triangles(1, 12, 11, 0, 1, 3, 12, 0),
+	gsSP2Triangles(13, 12, 3, 0, 13, 3, 4, 0),
+	gsSP1Triangle(13, 11, 12, 0),
 	gsSPEndDisplayList(),
 };
 
-Vtx kaktus_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_1_vtx_0[26] = {
+Vtx kaktus_tour_Right_Hand_Open_Switch_Option_Right_Hand_Open_mesh_layer_1_vtx_1[20] = {
+	{{{61, -6, 22}, 0, {-16, -16}, {0x68, 0xE6, 0x45, 0xFF}}},
+	{{{43, 11, 33}, 0, {-16, -16}, {0x3D, 0x24, 0x69, 0xFF}}},
+	{{{49, -16, 46}, 0, {-16, -16}, {0x35, 0x0C, 0x73, 0xFF}}},
+	{{{1, 43, 37}, 0, {-16, -16}, {0xFD, 0x4A, 0x67, 0xFF}}},
+	{{{52, 60, 25}, 0, {-16, -16}, {0xFD, 0x21, 0x7B, 0xFF}}},
+	{{{44, 89, 9}, 0, {-16, -16}, {0xF3, 0x7E, 0xFE, 0xFF}}},
+	{{{-20, 54, 5}, 0, {-16, -16}, {0xAE, 0x5E, 0xE7, 0xFF}}},
+	{{{-3, 13, -31}, 0, {-16, -16}, {0xD7, 0x03, 0x88, 0xFF}}},
+	{{{49, 37, -29}, 0, {-16, -16}, {0x11, 0x1D, 0x86, 0xFF}}},
+	{{{54, -20, -13}, 0, {-16, -16}, {0x3E, 0xB9, 0xAB, 0xFF}}},
+	{{{16, -36, -9}, 0, {-16, -16}, {0xF7, 0x99, 0xB6, 0xFF}}},
+	{{{-3, -33, -4}, 0, {-16, -16}, {0xB6, 0xA2, 0xD5, 0xFF}}},
+	{{{14, -36, 38}, 0, {-16, -16}, {0xD8, 0xA4, 0x4E, 0xFF}}},
+	{{{-7, -25, 29}, 0, {-16, -16}, {0xA1, 0xBA, 0x30, 0xFF}}},
+	{{{-1, 2, 44}, 0, {-16, -16}, {0xE2, 0xED, 0x7A, 0xFF}}},
+	{{{-13, 33, 49}, 0, {-16, -16}, {0xE2, 0x2A, 0x74, 0xFF}}},
+	{{{-30, 36, 6}, 0, {-16, -16}, {0x85, 0x1A, 0xEB, 0xFF}}},
+	{{{-17, 4, -17}, 0, {-16, -16}, {0x99, 0xDF, 0xBD, 0xFF}}},
+	{{{-16, 0, 10}, 0, {-16, -16}, {0x8A, 0xD1, 0xFD, 0xFF}}},
+	{{{-24, 18, 36}, 0, {-16, -16}, {0x91, 0xEB, 0x39, 0xFF}}},
+};
+
+Gfx kaktus_tour_Right_Hand_Open_Switch_Option_Right_Hand_Open_mesh_layer_1_tri_1[] = {
+	gsSPVertex(kaktus_tour_Right_Hand_Open_Switch_Option_Right_Hand_Open_mesh_layer_1_vtx_1 + 0, 20, 0),
+	gsSP2Triangles(0, 1, 2, 0, 1, 3, 2, 0),
+	gsSP2Triangles(1, 4, 3, 0, 3, 4, 5, 0),
+	gsSP2Triangles(5, 6, 3, 0, 6, 5, 7, 0),
+	gsSP2Triangles(5, 8, 7, 0, 7, 8, 9, 0),
+	gsSP2Triangles(7, 9, 10, 0, 7, 10, 11, 0),
+	gsSP2Triangles(10, 12, 11, 0, 12, 13, 11, 0),
+	gsSP2Triangles(12, 14, 13, 0, 2, 14, 12, 0),
+	gsSP2Triangles(3, 14, 2, 0, 3, 15, 14, 0),
+	gsSP2Triangles(15, 3, 6, 0, 15, 6, 16, 0),
+	gsSP2Triangles(6, 7, 16, 0, 7, 17, 16, 0),
+	gsSP2Triangles(11, 17, 7, 0, 17, 11, 18, 0),
+	gsSP2Triangles(11, 13, 18, 0, 13, 19, 18, 0),
+	gsSP2Triangles(14, 19, 13, 0, 14, 15, 19, 0),
+	gsSP2Triangles(16, 19, 15, 0, 19, 16, 18, 0),
+	gsSP1Triangle(16, 17, 18, 0),
+	gsSPEndDisplayList(),
+};
+
+Vtx kaktus_tour_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_1_vtx_0[26] = {
 	{{{37, 23, -7}, 0, {752, 506}, {0x81, 0x00, 0x00, 0xFF}}},
 	{{{37, 15, 1}, 0, {998, 752}, {0x81, 0x00, 0x00, 0xFF}}},
 	{{{37, 23, 9}, 0, {752, 998}, {0x81, 0x00, 0x00, 0xFF}}},
@@ -2833,8 +3054,8 @@ Vtx kaktus_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_1_vtx_0[26
 	{{{52, 19, -34}, 0, {-16, -16}, {0x47, 0x1B, 0x9A, 0xFF}}},
 };
 
-Gfx kaktus_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_1_tri_0[] = {
-	gsSPVertex(kaktus_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_1_vtx_0 + 0, 26, 0),
+Gfx kaktus_tour_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_1_tri_0[] = {
+	gsSPVertex(kaktus_tour_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_1_vtx_0 + 0, 26, 0),
 	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
 	gsSP2Triangles(4, 5, 6, 0, 4, 7, 5, 0),
 	gsSP2Triangles(7, 4, 8, 0, 6, 8, 4, 0),
@@ -2852,14 +3073,30 @@ Gfx kaktus_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_1_tri_0[] 
 	gsSP2Triangles(12, 13, 23, 0, 23, 13, 24, 0),
 	gsSP2Triangles(24, 13, 15, 0, 13, 14, 15, 0),
 	gsSP2Triangles(25, 24, 15, 0, 23, 24, 25, 0),
-	gsSP2Triangles(23, 25, 17, 0, 17, 25, 16, 0),
-	gsSP2Triangles(16, 25, 15, 0, 22, 23, 17, 0),
-	gsSP2Triangles(22, 17, 21, 0, 17, 18, 21, 0),
-	gsSP2Triangles(21, 18, 19, 0, 20, 21, 19, 0),
+	gsSP2Triangles(16, 25, 15, 0, 17, 25, 16, 0),
+	gsSP1Triangle(20, 21, 19, 0),
 	gsSPEndDisplayList(),
 };
 
-Vtx kaktus_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_1_vtx_1[39] = {
+Vtx kaktus_tour_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_1_vtx_1[7] = {
+	{{{22, 60, -6}, 0, {-16, -16}, {0x08, 0x77, 0xD5, 0xFF}}},
+	{{{52, 19, -34}, 0, {-16, -16}, {0x47, 0x1B, 0x9A, 0xFF}}},
+	{{{2, 8, -44}, 0, {-16, -16}, {0xDC, 0xFB, 0x86, 0xFF}}},
+	{{{-20, 52, -2}, 0, {-16, -16}, {0xB9, 0x66, 0xE5, 0xFF}}},
+	{{{-31, 38, 0}, 0, {-16, -16}, {0x8C, 0x2F, 0xEC, 0xFF}}},
+	{{{-15, 1, -22}, 0, {-16, -16}, {0xA0, 0xD9, 0xB7, 0xFF}}},
+	{{{-30, -2, 8}, 0, {-16, -16}, {0x89, 0xD5, 0xFB, 0xFF}}},
+};
+
+Gfx kaktus_tour_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_1_tri_1[] = {
+	gsSPVertex(kaktus_tour_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_1_vtx_1 + 0, 7, 0),
+	gsSP2Triangles(0, 1, 2, 0, 3, 0, 2, 0),
+	gsSP2Triangles(3, 2, 4, 0, 2, 5, 4, 0),
+	gsSP1Triangle(4, 5, 6, 0),
+	gsSPEndDisplayList(),
+};
+
+Vtx kaktus_tour_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_1_vtx_2[39] = {
 	{{{397, 21, -25}, 0, {-529, 495}, {0xE1, 0x04, 0x85, 0xFF}}},
 	{{{385, 2, -10}, 0, {-529, 495}, {0xDC, 0x8B, 0xE0, 0xFF}}},
 	{{{372, 21, -32}, 0, {-529, 495}, {0xD5, 0x03, 0x88, 0xFF}}},
@@ -2901,8 +3138,8 @@ Vtx kaktus_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_1_vtx_1[39
 	{{{417, 21, 57}, 0, {-529, 495}, {0xFA, 0x52, 0x9F, 0xFF}}},
 };
 
-Gfx kaktus_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_1_tri_1[] = {
-	gsSPVertex(kaktus_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_1_vtx_1 + 0, 39, 0),
+Gfx kaktus_tour_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_1_tri_2[] = {
+	gsSPVertex(kaktus_tour_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_1_vtx_2 + 0, 39, 0),
 	gsSP2Triangles(0, 1, 2, 0, 0, 3, 1, 0),
 	gsSP2Triangles(4, 3, 0, 0, 5, 4, 0, 0),
 	gsSP2Triangles(5, 0, 6, 0, 6, 0, 7, 0),
@@ -2942,7 +3179,7 @@ Gfx kaktus_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_1_tri_1[] 
 	gsSPEndDisplayList(),
 };
 
-Vtx kaktus_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_1_vtx_2[19] = {
+Vtx kaktus_tour_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_1_vtx_3[19] = {
 	{{{197, 21, -205}, 0, {877, 740}, {0x28, 0x00, 0x88, 0xFF}}},
 	{{{282, -138, -85}, 0, {422, 800}, {0x44, 0xA3, 0xCA, 0xFF}}},
 	{{{197, -163, -99}, 0, {438, 1008}, {0x28, 0x98, 0xC4, 0xFF}}},
@@ -2964,8 +3201,8 @@ Vtx kaktus_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_1_vtx_2[19
 	{{{344, 113, 61}, 0, {432, 340}, {0x6F, 0x36, 0x1F, 0xFF}}},
 };
 
-Gfx kaktus_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_1_tri_2[] = {
-	gsSPVertex(kaktus_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_1_vtx_2 + 0, 19, 0),
+Gfx kaktus_tour_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_1_tri_3[] = {
+	gsSPVertex(kaktus_tour_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_1_vtx_3 + 0, 19, 0),
 	gsSP2Triangles(0, 1, 2, 0, 0, 3, 1, 0),
 	gsSP2Triangles(3, 4, 1, 0, 3, 5, 4, 0),
 	gsSP2Triangles(5, 6, 4, 0, 7, 8, 9, 0),
@@ -2977,7 +3214,7 @@ Gfx kaktus_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_1_tri_2[] 
 	gsSPEndDisplayList(),
 };
 
-Vtx kaktus_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_1_vtx_3[19] = {
+Vtx kaktus_tour_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_1_vtx_4[19] = {
 	{{{344, 113, -46}, 0, {561, 426}, {0x6F, 0x36, 0xE1, 0xFF}}},
 	{{{367, 21, 7}, 0, {427, 494}, {0x7F, 0x00, 0x00, 0xFF}}},
 	{{{344, 21, -99}, 0, {552, 576}, {0x6F, 0x00, 0xC2, 0xFF}}},
@@ -2999,8 +3236,8 @@ Vtx kaktus_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_1_vtx_3[19
 	{{{197, 206, 114}, 0, {434, -16}, {0x28, 0x68, 0x3C, 0xFF}}},
 };
 
-Gfx kaktus_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_1_tri_3[] = {
-	gsSPVertex(kaktus_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_1_vtx_3 + 0, 19, 0),
+Gfx kaktus_tour_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_1_tri_4[] = {
+	gsSPVertex(kaktus_tour_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_1_vtx_4 + 0, 19, 0),
 	gsSP2Triangles(0, 1, 2, 0, 3, 0, 2, 0),
 	gsSP2Triangles(3, 2, 4, 0, 5, 3, 4, 0),
 	gsSP2Triangles(5, 4, 6, 0, 7, 1, 8, 0),
@@ -3012,7 +3249,7 @@ Gfx kaktus_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_1_tri_3[] 
 	gsSPEndDisplayList(),
 };
 
-Vtx kaktus_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_4_vtx_0[7] = {
+Vtx kaktus_tour_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_4_vtx_0[7] = {
 	{{{13, -59, 7}, 0, {-16, 496}, {0x00, 0x00, 0x81, 0xFF}}},
 	{{{13, 43, 7}, 0, {496, 496}, {0x00, 0x00, 0x81, 0xFF}}},
 	{{{114, 43, 7}, 0, {496, 35}, {0x00, 0x00, 0x81, 0xFF}}},
@@ -3022,14 +3259,14 @@ Vtx kaktus_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_4_vtx_0[7]
 	{{{357, -59, 7}, 0, {-16, 35}, {0x00, 0x00, 0x81, 0xFF}}},
 };
 
-Gfx kaktus_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_4_tri_0[] = {
-	gsSPVertex(kaktus_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_4_vtx_0 + 0, 7, 0),
+Gfx kaktus_tour_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_4_tri_0[] = {
+	gsSPVertex(kaktus_tour_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_4_vtx_0 + 0, 7, 0),
 	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
 	gsSP2Triangles(4, 2, 5, 0, 4, 5, 6, 0),
 	gsSPEndDisplayList(),
 };
 
-Vtx kaktus_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_1_vtx_0[22] = {
+Vtx kaktus_tour_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_1_vtx_0[22] = {
 	{{{46, -28, 35}, 0, {-16, -16}, {0x3D, 0xA6, 0x42, 0xFF}}},
 	{{{48, -1, 47}, 0, {-16, -16}, {0x47, 0x01, 0x69, 0xFF}}},
 	{{{7, -24, 47}, 0, {-16, -16}, {0xE8, 0xBC, 0x68, 0xFF}}},
@@ -3054,8 +3291,8 @@ Vtx kaktus_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_1_vtx_0[22] = 
 	{{{47, 18, -30}, 0, {-16, -16}, {0x45, 0x12, 0x97, 0xFF}}},
 };
 
-Gfx kaktus_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_1_tri_0[] = {
-	gsSPVertex(kaktus_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_1_vtx_0 + 0, 22, 0),
+Gfx kaktus_tour_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_1_tri_0[] = {
+	gsSPVertex(kaktus_tour_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_1_vtx_0 + 0, 22, 0),
 	gsSP2Triangles(0, 1, 2, 0, 0, 3, 1, 0),
 	gsSP2Triangles(3, 0, 4, 0, 2, 4, 0, 0),
 	gsSP2Triangles(4, 2, 5, 0, 2, 6, 5, 0),
@@ -3079,7 +3316,7 @@ Gfx kaktus_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_1_tri_0[] = {
 	gsSPEndDisplayList(),
 };
 
-Vtx kaktus_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_1_vtx_1[46] = {
+Vtx kaktus_tour_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_1_vtx_1[46] = {
 	{{{263, 63, 46}, 0, {624, 189}, {0x55, 0x48, 0xC2, 0xFF}}},
 	{{{224, -15, -23}, 0, {560, -16}, {0x41, 0x00, 0x93, 0xFF}}},
 	{{{183, 96, 2}, 0, {496, 189}, {0x27, 0x57, 0xAC, 0xFF}}},
@@ -3128,8 +3365,8 @@ Vtx kaktus_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_1_vtx_1[46] = 
 	{{{67, -15, 13}, 0, {240, 291}, {0x81, 0x00, 0xF9, 0xFF}}},
 };
 
-Gfx kaktus_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_1_tri_1[] = {
-	gsSPVertex(kaktus_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_1_vtx_1 + 0, 46, 0),
+Gfx kaktus_tour_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_1_tri_1[] = {
+	gsSPVertex(kaktus_tour_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_1_vtx_1 + 0, 46, 0),
 	gsSP2Triangles(0, 1, 2, 0, 3, 0, 2, 0),
 	gsSP2Triangles(3, 2, 4, 0, 4, 2, 5, 0),
 	gsSP2Triangles(2, 6, 5, 0, 4, 5, 7, 0),
@@ -3171,7 +3408,7 @@ Gfx kaktus_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_1_tri_1[] = {
 	gsSPEndDisplayList(),
 };
 
-Vtx kaktus_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_1_vtx_2[50] = {
+Vtx kaktus_tour_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_1_vtx_2[50] = {
 	{{{113, 103, 124}, 0, {496, 496}, {0xA6, 0xC9, 0x47, 0xFF}}},
 	{{{165, 69, 201}, 0, {624, 598}, {0x97, 0xDF, 0x40, 0xFF}}},
 	{{{174, 87, 222}, 0, {624, 598}, {0x97, 0xE1, 0x40, 0xFF}}},
@@ -3224,8 +3461,8 @@ Vtx kaktus_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_1_vtx_2[50] = 
 	{{{174, 87, 222}, 0, {624, 598}, {0x52, 0x55, 0x2F, 0xFF}}},
 };
 
-Gfx kaktus_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_1_tri_2[] = {
-	gsSPVertex(kaktus_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_1_vtx_2 + 0, 50, 0),
+Gfx kaktus_tour_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_1_tri_2[] = {
+	gsSPVertex(kaktus_tour_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_1_vtx_2 + 0, 50, 0),
 	gsSP2Triangles(0, 1, 2, 0, 1, 3, 2, 0),
 	gsSP2Triangles(1, 4, 3, 0, 5, 3, 4, 0),
 	gsSP2Triangles(5, 6, 3, 0, 7, 6, 5, 0),
@@ -3254,7 +3491,7 @@ Gfx kaktus_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_1_tri_2[] = {
 	gsSPEndDisplayList(),
 };
 
-Vtx kaktus_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_1_vtx_3[10] = {
+Vtx kaktus_tour_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_1_vtx_3[10] = {
 	{{{165, 69, 201}, 0, {624, 598}, {0x9B, 0x00, 0x4D, 0xFF}}},
 	{{{113, 103, 124}, 0, {496, 496}, {0x9B, 0x00, 0x4D, 0xFF}}},
 	{{{87, 91, 86}, 0, {432, 445}, {0x9B, 0x00, 0x4D, 0xFF}}},
@@ -3267,8 +3504,8 @@ Vtx kaktus_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_1_vtx_3[10] = 
 	{{{195, -15, 218}, 0, {752, 598}, {0x9B, 0x00, 0x4D, 0xFF}}},
 };
 
-Gfx kaktus_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_1_tri_3[] = {
-	gsSPVertex(kaktus_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_1_vtx_3 + 0, 10, 0),
+Gfx kaktus_tour_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_1_tri_3[] = {
+	gsSPVertex(kaktus_tour_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_1_vtx_3 + 0, 10, 0),
 	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
 	gsSP2Triangles(2, 4, 3, 0, 3, 5, 0, 0),
 	gsSP2Triangles(3, 6, 5, 0, 3, 7, 6, 0),
@@ -3276,20 +3513,20 @@ Gfx kaktus_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_1_tri_3[] = {
 	gsSPEndDisplayList(),
 };
 
-Vtx kaktus_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_4_vtx_0[4] = {
+Vtx kaktus_tour_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_4_vtx_0[4] = {
 	{{{124, 24, -80}, 0, {52, 940}, {0x03, 0x5A, 0xA7, 0xFF}}},
 	{{{69, 112, 6}, 0, {940, 940}, {0x03, 0x5A, 0xA7, 0xFF}}},
 	{{{192, 148, 47}, 0, {940, 52}, {0x03, 0x5A, 0xA7, 0xFF}}},
 	{{{247, 60, -39}, 0, {52, 52}, {0x03, 0x5A, 0xA7, 0xFF}}},
 };
 
-Gfx kaktus_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_4_tri_0[] = {
-	gsSPVertex(kaktus_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_4_vtx_0 + 0, 4, 0),
+Gfx kaktus_tour_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_4_tri_0[] = {
+	gsSPVertex(kaktus_tour_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_4_vtx_0 + 0, 4, 0),
 	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
 	gsSPEndDisplayList(),
 };
 
-Vtx kaktus_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_4_vtx_1[8] = {
+Vtx kaktus_tour_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_4_vtx_1[8] = {
 	{{{175, 110, 70}, 0, {-16, 496}, {0x92, 0x00, 0xC1, 0xFF}}},
 	{{{175, 173, 70}, 0, {496, 496}, {0x92, 0x00, 0xC1, 0xFF}}},
 	{{{207, 173, 15}, 0, {496, -16}, {0x92, 0x00, 0xC1, 0xFF}}},
@@ -3300,14 +3537,14 @@ Vtx kaktus_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_4_vtx_1[8] = {
 	{{{175, -200, 70}, 0, {496, 496}, {0x92, 0x00, 0xC1, 0xFF}}},
 };
 
-Gfx kaktus_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_4_tri_1[] = {
-	gsSPVertex(kaktus_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_4_vtx_1 + 0, 8, 0),
+Gfx kaktus_tour_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_4_tri_1[] = {
+	gsSPVertex(kaktus_tour_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_4_vtx_1 + 0, 8, 0),
 	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
 	gsSP2Triangles(4, 5, 6, 0, 4, 6, 7, 0),
 	gsSPEndDisplayList(),
 };
 
-Vtx kaktus_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_4_vtx_2[8] = {
+Vtx kaktus_tour_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_4_vtx_2[8] = {
 	{{{186, 103, 51}, 0, {-16, 496}, {0x6E, 0x00, 0x3F, 0xFF}}},
 	{{{186, 166, 51}, 0, {496, 496}, {0x6E, 0x00, 0x3F, 0xFF}}},
 	{{{154, 166, 106}, 0, {496, -16}, {0x6E, 0x00, 0x3F, 0xFF}}},
@@ -3318,14 +3555,14 @@ Vtx kaktus_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_4_vtx_2[8] = {
 	{{{186, -193, 51}, 0, {496, 496}, {0x6E, 0x00, 0x3F, 0xFF}}},
 };
 
-Gfx kaktus_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_4_tri_2[] = {
-	gsSPVertex(kaktus_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_4_vtx_2 + 0, 8, 0),
+Gfx kaktus_tour_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_4_tri_2[] = {
+	gsSPVertex(kaktus_tour_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_4_vtx_2 + 0, 8, 0),
 	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
 	gsSP2Triangles(4, 5, 6, 0, 4, 6, 7, 0),
 	gsSPEndDisplayList(),
 };
 
-Vtx kaktus_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_1_vtx_0[22] = {
+Vtx kaktus_tour_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_1_vtx_0[22] = {
 	{{{46, -28, 35}, 0, {-16, -16}, {0x3D, 0xA6, 0x42, 0xFF}}},
 	{{{48, -1, 47}, 0, {-16, -16}, {0x47, 0x01, 0x69, 0xFF}}},
 	{{{7, -24, 47}, 0, {-16, -16}, {0xE8, 0xBC, 0x68, 0xFF}}},
@@ -3350,8 +3587,8 @@ Vtx kaktus_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_1_vt
 	{{{47, 18, -30}, 0, {-16, -16}, {0x45, 0x12, 0x97, 0xFF}}},
 };
 
-Gfx kaktus_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_1_tri_0[] = {
-	gsSPVertex(kaktus_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_1_vtx_0 + 0, 22, 0),
+Gfx kaktus_tour_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_1_tri_0[] = {
+	gsSPVertex(kaktus_tour_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_1_vtx_0 + 0, 22, 0),
 	gsSP2Triangles(0, 1, 2, 0, 0, 3, 1, 0),
 	gsSP2Triangles(3, 0, 4, 0, 2, 4, 0, 0),
 	gsSP2Triangles(4, 2, 5, 0, 2, 6, 5, 0),
@@ -3375,7 +3612,7 @@ Gfx kaktus_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_1_tr
 	gsSPEndDisplayList(),
 };
 
-Vtx kaktus_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_1_vtx_1[46] = {
+Vtx kaktus_tour_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_1_vtx_1[46] = {
 	{{{263, 63, 46}, 0, {624, 189}, {0x54, 0x48, 0xC2, 0xFF}}},
 	{{{224, -15, -23}, 0, {560, -16}, {0x41, 0x00, 0x93, 0xFF}}},
 	{{{183, 96, 2}, 0, {496, 189}, {0x27, 0x57, 0xAC, 0xFF}}},
@@ -3424,8 +3661,8 @@ Vtx kaktus_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_1_vt
 	{{{67, -15, 13}, 0, {240, 291}, {0x81, 0x00, 0xF9, 0xFF}}},
 };
 
-Gfx kaktus_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_1_tri_1[] = {
-	gsSPVertex(kaktus_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_1_vtx_1 + 0, 46, 0),
+Gfx kaktus_tour_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_1_tri_1[] = {
+	gsSPVertex(kaktus_tour_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_1_vtx_1 + 0, 46, 0),
 	gsSP2Triangles(0, 1, 2, 0, 3, 0, 2, 0),
 	gsSP2Triangles(3, 2, 4, 0, 4, 2, 5, 0),
 	gsSP2Triangles(2, 6, 5, 0, 4, 5, 7, 0),
@@ -3467,7 +3704,7 @@ Gfx kaktus_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_1_tr
 	gsSPEndDisplayList(),
 };
 
-Vtx kaktus_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_1_vtx_2[50] = {
+Vtx kaktus_tour_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_1_vtx_2[50] = {
 	{{{113, 103, 124}, 0, {496, 496}, {0xA6, 0xC9, 0x47, 0xFF}}},
 	{{{165, 69, 201}, 0, {624, 598}, {0x97, 0xDF, 0x40, 0xFF}}},
 	{{{174, 87, 222}, 0, {624, 598}, {0x97, 0xE1, 0x40, 0xFF}}},
@@ -3520,8 +3757,8 @@ Vtx kaktus_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_1_vt
 	{{{174, 87, 222}, 0, {624, 598}, {0x52, 0x55, 0x2F, 0xFF}}},
 };
 
-Gfx kaktus_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_1_tri_2[] = {
-	gsSPVertex(kaktus_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_1_vtx_2 + 0, 50, 0),
+Gfx kaktus_tour_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_1_tri_2[] = {
+	gsSPVertex(kaktus_tour_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_1_vtx_2 + 0, 50, 0),
 	gsSP2Triangles(0, 1, 2, 0, 1, 3, 2, 0),
 	gsSP2Triangles(1, 4, 3, 0, 5, 3, 4, 0),
 	gsSP2Triangles(5, 6, 3, 0, 7, 6, 5, 0),
@@ -3550,7 +3787,7 @@ Gfx kaktus_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_1_tr
 	gsSPEndDisplayList(),
 };
 
-Vtx kaktus_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_1_vtx_3[10] = {
+Vtx kaktus_tour_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_1_vtx_3[10] = {
 	{{{165, 69, 201}, 0, {624, 598}, {0x9B, 0x00, 0x4D, 0xFF}}},
 	{{{113, 103, 124}, 0, {496, 496}, {0x9B, 0x00, 0x4D, 0xFF}}},
 	{{{87, 91, 86}, 0, {432, 445}, {0x9B, 0x00, 0x4D, 0xFF}}},
@@ -3563,8 +3800,8 @@ Vtx kaktus_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_1_vt
 	{{{195, -15, 218}, 0, {752, 598}, {0x9B, 0x00, 0x4D, 0xFF}}},
 };
 
-Gfx kaktus_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_1_tri_3[] = {
-	gsSPVertex(kaktus_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_1_vtx_3 + 0, 10, 0),
+Gfx kaktus_tour_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_1_tri_3[] = {
+	gsSPVertex(kaktus_tour_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_1_vtx_3 + 0, 10, 0),
 	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
 	gsSP2Triangles(2, 4, 3, 0, 3, 5, 0, 0),
 	gsSP2Triangles(3, 6, 5, 0, 3, 7, 6, 0),
@@ -3572,20 +3809,20 @@ Gfx kaktus_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_1_tr
 	gsSPEndDisplayList(),
 };
 
-Vtx kaktus_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_4_vtx_0[4] = {
+Vtx kaktus_tour_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_4_vtx_0[4] = {
 	{{{124, 24, -80}, 0, {52, 940}, {0x03, 0x5A, 0xA7, 0xFF}}},
 	{{{69, 112, 6}, 0, {940, 940}, {0x03, 0x5A, 0xA7, 0xFF}}},
 	{{{192, 148, 47}, 0, {940, 52}, {0x03, 0x5A, 0xA7, 0xFF}}},
 	{{{247, 60, -39}, 0, {52, 52}, {0x03, 0x5A, 0xA7, 0xFF}}},
 };
 
-Gfx kaktus_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_4_tri_0[] = {
-	gsSPVertex(kaktus_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_4_vtx_0 + 0, 4, 0),
+Gfx kaktus_tour_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_4_tri_0[] = {
+	gsSPVertex(kaktus_tour_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_4_vtx_0 + 0, 4, 0),
 	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
 	gsSPEndDisplayList(),
 };
 
-Vtx kaktus_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_4_vtx_1[8] = {
+Vtx kaktus_tour_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_4_vtx_1[8] = {
 	{{{175, 110, 70}, 0, {-16, 496}, {0x92, 0x00, 0xC1, 0xFF}}},
 	{{{175, 173, 70}, 0, {496, 496}, {0x92, 0x00, 0xC1, 0xFF}}},
 	{{{207, 173, 15}, 0, {496, -16}, {0x92, 0x00, 0xC1, 0xFF}}},
@@ -3596,14 +3833,14 @@ Vtx kaktus_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_4_vt
 	{{{175, -200, 70}, 0, {496, 496}, {0x92, 0x00, 0xC1, 0xFF}}},
 };
 
-Gfx kaktus_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_4_tri_1[] = {
-	gsSPVertex(kaktus_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_4_vtx_1 + 0, 8, 0),
+Gfx kaktus_tour_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_4_tri_1[] = {
+	gsSPVertex(kaktus_tour_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_4_vtx_1 + 0, 8, 0),
 	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
 	gsSP2Triangles(4, 5, 6, 0, 4, 6, 7, 0),
 	gsSPEndDisplayList(),
 };
 
-Vtx kaktus_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_4_vtx_2[8] = {
+Vtx kaktus_tour_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_4_vtx_2[8] = {
 	{{{186, 103, 51}, 0, {-16, 496}, {0x6E, 0x00, 0x3F, 0xFF}}},
 	{{{186, 166, 51}, 0, {496, 496}, {0x6E, 0x00, 0x3F, 0xFF}}},
 	{{{154, 166, 106}, 0, {496, -16}, {0x6E, 0x00, 0x3F, 0xFF}}},
@@ -3614,14 +3851,14 @@ Vtx kaktus_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_4_vt
 	{{{186, -193, 51}, 0, {496, 496}, {0x6E, 0x00, 0x3F, 0xFF}}},
 };
 
-Gfx kaktus_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_4_tri_2[] = {
-	gsSPVertex(kaktus_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_4_vtx_2 + 0, 8, 0),
+Gfx kaktus_tour_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_4_tri_2[] = {
+	gsSPVertex(kaktus_tour_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_4_vtx_2 + 0, 8, 0),
 	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
 	gsSP2Triangles(4, 5, 6, 0, 4, 6, 7, 0),
 	gsSPEndDisplayList(),
 };
 
-Vtx kaktus_Right_Hand_Wing_Cap_Swtich_Option_Wings_mesh_layer_4_vtx_0[12] = {
+Vtx kaktus_tour_Right_Hand_Wing_Cap_Swtich_Option_Wings_mesh_layer_4_vtx_0[12] = {
 	{{{265, -231, 195}, 0, {1711, 1046}, {0xA8, 0xB3, 0xCF, 0xFF}}},
 	{{{236, -155, 128}, 0, {835, 1047}, {0xA8, 0xB3, 0xCF, 0xFF}}},
 	{{{407, -303, 53}, 0, {1714, -729}, {0xA8, 0xB3, 0xCF, 0xFF}}},
@@ -3636,8 +3873,8 @@ Vtx kaktus_Right_Hand_Wing_Cap_Swtich_Option_Wings_mesh_layer_4_vtx_0[12] = {
 	{{{316, 178, 218}, 0, {1711, 1046}, {0xBD, 0x65, 0xD8, 0xFF}}},
 };
 
-Gfx kaktus_Right_Hand_Wing_Cap_Swtich_Option_Wings_mesh_layer_4_tri_0[] = {
-	gsSPVertex(kaktus_Right_Hand_Wing_Cap_Swtich_Option_Wings_mesh_layer_4_vtx_0 + 0, 12, 0),
+Gfx kaktus_tour_Right_Hand_Wing_Cap_Swtich_Option_Wings_mesh_layer_4_tri_0[] = {
+	gsSPVertex(kaktus_tour_Right_Hand_Wing_Cap_Swtich_Option_Wings_mesh_layer_4_vtx_0 + 0, 12, 0),
 	gsSP2Triangles(0, 1, 2, 0, 1, 3, 2, 0),
 	gsSP2Triangles(1, 4, 3, 0, 4, 5, 3, 0),
 	gsSP2Triangles(6, 7, 8, 0, 6, 8, 9, 0),
@@ -3645,31 +3882,31 @@ Gfx kaktus_Right_Hand_Wing_Cap_Swtich_Option_Wings_mesh_layer_4_tri_0[] = {
 	gsSPEndDisplayList(),
 };
 
-Vtx kaktus_Left_Thigh_Color_mesh_layer_1_vtx_0[20] = {
-	{{{88, 46, -6}, 0, {1008, 496}, {0x39, 0x71, 0x00, 0xFF}}},
-	{{{6, 2, -38}, 0, {752, -16}, {0xCA, 0x00, 0x8D, 0xFF}}},
-	{{{6, 38, -6}, 0, {1008, -16}, {0xC8, 0x72, 0x00, 0xFF}}},
-	{{{88, 2, -46}, 0, {752, 496}, {0x3A, 0x00, 0x8F, 0xFF}}},
-	{{{6, -34, -6}, 0, {496, -16}, {0xC8, 0x8E, 0x00, 0xFF}}},
-	{{{88, -42, -6}, 0, {496, 496}, {0x39, 0x8F, 0x00, 0xFF}}},
-	{{{6, 2, 27}, 0, {240, -16}, {0xCA, 0x00, 0x73, 0xFF}}},
-	{{{88, 2, 35}, 0, {240, 496}, {0x3A, 0x00, 0x71, 0xFF}}},
-	{{{6, 38, -6}, 0, {-16, -16}, {0xC8, 0x72, 0x00, 0xFF}}},
-	{{{88, 46, -6}, 0, {-16, 496}, {0x39, 0x71, 0x00, 0xFF}}},
-	{{{88, 46, -6}, 0, {752, 506}, {0x39, 0x71, 0x00, 0xFF}}},
-	{{{100, 2, -6}, 0, {752, 752}, {0x7F, 0x00, 0x00, 0xFF}}},
-	{{{88, 2, -46}, 0, {998, 752}, {0x3A, 0x00, 0x8F, 0xFF}}},
-	{{{88, 2, 35}, 0, {506, 752}, {0x3A, 0x00, 0x71, 0xFF}}},
-	{{{88, -42, -6}, 0, {752, 998}, {0x39, 0x8F, 0x00, 0xFF}}},
-	{{{6, 2, -38}, 0, {486, 752}, {0xCA, 0x00, 0x8D, 0xFF}}},
-	{{{-19, 2, -6}, 0, {240, 752}, {0x81, 0x00, 0x00, 0xFF}}},
-	{{{6, 38, -6}, 0, {240, 506}, {0xC8, 0x72, 0x00, 0xFF}}},
-	{{{6, -34, -6}, 0, {240, 998}, {0xC8, 0x8E, 0x00, 0xFF}}},
-	{{{6, 2, 27}, 0, {-6, 752}, {0xCA, 0x00, 0x73, 0xFF}}},
+Vtx kaktus_tour_Left_Thigh_Color_mesh_layer_1_vtx_0[20] = {
+	{{{88, 38, -5}, 0, {1008, 496}, {0x39, 0x71, 0x00, 0xFF}}},
+	{{{6, -6, -38}, 0, {752, -16}, {0xCA, 0x00, 0x8D, 0xFF}}},
+	{{{6, 30, -5}, 0, {1008, -16}, {0xC8, 0x72, 0x00, 0xFF}}},
+	{{{88, -6, -45}, 0, {752, 496}, {0x3A, 0x00, 0x8F, 0xFF}}},
+	{{{6, -42, -5}, 0, {496, -16}, {0xC8, 0x8E, 0x00, 0xFF}}},
+	{{{88, -50, -5}, 0, {496, 496}, {0x39, 0x8F, 0x00, 0xFF}}},
+	{{{6, -6, 27}, 0, {240, -16}, {0xCA, 0x00, 0x73, 0xFF}}},
+	{{{88, -6, 35}, 0, {240, 496}, {0x3A, 0x00, 0x71, 0xFF}}},
+	{{{6, 30, -5}, 0, {-16, -16}, {0xC8, 0x72, 0x00, 0xFF}}},
+	{{{88, 38, -5}, 0, {-16, 496}, {0x39, 0x71, 0x00, 0xFF}}},
+	{{{88, 38, -5}, 0, {752, 506}, {0x39, 0x71, 0x00, 0xFF}}},
+	{{{101, -6, -5}, 0, {752, 752}, {0x7F, 0x00, 0x00, 0xFF}}},
+	{{{88, -6, -45}, 0, {998, 752}, {0x3A, 0x00, 0x8F, 0xFF}}},
+	{{{88, -6, 35}, 0, {506, 752}, {0x3A, 0x00, 0x71, 0xFF}}},
+	{{{88, -50, -5}, 0, {752, 998}, {0x39, 0x8F, 0x00, 0xFF}}},
+	{{{6, -6, -38}, 0, {486, 752}, {0xCA, 0x00, 0x8D, 0xFF}}},
+	{{{-18, -6, -5}, 0, {240, 752}, {0x81, 0x00, 0x00, 0xFF}}},
+	{{{6, 30, -5}, 0, {240, 506}, {0xC8, 0x72, 0x00, 0xFF}}},
+	{{{6, -42, -5}, 0, {240, 998}, {0xC8, 0x8E, 0x00, 0xFF}}},
+	{{{6, -6, 27}, 0, {-6, 752}, {0xCA, 0x00, 0x73, 0xFF}}},
 };
 
-Gfx kaktus_Left_Thigh_Color_mesh_layer_1_tri_0[] = {
-	gsSPVertex(kaktus_Left_Thigh_Color_mesh_layer_1_vtx_0 + 0, 20, 0),
+Gfx kaktus_tour_Left_Thigh_Color_mesh_layer_1_tri_0[] = {
+	gsSPVertex(kaktus_tour_Left_Thigh_Color_mesh_layer_1_vtx_0 + 0, 20, 0),
 	gsSP2Triangles(0, 1, 2, 0, 0, 3, 1, 0),
 	gsSP2Triangles(3, 4, 1, 0, 3, 5, 4, 0),
 	gsSP2Triangles(5, 6, 4, 0, 5, 7, 6, 0),
@@ -3681,41 +3918,41 @@ Gfx kaktus_Left_Thigh_Color_mesh_layer_1_tri_0[] = {
 	gsSPEndDisplayList(),
 };
 
-Vtx kaktus_Left_Leg_mesh_layer_1_vtx_0[5] = {
-	{{{84, 65, -6}, 0, {752, 506}, {0x50, 0x62, 0xFE, 0xFF}}},
-	{{{84, 2, 51}, 0, {506, 752}, {0x54, 0xFE, 0x5F, 0xFF}}},
-	{{{46, -6, -15}, 0, {752, 752}, {0x7E, 0x0A, 0x0D, 0xFF}}},
-	{{{84, -61, -6}, 0, {752, 998}, {0x54, 0xA1, 0xFD, 0xFF}}},
-	{{{84, 2, -63}, 0, {998, 752}, {0x58, 0xFC, 0xA5, 0xFF}}},
+Vtx kaktus_tour_Left_Leg_mesh_layer_1_vtx_0[5] = {
+	{{{84, 57, -5}, 0, {752, 506}, {0x47, 0x6A, 0x00, 0xFF}}},
+	{{{84, -6, 52}, 0, {506, 752}, {0x49, 0x00, 0x68, 0xFF}}},
+	{{{72, -6, -5}, 0, {752, 752}, {0x7F, 0x00, 0x00, 0xFF}}},
+	{{{84, -69, -5}, 0, {752, 998}, {0x47, 0x96, 0x00, 0xFF}}},
+	{{{84, -6, -62}, 0, {998, 752}, {0x49, 0x00, 0x98, 0xFF}}},
 };
 
-Gfx kaktus_Left_Leg_mesh_layer_1_tri_0[] = {
-	gsSPVertex(kaktus_Left_Leg_mesh_layer_1_vtx_0 + 0, 5, 0),
+Gfx kaktus_tour_Left_Leg_mesh_layer_1_tri_0[] = {
+	gsSPVertex(kaktus_tour_Left_Leg_mesh_layer_1_vtx_0 + 0, 5, 0),
 	gsSP2Triangles(0, 1, 2, 0, 1, 3, 2, 0),
 	gsSP2Triangles(3, 4, 2, 0, 4, 0, 2, 0),
 	gsSPEndDisplayList(),
 };
 
-Vtx kaktus_Left_Leg_mesh_layer_1_vtx_1[15] = {
-	{{{84, 65, -6}, 0, {1008, 496}, {0x50, 0x62, 0xFE, 0xFF}}},
-	{{{-9, 2, -46}, 0, {752, -16}, {0xBD, 0x00, 0x94, 0xFF}}},
-	{{{-9, 46, -6}, 0, {1008, -16}, {0xBC, 0x6B, 0x00, 0xFF}}},
-	{{{84, 2, -63}, 0, {752, 496}, {0x58, 0xFC, 0xA5, 0xFF}}},
-	{{{-9, -42, -6}, 0, {496, -16}, {0xBC, 0x95, 0x00, 0xFF}}},
-	{{{84, -61, -6}, 0, {496, 496}, {0x54, 0xA1, 0xFD, 0xFF}}},
-	{{{-9, 2, 35}, 0, {240, -16}, {0xBD, 0x00, 0x6C, 0xFF}}},
-	{{{84, 2, 51}, 0, {240, 496}, {0x54, 0xFE, 0x5F, 0xFF}}},
-	{{{-9, 46, -6}, 0, {-16, -16}, {0xBC, 0x6B, 0x00, 0xFF}}},
-	{{{84, 65, -6}, 0, {-16, 496}, {0x50, 0x62, 0xFE, 0xFF}}},
-	{{{-9, 2, -46}, 0, {486, 752}, {0xBD, 0x00, 0x94, 0xFF}}},
-	{{{-28, 2, -6}, 0, {240, 752}, {0x81, 0x00, 0x00, 0xFF}}},
-	{{{-9, 46, -6}, 0, {240, 506}, {0xBC, 0x6B, 0x00, 0xFF}}},
-	{{{-9, -42, -6}, 0, {240, 998}, {0xBC, 0x95, 0x00, 0xFF}}},
-	{{{-9, 2, 35}, 0, {-6, 752}, {0xBD, 0x00, 0x6C, 0xFF}}},
+Vtx kaktus_tour_Left_Leg_mesh_layer_1_vtx_1[15] = {
+	{{{84, 57, -5}, 0, {1008, 496}, {0x47, 0x6A, 0x00, 0xFF}}},
+	{{{-9, -6, -45}, 0, {752, -16}, {0xBD, 0x00, 0x94, 0xFF}}},
+	{{{-9, 38, -5}, 0, {1008, -16}, {0xBC, 0x6B, 0x00, 0xFF}}},
+	{{{84, -6, -62}, 0, {752, 496}, {0x49, 0x00, 0x98, 0xFF}}},
+	{{{-9, -50, -5}, 0, {496, -16}, {0xBC, 0x95, 0x00, 0xFF}}},
+	{{{84, -69, -5}, 0, {496, 496}, {0x47, 0x96, 0x00, 0xFF}}},
+	{{{-9, -6, 35}, 0, {240, -16}, {0xBD, 0x00, 0x6C, 0xFF}}},
+	{{{84, -6, 52}, 0, {240, 496}, {0x49, 0x00, 0x68, 0xFF}}},
+	{{{-9, 38, -5}, 0, {-16, -16}, {0xBC, 0x6B, 0x00, 0xFF}}},
+	{{{84, 57, -5}, 0, {-16, 496}, {0x47, 0x6A, 0x00, 0xFF}}},
+	{{{-9, -6, -45}, 0, {486, 752}, {0xBD, 0x00, 0x94, 0xFF}}},
+	{{{-28, -6, -5}, 0, {240, 752}, {0x81, 0x00, 0x00, 0xFF}}},
+	{{{-9, 38, -5}, 0, {240, 506}, {0xBC, 0x6B, 0x00, 0xFF}}},
+	{{{-9, -50, -5}, 0, {240, 998}, {0xBC, 0x95, 0x00, 0xFF}}},
+	{{{-9, -6, 35}, 0, {-6, 752}, {0xBD, 0x00, 0x6C, 0xFF}}},
 };
 
-Gfx kaktus_Left_Leg_mesh_layer_1_tri_1[] = {
-	gsSPVertex(kaktus_Left_Leg_mesh_layer_1_vtx_1 + 0, 15, 0),
+Gfx kaktus_tour_Left_Leg_mesh_layer_1_tri_1[] = {
+	gsSPVertex(kaktus_tour_Left_Leg_mesh_layer_1_vtx_1 + 0, 15, 0),
 	gsSP2Triangles(0, 1, 2, 0, 0, 3, 1, 0),
 	gsSP2Triangles(3, 4, 1, 0, 3, 5, 4, 0),
 	gsSP2Triangles(5, 6, 4, 0, 5, 7, 6, 0),
@@ -3725,95 +3962,104 @@ Gfx kaktus_Left_Leg_mesh_layer_1_tri_1[] = {
 	gsSPEndDisplayList(),
 };
 
-Vtx kaktus_Left_Shoe_mesh_layer_1_vtx_0[36] = {
-	{{{-7, 34, -46}, 0, {569, 752}, {0x2C, 0x77, 0x00, 0xFF}}},
-	{{{-32, 43, -3}, 0, {715, 752}, {0x2C, 0x77, 0x00, 0xFF}}},
-	{{{-7, 34, 39}, 0, {862, 752}, {0x2C, 0x77, 0x00, 0xFF}}},
-	{{{32, 20, -56}, 0, {423, 752}, {0x2A, 0x78, 0x00, 0xFF}}},
-	{{{32, 20, 50}, 0, {1008, 752}, {0x2A, 0x78, 0x00, 0xFF}}},
-	{{{103, -4, 21}, 0, {130, 752}, {0x28, 0x78, 0x00, 0xFF}}},
-	{{{103, -4, -27}, 0, {277, 752}, {0x28, 0x78, 0x00, 0xFF}}},
-	{{{-20, -12, -42}, 0, {569, 240}, {0xAE, 0xBE, 0xB9, 0xFF}}},
-	{{{16, -25, -51}, 0, {423, 240}, {0xE1, 0xA4, 0xAE, 0xFF}}},
-	{{{15, -31, -3}, 0, {496, -16}, {0xD7, 0x88, 0x00, 0xFF}}},
-	{{{-13, 11, -46}, 0, {569, 496}, {0xB7, 0x0C, 0x99, 0xFF}}},
-	{{{-44, 22, -3}, 0, {715, 496}, {0x84, 0x1D, 0x00, 0xFF}}},
-	{{{-42, -4, -3}, 0, {715, 240}, {0x8C, 0xCC, 0x00, 0xFF}}},
-	{{{-20, -12, 36}, 0, {862, 240}, {0xAE, 0xBE, 0x47, 0xFF}}},
-	{{{15, -31, -3}, 0, {789, -16}, {0xD7, 0x88, 0x00, 0xFF}}},
-	{{{-13, 11, 40}, 0, {862, 496}, {0xB7, 0x0C, 0x67, 0xFF}}},
-	{{{-7, 34, 39}, 0, {862, 752}, {0xBA, 0x20, 0x65, 0xFF}}},
-	{{{32, 20, 50}, 0, {1008, 752}, {0x09, 0x11, 0x7E, 0xFF}}},
-	{{{25, -3, 54}, 0, {1008, 496}, {0xFE, 0xEE, 0x7E, 0xFF}}},
-	{{{16, -25, 45}, 0, {1008, 240}, {0xE1, 0xA4, 0x52, 0xFF}}},
-	{{{15, -31, -3}, 0, {935, -16}, {0xD7, 0x88, 0x00, 0xFF}}},
-	{{{-32, 43, -3}, 0, {715, 752}, {0x8B, 0x31, 0x00, 0xFF}}},
-	{{{-7, 34, -46}, 0, {569, 752}, {0xBA, 0x20, 0x9B, 0xFF}}},
-	{{{25, -3, -60}, 0, {423, 496}, {0xFE, 0xEE, 0x82, 0xFF}}},
-	{{{32, 20, -56}, 0, {423, 752}, {0x09, 0x11, 0x82, 0xFF}}},
-	{{{97, -32, -33}, 0, {277, 496}, {0x50, 0xBA, 0xBA, 0xFF}}},
-	{{{103, -4, -27}, 0, {277, 752}, {0x6C, 0xF6, 0xBE, 0xFF}}},
-	{{{97, -32, 27}, 0, {130, 496}, {0x50, 0xBA, 0x46, 0xFF}}},
-	{{{103, -4, 21}, 0, {130, 752}, {0x6C, 0xF6, 0x42, 0xFF}}},
-	{{{25, -3, 54}, 0, {-16, 496}, {0xFE, 0xEE, 0x7E, 0xFF}}},
-	{{{32, 20, 50}, 0, {-16, 752}, {0x09, 0x11, 0x7E, 0xFF}}},
-	{{{16, -25, 45}, 0, {-16, 240}, {0xE1, 0xA4, 0x52, 0xFF}}},
-	{{{56, -40, 18}, 0, {130, 240}, {0x02, 0x88, 0x29, 0xFF}}},
-	{{{15, -31, -3}, 0, {57, -16}, {0xD7, 0x88, 0x00, 0xFF}}},
-	{{{56, -40, -24}, 0, {277, 240}, {0x02, 0x88, 0xD7, 0xFF}}},
-	{{{15, -31, -3}, 0, {350, -16}, {0xD7, 0x88, 0x00, 0xFF}}},
+Vtx kaktus_tour_Left_Shoe_mesh_layer_1_vtx_0[29] = {
+	{{{-19, -20, -41}, 0, {569, 240}, {0xAE, 0xBE, 0xB9, 0xFF}}},
+	{{{16, -33, -51}, 0, {423, 240}, {0xE1, 0xA4, 0xAE, 0xFF}}},
+	{{{16, -39, -3}, 0, {496, -16}, {0xD7, 0x88, 0x00, 0xFF}}},
+	{{{-12, 3, -45}, 0, {569, 496}, {0xB7, 0x0C, 0x99, 0xFF}}},
+	{{{-44, 14, -3}, 0, {715, 496}, {0x84, 0x1D, 0x00, 0xFF}}},
+	{{{-42, -12, -3}, 0, {715, 240}, {0x8C, 0xCC, 0x00, 0xFF}}},
+	{{{-19, -20, 36}, 0, {862, 240}, {0xAE, 0xBE, 0x47, 0xFF}}},
+	{{{16, -39, -3}, 0, {789, -16}, {0xD7, 0x88, 0x00, 0xFF}}},
+	{{{-12, 3, 40}, 0, {862, 496}, {0xB7, 0x0C, 0x67, 0xFF}}},
+	{{{-7, 26, 40}, 0, {862, 752}, {0xBA, 0x20, 0x65, 0xFF}}},
+	{{{32, 12, 50}, 0, {1008, 752}, {0x09, 0x11, 0x7E, 0xFF}}},
+	{{{25, -11, 54}, 0, {1008, 496}, {0xFE, 0xEE, 0x7E, 0xFF}}},
+	{{{16, -33, 45}, 0, {1008, 240}, {0xE1, 0xA4, 0x52, 0xFF}}},
+	{{{16, -39, -3}, 0, {935, -16}, {0xD7, 0x88, 0x00, 0xFF}}},
+	{{{-31, 35, -3}, 0, {715, 752}, {0x8B, 0x31, 0x00, 0xFF}}},
+	{{{-7, 26, -45}, 0, {569, 752}, {0xBA, 0x20, 0x9B, 0xFF}}},
+	{{{25, -11, -60}, 0, {423, 496}, {0xFE, 0xEE, 0x82, 0xFF}}},
+	{{{32, 12, -56}, 0, {423, 752}, {0x09, 0x11, 0x82, 0xFF}}},
+	{{{98, -40, -33}, 0, {277, 496}, {0x50, 0xBA, 0xBA, 0xFF}}},
+	{{{104, -12, -26}, 0, {277, 752}, {0x6C, 0xF6, 0xBE, 0xFF}}},
+	{{{98, -40, 28}, 0, {130, 496}, {0x50, 0xBA, 0x46, 0xFF}}},
+	{{{104, -12, 21}, 0, {130, 752}, {0x6C, 0xF6, 0x42, 0xFF}}},
+	{{{25, -11, 54}, 0, {-16, 496}, {0xFE, 0xEE, 0x7E, 0xFF}}},
+	{{{32, 12, 50}, 0, {-16, 752}, {0x09, 0x11, 0x7E, 0xFF}}},
+	{{{16, -33, 45}, 0, {-16, 240}, {0xE1, 0xA4, 0x52, 0xFF}}},
+	{{{56, -48, 19}, 0, {130, 240}, {0x02, 0x88, 0x29, 0xFF}}},
+	{{{16, -39, -3}, 0, {57, -16}, {0xD7, 0x88, 0x00, 0xFF}}},
+	{{{56, -48, -24}, 0, {277, 240}, {0x02, 0x88, 0xD7, 0xFF}}},
+	{{{16, -39, -3}, 0, {350, -16}, {0xD7, 0x88, 0x00, 0xFF}}},
 };
 
-Gfx kaktus_Left_Shoe_mesh_layer_1_tri_0[] = {
-	gsSPVertex(kaktus_Left_Shoe_mesh_layer_1_vtx_0 + 0, 36, 0),
-	gsSP2Triangles(0, 1, 2, 0, 3, 0, 2, 0),
-	gsSP2Triangles(2, 4, 3, 0, 4, 5, 3, 0),
-	gsSP2Triangles(5, 6, 3, 0, 7, 8, 9, 0),
-	gsSP2Triangles(10, 8, 7, 0, 11, 10, 7, 0),
-	gsSP2Triangles(11, 7, 12, 0, 13, 12, 7, 0),
-	gsSP2Triangles(13, 7, 14, 0, 15, 12, 13, 0),
-	gsSP2Triangles(15, 11, 12, 0, 16, 11, 15, 0),
-	gsSP2Triangles(17, 16, 15, 0, 17, 15, 18, 0),
-	gsSP2Triangles(18, 15, 13, 0, 18, 13, 19, 0),
-	gsSP2Triangles(19, 13, 20, 0, 16, 21, 11, 0),
-	gsSP2Triangles(21, 10, 11, 0, 21, 22, 10, 0),
-	gsSP2Triangles(22, 23, 10, 0, 22, 24, 23, 0),
-	gsSP2Triangles(24, 25, 23, 0, 24, 26, 25, 0),
-	gsSP2Triangles(26, 27, 25, 0, 26, 28, 27, 0),
-	gsSP2Triangles(28, 29, 27, 0, 28, 30, 29, 0),
-	gsSP2Triangles(27, 29, 31, 0, 27, 31, 32, 0),
-	gsSP2Triangles(32, 31, 33, 0, 25, 27, 32, 0),
-	gsSP2Triangles(25, 32, 34, 0, 34, 32, 35, 0),
-	gsSP2Triangles(34, 35, 8, 0, 23, 34, 8, 0),
-	gsSP2Triangles(10, 23, 8, 0, 23, 25, 34, 0),
+Gfx kaktus_tour_Left_Shoe_mesh_layer_1_tri_0[] = {
+	gsSPVertex(kaktus_tour_Left_Shoe_mesh_layer_1_vtx_0 + 0, 29, 0),
+	gsSP2Triangles(0, 1, 2, 0, 3, 1, 0, 0),
+	gsSP2Triangles(4, 3, 0, 0, 4, 0, 5, 0),
+	gsSP2Triangles(6, 5, 0, 0, 6, 0, 7, 0),
+	gsSP2Triangles(8, 5, 6, 0, 8, 4, 5, 0),
+	gsSP2Triangles(9, 4, 8, 0, 10, 9, 8, 0),
+	gsSP2Triangles(10, 8, 11, 0, 11, 8, 6, 0),
+	gsSP2Triangles(11, 6, 12, 0, 12, 6, 13, 0),
+	gsSP2Triangles(9, 14, 4, 0, 14, 3, 4, 0),
+	gsSP2Triangles(14, 15, 3, 0, 15, 16, 3, 0),
+	gsSP2Triangles(15, 17, 16, 0, 17, 18, 16, 0),
+	gsSP2Triangles(17, 19, 18, 0, 19, 20, 18, 0),
+	gsSP2Triangles(19, 21, 20, 0, 21, 22, 20, 0),
+	gsSP2Triangles(21, 23, 22, 0, 20, 22, 24, 0),
+	gsSP2Triangles(20, 24, 25, 0, 25, 24, 26, 0),
+	gsSP2Triangles(18, 20, 25, 0, 18, 25, 27, 0),
+	gsSP2Triangles(27, 25, 28, 0, 27, 28, 1, 0),
+	gsSP2Triangles(16, 27, 1, 0, 3, 16, 1, 0),
+	gsSP1Triangle(16, 18, 27, 0),
 	gsSPEndDisplayList(),
 };
 
-Vtx kaktus_Right_Thigh_Color_mesh_layer_1_vtx_0[20] = {
-	{{{88, 46, 3}, 0, {1008, 496}, {0x39, 0x71, 0x00, 0xFF}}},
-	{{{6, 38, 3}, 0, {1008, -16}, {0xC8, 0x72, 0x00, 0xFF}}},
-	{{{6, 2, 36}, 0, {752, -16}, {0xCA, 0x00, 0x73, 0xFF}}},
-	{{{88, 2, 44}, 0, {752, 496}, {0x3A, 0x00, 0x71, 0xFF}}},
-	{{{6, -34, 3}, 0, {496, -16}, {0xC8, 0x8E, 0x00, 0xFF}}},
-	{{{88, -42, 3}, 0, {496, 496}, {0x39, 0x8F, 0x00, 0xFF}}},
-	{{{6, 2, -29}, 0, {240, -16}, {0xCA, 0x00, 0x8D, 0xFF}}},
-	{{{88, 2, -37}, 0, {240, 496}, {0x3A, 0x00, 0x8F, 0xFF}}},
-	{{{6, 38, 3}, 0, {-16, -16}, {0xC8, 0x72, 0x00, 0xFF}}},
-	{{{88, 46, 3}, 0, {-16, 496}, {0x39, 0x71, 0x00, 0xFF}}},
-	{{{88, 46, 3}, 0, {752, 506}, {0x39, 0x71, 0x00, 0xFF}}},
-	{{{88, 2, 44}, 0, {998, 752}, {0x3A, 0x00, 0x71, 0xFF}}},
-	{{{100, 2, 3}, 0, {752, 752}, {0x7F, 0x00, 0x00, 0xFF}}},
-	{{{88, -42, 3}, 0, {752, 998}, {0x39, 0x8F, 0x00, 0xFF}}},
-	{{{88, 2, -37}, 0, {506, 752}, {0x3A, 0x00, 0x8F, 0xFF}}},
-	{{{6, 2, 36}, 0, {486, 752}, {0xCA, 0x00, 0x73, 0xFF}}},
-	{{{6, 38, 3}, 0, {240, 506}, {0xC8, 0x72, 0x00, 0xFF}}},
-	{{{-19, 2, 3}, 0, {240, 752}, {0x81, 0x00, 0x00, 0xFF}}},
-	{{{6, 2, -29}, 0, {-6, 752}, {0xCA, 0x00, 0x8D, 0xFF}}},
-	{{{6, -34, 3}, 0, {240, 998}, {0xC8, 0x8E, 0x00, 0xFF}}},
+Vtx kaktus_tour_Left_Shoe_mesh_layer_1_vtx_1[7] = {
+	{{{-7, 26, -45}, 0, {569, 752}, {0x2C, 0x77, 0x00, 0xFF}}},
+	{{{-31, 35, -3}, 0, {715, 752}, {0x2C, 0x77, 0x00, 0xFF}}},
+	{{{-7, 26, 40}, 0, {862, 752}, {0x2C, 0x77, 0x00, 0xFF}}},
+	{{{32, 12, -56}, 0, {423, 752}, {0x2A, 0x78, 0x00, 0xFF}}},
+	{{{32, 12, 50}, 0, {1008, 752}, {0x2A, 0x78, 0x00, 0xFF}}},
+	{{{104, -12, 21}, 0, {130, 752}, {0x28, 0x78, 0x00, 0xFF}}},
+	{{{104, -12, -26}, 0, {277, 752}, {0x28, 0x78, 0x00, 0xFF}}},
 };
 
-Gfx kaktus_Right_Thigh_Color_mesh_layer_1_tri_0[] = {
-	gsSPVertex(kaktus_Right_Thigh_Color_mesh_layer_1_vtx_0 + 0, 20, 0),
+Gfx kaktus_tour_Left_Shoe_mesh_layer_1_tri_1[] = {
+	gsSPVertex(kaktus_tour_Left_Shoe_mesh_layer_1_vtx_1 + 0, 7, 0),
+	gsSP2Triangles(0, 1, 2, 0, 3, 0, 2, 0),
+	gsSP2Triangles(2, 4, 3, 0, 4, 5, 3, 0),
+	gsSP1Triangle(5, 6, 3, 0),
+	gsSPEndDisplayList(),
+};
+
+Vtx kaktus_tour_Right_Thigh_Color_mesh_layer_1_vtx_0[20] = {
+	{{{88, 38, 5}, 0, {1008, 496}, {0x39, 0x71, 0x00, 0xFF}}},
+	{{{6, 30, 5}, 0, {1008, -16}, {0xC8, 0x72, 0x00, 0xFF}}},
+	{{{6, -6, 38}, 0, {752, -16}, {0xCA, 0x00, 0x73, 0xFF}}},
+	{{{88, -6, 45}, 0, {752, 496}, {0x3A, 0x00, 0x71, 0xFF}}},
+	{{{6, -42, 5}, 0, {496, -16}, {0xC8, 0x8E, 0x00, 0xFF}}},
+	{{{88, -50, 5}, 0, {496, 496}, {0x39, 0x8F, 0x00, 0xFF}}},
+	{{{6, -6, -27}, 0, {240, -16}, {0xCA, 0x00, 0x8D, 0xFF}}},
+	{{{88, -6, -35}, 0, {240, 496}, {0x3A, 0x00, 0x8F, 0xFF}}},
+	{{{6, 30, 5}, 0, {-16, -16}, {0xC8, 0x72, 0x00, 0xFF}}},
+	{{{88, 38, 5}, 0, {-16, 496}, {0x39, 0x71, 0x00, 0xFF}}},
+	{{{88, 38, 5}, 0, {752, 506}, {0x39, 0x71, 0x00, 0xFF}}},
+	{{{88, -6, 45}, 0, {998, 752}, {0x3A, 0x00, 0x71, 0xFF}}},
+	{{{101, -6, 5}, 0, {752, 752}, {0x7F, 0x00, 0x00, 0xFF}}},
+	{{{88, -50, 5}, 0, {752, 998}, {0x39, 0x8F, 0x00, 0xFF}}},
+	{{{88, -6, -35}, 0, {506, 752}, {0x3A, 0x00, 0x8F, 0xFF}}},
+	{{{6, -6, 38}, 0, {486, 752}, {0xCA, 0x00, 0x73, 0xFF}}},
+	{{{6, 30, 5}, 0, {240, 506}, {0xC8, 0x72, 0x00, 0xFF}}},
+	{{{-18, -6, 5}, 0, {240, 752}, {0x81, 0x00, 0x00, 0xFF}}},
+	{{{6, -6, -27}, 0, {-6, 752}, {0xCA, 0x00, 0x8D, 0xFF}}},
+	{{{6, -42, 5}, 0, {240, 998}, {0xC8, 0x8E, 0x00, 0xFF}}},
+};
+
+Gfx kaktus_tour_Right_Thigh_Color_mesh_layer_1_tri_0[] = {
+	gsSPVertex(kaktus_tour_Right_Thigh_Color_mesh_layer_1_vtx_0 + 0, 20, 0),
 	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
 	gsSP2Triangles(3, 2, 4, 0, 3, 4, 5, 0),
 	gsSP2Triangles(5, 4, 6, 0, 5, 6, 7, 0),
@@ -3825,26 +4071,41 @@ Gfx kaktus_Right_Thigh_Color_mesh_layer_1_tri_0[] = {
 	gsSPEndDisplayList(),
 };
 
-Vtx kaktus_Right_Leg_mesh_layer_1_vtx_0[15] = {
-	{{{84, 65, 3}, 0, {1008, 496}, {0x50, 0x62, 0x02, 0xFF}}},
-	{{{-9, 46, 3}, 0, {1008, -16}, {0xBC, 0x6B, 0x00, 0xFF}}},
-	{{{-9, 2, 44}, 0, {752, -16}, {0xBD, 0x00, 0x6C, 0xFF}}},
-	{{{84, 2, 60}, 0, {752, 496}, {0x58, 0xFC, 0x5B, 0xFF}}},
-	{{{-9, -42, 3}, 0, {496, -16}, {0xBC, 0x95, 0x00, 0xFF}}},
-	{{{84, -61, 3}, 0, {496, 496}, {0x54, 0xA1, 0x03, 0xFF}}},
-	{{{-9, 2, -37}, 0, {240, -16}, {0xBD, 0x00, 0x94, 0xFF}}},
-	{{{84, 2, -53}, 0, {240, 496}, {0x54, 0xFE, 0xA1, 0xFF}}},
-	{{{-9, 46, 3}, 0, {-16, -16}, {0xBC, 0x6B, 0x00, 0xFF}}},
-	{{{84, 65, 3}, 0, {-16, 496}, {0x50, 0x62, 0x02, 0xFF}}},
-	{{{-9, 2, 44}, 0, {486, 752}, {0xBD, 0x00, 0x6C, 0xFF}}},
-	{{{-9, 46, 3}, 0, {240, 506}, {0xBC, 0x6B, 0x00, 0xFF}}},
-	{{{-28, 2, 3}, 0, {240, 752}, {0x81, 0x00, 0x00, 0xFF}}},
-	{{{-9, 2, -37}, 0, {-6, 752}, {0xBD, 0x00, 0x94, 0xFF}}},
-	{{{-9, -42, 3}, 0, {240, 998}, {0xBC, 0x95, 0x00, 0xFF}}},
+Vtx kaktus_tour_Right_Leg_mesh_layer_1_vtx_0[5] = {
+	{{{84, 57, 5}, 0, {752, 506}, {0x47, 0x6A, 0x00, 0xFF}}},
+	{{{72, -6, 5}, 0, {752, 752}, {0x7F, 0x00, 0x00, 0xFF}}},
+	{{{84, -6, -52}, 0, {506, 752}, {0x49, 0x00, 0x98, 0xFF}}},
+	{{{84, -6, 62}, 0, {998, 752}, {0x49, 0x00, 0x68, 0xFF}}},
+	{{{84, -69, 5}, 0, {752, 998}, {0x47, 0x96, 0x00, 0xFF}}},
 };
 
-Gfx kaktus_Right_Leg_mesh_layer_1_tri_0[] = {
-	gsSPVertex(kaktus_Right_Leg_mesh_layer_1_vtx_0 + 0, 15, 0),
+Gfx kaktus_tour_Right_Leg_mesh_layer_1_tri_0[] = {
+	gsSPVertex(kaktus_tour_Right_Leg_mesh_layer_1_vtx_0 + 0, 5, 0),
+	gsSP2Triangles(0, 1, 2, 0, 3, 1, 0, 0),
+	gsSP2Triangles(4, 1, 3, 0, 2, 1, 4, 0),
+	gsSPEndDisplayList(),
+};
+
+Vtx kaktus_tour_Right_Leg_mesh_layer_1_vtx_1[15] = {
+	{{{84, 57, 5}, 0, {1008, 496}, {0x47, 0x6A, 0x00, 0xFF}}},
+	{{{-9, 38, 5}, 0, {1008, -16}, {0xBC, 0x6B, 0x00, 0xFF}}},
+	{{{-9, -6, 45}, 0, {752, -16}, {0xBD, 0x00, 0x6C, 0xFF}}},
+	{{{84, -6, 62}, 0, {752, 496}, {0x49, 0x00, 0x68, 0xFF}}},
+	{{{-9, -50, 5}, 0, {496, -16}, {0xBC, 0x95, 0x00, 0xFF}}},
+	{{{84, -69, 5}, 0, {496, 496}, {0x47, 0x96, 0x00, 0xFF}}},
+	{{{-9, -6, -35}, 0, {240, -16}, {0xBD, 0x00, 0x94, 0xFF}}},
+	{{{84, -6, -52}, 0, {240, 496}, {0x49, 0x00, 0x98, 0xFF}}},
+	{{{-9, 38, 5}, 0, {-16, -16}, {0xBC, 0x6B, 0x00, 0xFF}}},
+	{{{84, 57, 5}, 0, {-16, 496}, {0x47, 0x6A, 0x00, 0xFF}}},
+	{{{-9, -6, 45}, 0, {486, 752}, {0xBD, 0x00, 0x6C, 0xFF}}},
+	{{{-9, 38, 5}, 0, {240, 506}, {0xBC, 0x6B, 0x00, 0xFF}}},
+	{{{-28, -6, 5}, 0, {240, 752}, {0x81, 0x00, 0x00, 0xFF}}},
+	{{{-9, -6, -35}, 0, {-6, 752}, {0xBD, 0x00, 0x94, 0xFF}}},
+	{{{-9, -50, 5}, 0, {240, 998}, {0xBC, 0x95, 0x00, 0xFF}}},
+};
+
+Gfx kaktus_tour_Right_Leg_mesh_layer_1_tri_1[] = {
+	gsSPVertex(kaktus_tour_Right_Leg_mesh_layer_1_vtx_1 + 0, 15, 0),
 	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
 	gsSP2Triangles(3, 2, 4, 0, 3, 4, 5, 0),
 	gsSP2Triangles(5, 4, 6, 0, 5, 6, 7, 0),
@@ -3854,90 +4115,82 @@ Gfx kaktus_Right_Leg_mesh_layer_1_tri_0[] = {
 	gsSPEndDisplayList(),
 };
 
-Vtx kaktus_Right_Leg_mesh_layer_1_vtx_1[5] = {
-	{{{84, 65, 3}, 0, {752, 506}, {0x50, 0x62, 0x02, 0xFF}}},
-	{{{84, 2, 60}, 0, {998, 752}, {0x58, 0xFC, 0x5B, 0xFF}}},
-	{{{46, -6, 13}, 0, {752, 752}, {0x7E, 0x0A, 0xF3, 0xFF}}},
-	{{{84, -61, 3}, 0, {752, 998}, {0x54, 0xA1, 0x03, 0xFF}}},
-	{{{84, 2, -53}, 0, {506, 752}, {0x54, 0xFE, 0xA1, 0xFF}}},
+Vtx kaktus_tour_Right_Shoe_DL_mesh_layer_1_vtx_0[29] = {
+	{{{-20, -20, -42}, 0, {862, 240}, {0xAE, 0xBE, 0xB9, 0xFF}}},
+	{{{15, -39, -3}, 0, {642, -16}, {0xD7, 0x88, 0x00, 0xFF}}},
+	{{{-20, -20, 36}, 0, {569, 240}, {0xAE, 0xBE, 0x47, 0xFF}}},
+	{{{-43, -12, -3}, 0, {715, 240}, {0x8C, 0xCC, 0x00, 0xFF}}},
+	{{{-45, 14, -3}, 0, {715, 496}, {0x84, 0x1D, 0x00, 0xFF}}},
+	{{{-13, 3, 40}, 0, {569, 496}, {0xB7, 0x0C, 0x67, 0xFF}}},
+	{{{15, -33, 45}, 0, {423, 240}, {0xE1, 0xA4, 0x52, 0xFF}}},
+	{{{15, -39, -3}, 0, {496, -16}, {0xD7, 0x88, 0x00, 0xFF}}},
+	{{{24, -11, 54}, 0, {423, 496}, {0xFE, 0xEE, 0x7E, 0xFF}}},
+	{{{55, -48, 18}, 0, {277, 240}, {0x02, 0x88, 0x29, 0xFF}}},
+	{{{15, -39, -3}, 0, {203, -16}, {0xD7, 0x88, 0x00, 0xFF}}},
+	{{{55, -48, -24}, 0, {130, 240}, {0x02, 0x88, 0xD7, 0xFF}}},
+	{{{97, -40, 27}, 0, {277, 496}, {0x50, 0xBA, 0x46, 0xFF}}},
+	{{{97, -40, -33}, 0, {130, 496}, {0x50, 0xBA, 0xBA, 0xFF}}},
+	{{{15, -33, -51}, 0, {-16, 240}, {0xE1, 0xA4, 0xAE, 0xFF}}},
+	{{{15, -39, -3}, 0, {57, -16}, {0xD7, 0x88, 0x00, 0xFF}}},
+	{{{24, -11, -60}, 0, {-16, 496}, {0xFE, 0xEE, 0x82, 0xFF}}},
+	{{{103, -12, -27}, 0, {130, 752}, {0x6C, 0xF6, 0xBE, 0xFF}}},
+	{{{31, 12, -56}, 0, {-16, 752}, {0x09, 0x11, 0x82, 0xFF}}},
+	{{{103, -12, 21}, 0, {277, 752}, {0x6C, 0xF6, 0x42, 0xFF}}},
+	{{{31, 12, 50}, 0, {423, 752}, {0x09, 0x11, 0x7E, 0xFF}}},
+	{{{-8, 26, 40}, 0, {569, 752}, {0xBA, 0x20, 0x65, 0xFF}}},
+	{{{-32, 35, -3}, 0, {715, 752}, {0x8B, 0x31, 0x00, 0xFF}}},
+	{{{-8, 26, -45}, 0, {862, 752}, {0xBA, 0x20, 0x9B, 0xFF}}},
+	{{{-13, 3, -46}, 0, {862, 496}, {0xB7, 0x0C, 0x99, 0xFF}}},
+	{{{31, 12, -56}, 0, {1008, 752}, {0x09, 0x11, 0x82, 0xFF}}},
+	{{{24, -11, -60}, 0, {1008, 496}, {0xFE, 0xEE, 0x82, 0xFF}}},
+	{{{15, -33, -51}, 0, {1008, 240}, {0xE1, 0xA4, 0xAE, 0xFF}}},
+	{{{15, -39, -3}, 0, {935, -16}, {0xD7, 0x88, 0x00, 0xFF}}},
 };
 
-Gfx kaktus_Right_Leg_mesh_layer_1_tri_1[] = {
-	gsSPVertex(kaktus_Right_Leg_mesh_layer_1_vtx_1 + 0, 5, 0),
-	gsSP2Triangles(0, 1, 2, 0, 1, 3, 2, 0),
-	gsSP2Triangles(3, 4, 2, 0, 4, 0, 2, 0),
+Gfx kaktus_tour_Right_Shoe_DL_mesh_layer_1_tri_0[] = {
+	gsSPVertex(kaktus_tour_Right_Shoe_DL_mesh_layer_1_vtx_0 + 0, 29, 0),
+	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
+	gsSP2Triangles(4, 3, 2, 0, 4, 2, 5, 0),
+	gsSP2Triangles(5, 2, 6, 0, 2, 7, 6, 0),
+	gsSP2Triangles(5, 6, 8, 0, 8, 6, 9, 0),
+	gsSP2Triangles(10, 9, 6, 0, 10, 11, 9, 0),
+	gsSP2Triangles(12, 9, 11, 0, 12, 11, 13, 0),
+	gsSP2Triangles(13, 11, 14, 0, 11, 15, 14, 0),
+	gsSP2Triangles(13, 14, 16, 0, 17, 13, 16, 0),
+	gsSP2Triangles(17, 16, 18, 0, 19, 13, 17, 0),
+	gsSP2Triangles(19, 12, 13, 0, 20, 12, 19, 0),
+	gsSP2Triangles(20, 8, 12, 0, 21, 8, 20, 0),
+	gsSP2Triangles(21, 5, 8, 0, 22, 5, 21, 0),
+	gsSP2Triangles(22, 4, 5, 0, 23, 4, 22, 0),
+	gsSP2Triangles(23, 24, 4, 0, 25, 24, 23, 0),
+	gsSP2Triangles(25, 26, 24, 0, 26, 0, 24, 0),
+	gsSP2Triangles(26, 27, 0, 0, 27, 28, 0, 0),
+	gsSP2Triangles(24, 0, 3, 0, 24, 3, 4, 0),
+	gsSP1Triangle(8, 9, 12, 0),
 	gsSPEndDisplayList(),
 };
 
-Vtx kaktus_Right_Shoe_DL_mesh_layer_1_vtx_0[36] = {
-	{{{-8, 34, -45}, 0, {862, 752}, {0x2C, 0x77, 0x00, 0xFF}}},
-	{{{-33, 43, -3}, 0, {715, 752}, {0x2C, 0x77, 0x00, 0xFF}}},
-	{{{-8, 34, 40}, 0, {569, 752}, {0x2C, 0x77, 0x00, 0xFF}}},
-	{{{31, 20, -56}, 0, {1008, 752}, {0x2A, 0x78, 0x00, 0xFF}}},
-	{{{31, 20, 50}, 0, {423, 752}, {0x2A, 0x78, 0x00, 0xFF}}},
-	{{{102, -4, 21}, 0, {277, 752}, {0x28, 0x78, 0x00, 0xFF}}},
-	{{{102, -4, -26}, 0, {130, 752}, {0x28, 0x78, 0x00, 0xFF}}},
-	{{{-21, -12, -41}, 0, {862, 240}, {0xAE, 0xBE, 0xB9, 0xFF}}},
-	{{{14, -31, -3}, 0, {642, -16}, {0xD7, 0x88, 0x00, 0xFF}}},
-	{{{-21, -12, 36}, 0, {569, 240}, {0xAE, 0xBE, 0x47, 0xFF}}},
-	{{{-43, -4, -3}, 0, {715, 240}, {0x8C, 0xCC, 0x00, 0xFF}}},
-	{{{-46, 22, -3}, 0, {715, 496}, {0x84, 0x1D, 0x00, 0xFF}}},
-	{{{-14, 11, 40}, 0, {569, 496}, {0xB7, 0x0C, 0x67, 0xFF}}},
-	{{{14, -25, 46}, 0, {423, 240}, {0xE1, 0xA4, 0x52, 0xFF}}},
-	{{{14, -31, -3}, 0, {496, -16}, {0xD7, 0x88, 0x00, 0xFF}}},
-	{{{24, -3, 55}, 0, {423, 496}, {0xFE, 0xEE, 0x7E, 0xFF}}},
-	{{{55, -40, 19}, 0, {277, 240}, {0x02, 0x88, 0x29, 0xFF}}},
-	{{{14, -31, -3}, 0, {203, -16}, {0xD7, 0x88, 0x00, 0xFF}}},
-	{{{55, -40, -24}, 0, {130, 240}, {0x02, 0x88, 0xD7, 0xFF}}},
-	{{{96, -32, 28}, 0, {277, 496}, {0x50, 0xBA, 0x46, 0xFF}}},
-	{{{96, -32, -33}, 0, {130, 496}, {0x50, 0xBA, 0xBA, 0xFF}}},
-	{{{14, -25, -51}, 0, {-16, 240}, {0xE1, 0xA4, 0xAE, 0xFF}}},
-	{{{14, -31, -3}, 0, {57, -16}, {0xD7, 0x88, 0x00, 0xFF}}},
-	{{{24, -3, -60}, 0, {-16, 496}, {0xFE, 0xEE, 0x82, 0xFF}}},
-	{{{102, -4, -26}, 0, {130, 752}, {0x6C, 0xF6, 0xBE, 0xFF}}},
-	{{{31, 20, -56}, 0, {-16, 752}, {0x09, 0x11, 0x82, 0xFF}}},
-	{{{102, -4, 21}, 0, {277, 752}, {0x6C, 0xF6, 0x42, 0xFF}}},
-	{{{31, 20, 50}, 0, {423, 752}, {0x09, 0x11, 0x7E, 0xFF}}},
-	{{{-8, 34, 40}, 0, {569, 752}, {0xBA, 0x20, 0x65, 0xFF}}},
-	{{{-33, 43, -3}, 0, {715, 752}, {0x8B, 0x31, 0x00, 0xFF}}},
-	{{{-8, 34, -45}, 0, {862, 752}, {0xBA, 0x20, 0x9B, 0xFF}}},
-	{{{-14, 11, -45}, 0, {862, 496}, {0xB7, 0x0C, 0x99, 0xFF}}},
-	{{{31, 20, -56}, 0, {1008, 752}, {0x09, 0x11, 0x82, 0xFF}}},
-	{{{24, -3, -60}, 0, {1008, 496}, {0xFE, 0xEE, 0x82, 0xFF}}},
-	{{{14, -25, -51}, 0, {1008, 240}, {0xE1, 0xA4, 0xAE, 0xFF}}},
-	{{{14, -31, -3}, 0, {935, -16}, {0xD7, 0x88, 0x00, 0xFF}}},
+Vtx kaktus_tour_Right_Shoe_DL_mesh_layer_1_vtx_1[7] = {
+	{{{-8, 26, -45}, 0, {862, 752}, {0x2C, 0x77, 0x00, 0xFF}}},
+	{{{-32, 35, -3}, 0, {715, 752}, {0x2C, 0x77, 0x00, 0xFF}}},
+	{{{-8, 26, 40}, 0, {569, 752}, {0x2C, 0x77, 0x00, 0xFF}}},
+	{{{31, 12, -56}, 0, {1008, 752}, {0x2A, 0x78, 0x00, 0xFF}}},
+	{{{31, 12, 50}, 0, {423, 752}, {0x2A, 0x78, 0x00, 0xFF}}},
+	{{{103, -12, 21}, 0, {277, 752}, {0x28, 0x78, 0x00, 0xFF}}},
+	{{{103, -12, -27}, 0, {130, 752}, {0x28, 0x78, 0x00, 0xFF}}},
 };
 
-Gfx kaktus_Right_Shoe_DL_mesh_layer_1_tri_0[] = {
-	gsSPVertex(kaktus_Right_Shoe_DL_mesh_layer_1_vtx_0 + 0, 36, 0),
+Gfx kaktus_tour_Right_Shoe_DL_mesh_layer_1_tri_1[] = {
+	gsSPVertex(kaktus_tour_Right_Shoe_DL_mesh_layer_1_vtx_1 + 0, 7, 0),
 	gsSP2Triangles(0, 1, 2, 0, 3, 0, 2, 0),
 	gsSP2Triangles(2, 4, 3, 0, 4, 5, 3, 0),
-	gsSP2Triangles(5, 6, 3, 0, 7, 8, 9, 0),
-	gsSP2Triangles(7, 9, 10, 0, 11, 10, 9, 0),
-	gsSP2Triangles(11, 9, 12, 0, 12, 9, 13, 0),
-	gsSP2Triangles(9, 14, 13, 0, 12, 13, 15, 0),
-	gsSP2Triangles(15, 13, 16, 0, 17, 16, 13, 0),
-	gsSP2Triangles(17, 18, 16, 0, 19, 16, 18, 0),
-	gsSP2Triangles(19, 18, 20, 0, 20, 18, 21, 0),
-	gsSP2Triangles(18, 22, 21, 0, 20, 21, 23, 0),
-	gsSP2Triangles(24, 20, 23, 0, 24, 23, 25, 0),
-	gsSP2Triangles(26, 20, 24, 0, 26, 19, 20, 0),
-	gsSP2Triangles(27, 19, 26, 0, 27, 15, 19, 0),
-	gsSP2Triangles(28, 15, 27, 0, 28, 12, 15, 0),
-	gsSP2Triangles(29, 12, 28, 0, 29, 11, 12, 0),
-	gsSP2Triangles(30, 11, 29, 0, 30, 31, 11, 0),
-	gsSP2Triangles(32, 31, 30, 0, 32, 33, 31, 0),
-	gsSP2Triangles(33, 7, 31, 0, 33, 34, 7, 0),
-	gsSP2Triangles(34, 35, 7, 0, 31, 7, 10, 0),
-	gsSP2Triangles(31, 10, 11, 0, 15, 16, 19, 0),
+	gsSP1Triangle(5, 6, 3, 0),
 	gsSPEndDisplayList(),
 };
 
 
-Gfx mat_kaktus_Bottom_001[] = {
-	gsSPLight(&kaktus_Bottom_001_lights.l, 1),
-    gsSPLight(&kaktus_Bottom_001_lights.a, 2),
-    gsSPCopyLightEXT(1, 5),
+Gfx mat_kaktus_tour_Bottom_002[] = {
+	gsSPSetLights1(kaktus_tour_Bottom_002_lights),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(0, 0, 0, SHADE, 0, 0, 0, ENVIRONMENT, 0, 0, 0, SHADE, 0, 0, 0, ENVIRONMENT),
 	gsDPSetAlphaDither(G_AD_NOISE),
@@ -3945,13 +4198,64 @@ Gfx mat_kaktus_Bottom_001[] = {
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_revert_kaktus_Bottom_001[] = {
+Gfx mat_revert_kaktus_tour_Bottom_002[] = {
 	gsDPPipeSync(),
 	gsDPSetAlphaDither(G_AD_DISABLE),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_kaktus_Sweater__SHIRT__001[] = {
+Gfx mat_kaktus_tour_f3dlite_material_003[] = {
+	gsSPSetLights1(kaktus_tour_f3dlite_material_003_lights),
+	gsDPPipeSync(),
+	gsDPSetCombineLERP(0, 0, 0, SHADE, 0, 0, 0, ENVIRONMENT, 0, 0, 0, SHADE, 0, 0, 0, ENVIRONMENT),
+	gsDPSetAlphaDither(G_AD_NOISE),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsSPEndDisplayList(),
+};
+
+Gfx mat_revert_kaktus_tour_f3dlite_material_003[] = {
+	gsDPPipeSync(),
+	gsDPSetAlphaDither(G_AD_DISABLE),
+	gsSPEndDisplayList(),
+};
+
+Gfx mat_kaktus_tour_Shoes__SHOES__002[] = {
+	gsSPCopyLightsPlayerPart(SHOES),
+	gsDPPipeSync(),
+	gsDPSetCombineLERP(0, 0, 0, SHADE, 0, 0, 0, ENVIRONMENT, 0, 0, 0, SHADE, 0, 0, 0, ENVIRONMENT),
+	gsDPSetAlphaDither(G_AD_NOISE),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsSPEndDisplayList(),
+};
+
+Gfx mat_revert_kaktus_tour_Shoes__SHOES__002[] = {
+	gsDPPipeSync(),
+	gsDPSetAlphaDither(G_AD_DISABLE),
+	gsSPEndDisplayList(),
+};
+
+Gfx mat_kaktus_tour_Metal__NO_RECOLOR_[] = {
+	gsSPSetGeometryMode(G_TEXTURE_GEN),
+	gsDPPipeSync(),
+	gsDPSetCombineLERP(0, 0, 0, TEXEL0, 0, 0, 0, ENVIRONMENT, 0, 0, 0, TEXEL0, 0, 0, 0, ENVIRONMENT),
+	gsDPSetAlphaDither(G_AD_NOISE),
+	gsSPTexture(1984, 1984, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b_LOAD_BLOCK, 1, kaktus_tour_ball_goldenorange_rgba16),
+	gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadBlock(7, 0, 0, 1023, 256),
+	gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b, 8, 0, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTileSize(0, 0, 0, 124, 124),
+	gsSPEndDisplayList(),
+};
+
+Gfx mat_revert_kaktus_tour_Metal__NO_RECOLOR_[] = {
+	gsSPClearGeometryMode(G_TEXTURE_GEN),
+	gsDPPipeSync(),
+	gsDPSetAlphaDither(G_AD_DISABLE),
+	gsSPEndDisplayList(),
+};
+
+Gfx mat_kaktus_tour_Sweater__SHIRT__002[] = {
 	gsSPCopyLightsPlayerPart(SHIRT),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(0, 0, 0, SHADE, 0, 0, 0, ENVIRONMENT, 0, 0, 0, SHADE, 0, 0, 0, ENVIRONMENT),
@@ -3960,34 +4264,13 @@ Gfx mat_kaktus_Sweater__SHIRT__001[] = {
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_revert_kaktus_Sweater__SHIRT__001[] = {
+Gfx mat_revert_kaktus_tour_Sweater__SHIRT__002[] = {
 	gsDPPipeSync(),
 	gsDPSetAlphaDither(G_AD_DISABLE),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_kaktus_Metal__NO_RECOLOR_[] = {
-	gsSPSetGeometryMode(G_TEXTURE_GEN),
-	gsDPPipeSync(),
-	gsDPSetCombineLERP(0, 0, 0, TEXEL0, 0, 0, 0, ENVIRONMENT, 0, 0, 0, TEXEL0, 0, 0, 0, ENVIRONMENT),
-	gsDPSetAlphaDither(G_AD_NOISE),
-	gsSPTexture(1984, 1984, 0, 0, 1),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b_LOAD_BLOCK, 1, kaktus_ball_goldenorange_rgba16),
-	gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadBlock(7, 0, 0, 1023, 256),
-	gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b, 8, 0, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0),
-	gsDPSetTileSize(0, 0, 0, 124, 124),
-	gsSPEndDisplayList(),
-};
-
-Gfx mat_revert_kaktus_Metal__NO_RECOLOR_[] = {
-	gsSPClearGeometryMode(G_TEXTURE_GEN),
-	gsDPPipeSync(),
-	gsDPSetAlphaDither(G_AD_DISABLE),
-	gsSPEndDisplayList(),
-};
-
-Gfx mat_kaktus_Skin__SKIN__001[] = {
+Gfx mat_kaktus_tour_Skin__SKIN__002[] = {
 	gsSPCopyLightsPlayerPart(SKIN),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(0, 0, 0, SHADE, 0, 0, 0, ENVIRONMENT, 0, 0, 0, SHADE, 0, 0, 0, ENVIRONMENT),
@@ -3996,13 +4279,13 @@ Gfx mat_kaktus_Skin__SKIN__001[] = {
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_revert_kaktus_Skin__SKIN__001[] = {
+Gfx mat_revert_kaktus_tour_Skin__SKIN__002[] = {
 	gsDPPipeSync(),
 	gsDPSetAlphaDither(G_AD_DISABLE),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_kaktus_Hat__CAP__001[] = {
+Gfx mat_kaktus_tour_Hat__CAP__002[] = {
 	gsSPCopyLightsPlayerPart(CAP),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(0, 0, 0, SHADE, 0, 0, 0, ENVIRONMENT, 0, 0, 0, SHADE, 0, 0, 0, ENVIRONMENT),
@@ -4011,13 +4294,13 @@ Gfx mat_kaktus_Hat__CAP__001[] = {
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_revert_kaktus_Hat__CAP__001[] = {
+Gfx mat_revert_kaktus_tour_Hat__CAP__002[] = {
 	gsDPPipeSync(),
 	gsDPSetAlphaDither(G_AD_DISABLE),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_kaktus_Brim__EMBLEM__001[] = {
+Gfx mat_kaktus_tour_Brim__EMBLEM__002[] = {
 	gsSPCopyLightsPlayerPart(EMBLEM),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(0, 0, 0, SHADE, 0, 0, 0, ENVIRONMENT, 0, 0, 0, SHADE, 0, 0, 0, ENVIRONMENT),
@@ -4026,13 +4309,13 @@ Gfx mat_kaktus_Brim__EMBLEM__001[] = {
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_revert_kaktus_Brim__EMBLEM__001[] = {
+Gfx mat_revert_kaktus_tour_Brim__EMBLEM__002[] = {
 	gsDPPipeSync(),
 	gsDPSetAlphaDither(G_AD_DISABLE),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_kaktus_Hair__HAIR__001[] = {
+Gfx mat_kaktus_tour_Hair__HAIR__002[] = {
 	gsSPClearGeometryMode(G_CULL_BACK),
 	gsSPCopyLightsPlayerPart(HAIR),
 	gsDPPipeSync(),
@@ -4042,19 +4325,19 @@ Gfx mat_kaktus_Hair__HAIR__001[] = {
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_revert_kaktus_Hair__HAIR__001[] = {
+Gfx mat_revert_kaktus_tour_Hair__HAIR__002[] = {
 	gsSPSetGeometryMode(G_CULL_BACK),
 	gsDPPipeSync(),
 	gsDPSetAlphaDither(G_AD_DISABLE),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_kaktus_Eyes_Open[] = {
+Gfx mat_kaktus_tour_Eyes_Open[] = {
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(0, 0, 0, TEXEL0, 0, 0, 0, TEXEL0, 0, 0, 0, TEXEL0, 0, 0, 0, TEXEL0),
 	gsDPSetAlphaDither(G_AD_NOISE),
 	gsSPTexture(65535, 65535, 0, 0, 1),
-	gsDPSetTextureImage(G_IM_FMT_IA, G_IM_SIZ_8b_LOAD_BLOCK, 1, kaktus_kaktuseyes1_ia8),
+	gsDPSetTextureImage(G_IM_FMT_IA, G_IM_SIZ_8b_LOAD_BLOCK, 1, kaktus_tour_kaktuseyes1_ia8),
 	gsDPSetTile(G_IM_FMT_IA, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_IA, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
@@ -4062,23 +4345,23 @@ Gfx mat_kaktus_Eyes_Open[] = {
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_revert_kaktus_Eyes_Open[] = {
+Gfx mat_revert_kaktus_tour_Eyes_Open[] = {
 	gsDPPipeSync(),
 	gsDPSetAlphaDither(G_AD_DISABLE),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_kaktus_Flower_001[] = {
+Gfx mat_kaktus_tour_Flower_002[] = {
 	gsSPClearGeometryMode(G_CULL_BACK),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(0, 0, 0, TEXEL0, 0, 0, 0, TEXEL0, 0, 0, 0, TEXEL0, 0, 0, 0, TEXEL0),
 	gsDPSetAlphaDither(G_AD_NOISE),
 	gsDPSetTextureLUT(G_TT_RGBA16),
 	gsSPTexture(65535, 65535, 0, 0, 1),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, kaktus_flwowerera_pal_rgba16),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, kaktus_tour_flwowerera2_pal_rgba16),
 	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadTLUTCmd(5, 11),
-	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_16b, 1, kaktus_flwowerera_ci4),
+	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_16b, 1, kaktus_tour_flwowerera2_ci4),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_16b, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 255, 1024),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_4b, 2, 0, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0),
@@ -4086,7 +4369,7 @@ Gfx mat_kaktus_Flower_001[] = {
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_revert_kaktus_Flower_001[] = {
+Gfx mat_revert_kaktus_tour_Flower_002[] = {
 	gsSPSetGeometryMode(G_CULL_BACK),
 	gsDPPipeSync(),
 	gsDPSetAlphaDither(G_AD_DISABLE),
@@ -4094,13 +4377,13 @@ Gfx mat_revert_kaktus_Flower_001[] = {
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_kaktus_Prick_Top_001[] = {
+Gfx mat_kaktus_tour_Prick_Top_002[] = {
 	gsSPClearGeometryMode(G_CULL_BACK),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(0, 0, 0, TEXEL0, 0, 0, 0, TEXEL0, 0, 0, 0, TEXEL0, 0, 0, 0, TEXEL0),
 	gsDPSetAlphaDither(G_AD_NOISE),
 	gsSPTexture(65535, 65535, 0, 0, 1),
-	gsDPSetTextureImage(G_IM_FMT_IA, G_IM_SIZ_8b_LOAD_BLOCK, 1, kaktus_kakspike_ia8),
+	gsDPSetTextureImage(G_IM_FMT_IA, G_IM_SIZ_8b_LOAD_BLOCK, 1, kaktus_tour_kakspike_ia8),
 	gsDPSetTile(G_IM_FMT_IA, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 127, 1024),
 	gsDPSetTile(G_IM_FMT_IA, G_IM_SIZ_8b, 2, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 4, 0, G_TX_CLAMP | G_TX_NOMIRROR, 4, 0),
@@ -4108,20 +4391,20 @@ Gfx mat_kaktus_Prick_Top_001[] = {
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_revert_kaktus_Prick_Top_001[] = {
+Gfx mat_revert_kaktus_tour_Prick_Top_002[] = {
 	gsSPSetGeometryMode(G_CULL_BACK),
 	gsDPPipeSync(),
 	gsDPSetAlphaDither(G_AD_DISABLE),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_kaktus_Prick_Bottom_001[] = {
+Gfx mat_kaktus_tour_Prick_Bottom_002[] = {
 	gsSPClearGeometryMode(G_CULL_BACK),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(0, 0, 0, TEXEL0, 0, 0, 0, TEXEL0, 0, 0, 0, TEXEL0, 0, 0, 0, TEXEL0),
 	gsDPSetAlphaDither(G_AD_NOISE),
 	gsSPTexture(65535, 65535, 0, 0, 1),
-	gsDPSetTextureImage(G_IM_FMT_IA, G_IM_SIZ_8b_LOAD_BLOCK, 1, kaktus_kakspike_ia8_copy),
+	gsDPSetTextureImage(G_IM_FMT_IA, G_IM_SIZ_8b_LOAD_BLOCK, 1, kaktus_tour_kakspike_ia8_copy),
 	gsDPSetTile(G_IM_FMT_IA, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 127, 1024),
 	gsDPSetTile(G_IM_FMT_IA, G_IM_SIZ_8b, 2, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 4, 0, G_TX_CLAMP | G_TX_NOMIRROR, 4, 0),
@@ -4129,19 +4412,19 @@ Gfx mat_kaktus_Prick_Bottom_001[] = {
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_revert_kaktus_Prick_Bottom_001[] = {
+Gfx mat_revert_kaktus_tour_Prick_Bottom_002[] = {
 	gsSPSetGeometryMode(G_CULL_BACK),
 	gsDPPipeSync(),
 	gsDPSetAlphaDither(G_AD_DISABLE),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_kaktus_Eyes_Half[] = {
+Gfx mat_kaktus_tour_Eyes_Half[] = {
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(0, 0, 0, TEXEL0, 0, 0, 0, TEXEL0, 0, 0, 0, TEXEL0, 0, 0, 0, TEXEL0),
 	gsDPSetAlphaDither(G_AD_NOISE),
 	gsSPTexture(65535, 65535, 0, 0, 1),
-	gsDPSetTextureImage(G_IM_FMT_IA, G_IM_SIZ_8b_LOAD_BLOCK, 1, kaktus_texture_7__ia8),
+	gsDPSetTextureImage(G_IM_FMT_IA, G_IM_SIZ_8b_LOAD_BLOCK, 1, kaktus_tour_texture_7__ia8),
 	gsDPSetTile(G_IM_FMT_IA, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_IA, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0),
@@ -4149,22 +4432,22 @@ Gfx mat_kaktus_Eyes_Half[] = {
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_revert_kaktus_Eyes_Half[] = {
+Gfx mat_revert_kaktus_tour_Eyes_Half[] = {
 	gsDPPipeSync(),
 	gsDPSetAlphaDither(G_AD_DISABLE),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_kaktus_Eyes_Closed[] = {
+Gfx mat_kaktus_tour_Eyes_Closed[] = {
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(0, 0, 0, TEXEL0, 0, 0, 0, TEXEL0, 0, 0, 0, TEXEL0, 0, 0, 0, TEXEL0),
 	gsDPSetAlphaDither(G_AD_NOISE),
 	gsDPSetTextureLUT(G_TT_RGBA16),
 	gsSPTexture(65535, 65535, 0, 0, 1),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, kaktus_texture_1__pal_rgba16),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, kaktus_tour_texture_1__pal_rgba16),
 	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadTLUTCmd(5, 2),
-	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_16b, 1, kaktus_texture_1__ci4),
+	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_16b, 1, kaktus_tour_texture_1__ci4),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_16b, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 255, 1024),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_4b, 2, 0, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0),
@@ -4172,23 +4455,23 @@ Gfx mat_kaktus_Eyes_Closed[] = {
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_revert_kaktus_Eyes_Closed[] = {
+Gfx mat_revert_kaktus_tour_Eyes_Closed[] = {
 	gsDPPipeSync(),
 	gsDPSetAlphaDither(G_AD_DISABLE),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_kaktus_Eyes_Left[] = {
+Gfx mat_kaktus_tour_Eyes_Left[] = {
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(0, 0, 0, TEXEL0, 0, 0, 0, TEXEL0, 0, 0, 0, TEXEL0, 0, 0, 0, TEXEL0),
 	gsDPSetAlphaDither(G_AD_NOISE),
 	gsDPSetTextureLUT(G_TT_RGBA16),
 	gsSPTexture(65535, 65535, 0, 0, 1),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, kaktus_texture_3__pal_rgba16),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, kaktus_tour_texture_3__pal_rgba16),
 	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadTLUTCmd(5, 5),
-	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_16b, 1, kaktus_texture_3__ci4),
+	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_16b, 1, kaktus_tour_texture_3__ci4),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_16b, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 255, 1024),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_4b, 2, 0, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0),
@@ -4196,23 +4479,23 @@ Gfx mat_kaktus_Eyes_Left[] = {
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_revert_kaktus_Eyes_Left[] = {
+Gfx mat_revert_kaktus_tour_Eyes_Left[] = {
 	gsDPPipeSync(),
 	gsDPSetAlphaDither(G_AD_DISABLE),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_kaktus_Eyes_Right[] = {
+Gfx mat_kaktus_tour_Eyes_Right[] = {
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(0, 0, 0, TEXEL0, 0, 0, 0, TEXEL0, 0, 0, 0, TEXEL0, 0, 0, 0, TEXEL0),
 	gsDPSetAlphaDither(G_AD_NOISE),
 	gsDPSetTextureLUT(G_TT_RGBA16),
 	gsSPTexture(65535, 65535, 0, 0, 1),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, kaktus_texture_6__pal_rgba16),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, kaktus_tour_texture_6__pal_rgba16),
 	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadTLUTCmd(5, 5),
-	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_16b, 1, kaktus_texture_6__ci4),
+	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_16b, 1, kaktus_tour_texture_6__ci4),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_16b, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 255, 1024),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_4b, 2, 0, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0),
@@ -4220,23 +4503,23 @@ Gfx mat_kaktus_Eyes_Right[] = {
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_revert_kaktus_Eyes_Right[] = {
+Gfx mat_revert_kaktus_tour_Eyes_Right[] = {
 	gsDPPipeSync(),
 	gsDPSetAlphaDither(G_AD_DISABLE),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_kaktus_Eyes_Wink[] = {
+Gfx mat_kaktus_tour_Eyes_Wink[] = {
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(0, 0, 0, TEXEL0, 0, 0, 0, TEXEL0, 0, 0, 0, TEXEL0, 0, 0, 0, TEXEL0),
 	gsDPSetAlphaDither(G_AD_NOISE),
 	gsDPSetTextureLUT(G_TT_RGBA16),
 	gsSPTexture(65535, 65535, 0, 0, 1),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, kaktus_texture_5__pal_rgba16),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, kaktus_tour_texture_5__pal_rgba16),
 	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadTLUTCmd(5, 6),
-	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_16b, 1, kaktus_texture_5__ci4),
+	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_16b, 1, kaktus_tour_texture_5__ci4),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_16b, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 255, 1024),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_4b, 2, 0, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0),
@@ -4244,23 +4527,23 @@ Gfx mat_kaktus_Eyes_Wink[] = {
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_revert_kaktus_Eyes_Wink[] = {
+Gfx mat_revert_kaktus_tour_Eyes_Wink[] = {
 	gsDPPipeSync(),
 	gsDPSetAlphaDither(G_AD_DISABLE),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_kaktus_Eyes_Down[] = {
+Gfx mat_kaktus_tour_Eyes_Down[] = {
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(0, 0, 0, TEXEL0, 0, 0, 0, TEXEL0, 0, 0, 0, TEXEL0, 0, 0, 0, TEXEL0),
 	gsDPSetAlphaDither(G_AD_NOISE),
 	gsDPSetTextureLUT(G_TT_RGBA16),
 	gsSPTexture(65535, 65535, 0, 0, 1),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, kaktus_texture_4__pal_rgba16),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, kaktus_tour_texture_4__pal_rgba16),
 	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadTLUTCmd(5, 6),
-	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_16b, 1, kaktus_texture_4__ci4),
+	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_16b, 1, kaktus_tour_texture_4__ci4),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_16b, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 255, 1024),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_4b, 2, 0, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0),
@@ -4268,19 +4551,19 @@ Gfx mat_kaktus_Eyes_Down[] = {
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_revert_kaktus_Eyes_Down[] = {
+Gfx mat_revert_kaktus_tour_Eyes_Down[] = {
 	gsDPPipeSync(),
 	gsDPSetAlphaDither(G_AD_DISABLE),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_kaktus_Mouth_Dead[] = {
+Gfx mat_kaktus_tour_Mouth_Dead[] = {
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(0, 0, 0, TEXEL0, 0, 0, 0, TEXEL0, 0, 0, 0, TEXEL0, 0, 0, 0, TEXEL0),
 	gsDPSetAlphaDither(G_AD_NOISE),
 	gsSPTexture(65535, 65535, 0, 0, 1),
-	gsDPSetTextureImage(G_IM_FMT_IA, G_IM_SIZ_8b_LOAD_BLOCK, 1, kaktus_kaktuseyes4_ia8),
+	gsDPSetTextureImage(G_IM_FMT_IA, G_IM_SIZ_8b_LOAD_BLOCK, 1, kaktus_tour_kaktuseyes4_ia8),
 	gsDPSetTile(G_IM_FMT_IA, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 511, 512),
 	gsDPSetTile(G_IM_FMT_IA, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0),
@@ -4288,13 +4571,13 @@ Gfx mat_kaktus_Mouth_Dead[] = {
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_revert_kaktus_Mouth_Dead[] = {
+Gfx mat_revert_kaktus_tour_Mouth_Dead[] = {
 	gsDPPipeSync(),
 	gsDPSetAlphaDither(G_AD_DISABLE),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_kaktus_Skin__SKIN_[] = {
+Gfx mat_kaktus_tour_Skin__SKIN_[] = {
 	gsSPCopyLightsPlayerPart(SKIN),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(0, 0, 0, SHADE, 0, 0, 0, ENVIRONMENT, 0, 0, 0, SHADE, 0, 0, 0, ENVIRONMENT),
@@ -4303,13 +4586,13 @@ Gfx mat_kaktus_Skin__SKIN_[] = {
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_revert_kaktus_Skin__SKIN_[] = {
+Gfx mat_revert_kaktus_tour_Skin__SKIN_[] = {
 	gsDPPipeSync(),
 	gsDPSetAlphaDither(G_AD_DISABLE),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_kaktus_Hair__HAIR_[] = {
+Gfx mat_kaktus_tour_Hair__HAIR_[] = {
 	gsSPClearGeometryMode(G_CULL_BACK),
 	gsSPCopyLightsPlayerPart(HAIR),
 	gsDPPipeSync(),
@@ -4319,24 +4602,24 @@ Gfx mat_kaktus_Hair__HAIR_[] = {
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_revert_kaktus_Hair__HAIR_[] = {
+Gfx mat_revert_kaktus_tour_Hair__HAIR_[] = {
 	gsSPSetGeometryMode(G_CULL_BACK),
 	gsDPPipeSync(),
 	gsDPSetAlphaDither(G_AD_DISABLE),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_kaktus_Kaktus_Wing_001[] = {
+Gfx mat_kaktus_tour_Kaktus_Wing_002[] = {
 	gsSPClearGeometryMode(G_CULL_BACK),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(0, 0, 0, TEXEL0, 0, 0, 0, TEXEL0, 0, 0, 0, TEXEL0, 0, 0, 0, TEXEL0),
 	gsDPSetAlphaDither(G_AD_NOISE),
 	gsDPSetTextureLUT(G_TT_RGBA16),
 	gsSPTexture(65535, 65535, 0, 0, 1),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, kaktus_kaktus_wing_pal_rgba16),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, kaktus_tour_kaktus_wing_pal_rgba16),
 	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadTLUTCmd(5, 1),
-	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_16b, 1, kaktus_kaktus_wing_ci4),
+	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_16b, 1, kaktus_tour_kaktus_wing_ci4),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_16b, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 255, 1024),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_4b, 2, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
@@ -4344,7 +4627,7 @@ Gfx mat_kaktus_Kaktus_Wing_001[] = {
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_revert_kaktus_Kaktus_Wing_001[] = {
+Gfx mat_revert_kaktus_tour_Kaktus_Wing_002[] = {
 	gsSPSetGeometryMode(G_CULL_BACK),
 	gsDPPipeSync(),
 	gsDPSetAlphaDither(G_AD_DISABLE),
@@ -4352,30 +4635,8 @@ Gfx mat_revert_kaktus_Kaktus_Wing_001[] = {
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_kaktus_f3dlite_material[] = {
-	gsSPSetGeometryMode(G_TEXTURE_GEN),
-	gsDPPipeSync(),
-	gsDPSetCombineLERP(0, 0, 0, TEXEL0, 0, 0, 0, ENVIRONMENT, 0, 0, 0, TEXEL0, 0, 0, 0, ENVIRONMENT),
-	gsDPSetAlphaDither(G_AD_NOISE),
-	gsSPTexture(1984, 1984, 0, 0, 1),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b_LOAD_BLOCK, 1, kaktus_ball_goldenorange_rgba16),
-	gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadBlock(7, 0, 0, 1023, 256),
-	gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b, 8, 0, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0),
-	gsDPSetTileSize(0, 0, 0, 124, 124),
-	gsSPEndDisplayList(),
-};
-
-Gfx mat_revert_kaktus_f3dlite_material[] = {
-	gsSPClearGeometryMode(G_TEXTURE_GEN),
-	gsDPPipeSync(),
-	gsDPSetAlphaDither(G_AD_DISABLE),
-	gsSPEndDisplayList(),
-};
-
-Gfx mat_kaktus_Umbrella_2[] = {
-	gsSPClearGeometryMode(G_CULL_BACK),
-	gsSPSetLights1(kaktus_Umbrella_2_lights),
+Gfx mat_kaktus_tour_Pants__PANTS__002[] = {
+	gsSPCopyLightsPlayerPart(PANTS),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(0, 0, 0, SHADE, 0, 0, 0, ENVIRONMENT, 0, 0, 0, SHADE, 0, 0, 0, ENVIRONMENT),
 	gsDPSetAlphaDither(G_AD_NOISE),
@@ -4383,14 +4644,51 @@ Gfx mat_kaktus_Umbrella_2[] = {
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_revert_kaktus_Umbrella_2[] = {
+Gfx mat_revert_kaktus_tour_Pants__PANTS__002[] = {
+	gsDPPipeSync(),
+	gsDPSetAlphaDither(G_AD_DISABLE),
+	gsSPEndDisplayList(),
+};
+
+Gfx mat_kaktus_tour_f3dlite_material[] = {
+	gsSPSetGeometryMode(G_TEXTURE_GEN),
+	gsDPPipeSync(),
+	gsDPSetCombineLERP(0, 0, 0, TEXEL0, 0, 0, 0, ENVIRONMENT, 0, 0, 0, TEXEL0, 0, 0, 0, ENVIRONMENT),
+	gsDPSetAlphaDither(G_AD_NOISE),
+	gsSPTexture(1984, 1984, 0, 0, 1),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b_LOAD_BLOCK, 1, kaktus_tour_ball_goldenorange_rgba16),
+	gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadBlock(7, 0, 0, 1023, 256),
+	gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b, 8, 0, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTileSize(0, 0, 0, 124, 124),
+	gsSPEndDisplayList(),
+};
+
+Gfx mat_revert_kaktus_tour_f3dlite_material[] = {
+	gsSPClearGeometryMode(G_TEXTURE_GEN),
+	gsDPPipeSync(),
+	gsDPSetAlphaDither(G_AD_DISABLE),
+	gsSPEndDisplayList(),
+};
+
+Gfx mat_kaktus_tour_Umbrella_2[] = {
+	gsSPClearGeometryMode(G_CULL_BACK),
+	gsSPSetLights1(kaktus_tour_Umbrella_2_lights),
+	gsDPPipeSync(),
+	gsDPSetCombineLERP(0, 0, 0, SHADE, 0, 0, 0, ENVIRONMENT, 0, 0, 0, SHADE, 0, 0, 0, ENVIRONMENT),
+	gsDPSetAlphaDither(G_AD_NOISE),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsSPEndDisplayList(),
+};
+
+Gfx mat_revert_kaktus_tour_Umbrella_2[] = {
 	gsSPSetGeometryMode(G_CULL_BACK),
 	gsDPPipeSync(),
 	gsDPSetAlphaDither(G_AD_DISABLE),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_kaktus_Umbrella_1[] = {
+Gfx mat_kaktus_tour_Umbrella_1[] = {
 	gsSPClearGeometryMode(G_CULL_BACK),
 	gsSPCopyLightsPlayerPart(GLOVES),
 	gsDPPipeSync(),
@@ -4400,21 +4698,21 @@ Gfx mat_kaktus_Umbrella_1[] = {
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_revert_kaktus_Umbrella_1[] = {
+Gfx mat_revert_kaktus_tour_Umbrella_1[] = {
 	gsSPSetGeometryMode(G_CULL_BACK),
 	gsDPPipeSync(),
 	gsDPSetAlphaDither(G_AD_DISABLE),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_kaktus_Handle[] = {
+Gfx mat_kaktus_tour_Handle[] = {
 	gsSPClearGeometryMode(G_CULL_BACK),
-	gsSPSetLights1(kaktus_Handle_lights),
+	gsSPSetLights1(kaktus_tour_Handle_lights),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, TEXEL0, 0, ENVIRONMENT, 0, TEXEL0, 0, SHADE, 0, TEXEL0, 0, ENVIRONMENT, 0),
 	gsDPSetAlphaDither(G_AD_NOISE),
 	gsSPTexture(65535, 65535, 0, 0, 1),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b_LOAD_BLOCK, 1, kaktus_brellahandle_rgba16),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b_LOAD_BLOCK, 1, kaktus_tour_brellahandle_rgba16),
 	gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 255, 512),
 	gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 4, 0, G_TX_CLAMP | G_TX_NOMIRROR, 4, 0),
@@ -4422,14 +4720,14 @@ Gfx mat_kaktus_Handle[] = {
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_revert_kaktus_Handle[] = {
+Gfx mat_revert_kaktus_tour_Handle[] = {
 	gsSPSetGeometryMode(G_CULL_BACK),
 	gsDPPipeSync(),
 	gsDPSetAlphaDither(G_AD_DISABLE),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_kaktus_Hat__CAP_[] = {
+Gfx mat_kaktus_tour_Hat__CAP_[] = {
 	gsSPCopyLightsPlayerPart(CAP),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(0, 0, 0, SHADE, 0, 0, 0, ENVIRONMENT, 0, 0, 0, SHADE, 0, 0, 0, ENVIRONMENT),
@@ -4438,13 +4736,13 @@ Gfx mat_kaktus_Hat__CAP_[] = {
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_revert_kaktus_Hat__CAP_[] = {
+Gfx mat_revert_kaktus_tour_Hat__CAP_[] = {
 	gsDPPipeSync(),
 	gsDPSetAlphaDither(G_AD_DISABLE),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_kaktus_Brim__EMBLEM_[] = {
+Gfx mat_kaktus_tour_Brim__EMBLEM_[] = {
 	gsSPCopyLightsPlayerPart(EMBLEM),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(0, 0, 0, SHADE, 0, 0, 0, ENVIRONMENT, 0, 0, 0, SHADE, 0, 0, 0, ENVIRONMENT),
@@ -4453,14 +4751,14 @@ Gfx mat_kaktus_Brim__EMBLEM_[] = {
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_revert_kaktus_Brim__EMBLEM_[] = {
+Gfx mat_revert_kaktus_tour_Brim__EMBLEM_[] = {
 	gsDPPipeSync(),
 	gsDPSetAlphaDither(G_AD_DISABLE),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_kaktus_Bottom[] = {
-	gsSPSetLights1(kaktus_Bottom_lights),
+Gfx mat_kaktus_tour_Bottom[] = {
+	gsSPSetLights1(kaktus_tour_Bottom_lights),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(0, 0, 0, SHADE, 0, 0, 0, ENVIRONMENT, 0, 0, 0, SHADE, 0, 0, 0, ENVIRONMENT),
 	gsDPSetAlphaDither(G_AD_NOISE),
@@ -4468,23 +4766,23 @@ Gfx mat_kaktus_Bottom[] = {
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_revert_kaktus_Bottom[] = {
+Gfx mat_revert_kaktus_tour_Bottom[] = {
 	gsDPPipeSync(),
 	gsDPSetAlphaDither(G_AD_DISABLE),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_kaktus_Flower[] = {
+Gfx mat_kaktus_tour_Flower[] = {
 	gsSPClearGeometryMode(G_CULL_BACK),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(0, 0, 0, TEXEL0, 0, 0, 0, TEXEL0, 0, 0, 0, TEXEL0, 0, 0, 0, TEXEL0),
 	gsDPSetAlphaDither(G_AD_NOISE),
 	gsDPSetTextureLUT(G_TT_RGBA16),
 	gsSPTexture(65535, 65535, 0, 0, 1),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, kaktus_flwowerera_pal_rgba16_copy),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, kaktus_tour_flwowerera_pal_rgba16),
 	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadTLUTCmd(5, 11),
-	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_16b, 1, kaktus_flwowerera_ci4_copy),
+	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_16b, 1, kaktus_tour_flwowerera_ci4),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_16b, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 255, 1024),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_4b, 2, 0, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0),
@@ -4492,7 +4790,7 @@ Gfx mat_kaktus_Flower[] = {
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_revert_kaktus_Flower[] = {
+Gfx mat_revert_kaktus_tour_Flower[] = {
 	gsSPSetGeometryMode(G_CULL_BACK),
 	gsDPPipeSync(),
 	gsDPSetAlphaDither(G_AD_DISABLE),
@@ -4500,13 +4798,13 @@ Gfx mat_revert_kaktus_Flower[] = {
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_kaktus_Prick_Top[] = {
+Gfx mat_kaktus_tour_Prick_Top[] = {
 	gsSPClearGeometryMode(G_CULL_BACK),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(0, 0, 0, TEXEL0, 0, 0, 0, TEXEL0, 0, 0, 0, TEXEL0, 0, 0, 0, TEXEL0),
 	gsDPSetAlphaDither(G_AD_NOISE),
 	gsSPTexture(65535, 65535, 0, 0, 1),
-	gsDPSetTextureImage(G_IM_FMT_IA, G_IM_SIZ_8b_LOAD_BLOCK, 1, kaktus_kakspike_ia8_copy_copy),
+	gsDPSetTextureImage(G_IM_FMT_IA, G_IM_SIZ_8b_LOAD_BLOCK, 1, kaktus_tour_kakspike_ia8_copy_copy),
 	gsDPSetTile(G_IM_FMT_IA, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 127, 1024),
 	gsDPSetTile(G_IM_FMT_IA, G_IM_SIZ_8b, 2, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 4, 0, G_TX_CLAMP | G_TX_NOMIRROR, 4, 0),
@@ -4514,20 +4812,20 @@ Gfx mat_kaktus_Prick_Top[] = {
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_revert_kaktus_Prick_Top[] = {
+Gfx mat_revert_kaktus_tour_Prick_Top[] = {
 	gsSPSetGeometryMode(G_CULL_BACK),
 	gsDPPipeSync(),
 	gsDPSetAlphaDither(G_AD_DISABLE),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_kaktus_Prick_Bottom[] = {
+Gfx mat_kaktus_tour_Prick_Bottom[] = {
 	gsSPClearGeometryMode(G_CULL_BACK),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(0, 0, 0, TEXEL0, 0, 0, 0, TEXEL0, 0, 0, 0, TEXEL0, 0, 0, 0, TEXEL0),
 	gsDPSetAlphaDither(G_AD_NOISE),
 	gsSPTexture(65535, 65535, 0, 0, 1),
-	gsDPSetTextureImage(G_IM_FMT_IA, G_IM_SIZ_8b_LOAD_BLOCK, 1, kaktus_kakspike_ia8_copy_copy_copy),
+	gsDPSetTextureImage(G_IM_FMT_IA, G_IM_SIZ_8b_LOAD_BLOCK, 1, kaktus_tour_kakspike_ia8_copy_copy_copy),
 	gsDPSetTile(G_IM_FMT_IA, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 127, 1024),
 	gsDPSetTile(G_IM_FMT_IA, G_IM_SIZ_8b, 2, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 4, 0, G_TX_CLAMP | G_TX_NOMIRROR, 4, 0),
@@ -4535,24 +4833,24 @@ Gfx mat_kaktus_Prick_Bottom[] = {
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_revert_kaktus_Prick_Bottom[] = {
+Gfx mat_revert_kaktus_tour_Prick_Bottom[] = {
 	gsSPSetGeometryMode(G_CULL_BACK),
 	gsDPPipeSync(),
 	gsDPSetAlphaDither(G_AD_DISABLE),
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_kaktus_Kaktus_Wing[] = {
+Gfx mat_kaktus_tour_Kaktus_Wing[] = {
 	gsSPClearGeometryMode(G_CULL_BACK),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(0, 0, 0, TEXEL0, 0, 0, 0, TEXEL0, 0, 0, 0, TEXEL0, 0, 0, 0, TEXEL0),
 	gsDPSetAlphaDither(G_AD_NOISE),
 	gsDPSetTextureLUT(G_TT_RGBA16),
 	gsSPTexture(65535, 65535, 0, 0, 1),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, kaktus_kaktus_wing_pal_rgba16_copy),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, kaktus_tour_kaktus_wing_pal_rgba16_copy),
 	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadTLUTCmd(5, 1),
-	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_16b, 1, kaktus_kaktus_wing_ci4_copy),
+	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_16b, 1, kaktus_tour_kaktus_wing_ci4_copy),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_16b, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 255, 1024),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_4b, 2, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
@@ -4560,7 +4858,7 @@ Gfx mat_kaktus_Kaktus_Wing[] = {
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_revert_kaktus_Kaktus_Wing[] = {
+Gfx mat_revert_kaktus_tour_Kaktus_Wing[] = {
 	gsSPSetGeometryMode(G_CULL_BACK),
 	gsDPPipeSync(),
 	gsDPSetAlphaDither(G_AD_DISABLE),
@@ -4568,969 +4866,966 @@ Gfx mat_revert_kaktus_Kaktus_Wing[] = {
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_kaktus_Pants__PANTS__001[] = {
-	gsSPCopyLightsPlayerPart(PANTS),
-	gsDPPipeSync(),
-	gsDPSetCombineLERP(0, 0, 0, SHADE, 0, 0, 0, ENVIRONMENT, 0, 0, 0, SHADE, 0, 0, 0, ENVIRONMENT),
-	gsDPSetAlphaDither(G_AD_NOISE),
-	gsSPTexture(65535, 65535, 0, 0, 1),
-	gsSPEndDisplayList(),
-};
-
-Gfx mat_revert_kaktus_Pants__PANTS__001[] = {
-	gsDPPipeSync(),
-	gsDPSetAlphaDither(G_AD_DISABLE),
-	gsSPEndDisplayList(),
-};
-
-Gfx mat_kaktus_f3dlite_material_001[] = {
-	gsSPLight(&kaktus_f3dlite_material_001_lights.l, 1),
-    gsSPLight(&kaktus_f3dlite_material_001_lights.a, 2),
-    gsSPCopyLightEXT(1, 3),
-	gsDPPipeSync(),
-	gsDPSetCombineLERP(0, 0, 0, SHADE, 0, 0, 0, ENVIRONMENT, 0, 0, 0, SHADE, 0, 0, 0, ENVIRONMENT),
-	gsDPSetAlphaDither(G_AD_NOISE),
-	gsSPTexture(65535, 65535, 0, 0, 1),
-	gsSPEndDisplayList(),
-};
-
-Gfx mat_revert_kaktus_f3dlite_material_001[] = {
-	gsDPPipeSync(),
-	gsDPSetAlphaDither(G_AD_DISABLE),
-	gsSPEndDisplayList(),
-};
-
-Gfx mat_kaktus_Shoes__SHOES__001[] = {
-	gsSPCopyLightsPlayerPart(SHOES),
-	gsDPPipeSync(),
-	gsDPSetCombineLERP(0, 0, 0, SHADE, 0, 0, 0, ENVIRONMENT, 0, 0, 0, SHADE, 0, 0, 0, ENVIRONMENT),
-	gsDPSetAlphaDither(G_AD_NOISE),
-	gsSPTexture(65535, 65535, 0, 0, 1),
-	gsSPEndDisplayList(),
-};
-
-Gfx mat_revert_kaktus_Shoes__SHOES__001[] = {
-	gsDPPipeSync(),
-	gsDPSetAlphaDither(G_AD_DISABLE),
-	gsSPEndDisplayList(),
-};
-
-Gfx kaktus_Butt_mesh_layer_1[] = {
-	gsSPDisplayList(mat_kaktus_Bottom_001),
-	gsSPDisplayList(kaktus_Butt_mesh_layer_1_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Bottom_001),
-	gsSPDisplayList(mat_kaktus_Sweater__SHIRT__001),
-	gsSPDisplayList(kaktus_Butt_mesh_layer_1_tri_1),
-	gsSPDisplayList(mat_revert_kaktus_Sweater__SHIRT__001),
-	gsSPEndDisplayList(),
-};
-
-Gfx kaktus_Butt_mesh_layer_1_mat_override_Metal__NO_RECOLOR__0[] = {
-	gsSPDisplayList(mat_kaktus_Metal__NO_RECOLOR_),
-	gsSPDisplayList(kaktus_Butt_mesh_layer_1_tri_0),
-	gsSPDisplayList(kaktus_Butt_mesh_layer_1_tri_1),
-	gsSPDisplayList(mat_revert_kaktus_Metal__NO_RECOLOR_),
-	gsSPEndDisplayList(),
-};
-
-Gfx kaktus_Torso_skinned_mesh_layer_1[] = {
-	gsSPDisplayList(mat_kaktus_Sweater__SHIRT__001),
-	gsSPDisplayList(kaktus_Torso_skinned_mesh_layer_1_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Sweater__SHIRT__001),
-	gsSPEndDisplayList(),
-};
-
-Gfx kaktus_Torso_skinned_mesh_layer_1_mat_override_Metal__NO_RECOLOR__0[] = {
-	gsSPDisplayList(mat_kaktus_Metal__NO_RECOLOR_),
-	gsSPDisplayList(kaktus_Torso_skinned_mesh_layer_1_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Metal__NO_RECOLOR_),
-	gsSPEndDisplayList(),
-};
-
-Gfx kaktus_Torso_mesh_layer_1[] = {
-	gsSPDisplayList(mat_kaktus_Sweater__SHIRT__001),
-	gsSPDisplayList(kaktus_Torso_mesh_layer_1_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Sweater__SHIRT__001),
-	gsSPDisplayList(mat_kaktus_Skin__SKIN__001),
-	gsSPDisplayList(kaktus_Torso_mesh_layer_1_tri_1),
-	gsSPDisplayList(mat_revert_kaktus_Skin__SKIN__001),
-	gsSPDisplayList(mat_kaktus_Sweater__SHIRT__001),
-	gsSPDisplayList(kaktus_Torso_mesh_layer_1_tri_2),
-	gsSPDisplayList(mat_revert_kaktus_Sweater__SHIRT__001),
-	gsSPEndDisplayList(),
-};
-
-Gfx kaktus_Torso_mesh_layer_1_mat_override_Metal__NO_RECOLOR__0[] = {
-	gsSPDisplayList(mat_kaktus_Metal__NO_RECOLOR_),
-	gsSPDisplayList(kaktus_Torso_mesh_layer_1_tri_0),
-	gsSPDisplayList(kaktus_Torso_mesh_layer_1_tri_1),
-	gsSPDisplayList(kaktus_Torso_mesh_layer_1_tri_2),
-	gsSPDisplayList(mat_revert_kaktus_Metal__NO_RECOLOR_),
-	gsSPEndDisplayList(),
+Gfx kaktus_tour_Butt_mesh_layer_1[] = {
+	gsSPDisplayList(mat_kaktus_tour_Bottom_002),
+	gsSPDisplayList(kaktus_tour_Butt_mesh_layer_1_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Bottom_002),
+	gsSPDisplayList(mat_kaktus_tour_f3dlite_material_003),
+	gsSPDisplayList(kaktus_tour_Butt_mesh_layer_1_tri_1),
+	gsSPDisplayList(mat_revert_kaktus_tour_f3dlite_material_003),
+	gsSPDisplayList(mat_kaktus_tour_Shoes__SHOES__002),
+	gsSPDisplayList(kaktus_tour_Butt_mesh_layer_1_tri_2),
+	gsSPDisplayList(mat_revert_kaktus_tour_Shoes__SHOES__002),
+	gsSPEndDisplayList(),
+};
+
+Gfx kaktus_tour_Butt_mesh_layer_1_mat_override_Metal__NO_RECOLOR__0[] = {
+	gsSPDisplayList(mat_kaktus_tour_Metal__NO_RECOLOR_),
+	gsSPDisplayList(kaktus_tour_Butt_mesh_layer_1_tri_0),
+	gsSPDisplayList(kaktus_tour_Butt_mesh_layer_1_tri_1),
+	gsSPDisplayList(kaktus_tour_Butt_mesh_layer_1_tri_2),
+	gsSPDisplayList(mat_revert_kaktus_tour_Metal__NO_RECOLOR_),
+	gsSPEndDisplayList(),
+};
+
+Gfx kaktus_tour_Torso_skinned_mesh_layer_1[] = {
+	gsSPDisplayList(mat_kaktus_tour_Sweater__SHIRT__002),
+	gsSPDisplayList(kaktus_tour_Torso_skinned_mesh_layer_1_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Sweater__SHIRT__002),
+	gsSPDisplayList(mat_kaktus_tour_f3dlite_material_003),
+	gsSPDisplayList(kaktus_tour_Torso_skinned_mesh_layer_1_tri_1),
+	gsSPDisplayList(mat_revert_kaktus_tour_f3dlite_material_003),
+	gsSPEndDisplayList(),
+};
+
+Gfx kaktus_tour_Torso_skinned_mesh_layer_1_mat_override_Metal__NO_RECOLOR__0[] = {
+	gsSPDisplayList(mat_kaktus_tour_Metal__NO_RECOLOR_),
+	gsSPDisplayList(kaktus_tour_Torso_skinned_mesh_layer_1_tri_0),
+	gsSPDisplayList(kaktus_tour_Torso_skinned_mesh_layer_1_tri_1),
+	gsSPDisplayList(mat_revert_kaktus_tour_Metal__NO_RECOLOR_),
+	gsSPEndDisplayList(),
+};
+
+Gfx kaktus_tour_Torso_mesh_layer_1[] = {
+	gsSPDisplayList(mat_kaktus_tour_Sweater__SHIRT__002),
+	gsSPDisplayList(kaktus_tour_Torso_mesh_layer_1_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Sweater__SHIRT__002),
+	gsSPDisplayList(mat_kaktus_tour_f3dlite_material_003),
+	gsSPDisplayList(kaktus_tour_Torso_mesh_layer_1_tri_1),
+	gsSPDisplayList(mat_revert_kaktus_tour_f3dlite_material_003),
+	gsSPDisplayList(mat_kaktus_tour_Skin__SKIN__002),
+	gsSPDisplayList(kaktus_tour_Torso_mesh_layer_1_tri_2),
+	gsSPDisplayList(mat_revert_kaktus_tour_Skin__SKIN__002),
+	gsSPDisplayList(mat_kaktus_tour_Sweater__SHIRT__002),
+	gsSPDisplayList(kaktus_tour_Torso_mesh_layer_1_tri_3),
+	gsSPDisplayList(mat_revert_kaktus_tour_Sweater__SHIRT__002),
+	gsSPDisplayList(mat_kaktus_tour_Shoes__SHOES__002),
+	gsSPDisplayList(kaktus_tour_Torso_mesh_layer_1_tri_4),
+	gsSPDisplayList(mat_revert_kaktus_tour_Shoes__SHOES__002),
+	gsSPEndDisplayList(),
+};
+
+Gfx kaktus_tour_Torso_mesh_layer_1_mat_override_Metal__NO_RECOLOR__0[] = {
+	gsSPDisplayList(mat_kaktus_tour_Metal__NO_RECOLOR_),
+	gsSPDisplayList(kaktus_tour_Torso_mesh_layer_1_tri_0),
+	gsSPDisplayList(kaktus_tour_Torso_mesh_layer_1_tri_1),
+	gsSPDisplayList(kaktus_tour_Torso_mesh_layer_1_tri_2),
+	gsSPDisplayList(kaktus_tour_Torso_mesh_layer_1_tri_3),
+	gsSPDisplayList(kaktus_tour_Torso_mesh_layer_1_tri_4),
+	gsSPDisplayList(mat_revert_kaktus_tour_Metal__NO_RECOLOR_),
+	gsSPEndDisplayList(),
+};
+
+Gfx kaktus_tour_Head_DL_mesh_layer_1[] = {
+	gsSPDisplayList(mat_kaktus_tour_Hat__CAP__002),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_1_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Hat__CAP__002),
+	gsSPDisplayList(mat_kaktus_tour_Skin__SKIN__002),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_1_tri_1),
+	gsSPDisplayList(mat_revert_kaktus_tour_Skin__SKIN__002),
+	gsSPDisplayList(mat_kaktus_tour_Brim__EMBLEM__002),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_1_tri_2),
+	gsSPDisplayList(mat_revert_kaktus_tour_Brim__EMBLEM__002),
+	gsSPDisplayList(mat_kaktus_tour_Hair__HAIR__002),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_1_tri_3),
+	gsSPDisplayList(mat_revert_kaktus_tour_Hair__HAIR__002),
+	gsSPEndDisplayList(),
+};
+
+Gfx kaktus_tour_Head_DL_mesh_layer_1_mat_override_Metal__NO_RECOLOR__0[] = {
+	gsSPDisplayList(mat_kaktus_tour_Metal__NO_RECOLOR_),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_1_tri_0),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_1_tri_1),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_1_tri_2),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_1_tri_3),
+	gsSPDisplayList(mat_revert_kaktus_tour_Metal__NO_RECOLOR_),
+	gsSPEndDisplayList(),
+};
+
+Gfx kaktus_tour_Head_DL_mesh_layer_1_mat_override_Eyes_Half_1[] = {
+	gsSPDisplayList(mat_kaktus_tour_Hat__CAP__002),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_1_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Hat__CAP__002),
+	gsSPDisplayList(mat_kaktus_tour_Skin__SKIN__002),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_1_tri_1),
+	gsSPDisplayList(mat_revert_kaktus_tour_Skin__SKIN__002),
+	gsSPDisplayList(mat_kaktus_tour_Brim__EMBLEM__002),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_1_tri_2),
+	gsSPDisplayList(mat_revert_kaktus_tour_Brim__EMBLEM__002),
+	gsSPDisplayList(mat_kaktus_tour_Hair__HAIR__002),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_1_tri_3),
+	gsSPDisplayList(mat_revert_kaktus_tour_Hair__HAIR__002),
+	gsSPEndDisplayList(),
+};
+
+Gfx kaktus_tour_Head_DL_mesh_layer_1_mat_override_Eyes_Closed_2[] = {
+	gsSPDisplayList(mat_kaktus_tour_Hat__CAP__002),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_1_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Hat__CAP__002),
+	gsSPDisplayList(mat_kaktus_tour_Skin__SKIN__002),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_1_tri_1),
+	gsSPDisplayList(mat_revert_kaktus_tour_Skin__SKIN__002),
+	gsSPDisplayList(mat_kaktus_tour_Brim__EMBLEM__002),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_1_tri_2),
+	gsSPDisplayList(mat_revert_kaktus_tour_Brim__EMBLEM__002),
+	gsSPDisplayList(mat_kaktus_tour_Hair__HAIR__002),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_1_tri_3),
+	gsSPDisplayList(mat_revert_kaktus_tour_Hair__HAIR__002),
+	gsSPEndDisplayList(),
+};
+
+Gfx kaktus_tour_Head_DL_mesh_layer_1_mat_override_Eyes_Left_3[] = {
+	gsSPDisplayList(mat_kaktus_tour_Hat__CAP__002),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_1_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Hat__CAP__002),
+	gsSPDisplayList(mat_kaktus_tour_Skin__SKIN__002),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_1_tri_1),
+	gsSPDisplayList(mat_revert_kaktus_tour_Skin__SKIN__002),
+	gsSPDisplayList(mat_kaktus_tour_Brim__EMBLEM__002),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_1_tri_2),
+	gsSPDisplayList(mat_revert_kaktus_tour_Brim__EMBLEM__002),
+	gsSPDisplayList(mat_kaktus_tour_Hair__HAIR__002),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_1_tri_3),
+	gsSPDisplayList(mat_revert_kaktus_tour_Hair__HAIR__002),
+	gsSPEndDisplayList(),
+};
+
+Gfx kaktus_tour_Head_DL_mesh_layer_1_mat_override_Eyes_Right_4[] = {
+	gsSPDisplayList(mat_kaktus_tour_Hat__CAP__002),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_1_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Hat__CAP__002),
+	gsSPDisplayList(mat_kaktus_tour_Skin__SKIN__002),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_1_tri_1),
+	gsSPDisplayList(mat_revert_kaktus_tour_Skin__SKIN__002),
+	gsSPDisplayList(mat_kaktus_tour_Brim__EMBLEM__002),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_1_tri_2),
+	gsSPDisplayList(mat_revert_kaktus_tour_Brim__EMBLEM__002),
+	gsSPDisplayList(mat_kaktus_tour_Hair__HAIR__002),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_1_tri_3),
+	gsSPDisplayList(mat_revert_kaktus_tour_Hair__HAIR__002),
+	gsSPEndDisplayList(),
+};
+
+Gfx kaktus_tour_Head_DL_mesh_layer_1_mat_override_Eyes_Wink_5[] = {
+	gsSPDisplayList(mat_kaktus_tour_Hat__CAP__002),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_1_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Hat__CAP__002),
+	gsSPDisplayList(mat_kaktus_tour_Skin__SKIN__002),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_1_tri_1),
+	gsSPDisplayList(mat_revert_kaktus_tour_Skin__SKIN__002),
+	gsSPDisplayList(mat_kaktus_tour_Brim__EMBLEM__002),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_1_tri_2),
+	gsSPDisplayList(mat_revert_kaktus_tour_Brim__EMBLEM__002),
+	gsSPDisplayList(mat_kaktus_tour_Hair__HAIR__002),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_1_tri_3),
+	gsSPDisplayList(mat_revert_kaktus_tour_Hair__HAIR__002),
+	gsSPEndDisplayList(),
+};
+
+Gfx kaktus_tour_Head_DL_mesh_layer_1_mat_override_Eyes_Down_6[] = {
+	gsSPDisplayList(mat_kaktus_tour_Hat__CAP__002),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_1_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Hat__CAP__002),
+	gsSPDisplayList(mat_kaktus_tour_Skin__SKIN__002),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_1_tri_1),
+	gsSPDisplayList(mat_revert_kaktus_tour_Skin__SKIN__002),
+	gsSPDisplayList(mat_kaktus_tour_Brim__EMBLEM__002),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_1_tri_2),
+	gsSPDisplayList(mat_revert_kaktus_tour_Brim__EMBLEM__002),
+	gsSPDisplayList(mat_kaktus_tour_Hair__HAIR__002),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_1_tri_3),
+	gsSPDisplayList(mat_revert_kaktus_tour_Hair__HAIR__002),
+	gsSPEndDisplayList(),
+};
+
+Gfx kaktus_tour_Head_DL_mesh_layer_1_mat_override_Mouth_Dead_7[] = {
+	gsSPDisplayList(mat_kaktus_tour_Hat__CAP__002),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_1_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Hat__CAP__002),
+	gsSPDisplayList(mat_kaktus_tour_Skin__SKIN__002),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_1_tri_1),
+	gsSPDisplayList(mat_revert_kaktus_tour_Skin__SKIN__002),
+	gsSPDisplayList(mat_kaktus_tour_Brim__EMBLEM__002),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_1_tri_2),
+	gsSPDisplayList(mat_revert_kaktus_tour_Brim__EMBLEM__002),
+	gsSPDisplayList(mat_kaktus_tour_Hair__HAIR__002),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_1_tri_3),
+	gsSPDisplayList(mat_revert_kaktus_tour_Hair__HAIR__002),
+	gsSPEndDisplayList(),
+};
+
+Gfx kaktus_tour_Head_DL_mesh_layer_1_mat_override_Eyes_Open_8[] = {
+	gsSPDisplayList(mat_kaktus_tour_Hat__CAP__002),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_1_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Hat__CAP__002),
+	gsSPDisplayList(mat_kaktus_tour_Skin__SKIN__002),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_1_tri_1),
+	gsSPDisplayList(mat_revert_kaktus_tour_Skin__SKIN__002),
+	gsSPDisplayList(mat_kaktus_tour_Brim__EMBLEM__002),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_1_tri_2),
+	gsSPDisplayList(mat_revert_kaktus_tour_Brim__EMBLEM__002),
+	gsSPDisplayList(mat_kaktus_tour_Hair__HAIR__002),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_1_tri_3),
+	gsSPDisplayList(mat_revert_kaktus_tour_Hair__HAIR__002),
+	gsSPEndDisplayList(),
+};
+
+Gfx kaktus_tour_Head_DL_mesh_layer_4[] = {
+	gsSPDisplayList(mat_kaktus_tour_Eyes_Open),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_4_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Eyes_Open),
+	gsSPDisplayList(mat_kaktus_tour_Flower_002),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_4_tri_1),
+	gsSPDisplayList(mat_revert_kaktus_tour_Flower_002),
+	gsSPDisplayList(mat_kaktus_tour_Prick_Top_002),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_4_tri_2),
+	gsSPDisplayList(mat_revert_kaktus_tour_Prick_Top_002),
+	gsSPDisplayList(mat_kaktus_tour_Prick_Bottom_002),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_4_tri_3),
+	gsSPDisplayList(mat_revert_kaktus_tour_Prick_Bottom_002),
+	gsSPEndDisplayList(),
+};
+
+Gfx kaktus_tour_Head_DL_mesh_layer_4_mat_override_Metal__NO_RECOLOR__0[] = {
+	gsSPDisplayList(mat_kaktus_tour_Metal__NO_RECOLOR_),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_4_tri_0),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_4_tri_1),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_4_tri_2),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_4_tri_3),
+	gsSPDisplayList(mat_revert_kaktus_tour_Metal__NO_RECOLOR_),
+	gsSPEndDisplayList(),
+};
+
+Gfx kaktus_tour_Head_DL_mesh_layer_4_mat_override_Eyes_Half_1[] = {
+	gsSPDisplayList(mat_kaktus_tour_Eyes_Half),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_4_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Eyes_Half),
+	gsSPDisplayList(mat_kaktus_tour_Flower_002),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_4_tri_1),
+	gsSPDisplayList(mat_revert_kaktus_tour_Flower_002),
+	gsSPDisplayList(mat_kaktus_tour_Prick_Top_002),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_4_tri_2),
+	gsSPDisplayList(mat_revert_kaktus_tour_Prick_Top_002),
+	gsSPDisplayList(mat_kaktus_tour_Prick_Bottom_002),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_4_tri_3),
+	gsSPDisplayList(mat_revert_kaktus_tour_Prick_Bottom_002),
+	gsSPEndDisplayList(),
+};
+
+Gfx kaktus_tour_Head_DL_mesh_layer_4_mat_override_Eyes_Closed_2[] = {
+	gsSPDisplayList(mat_kaktus_tour_Eyes_Closed),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_4_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Eyes_Closed),
+	gsSPDisplayList(mat_kaktus_tour_Flower_002),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_4_tri_1),
+	gsSPDisplayList(mat_revert_kaktus_tour_Flower_002),
+	gsSPDisplayList(mat_kaktus_tour_Prick_Top_002),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_4_tri_2),
+	gsSPDisplayList(mat_revert_kaktus_tour_Prick_Top_002),
+	gsSPDisplayList(mat_kaktus_tour_Prick_Bottom_002),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_4_tri_3),
+	gsSPDisplayList(mat_revert_kaktus_tour_Prick_Bottom_002),
+	gsSPEndDisplayList(),
+};
+
+Gfx kaktus_tour_Head_DL_mesh_layer_4_mat_override_Eyes_Left_3[] = {
+	gsSPDisplayList(mat_kaktus_tour_Eyes_Left),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_4_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Eyes_Left),
+	gsSPDisplayList(mat_kaktus_tour_Flower_002),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_4_tri_1),
+	gsSPDisplayList(mat_revert_kaktus_tour_Flower_002),
+	gsSPDisplayList(mat_kaktus_tour_Prick_Top_002),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_4_tri_2),
+	gsSPDisplayList(mat_revert_kaktus_tour_Prick_Top_002),
+	gsSPDisplayList(mat_kaktus_tour_Prick_Bottom_002),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_4_tri_3),
+	gsSPDisplayList(mat_revert_kaktus_tour_Prick_Bottom_002),
+	gsSPEndDisplayList(),
+};
+
+Gfx kaktus_tour_Head_DL_mesh_layer_4_mat_override_Eyes_Right_4[] = {
+	gsSPDisplayList(mat_kaktus_tour_Eyes_Right),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_4_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Eyes_Right),
+	gsSPDisplayList(mat_kaktus_tour_Flower_002),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_4_tri_1),
+	gsSPDisplayList(mat_revert_kaktus_tour_Flower_002),
+	gsSPDisplayList(mat_kaktus_tour_Prick_Top_002),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_4_tri_2),
+	gsSPDisplayList(mat_revert_kaktus_tour_Prick_Top_002),
+	gsSPDisplayList(mat_kaktus_tour_Prick_Bottom_002),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_4_tri_3),
+	gsSPDisplayList(mat_revert_kaktus_tour_Prick_Bottom_002),
+	gsSPEndDisplayList(),
+};
+
+Gfx kaktus_tour_Head_DL_mesh_layer_4_mat_override_Eyes_Wink_5[] = {
+	gsSPDisplayList(mat_kaktus_tour_Eyes_Wink),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_4_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Eyes_Wink),
+	gsSPDisplayList(mat_kaktus_tour_Flower_002),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_4_tri_1),
+	gsSPDisplayList(mat_revert_kaktus_tour_Flower_002),
+	gsSPDisplayList(mat_kaktus_tour_Prick_Top_002),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_4_tri_2),
+	gsSPDisplayList(mat_revert_kaktus_tour_Prick_Top_002),
+	gsSPDisplayList(mat_kaktus_tour_Prick_Bottom_002),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_4_tri_3),
+	gsSPDisplayList(mat_revert_kaktus_tour_Prick_Bottom_002),
+	gsSPEndDisplayList(),
+};
+
+Gfx kaktus_tour_Head_DL_mesh_layer_4_mat_override_Eyes_Down_6[] = {
+	gsSPDisplayList(mat_kaktus_tour_Eyes_Down),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_4_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Eyes_Down),
+	gsSPDisplayList(mat_kaktus_tour_Flower_002),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_4_tri_1),
+	gsSPDisplayList(mat_revert_kaktus_tour_Flower_002),
+	gsSPDisplayList(mat_kaktus_tour_Prick_Top_002),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_4_tri_2),
+	gsSPDisplayList(mat_revert_kaktus_tour_Prick_Top_002),
+	gsSPDisplayList(mat_kaktus_tour_Prick_Bottom_002),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_4_tri_3),
+	gsSPDisplayList(mat_revert_kaktus_tour_Prick_Bottom_002),
+	gsSPEndDisplayList(),
+};
+
+Gfx kaktus_tour_Head_DL_mesh_layer_4_mat_override_Mouth_Dead_7[] = {
+	gsSPDisplayList(mat_kaktus_tour_Mouth_Dead),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_4_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Mouth_Dead),
+	gsSPDisplayList(mat_kaktus_tour_Flower_002),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_4_tri_1),
+	gsSPDisplayList(mat_revert_kaktus_tour_Flower_002),
+	gsSPDisplayList(mat_kaktus_tour_Prick_Top_002),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_4_tri_2),
+	gsSPDisplayList(mat_revert_kaktus_tour_Prick_Top_002),
+	gsSPDisplayList(mat_kaktus_tour_Prick_Bottom_002),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_4_tri_3),
+	gsSPDisplayList(mat_revert_kaktus_tour_Prick_Bottom_002),
+	gsSPEndDisplayList(),
+};
+
+Gfx kaktus_tour_Head_DL_mesh_layer_4_mat_override_Eyes_Open_8[] = {
+	gsSPDisplayList(mat_kaktus_tour_Eyes_Open),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_4_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Eyes_Open),
+	gsSPDisplayList(mat_kaktus_tour_Flower_002),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_4_tri_1),
+	gsSPDisplayList(mat_revert_kaktus_tour_Flower_002),
+	gsSPDisplayList(mat_kaktus_tour_Prick_Top_002),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_4_tri_2),
+	gsSPDisplayList(mat_revert_kaktus_tour_Prick_Top_002),
+	gsSPDisplayList(mat_kaktus_tour_Prick_Bottom_002),
+	gsSPDisplayList(kaktus_tour_Head_DL_mesh_layer_4_tri_3),
+	gsSPDisplayList(mat_revert_kaktus_tour_Prick_Bottom_002),
+	gsSPEndDisplayList(),
+};
+
+Gfx kaktus_tour_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1[] = {
+	gsSPDisplayList(mat_kaktus_tour_Skin__SKIN_),
+	gsSPDisplayList(kaktus_tour_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Skin__SKIN_),
+	gsSPDisplayList(mat_kaktus_tour_Hair__HAIR_),
+	gsSPDisplayList(kaktus_tour_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_tri_1),
+	gsSPDisplayList(mat_revert_kaktus_tour_Hair__HAIR_),
+	gsSPEndDisplayList(),
+};
+
+Gfx kaktus_tour_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_mat_override_Metal__NO_RECOLOR__0[] = {
+	gsSPDisplayList(mat_kaktus_tour_Metal__NO_RECOLOR_),
+	gsSPDisplayList(kaktus_tour_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_tri_0),
+	gsSPDisplayList(kaktus_tour_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_tri_1),
+	gsSPDisplayList(mat_revert_kaktus_tour_Metal__NO_RECOLOR_),
+	gsSPEndDisplayList(),
+};
+
+Gfx kaktus_tour_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_mat_override_Eyes_Half_1[] = {
+	gsSPDisplayList(mat_kaktus_tour_Skin__SKIN_),
+	gsSPDisplayList(kaktus_tour_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Skin__SKIN_),
+	gsSPDisplayList(mat_kaktus_tour_Hair__HAIR_),
+	gsSPDisplayList(kaktus_tour_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_tri_1),
+	gsSPDisplayList(mat_revert_kaktus_tour_Hair__HAIR_),
+	gsSPEndDisplayList(),
+};
+
+Gfx kaktus_tour_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_mat_override_Eyes_Closed_2[] = {
+	gsSPDisplayList(mat_kaktus_tour_Skin__SKIN_),
+	gsSPDisplayList(kaktus_tour_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Skin__SKIN_),
+	gsSPDisplayList(mat_kaktus_tour_Hair__HAIR_),
+	gsSPDisplayList(kaktus_tour_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_tri_1),
+	gsSPDisplayList(mat_revert_kaktus_tour_Hair__HAIR_),
+	gsSPEndDisplayList(),
+};
+
+Gfx kaktus_tour_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_mat_override_Eyes_Left_3[] = {
+	gsSPDisplayList(mat_kaktus_tour_Skin__SKIN_),
+	gsSPDisplayList(kaktus_tour_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Skin__SKIN_),
+	gsSPDisplayList(mat_kaktus_tour_Hair__HAIR_),
+	gsSPDisplayList(kaktus_tour_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_tri_1),
+	gsSPDisplayList(mat_revert_kaktus_tour_Hair__HAIR_),
+	gsSPEndDisplayList(),
+};
+
+Gfx kaktus_tour_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_mat_override_Eyes_Right_4[] = {
+	gsSPDisplayList(mat_kaktus_tour_Skin__SKIN_),
+	gsSPDisplayList(kaktus_tour_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Skin__SKIN_),
+	gsSPDisplayList(mat_kaktus_tour_Hair__HAIR_),
+	gsSPDisplayList(kaktus_tour_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_tri_1),
+	gsSPDisplayList(mat_revert_kaktus_tour_Hair__HAIR_),
+	gsSPEndDisplayList(),
 };
-
-Gfx kaktus_Head_DL_mesh_layer_1[] = {
-	gsSPDisplayList(mat_kaktus_Hat__CAP__001),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_1_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Hat__CAP__001),
-	gsSPDisplayList(mat_kaktus_Skin__SKIN__001),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_1_tri_1),
-	gsSPDisplayList(mat_revert_kaktus_Skin__SKIN__001),
-	gsSPDisplayList(mat_kaktus_Brim__EMBLEM__001),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_1_tri_2),
-	gsSPDisplayList(mat_revert_kaktus_Brim__EMBLEM__001),
-	gsSPDisplayList(mat_kaktus_Hair__HAIR__001),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_1_tri_3),
-	gsSPDisplayList(mat_revert_kaktus_Hair__HAIR__001),
-	gsSPEndDisplayList(),
-};
-
-Gfx kaktus_Head_DL_mesh_layer_1_mat_override_Metal__NO_RECOLOR__0[] = {
-	gsSPDisplayList(mat_kaktus_Metal__NO_RECOLOR_),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_1_tri_0),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_1_tri_1),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_1_tri_2),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_1_tri_3),
-	gsSPDisplayList(mat_revert_kaktus_Metal__NO_RECOLOR_),
-	gsSPEndDisplayList(),
-};
-
-Gfx kaktus_Head_DL_mesh_layer_1_mat_override_Eyes_Half_1[] = {
-	gsSPDisplayList(mat_kaktus_Hat__CAP__001),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_1_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Hat__CAP__001),
-	gsSPDisplayList(mat_kaktus_Skin__SKIN__001),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_1_tri_1),
-	gsSPDisplayList(mat_revert_kaktus_Skin__SKIN__001),
-	gsSPDisplayList(mat_kaktus_Brim__EMBLEM__001),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_1_tri_2),
-	gsSPDisplayList(mat_revert_kaktus_Brim__EMBLEM__001),
-	gsSPDisplayList(mat_kaktus_Hair__HAIR__001),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_1_tri_3),
-	gsSPDisplayList(mat_revert_kaktus_Hair__HAIR__001),
-	gsSPEndDisplayList(),
-};
-
-Gfx kaktus_Head_DL_mesh_layer_1_mat_override_Eyes_Closed_2[] = {
-	gsSPDisplayList(mat_kaktus_Hat__CAP__001),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_1_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Hat__CAP__001),
-	gsSPDisplayList(mat_kaktus_Skin__SKIN__001),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_1_tri_1),
-	gsSPDisplayList(mat_revert_kaktus_Skin__SKIN__001),
-	gsSPDisplayList(mat_kaktus_Brim__EMBLEM__001),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_1_tri_2),
-	gsSPDisplayList(mat_revert_kaktus_Brim__EMBLEM__001),
-	gsSPDisplayList(mat_kaktus_Hair__HAIR__001),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_1_tri_3),
-	gsSPDisplayList(mat_revert_kaktus_Hair__HAIR__001),
-	gsSPEndDisplayList(),
-};
-
-Gfx kaktus_Head_DL_mesh_layer_1_mat_override_Eyes_Left_3[] = {
-	gsSPDisplayList(mat_kaktus_Hat__CAP__001),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_1_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Hat__CAP__001),
-	gsSPDisplayList(mat_kaktus_Skin__SKIN__001),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_1_tri_1),
-	gsSPDisplayList(mat_revert_kaktus_Skin__SKIN__001),
-	gsSPDisplayList(mat_kaktus_Brim__EMBLEM__001),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_1_tri_2),
-	gsSPDisplayList(mat_revert_kaktus_Brim__EMBLEM__001),
-	gsSPDisplayList(mat_kaktus_Hair__HAIR__001),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_1_tri_3),
-	gsSPDisplayList(mat_revert_kaktus_Hair__HAIR__001),
-	gsSPEndDisplayList(),
-};
-
-Gfx kaktus_Head_DL_mesh_layer_1_mat_override_Eyes_Right_4[] = {
-	gsSPDisplayList(mat_kaktus_Hat__CAP__001),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_1_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Hat__CAP__001),
-	gsSPDisplayList(mat_kaktus_Skin__SKIN__001),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_1_tri_1),
-	gsSPDisplayList(mat_revert_kaktus_Skin__SKIN__001),
-	gsSPDisplayList(mat_kaktus_Brim__EMBLEM__001),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_1_tri_2),
-	gsSPDisplayList(mat_revert_kaktus_Brim__EMBLEM__001),
-	gsSPDisplayList(mat_kaktus_Hair__HAIR__001),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_1_tri_3),
-	gsSPDisplayList(mat_revert_kaktus_Hair__HAIR__001),
-	gsSPEndDisplayList(),
-};
-
-Gfx kaktus_Head_DL_mesh_layer_1_mat_override_Eyes_Wink_5[] = {
-	gsSPDisplayList(mat_kaktus_Hat__CAP__001),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_1_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Hat__CAP__001),
-	gsSPDisplayList(mat_kaktus_Skin__SKIN__001),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_1_tri_1),
-	gsSPDisplayList(mat_revert_kaktus_Skin__SKIN__001),
-	gsSPDisplayList(mat_kaktus_Brim__EMBLEM__001),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_1_tri_2),
-	gsSPDisplayList(mat_revert_kaktus_Brim__EMBLEM__001),
-	gsSPDisplayList(mat_kaktus_Hair__HAIR__001),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_1_tri_3),
-	gsSPDisplayList(mat_revert_kaktus_Hair__HAIR__001),
-	gsSPEndDisplayList(),
-};
-
-Gfx kaktus_Head_DL_mesh_layer_1_mat_override_Eyes_Down_6[] = {
-	gsSPDisplayList(mat_kaktus_Hat__CAP__001),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_1_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Hat__CAP__001),
-	gsSPDisplayList(mat_kaktus_Skin__SKIN__001),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_1_tri_1),
-	gsSPDisplayList(mat_revert_kaktus_Skin__SKIN__001),
-	gsSPDisplayList(mat_kaktus_Brim__EMBLEM__001),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_1_tri_2),
-	gsSPDisplayList(mat_revert_kaktus_Brim__EMBLEM__001),
-	gsSPDisplayList(mat_kaktus_Hair__HAIR__001),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_1_tri_3),
-	gsSPDisplayList(mat_revert_kaktus_Hair__HAIR__001),
-	gsSPEndDisplayList(),
-};
-
-Gfx kaktus_Head_DL_mesh_layer_1_mat_override_Mouth_Dead_7[] = {
-	gsSPDisplayList(mat_kaktus_Hat__CAP__001),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_1_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Hat__CAP__001),
-	gsSPDisplayList(mat_kaktus_Skin__SKIN__001),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_1_tri_1),
-	gsSPDisplayList(mat_revert_kaktus_Skin__SKIN__001),
-	gsSPDisplayList(mat_kaktus_Brim__EMBLEM__001),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_1_tri_2),
-	gsSPDisplayList(mat_revert_kaktus_Brim__EMBLEM__001),
-	gsSPDisplayList(mat_kaktus_Hair__HAIR__001),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_1_tri_3),
-	gsSPDisplayList(mat_revert_kaktus_Hair__HAIR__001),
-	gsSPEndDisplayList(),
-};
-
-Gfx kaktus_Head_DL_mesh_layer_1_mat_override_Eyes_Open_8[] = {
-	gsSPDisplayList(mat_kaktus_Hat__CAP__001),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_1_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Hat__CAP__001),
-	gsSPDisplayList(mat_kaktus_Skin__SKIN__001),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_1_tri_1),
-	gsSPDisplayList(mat_revert_kaktus_Skin__SKIN__001),
-	gsSPDisplayList(mat_kaktus_Brim__EMBLEM__001),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_1_tri_2),
-	gsSPDisplayList(mat_revert_kaktus_Brim__EMBLEM__001),
-	gsSPDisplayList(mat_kaktus_Hair__HAIR__001),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_1_tri_3),
-	gsSPDisplayList(mat_revert_kaktus_Hair__HAIR__001),
-	gsSPEndDisplayList(),
-};
-
-Gfx kaktus_Head_DL_mesh_layer_4[] = {
-	gsSPDisplayList(mat_kaktus_Eyes_Open),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_4_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Eyes_Open),
-	gsSPDisplayList(mat_kaktus_Flower_001),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_4_tri_1),
-	gsSPDisplayList(mat_revert_kaktus_Flower_001),
-	gsSPDisplayList(mat_kaktus_Prick_Top_001),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_4_tri_2),
-	gsSPDisplayList(mat_revert_kaktus_Prick_Top_001),
-	gsSPDisplayList(mat_kaktus_Prick_Bottom_001),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_4_tri_3),
-	gsSPDisplayList(mat_revert_kaktus_Prick_Bottom_001),
-	gsSPEndDisplayList(),
-};
-
-Gfx kaktus_Head_DL_mesh_layer_4_mat_override_Metal__NO_RECOLOR__0[] = {
-	gsSPDisplayList(mat_kaktus_Metal__NO_RECOLOR_),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_4_tri_0),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_4_tri_1),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_4_tri_2),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_4_tri_3),
-	gsSPDisplayList(mat_revert_kaktus_Metal__NO_RECOLOR_),
-	gsSPEndDisplayList(),
-};
-
-Gfx kaktus_Head_DL_mesh_layer_4_mat_override_Eyes_Half_1[] = {
-	gsSPDisplayList(mat_kaktus_Eyes_Half),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_4_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Eyes_Half),
-	gsSPDisplayList(mat_kaktus_Flower_001),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_4_tri_1),
-	gsSPDisplayList(mat_revert_kaktus_Flower_001),
-	gsSPDisplayList(mat_kaktus_Prick_Top_001),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_4_tri_2),
-	gsSPDisplayList(mat_revert_kaktus_Prick_Top_001),
-	gsSPDisplayList(mat_kaktus_Prick_Bottom_001),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_4_tri_3),
-	gsSPDisplayList(mat_revert_kaktus_Prick_Bottom_001),
-	gsSPEndDisplayList(),
-};
-
-Gfx kaktus_Head_DL_mesh_layer_4_mat_override_Eyes_Closed_2[] = {
-	gsSPDisplayList(mat_kaktus_Eyes_Closed),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_4_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Eyes_Closed),
-	gsSPDisplayList(mat_kaktus_Flower_001),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_4_tri_1),
-	gsSPDisplayList(mat_revert_kaktus_Flower_001),
-	gsSPDisplayList(mat_kaktus_Prick_Top_001),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_4_tri_2),
-	gsSPDisplayList(mat_revert_kaktus_Prick_Top_001),
-	gsSPDisplayList(mat_kaktus_Prick_Bottom_001),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_4_tri_3),
-	gsSPDisplayList(mat_revert_kaktus_Prick_Bottom_001),
-	gsSPEndDisplayList(),
-};
-
-Gfx kaktus_Head_DL_mesh_layer_4_mat_override_Eyes_Left_3[] = {
-	gsSPDisplayList(mat_kaktus_Eyes_Left),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_4_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Eyes_Left),
-	gsSPDisplayList(mat_kaktus_Flower_001),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_4_tri_1),
-	gsSPDisplayList(mat_revert_kaktus_Flower_001),
-	gsSPDisplayList(mat_kaktus_Prick_Top_001),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_4_tri_2),
-	gsSPDisplayList(mat_revert_kaktus_Prick_Top_001),
-	gsSPDisplayList(mat_kaktus_Prick_Bottom_001),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_4_tri_3),
-	gsSPDisplayList(mat_revert_kaktus_Prick_Bottom_001),
-	gsSPEndDisplayList(),
-};
-
-Gfx kaktus_Head_DL_mesh_layer_4_mat_override_Eyes_Right_4[] = {
-	gsSPDisplayList(mat_kaktus_Eyes_Right),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_4_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Eyes_Right),
-	gsSPDisplayList(mat_kaktus_Flower_001),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_4_tri_1),
-	gsSPDisplayList(mat_revert_kaktus_Flower_001),
-	gsSPDisplayList(mat_kaktus_Prick_Top_001),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_4_tri_2),
-	gsSPDisplayList(mat_revert_kaktus_Prick_Top_001),
-	gsSPDisplayList(mat_kaktus_Prick_Bottom_001),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_4_tri_3),
-	gsSPDisplayList(mat_revert_kaktus_Prick_Bottom_001),
-	gsSPEndDisplayList(),
-};
-
-Gfx kaktus_Head_DL_mesh_layer_4_mat_override_Eyes_Wink_5[] = {
-	gsSPDisplayList(mat_kaktus_Eyes_Wink),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_4_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Eyes_Wink),
-	gsSPDisplayList(mat_kaktus_Flower_001),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_4_tri_1),
-	gsSPDisplayList(mat_revert_kaktus_Flower_001),
-	gsSPDisplayList(mat_kaktus_Prick_Top_001),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_4_tri_2),
-	gsSPDisplayList(mat_revert_kaktus_Prick_Top_001),
-	gsSPDisplayList(mat_kaktus_Prick_Bottom_001),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_4_tri_3),
-	gsSPDisplayList(mat_revert_kaktus_Prick_Bottom_001),
-	gsSPEndDisplayList(),
-};
-
-Gfx kaktus_Head_DL_mesh_layer_4_mat_override_Eyes_Down_6[] = {
-	gsSPDisplayList(mat_kaktus_Eyes_Down),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_4_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Eyes_Down),
-	gsSPDisplayList(mat_kaktus_Flower_001),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_4_tri_1),
-	gsSPDisplayList(mat_revert_kaktus_Flower_001),
-	gsSPDisplayList(mat_kaktus_Prick_Top_001),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_4_tri_2),
-	gsSPDisplayList(mat_revert_kaktus_Prick_Top_001),
-	gsSPDisplayList(mat_kaktus_Prick_Bottom_001),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_4_tri_3),
-	gsSPDisplayList(mat_revert_kaktus_Prick_Bottom_001),
-	gsSPEndDisplayList(),
-};
-
-Gfx kaktus_Head_DL_mesh_layer_4_mat_override_Mouth_Dead_7[] = {
-	gsSPDisplayList(mat_kaktus_Mouth_Dead),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_4_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Mouth_Dead),
-	gsSPDisplayList(mat_kaktus_Flower_001),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_4_tri_1),
-	gsSPDisplayList(mat_revert_kaktus_Flower_001),
-	gsSPDisplayList(mat_kaktus_Prick_Top_001),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_4_tri_2),
-	gsSPDisplayList(mat_revert_kaktus_Prick_Top_001),
-	gsSPDisplayList(mat_kaktus_Prick_Bottom_001),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_4_tri_3),
-	gsSPDisplayList(mat_revert_kaktus_Prick_Bottom_001),
-	gsSPEndDisplayList(),
-};
-
-Gfx kaktus_Head_DL_mesh_layer_4_mat_override_Eyes_Open_8[] = {
-	gsSPDisplayList(mat_kaktus_Eyes_Open),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_4_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Eyes_Open),
-	gsSPDisplayList(mat_kaktus_Flower_001),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_4_tri_1),
-	gsSPDisplayList(mat_revert_kaktus_Flower_001),
-	gsSPDisplayList(mat_kaktus_Prick_Top_001),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_4_tri_2),
-	gsSPDisplayList(mat_revert_kaktus_Prick_Top_001),
-	gsSPDisplayList(mat_kaktus_Prick_Bottom_001),
-	gsSPDisplayList(kaktus_Head_DL_mesh_layer_4_tri_3),
-	gsSPDisplayList(mat_revert_kaktus_Prick_Bottom_001),
-	gsSPEndDisplayList(),
-};
-
-Gfx kaktus_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1[] = {
-	gsSPDisplayList(mat_kaktus_Skin__SKIN_),
-	gsSPDisplayList(kaktus_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Skin__SKIN_),
-	gsSPDisplayList(mat_kaktus_Hair__HAIR_),
-	gsSPDisplayList(kaktus_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_tri_1),
-	gsSPDisplayList(mat_revert_kaktus_Hair__HAIR_),
-	gsSPEndDisplayList(),
-};
-
-Gfx kaktus_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_mat_override_Metal__NO_RECOLOR__0[] = {
-	gsSPDisplayList(mat_kaktus_Metal__NO_RECOLOR_),
-	gsSPDisplayList(kaktus_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_tri_0),
-	gsSPDisplayList(kaktus_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_tri_1),
-	gsSPDisplayList(mat_revert_kaktus_Metal__NO_RECOLOR_),
-	gsSPEndDisplayList(),
-};
-
-Gfx kaktus_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_mat_override_Eyes_Half_1[] = {
-	gsSPDisplayList(mat_kaktus_Skin__SKIN_),
-	gsSPDisplayList(kaktus_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Skin__SKIN_),
-	gsSPDisplayList(mat_kaktus_Hair__HAIR_),
-	gsSPDisplayList(kaktus_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_tri_1),
-	gsSPDisplayList(mat_revert_kaktus_Hair__HAIR_),
-	gsSPEndDisplayList(),
-};
-
-Gfx kaktus_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_mat_override_Eyes_Closed_2[] = {
-	gsSPDisplayList(mat_kaktus_Skin__SKIN_),
-	gsSPDisplayList(kaktus_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Skin__SKIN_),
-	gsSPDisplayList(mat_kaktus_Hair__HAIR_),
-	gsSPDisplayList(kaktus_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_tri_1),
-	gsSPDisplayList(mat_revert_kaktus_Hair__HAIR_),
-	gsSPEndDisplayList(),
-};
-
-Gfx kaktus_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_mat_override_Eyes_Left_3[] = {
-	gsSPDisplayList(mat_kaktus_Skin__SKIN_),
-	gsSPDisplayList(kaktus_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Skin__SKIN_),
-	gsSPDisplayList(mat_kaktus_Hair__HAIR_),
-	gsSPDisplayList(kaktus_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_tri_1),
-	gsSPDisplayList(mat_revert_kaktus_Hair__HAIR_),
-	gsSPEndDisplayList(),
-};
-
-Gfx kaktus_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_mat_override_Eyes_Right_4[] = {
-	gsSPDisplayList(mat_kaktus_Skin__SKIN_),
-	gsSPDisplayList(kaktus_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Skin__SKIN_),
-	gsSPDisplayList(mat_kaktus_Hair__HAIR_),
-	gsSPDisplayList(kaktus_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_tri_1),
-	gsSPDisplayList(mat_revert_kaktus_Hair__HAIR_),
-	gsSPEndDisplayList(),
-};
 
-Gfx kaktus_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_mat_override_Eyes_Wink_5[] = {
-	gsSPDisplayList(mat_kaktus_Skin__SKIN_),
-	gsSPDisplayList(kaktus_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Skin__SKIN_),
-	gsSPDisplayList(mat_kaktus_Hair__HAIR_),
-	gsSPDisplayList(kaktus_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_tri_1),
-	gsSPDisplayList(mat_revert_kaktus_Hair__HAIR_),
+Gfx kaktus_tour_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_mat_override_Eyes_Wink_5[] = {
+	gsSPDisplayList(mat_kaktus_tour_Skin__SKIN_),
+	gsSPDisplayList(kaktus_tour_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Skin__SKIN_),
+	gsSPDisplayList(mat_kaktus_tour_Hair__HAIR_),
+	gsSPDisplayList(kaktus_tour_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_tri_1),
+	gsSPDisplayList(mat_revert_kaktus_tour_Hair__HAIR_),
 	gsSPEndDisplayList(),
 };
 
-Gfx kaktus_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_mat_override_Eyes_Down_6[] = {
-	gsSPDisplayList(mat_kaktus_Skin__SKIN_),
-	gsSPDisplayList(kaktus_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Skin__SKIN_),
-	gsSPDisplayList(mat_kaktus_Hair__HAIR_),
-	gsSPDisplayList(kaktus_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_tri_1),
-	gsSPDisplayList(mat_revert_kaktus_Hair__HAIR_),
+Gfx kaktus_tour_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_mat_override_Eyes_Down_6[] = {
+	gsSPDisplayList(mat_kaktus_tour_Skin__SKIN_),
+	gsSPDisplayList(kaktus_tour_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Skin__SKIN_),
+	gsSPDisplayList(mat_kaktus_tour_Hair__HAIR_),
+	gsSPDisplayList(kaktus_tour_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_tri_1),
+	gsSPDisplayList(mat_revert_kaktus_tour_Hair__HAIR_),
 	gsSPEndDisplayList(),
 };
 
-Gfx kaktus_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_mat_override_Mouth_Dead_7[] = {
-	gsSPDisplayList(mat_kaktus_Skin__SKIN_),
-	gsSPDisplayList(kaktus_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Skin__SKIN_),
-	gsSPDisplayList(mat_kaktus_Hair__HAIR_),
-	gsSPDisplayList(kaktus_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_tri_1),
-	gsSPDisplayList(mat_revert_kaktus_Hair__HAIR_),
+Gfx kaktus_tour_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_mat_override_Mouth_Dead_7[] = {
+	gsSPDisplayList(mat_kaktus_tour_Skin__SKIN_),
+	gsSPDisplayList(kaktus_tour_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Skin__SKIN_),
+	gsSPDisplayList(mat_kaktus_tour_Hair__HAIR_),
+	gsSPDisplayList(kaktus_tour_Capless_Head_Switch_Option_Capless_Head_mesh_layer_1_tri_1),
+	gsSPDisplayList(mat_revert_kaktus_tour_Hair__HAIR_),
 	gsSPEndDisplayList(),
 };
 
-Gfx kaktus_Capless_Head_Switch_Option_Capless_Head_mesh_layer_4[] = {
-	gsSPDisplayList(mat_kaktus_Eyes_Open),
-	gsSPDisplayList(kaktus_Capless_Head_Switch_Option_Capless_Head_mesh_layer_4_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Eyes_Open),
+Gfx kaktus_tour_Capless_Head_Switch_Option_Capless_Head_mesh_layer_4[] = {
+	gsSPDisplayList(mat_kaktus_tour_Eyes_Open),
+	gsSPDisplayList(kaktus_tour_Capless_Head_Switch_Option_Capless_Head_mesh_layer_4_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Eyes_Open),
 	gsSPEndDisplayList(),
 };
 
-Gfx kaktus_Capless_Head_Switch_Option_Capless_Head_mesh_layer_4_mat_override_Metal__NO_RECOLOR__0[] = {
-	gsSPDisplayList(mat_kaktus_Metal__NO_RECOLOR_),
-	gsSPDisplayList(kaktus_Capless_Head_Switch_Option_Capless_Head_mesh_layer_4_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Metal__NO_RECOLOR_),
+Gfx kaktus_tour_Capless_Head_Switch_Option_Capless_Head_mesh_layer_4_mat_override_Metal__NO_RECOLOR__0[] = {
+	gsSPDisplayList(mat_kaktus_tour_Metal__NO_RECOLOR_),
+	gsSPDisplayList(kaktus_tour_Capless_Head_Switch_Option_Capless_Head_mesh_layer_4_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Metal__NO_RECOLOR_),
 	gsSPEndDisplayList(),
 };
 
-Gfx kaktus_Capless_Head_Switch_Option_Capless_Head_mesh_layer_4_mat_override_Eyes_Half_1[] = {
-	gsSPDisplayList(mat_kaktus_Eyes_Half),
-	gsSPDisplayList(kaktus_Capless_Head_Switch_Option_Capless_Head_mesh_layer_4_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Eyes_Half),
+Gfx kaktus_tour_Capless_Head_Switch_Option_Capless_Head_mesh_layer_4_mat_override_Eyes_Half_1[] = {
+	gsSPDisplayList(mat_kaktus_tour_Eyes_Half),
+	gsSPDisplayList(kaktus_tour_Capless_Head_Switch_Option_Capless_Head_mesh_layer_4_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Eyes_Half),
 	gsSPEndDisplayList(),
 };
 
-Gfx kaktus_Capless_Head_Switch_Option_Capless_Head_mesh_layer_4_mat_override_Eyes_Closed_2[] = {
-	gsSPDisplayList(mat_kaktus_Eyes_Closed),
-	gsSPDisplayList(kaktus_Capless_Head_Switch_Option_Capless_Head_mesh_layer_4_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Eyes_Closed),
+Gfx kaktus_tour_Capless_Head_Switch_Option_Capless_Head_mesh_layer_4_mat_override_Eyes_Closed_2[] = {
+	gsSPDisplayList(mat_kaktus_tour_Eyes_Closed),
+	gsSPDisplayList(kaktus_tour_Capless_Head_Switch_Option_Capless_Head_mesh_layer_4_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Eyes_Closed),
 	gsSPEndDisplayList(),
 };
 
-Gfx kaktus_Capless_Head_Switch_Option_Capless_Head_mesh_layer_4_mat_override_Eyes_Left_3[] = {
-	gsSPDisplayList(mat_kaktus_Eyes_Left),
-	gsSPDisplayList(kaktus_Capless_Head_Switch_Option_Capless_Head_mesh_layer_4_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Eyes_Left),
+Gfx kaktus_tour_Capless_Head_Switch_Option_Capless_Head_mesh_layer_4_mat_override_Eyes_Left_3[] = {
+	gsSPDisplayList(mat_kaktus_tour_Eyes_Left),
+	gsSPDisplayList(kaktus_tour_Capless_Head_Switch_Option_Capless_Head_mesh_layer_4_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Eyes_Left),
 	gsSPEndDisplayList(),
 };
 
-Gfx kaktus_Capless_Head_Switch_Option_Capless_Head_mesh_layer_4_mat_override_Eyes_Right_4[] = {
-	gsSPDisplayList(mat_kaktus_Eyes_Right),
-	gsSPDisplayList(kaktus_Capless_Head_Switch_Option_Capless_Head_mesh_layer_4_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Eyes_Right),
+Gfx kaktus_tour_Capless_Head_Switch_Option_Capless_Head_mesh_layer_4_mat_override_Eyes_Right_4[] = {
+	gsSPDisplayList(mat_kaktus_tour_Eyes_Right),
+	gsSPDisplayList(kaktus_tour_Capless_Head_Switch_Option_Capless_Head_mesh_layer_4_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Eyes_Right),
 	gsSPEndDisplayList(),
 };
 
-Gfx kaktus_Capless_Head_Switch_Option_Capless_Head_mesh_layer_4_mat_override_Eyes_Wink_5[] = {
-	gsSPDisplayList(mat_kaktus_Eyes_Wink),
-	gsSPDisplayList(kaktus_Capless_Head_Switch_Option_Capless_Head_mesh_layer_4_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Eyes_Wink),
+Gfx kaktus_tour_Capless_Head_Switch_Option_Capless_Head_mesh_layer_4_mat_override_Eyes_Wink_5[] = {
+	gsSPDisplayList(mat_kaktus_tour_Eyes_Wink),
+	gsSPDisplayList(kaktus_tour_Capless_Head_Switch_Option_Capless_Head_mesh_layer_4_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Eyes_Wink),
 	gsSPEndDisplayList(),
 };
 
-Gfx kaktus_Capless_Head_Switch_Option_Capless_Head_mesh_layer_4_mat_override_Eyes_Down_6[] = {
-	gsSPDisplayList(mat_kaktus_Eyes_Down),
-	gsSPDisplayList(kaktus_Capless_Head_Switch_Option_Capless_Head_mesh_layer_4_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Eyes_Down),
+Gfx kaktus_tour_Capless_Head_Switch_Option_Capless_Head_mesh_layer_4_mat_override_Eyes_Down_6[] = {
+	gsSPDisplayList(mat_kaktus_tour_Eyes_Down),
+	gsSPDisplayList(kaktus_tour_Capless_Head_Switch_Option_Capless_Head_mesh_layer_4_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Eyes_Down),
 	gsSPEndDisplayList(),
 };
 
-Gfx kaktus_Capless_Head_Switch_Option_Capless_Head_mesh_layer_4_mat_override_Mouth_Dead_7[] = {
-	gsSPDisplayList(mat_kaktus_Mouth_Dead),
-	gsSPDisplayList(kaktus_Capless_Head_Switch_Option_Capless_Head_mesh_layer_4_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Mouth_Dead),
+Gfx kaktus_tour_Capless_Head_Switch_Option_Capless_Head_mesh_layer_4_mat_override_Mouth_Dead_7[] = {
+	gsSPDisplayList(mat_kaktus_tour_Mouth_Dead),
+	gsSPDisplayList(kaktus_tour_Capless_Head_Switch_Option_Capless_Head_mesh_layer_4_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Mouth_Dead),
 	gsSPEndDisplayList(),
 };
 
-Gfx kaktus_Left_Wing_DL_mesh_layer_4[] = {
-	gsSPDisplayList(mat_kaktus_Kaktus_Wing_001),
-	gsSPDisplayList(kaktus_Left_Wing_DL_mesh_layer_4_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Kaktus_Wing_001),
+Gfx kaktus_tour_Left_Wing_DL_mesh_layer_4[] = {
+	gsSPDisplayList(mat_kaktus_tour_Kaktus_Wing_002),
+	gsSPDisplayList(kaktus_tour_Left_Wing_DL_mesh_layer_4_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Kaktus_Wing_002),
 	gsSPEndDisplayList(),
 };
 
-Gfx kaktus_Left_Wing_DL_mesh_layer_4_mat_override_Metal__NO_RECOLOR__0[] = {
-	gsSPDisplayList(mat_kaktus_Metal__NO_RECOLOR_),
-	gsSPDisplayList(kaktus_Left_Wing_DL_mesh_layer_4_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Metal__NO_RECOLOR_),
+Gfx kaktus_tour_Left_Wing_DL_mesh_layer_4_mat_override_Metal__NO_RECOLOR__0[] = {
+	gsSPDisplayList(mat_kaktus_tour_Metal__NO_RECOLOR_),
+	gsSPDisplayList(kaktus_tour_Left_Wing_DL_mesh_layer_4_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Metal__NO_RECOLOR_),
 	gsSPEndDisplayList(),
 };
 
-Gfx kaktus_Right_Wing_DL_mesh_layer_4[] = {
-	gsSPDisplayList(mat_kaktus_Kaktus_Wing_001),
-	gsSPDisplayList(kaktus_Right_Wing_DL_mesh_layer_4_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Kaktus_Wing_001),
+Gfx kaktus_tour_Right_Wing_DL_mesh_layer_4[] = {
+	gsSPDisplayList(mat_kaktus_tour_Kaktus_Wing_002),
+	gsSPDisplayList(kaktus_tour_Right_Wing_DL_mesh_layer_4_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Kaktus_Wing_002),
 	gsSPEndDisplayList(),
 };
 
-Gfx kaktus_Right_Wing_DL_mesh_layer_4_mat_override_Metal__NO_RECOLOR__0[] = {
-	gsSPDisplayList(mat_kaktus_Metal__NO_RECOLOR_),
-	gsSPDisplayList(kaktus_Right_Wing_DL_mesh_layer_4_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Metal__NO_RECOLOR_),
+Gfx kaktus_tour_Right_Wing_DL_mesh_layer_4_mat_override_Metal__NO_RECOLOR__0[] = {
+	gsSPDisplayList(mat_kaktus_tour_Metal__NO_RECOLOR_),
+	gsSPDisplayList(kaktus_tour_Right_Wing_DL_mesh_layer_4_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Metal__NO_RECOLOR_),
 	gsSPEndDisplayList(),
 };
 
-Gfx kaktus_Left_Arm_Color_mesh_layer_1[] = {
-	gsSPDisplayList(mat_kaktus_Sweater__SHIRT__001),
-	gsSPDisplayList(kaktus_Left_Arm_Color_mesh_layer_1_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Sweater__SHIRT__001),
+Gfx kaktus_tour_Left_Arm_Color_mesh_layer_1[] = {
+	gsSPDisplayList(mat_kaktus_tour_Sweater__SHIRT__002),
+	gsSPDisplayList(kaktus_tour_Left_Arm_Color_mesh_layer_1_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Sweater__SHIRT__002),
 	gsSPEndDisplayList(),
 };
 
-Gfx kaktus_Left_Arm_Color_mesh_layer_1_mat_override_Metal__NO_RECOLOR__0[] = {
-	gsSPDisplayList(mat_kaktus_Metal__NO_RECOLOR_),
-	gsSPDisplayList(kaktus_Left_Arm_Color_mesh_layer_1_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Metal__NO_RECOLOR_),
+Gfx kaktus_tour_Left_Arm_Color_mesh_layer_1_mat_override_Metal__NO_RECOLOR__0[] = {
+	gsSPDisplayList(mat_kaktus_tour_Metal__NO_RECOLOR_),
+	gsSPDisplayList(kaktus_tour_Left_Arm_Color_mesh_layer_1_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Metal__NO_RECOLOR_),
 	gsSPEndDisplayList(),
 };
 
-Gfx kaktus_Left_Forearm_mesh_layer_1[] = {
-	gsSPDisplayList(mat_kaktus_Bottom_001),
-	gsSPDisplayList(kaktus_Left_Forearm_mesh_layer_1_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Bottom_001),
-	gsSPDisplayList(mat_kaktus_Sweater__SHIRT__001),
-	gsSPDisplayList(kaktus_Left_Forearm_mesh_layer_1_tri_1),
-	gsSPDisplayList(mat_revert_kaktus_Sweater__SHIRT__001),
+Gfx kaktus_tour_Left_Forearm_mesh_layer_1[] = {
+	gsSPDisplayList(mat_kaktus_tour_Shoes__SHOES__002),
+	gsSPDisplayList(kaktus_tour_Left_Forearm_mesh_layer_1_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Shoes__SHOES__002),
+	gsSPDisplayList(mat_kaktus_tour_Sweater__SHIRT__002),
+	gsSPDisplayList(kaktus_tour_Left_Forearm_mesh_layer_1_tri_1),
+	gsSPDisplayList(mat_revert_kaktus_tour_Sweater__SHIRT__002),
 	gsSPEndDisplayList(),
 };
 
-Gfx kaktus_Left_Forearm_mesh_layer_1_mat_override_Metal__NO_RECOLOR__0[] = {
-	gsSPDisplayList(mat_kaktus_Metal__NO_RECOLOR_),
-	gsSPDisplayList(kaktus_Left_Forearm_mesh_layer_1_tri_0),
-	gsSPDisplayList(kaktus_Left_Forearm_mesh_layer_1_tri_1),
-	gsSPDisplayList(mat_revert_kaktus_Metal__NO_RECOLOR_),
+Gfx kaktus_tour_Left_Forearm_mesh_layer_1_mat_override_Metal__NO_RECOLOR__0[] = {
+	gsSPDisplayList(mat_kaktus_tour_Metal__NO_RECOLOR_),
+	gsSPDisplayList(kaktus_tour_Left_Forearm_mesh_layer_1_tri_0),
+	gsSPDisplayList(kaktus_tour_Left_Forearm_mesh_layer_1_tri_1),
+	gsSPDisplayList(mat_revert_kaktus_tour_Metal__NO_RECOLOR_),
 	gsSPEndDisplayList(),
 };
 
-Gfx kaktus_Left_Hand_DL_mesh_layer_1[] = {
-	gsSPDisplayList(mat_kaktus_Skin__SKIN__001),
-	gsSPDisplayList(kaktus_Left_Hand_DL_mesh_layer_1_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Skin__SKIN__001),
+Gfx kaktus_tour_Left_Hand_DL_mesh_layer_1[] = {
+	gsSPDisplayList(mat_kaktus_tour_Pants__PANTS__002),
+	gsSPDisplayList(kaktus_tour_Left_Hand_DL_mesh_layer_1_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Pants__PANTS__002),
+	gsSPDisplayList(mat_kaktus_tour_Skin__SKIN__002),
+	gsSPDisplayList(kaktus_tour_Left_Hand_DL_mesh_layer_1_tri_1),
+	gsSPDisplayList(mat_revert_kaktus_tour_Skin__SKIN__002),
 	gsSPEndDisplayList(),
 };
 
-Gfx kaktus_Left_Hand_DL_mesh_layer_1_mat_override_Metal__NO_RECOLOR__0[] = {
-	gsSPDisplayList(mat_kaktus_Metal__NO_RECOLOR_),
-	gsSPDisplayList(kaktus_Left_Hand_DL_mesh_layer_1_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Metal__NO_RECOLOR_),
+Gfx kaktus_tour_Left_Hand_DL_mesh_layer_1_mat_override_Metal__NO_RECOLOR__0[] = {
+	gsSPDisplayList(mat_kaktus_tour_Metal__NO_RECOLOR_),
+	gsSPDisplayList(kaktus_tour_Left_Hand_DL_mesh_layer_1_tri_0),
+	gsSPDisplayList(kaktus_tour_Left_Hand_DL_mesh_layer_1_tri_1),
+	gsSPDisplayList(mat_revert_kaktus_tour_Metal__NO_RECOLOR_),
 	gsSPEndDisplayList(),
 };
 
-Gfx kaktus_Left_Hand_Open_Switch_Option_Left_Hand_Open_mesh_layer_1[] = {
-	gsSPDisplayList(mat_kaktus_Skin__SKIN_),
-	gsSPDisplayList(kaktus_Left_Hand_Open_Switch_Option_Left_Hand_Open_mesh_layer_1_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Skin__SKIN_),
+Gfx kaktus_tour_Left_Hand_Open_Switch_Option_Left_Hand_Open_mesh_layer_1[] = {
+	gsSPDisplayList(mat_kaktus_tour_Skin__SKIN_),
+	gsSPDisplayList(kaktus_tour_Left_Hand_Open_Switch_Option_Left_Hand_Open_mesh_layer_1_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Skin__SKIN_),
+	gsSPDisplayList(mat_kaktus_tour_Pants__PANTS__002),
+	gsSPDisplayList(kaktus_tour_Left_Hand_Open_Switch_Option_Left_Hand_Open_mesh_layer_1_tri_1),
+	gsSPDisplayList(mat_revert_kaktus_tour_Pants__PANTS__002),
 	gsSPEndDisplayList(),
 };
 
-Gfx kaktus_Left_Hand_Open_Switch_Option_Left_Hand_Open_mesh_layer_1_mat_override_Metal__NO_RECOLOR__0[] = {
-	gsSPDisplayList(mat_kaktus_Metal__NO_RECOLOR_),
-	gsSPDisplayList(kaktus_Left_Hand_Open_Switch_Option_Left_Hand_Open_mesh_layer_1_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Metal__NO_RECOLOR_),
+Gfx kaktus_tour_Left_Hand_Open_Switch_Option_Left_Hand_Open_mesh_layer_1_mat_override_Metal__NO_RECOLOR__0[] = {
+	gsSPDisplayList(mat_kaktus_tour_Metal__NO_RECOLOR_),
+	gsSPDisplayList(kaktus_tour_Left_Hand_Open_Switch_Option_Left_Hand_Open_mesh_layer_1_tri_0),
+	gsSPDisplayList(kaktus_tour_Left_Hand_Open_Switch_Option_Left_Hand_Open_mesh_layer_1_tri_1),
+	gsSPDisplayList(mat_revert_kaktus_tour_Metal__NO_RECOLOR_),
 	gsSPEndDisplayList(),
 };
 
-Gfx kaktus_Right_Arm_Color_mesh_layer_1[] = {
-	gsSPDisplayList(mat_kaktus_Sweater__SHIRT__001),
-	gsSPDisplayList(kaktus_Right_Arm_Color_mesh_layer_1_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Sweater__SHIRT__001),
+Gfx kaktus_tour_Right_Arm_Color_mesh_layer_1[] = {
+	gsSPDisplayList(mat_kaktus_tour_Sweater__SHIRT__002),
+	gsSPDisplayList(kaktus_tour_Right_Arm_Color_mesh_layer_1_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Sweater__SHIRT__002),
 	gsSPEndDisplayList(),
 };
 
-Gfx kaktus_Right_Arm_Color_mesh_layer_1_mat_override_Metal__NO_RECOLOR__0[] = {
-	gsSPDisplayList(mat_kaktus_Metal__NO_RECOLOR_),
-	gsSPDisplayList(kaktus_Right_Arm_Color_mesh_layer_1_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Metal__NO_RECOLOR_),
+Gfx kaktus_tour_Right_Arm_Color_mesh_layer_1_mat_override_Metal__NO_RECOLOR__0[] = {
+	gsSPDisplayList(mat_kaktus_tour_Metal__NO_RECOLOR_),
+	gsSPDisplayList(kaktus_tour_Right_Arm_Color_mesh_layer_1_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Metal__NO_RECOLOR_),
 	gsSPEndDisplayList(),
 };
 
-Gfx kaktus_Right_Forearm_mesh_layer_1[] = {
-	gsSPDisplayList(mat_kaktus_Bottom_001),
-	gsSPDisplayList(kaktus_Right_Forearm_mesh_layer_1_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Bottom_001),
-	gsSPDisplayList(mat_kaktus_Sweater__SHIRT__001),
-	gsSPDisplayList(kaktus_Right_Forearm_mesh_layer_1_tri_1),
-	gsSPDisplayList(mat_revert_kaktus_Sweater__SHIRT__001),
+Gfx kaktus_tour_Right_Forearm_mesh_layer_1[] = {
+	gsSPDisplayList(mat_kaktus_tour_Shoes__SHOES__002),
+	gsSPDisplayList(kaktus_tour_Right_Forearm_mesh_layer_1_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Shoes__SHOES__002),
+	gsSPDisplayList(mat_kaktus_tour_Sweater__SHIRT__002),
+	gsSPDisplayList(kaktus_tour_Right_Forearm_mesh_layer_1_tri_1),
+	gsSPDisplayList(mat_revert_kaktus_tour_Sweater__SHIRT__002),
 	gsSPEndDisplayList(),
 };
 
-Gfx kaktus_Right_Forearm_mesh_layer_1_mat_override_Metal__NO_RECOLOR__0[] = {
-	gsSPDisplayList(mat_kaktus_Metal__NO_RECOLOR_),
-	gsSPDisplayList(kaktus_Right_Forearm_mesh_layer_1_tri_0),
-	gsSPDisplayList(kaktus_Right_Forearm_mesh_layer_1_tri_1),
-	gsSPDisplayList(mat_revert_kaktus_Metal__NO_RECOLOR_),
+Gfx kaktus_tour_Right_Forearm_mesh_layer_1_mat_override_Metal__NO_RECOLOR__0[] = {
+	gsSPDisplayList(mat_kaktus_tour_Metal__NO_RECOLOR_),
+	gsSPDisplayList(kaktus_tour_Right_Forearm_mesh_layer_1_tri_0),
+	gsSPDisplayList(kaktus_tour_Right_Forearm_mesh_layer_1_tri_1),
+	gsSPDisplayList(mat_revert_kaktus_tour_Metal__NO_RECOLOR_),
 	gsSPEndDisplayList(),
 };
 
-Gfx kaktus_Right_Hand_DL_mesh_layer_1[] = {
-	gsSPDisplayList(mat_kaktus_Skin__SKIN__001),
-	gsSPDisplayList(kaktus_Right_Hand_DL_mesh_layer_1_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Skin__SKIN__001),
+Gfx kaktus_tour_Right_Hand_DL_mesh_layer_1[] = {
+	gsSPDisplayList(mat_kaktus_tour_Pants__PANTS__002),
+	gsSPDisplayList(kaktus_tour_Right_Hand_DL_mesh_layer_1_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Pants__PANTS__002),
+	gsSPDisplayList(mat_kaktus_tour_Skin__SKIN__002),
+	gsSPDisplayList(kaktus_tour_Right_Hand_DL_mesh_layer_1_tri_1),
+	gsSPDisplayList(mat_revert_kaktus_tour_Skin__SKIN__002),
 	gsSPEndDisplayList(),
 };
 
-Gfx kaktus_Right_Hand_DL_mesh_layer_1_mat_override_Metal__NO_RECOLOR__0[] = {
-	gsSPDisplayList(mat_kaktus_Metal__NO_RECOLOR_),
-	gsSPDisplayList(kaktus_Right_Hand_DL_mesh_layer_1_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Metal__NO_RECOLOR_),
+Gfx kaktus_tour_Right_Hand_DL_mesh_layer_1_mat_override_Metal__NO_RECOLOR__0[] = {
+	gsSPDisplayList(mat_kaktus_tour_Metal__NO_RECOLOR_),
+	gsSPDisplayList(kaktus_tour_Right_Hand_DL_mesh_layer_1_tri_0),
+	gsSPDisplayList(kaktus_tour_Right_Hand_DL_mesh_layer_1_tri_1),
+	gsSPDisplayList(mat_revert_kaktus_tour_Metal__NO_RECOLOR_),
 	gsSPEndDisplayList(),
 };
 
-Gfx kaktus_Right_Hand_Open_Switch_Option_Right_Hand_Open_mesh_layer_1[] = {
-	gsSPDisplayList(mat_kaktus_Skin__SKIN_),
-	gsSPDisplayList(kaktus_Right_Hand_Open_Switch_Option_Right_Hand_Open_mesh_layer_1_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Skin__SKIN_),
+Gfx kaktus_tour_Right_Hand_Open_Switch_Option_Right_Hand_Open_mesh_layer_1[] = {
+	gsSPDisplayList(mat_kaktus_tour_Skin__SKIN_),
+	gsSPDisplayList(kaktus_tour_Right_Hand_Open_Switch_Option_Right_Hand_Open_mesh_layer_1_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Skin__SKIN_),
+	gsSPDisplayList(mat_kaktus_tour_Pants__PANTS__002),
+	gsSPDisplayList(kaktus_tour_Right_Hand_Open_Switch_Option_Right_Hand_Open_mesh_layer_1_tri_1),
+	gsSPDisplayList(mat_revert_kaktus_tour_Pants__PANTS__002),
 	gsSPEndDisplayList(),
 };
 
-Gfx kaktus_Right_Hand_Open_Switch_Option_Right_Hand_Open_mesh_layer_1_mat_override_Metal__NO_RECOLOR__0[] = {
-	gsSPDisplayList(mat_kaktus_Metal__NO_RECOLOR_),
-	gsSPDisplayList(kaktus_Right_Hand_Open_Switch_Option_Right_Hand_Open_mesh_layer_1_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Metal__NO_RECOLOR_),
+Gfx kaktus_tour_Right_Hand_Open_Switch_Option_Right_Hand_Open_mesh_layer_1_mat_override_Metal__NO_RECOLOR__0[] = {
+	gsSPDisplayList(mat_kaktus_tour_Metal__NO_RECOLOR_),
+	gsSPDisplayList(kaktus_tour_Right_Hand_Open_Switch_Option_Right_Hand_Open_mesh_layer_1_tri_0),
+	gsSPDisplayList(kaktus_tour_Right_Hand_Open_Switch_Option_Right_Hand_Open_mesh_layer_1_tri_1),
+	gsSPDisplayList(mat_revert_kaktus_tour_Metal__NO_RECOLOR_),
 	gsSPEndDisplayList(),
 };
 
-Gfx kaktus_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_1[] = {
-	gsSPDisplayList(mat_kaktus_Skin__SKIN_),
-	gsSPDisplayList(kaktus_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_1_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Skin__SKIN_),
-	gsSPDisplayList(mat_kaktus_f3dlite_material),
-	gsSPDisplayList(kaktus_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_1_tri_1),
-	gsSPDisplayList(mat_revert_kaktus_f3dlite_material),
-	gsSPDisplayList(mat_kaktus_Umbrella_2),
-	gsSPDisplayList(kaktus_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_1_tri_2),
-	gsSPDisplayList(mat_revert_kaktus_Umbrella_2),
-	gsSPDisplayList(mat_kaktus_Umbrella_1),
-	gsSPDisplayList(kaktus_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_1_tri_3),
-	gsSPDisplayList(mat_revert_kaktus_Umbrella_1),
+Gfx kaktus_tour_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_1[] = {
+	gsSPDisplayList(mat_kaktus_tour_Pants__PANTS__002),
+	gsSPDisplayList(kaktus_tour_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_1_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Pants__PANTS__002),
+	gsSPDisplayList(mat_kaktus_tour_Skin__SKIN_),
+	gsSPDisplayList(kaktus_tour_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_1_tri_1),
+	gsSPDisplayList(mat_revert_kaktus_tour_Skin__SKIN_),
+	gsSPDisplayList(mat_kaktus_tour_f3dlite_material),
+	gsSPDisplayList(kaktus_tour_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_1_tri_2),
+	gsSPDisplayList(mat_revert_kaktus_tour_f3dlite_material),
+	gsSPDisplayList(mat_kaktus_tour_Umbrella_2),
+	gsSPDisplayList(kaktus_tour_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_1_tri_3),
+	gsSPDisplayList(mat_revert_kaktus_tour_Umbrella_2),
+	gsSPDisplayList(mat_kaktus_tour_Umbrella_1),
+	gsSPDisplayList(kaktus_tour_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_1_tri_4),
+	gsSPDisplayList(mat_revert_kaktus_tour_Umbrella_1),
 	gsSPEndDisplayList(),
 };
 
-Gfx kaktus_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_1_mat_override_Metal__NO_RECOLOR__0[] = {
-	gsSPDisplayList(mat_kaktus_Metal__NO_RECOLOR_),
-	gsSPDisplayList(kaktus_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_1_tri_0),
-	gsSPDisplayList(kaktus_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_1_tri_1),
-	gsSPDisplayList(mat_revert_kaktus_Metal__NO_RECOLOR_),
-	gsSPDisplayList(mat_kaktus_Umbrella_2),
-	gsSPDisplayList(kaktus_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_1_tri_2),
-	gsSPDisplayList(mat_revert_kaktus_Umbrella_2),
-	gsSPDisplayList(mat_kaktus_Umbrella_1),
-	gsSPDisplayList(kaktus_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_1_tri_3),
-	gsSPDisplayList(mat_revert_kaktus_Umbrella_1),
+Gfx kaktus_tour_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_1_mat_override_Metal__NO_RECOLOR__0[] = {
+	gsSPDisplayList(mat_kaktus_tour_Metal__NO_RECOLOR_),
+	gsSPDisplayList(kaktus_tour_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_1_tri_0),
+	gsSPDisplayList(kaktus_tour_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_1_tri_1),
+	gsSPDisplayList(kaktus_tour_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_1_tri_2),
+	gsSPDisplayList(mat_revert_kaktus_tour_Metal__NO_RECOLOR_),
+	gsSPDisplayList(mat_kaktus_tour_Umbrella_2),
+	gsSPDisplayList(kaktus_tour_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_1_tri_3),
+	gsSPDisplayList(mat_revert_kaktus_tour_Umbrella_2),
+	gsSPDisplayList(mat_kaktus_tour_Umbrella_1),
+	gsSPDisplayList(kaktus_tour_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_1_tri_4),
+	gsSPDisplayList(mat_revert_kaktus_tour_Umbrella_1),
 	gsSPEndDisplayList(),
 };
 
-Gfx kaktus_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_4[] = {
-	gsSPDisplayList(mat_kaktus_Handle),
-	gsSPDisplayList(kaktus_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_4_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Handle),
+Gfx kaktus_tour_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_4[] = {
+	gsSPDisplayList(mat_kaktus_tour_Handle),
+	gsSPDisplayList(kaktus_tour_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_4_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Handle),
 	gsSPEndDisplayList(),
 };
 
-Gfx kaktus_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_4_mat_override_Metal__NO_RECOLOR__0[] = {
-	gsSPDisplayList(mat_kaktus_Handle),
-	gsSPDisplayList(kaktus_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_4_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Handle),
+Gfx kaktus_tour_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_4_mat_override_Metal__NO_RECOLOR__0[] = {
+	gsSPDisplayList(mat_kaktus_tour_Handle),
+	gsSPDisplayList(kaktus_tour_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_4_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Handle),
 	gsSPEndDisplayList(),
 };
 
-Gfx kaktus_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_1[] = {
-	gsSPDisplayList(mat_kaktus_Skin__SKIN_),
-	gsSPDisplayList(kaktus_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_1_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Skin__SKIN_),
-	gsSPDisplayList(mat_kaktus_Hat__CAP_),
-	gsSPDisplayList(kaktus_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_1_tri_1),
-	gsSPDisplayList(mat_revert_kaktus_Hat__CAP_),
-	gsSPDisplayList(mat_kaktus_Brim__EMBLEM_),
-	gsSPDisplayList(kaktus_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_1_tri_2),
-	gsSPDisplayList(mat_revert_kaktus_Brim__EMBLEM_),
-	gsSPDisplayList(mat_kaktus_Bottom),
-	gsSPDisplayList(kaktus_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_1_tri_3),
-	gsSPDisplayList(mat_revert_kaktus_Bottom),
+Gfx kaktus_tour_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_1[] = {
+	gsSPDisplayList(mat_kaktus_tour_Skin__SKIN_),
+	gsSPDisplayList(kaktus_tour_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_1_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Skin__SKIN_),
+	gsSPDisplayList(mat_kaktus_tour_Hat__CAP_),
+	gsSPDisplayList(kaktus_tour_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_1_tri_1),
+	gsSPDisplayList(mat_revert_kaktus_tour_Hat__CAP_),
+	gsSPDisplayList(mat_kaktus_tour_Brim__EMBLEM_),
+	gsSPDisplayList(kaktus_tour_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_1_tri_2),
+	gsSPDisplayList(mat_revert_kaktus_tour_Brim__EMBLEM_),
+	gsSPDisplayList(mat_kaktus_tour_Bottom),
+	gsSPDisplayList(kaktus_tour_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_1_tri_3),
+	gsSPDisplayList(mat_revert_kaktus_tour_Bottom),
 	gsSPEndDisplayList(),
 };
 
-Gfx kaktus_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_1_mat_override_Metal__NO_RECOLOR__0[] = {
-	gsSPDisplayList(mat_kaktus_Metal__NO_RECOLOR_),
-	gsSPDisplayList(kaktus_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_1_tri_0),
-	gsSPDisplayList(kaktus_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_1_tri_1),
-	gsSPDisplayList(kaktus_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_1_tri_2),
-	gsSPDisplayList(kaktus_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_1_tri_3),
-	gsSPDisplayList(mat_revert_kaktus_Metal__NO_RECOLOR_),
+Gfx kaktus_tour_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_1_mat_override_Metal__NO_RECOLOR__0[] = {
+	gsSPDisplayList(mat_kaktus_tour_Metal__NO_RECOLOR_),
+	gsSPDisplayList(kaktus_tour_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_1_tri_0),
+	gsSPDisplayList(kaktus_tour_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_1_tri_1),
+	gsSPDisplayList(kaktus_tour_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_1_tri_2),
+	gsSPDisplayList(kaktus_tour_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_1_tri_3),
+	gsSPDisplayList(mat_revert_kaktus_tour_Metal__NO_RECOLOR_),
 	gsSPEndDisplayList(),
 };
 
-Gfx kaktus_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_4[] = {
-	gsSPDisplayList(mat_kaktus_Flower),
-	gsSPDisplayList(kaktus_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_4_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Flower),
-	gsSPDisplayList(mat_kaktus_Prick_Top),
-	gsSPDisplayList(kaktus_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_4_tri_1),
-	gsSPDisplayList(mat_revert_kaktus_Prick_Top),
-	gsSPDisplayList(mat_kaktus_Prick_Bottom),
-	gsSPDisplayList(kaktus_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_4_tri_2),
-	gsSPDisplayList(mat_revert_kaktus_Prick_Bottom),
+Gfx kaktus_tour_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_4[] = {
+	gsSPDisplayList(mat_kaktus_tour_Flower),
+	gsSPDisplayList(kaktus_tour_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_4_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Flower),
+	gsSPDisplayList(mat_kaktus_tour_Prick_Top),
+	gsSPDisplayList(kaktus_tour_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_4_tri_1),
+	gsSPDisplayList(mat_revert_kaktus_tour_Prick_Top),
+	gsSPDisplayList(mat_kaktus_tour_Prick_Bottom),
+	gsSPDisplayList(kaktus_tour_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_4_tri_2),
+	gsSPDisplayList(mat_revert_kaktus_tour_Prick_Bottom),
 	gsSPEndDisplayList(),
 };
 
-Gfx kaktus_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_4_mat_override_Metal__NO_RECOLOR__0[] = {
-	gsSPDisplayList(mat_kaktus_Metal__NO_RECOLOR_),
-	gsSPDisplayList(kaktus_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_4_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Metal__NO_RECOLOR_),
-	gsSPDisplayList(mat_kaktus_Prick_Top),
-	gsSPDisplayList(kaktus_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_4_tri_1),
-	gsSPDisplayList(mat_revert_kaktus_Prick_Top),
-	gsSPDisplayList(mat_kaktus_Prick_Bottom),
-	gsSPDisplayList(kaktus_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_4_tri_2),
-	gsSPDisplayList(mat_revert_kaktus_Prick_Bottom),
+Gfx kaktus_tour_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_4_mat_override_Metal__NO_RECOLOR__0[] = {
+	gsSPDisplayList(mat_kaktus_tour_Metal__NO_RECOLOR_),
+	gsSPDisplayList(kaktus_tour_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_4_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Metal__NO_RECOLOR_),
+	gsSPDisplayList(mat_kaktus_tour_Prick_Top),
+	gsSPDisplayList(kaktus_tour_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_4_tri_1),
+	gsSPDisplayList(mat_revert_kaktus_tour_Prick_Top),
+	gsSPDisplayList(mat_kaktus_tour_Prick_Bottom),
+	gsSPDisplayList(kaktus_tour_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_4_tri_2),
+	gsSPDisplayList(mat_revert_kaktus_tour_Prick_Bottom),
 	gsSPEndDisplayList(),
 };
 
-Gfx kaktus_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_1[] = {
-	gsSPDisplayList(mat_kaktus_Skin__SKIN_),
-	gsSPDisplayList(kaktus_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_1_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Skin__SKIN_),
-	gsSPDisplayList(mat_kaktus_Hat__CAP_),
-	gsSPDisplayList(kaktus_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_1_tri_1),
-	gsSPDisplayList(mat_revert_kaktus_Hat__CAP_),
-	gsSPDisplayList(mat_kaktus_Brim__EMBLEM_),
-	gsSPDisplayList(kaktus_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_1_tri_2),
-	gsSPDisplayList(mat_revert_kaktus_Brim__EMBLEM_),
-	gsSPDisplayList(mat_kaktus_Bottom),
-	gsSPDisplayList(kaktus_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_1_tri_3),
-	gsSPDisplayList(mat_revert_kaktus_Bottom),
+Gfx kaktus_tour_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_1[] = {
+	gsSPDisplayList(mat_kaktus_tour_Skin__SKIN_),
+	gsSPDisplayList(kaktus_tour_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_1_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Skin__SKIN_),
+	gsSPDisplayList(mat_kaktus_tour_Hat__CAP_),
+	gsSPDisplayList(kaktus_tour_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_1_tri_1),
+	gsSPDisplayList(mat_revert_kaktus_tour_Hat__CAP_),
+	gsSPDisplayList(mat_kaktus_tour_Brim__EMBLEM_),
+	gsSPDisplayList(kaktus_tour_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_1_tri_2),
+	gsSPDisplayList(mat_revert_kaktus_tour_Brim__EMBLEM_),
+	gsSPDisplayList(mat_kaktus_tour_Bottom),
+	gsSPDisplayList(kaktus_tour_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_1_tri_3),
+	gsSPDisplayList(mat_revert_kaktus_tour_Bottom),
 	gsSPEndDisplayList(),
 };
 
-Gfx kaktus_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_1_mat_override_Metal__NO_RECOLOR__0[] = {
-	gsSPDisplayList(mat_kaktus_Metal__NO_RECOLOR_),
-	gsSPDisplayList(kaktus_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_1_tri_0),
-	gsSPDisplayList(kaktus_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_1_tri_1),
-	gsSPDisplayList(kaktus_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_1_tri_2),
-	gsSPDisplayList(kaktus_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_1_tri_3),
-	gsSPDisplayList(mat_revert_kaktus_Metal__NO_RECOLOR_),
+Gfx kaktus_tour_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_1_mat_override_Metal__NO_RECOLOR__0[] = {
+	gsSPDisplayList(mat_kaktus_tour_Metal__NO_RECOLOR_),
+	gsSPDisplayList(kaktus_tour_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_1_tri_0),
+	gsSPDisplayList(kaktus_tour_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_1_tri_1),
+	gsSPDisplayList(kaktus_tour_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_1_tri_2),
+	gsSPDisplayList(kaktus_tour_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_1_tri_3),
+	gsSPDisplayList(mat_revert_kaktus_tour_Metal__NO_RECOLOR_),
 	gsSPEndDisplayList(),
 };
 
-Gfx kaktus_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_4[] = {
-	gsSPDisplayList(mat_kaktus_Flower),
-	gsSPDisplayList(kaktus_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_4_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Flower),
-	gsSPDisplayList(mat_kaktus_Prick_Top),
-	gsSPDisplayList(kaktus_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_4_tri_1),
-	gsSPDisplayList(mat_revert_kaktus_Prick_Top),
-	gsSPDisplayList(mat_kaktus_Prick_Bottom),
-	gsSPDisplayList(kaktus_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_4_tri_2),
-	gsSPDisplayList(mat_revert_kaktus_Prick_Bottom),
+Gfx kaktus_tour_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_4[] = {
+	gsSPDisplayList(mat_kaktus_tour_Flower),
+	gsSPDisplayList(kaktus_tour_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_4_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Flower),
+	gsSPDisplayList(mat_kaktus_tour_Prick_Top),
+	gsSPDisplayList(kaktus_tour_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_4_tri_1),
+	gsSPDisplayList(mat_revert_kaktus_tour_Prick_Top),
+	gsSPDisplayList(mat_kaktus_tour_Prick_Bottom),
+	gsSPDisplayList(kaktus_tour_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_4_tri_2),
+	gsSPDisplayList(mat_revert_kaktus_tour_Prick_Bottom),
 	gsSPEndDisplayList(),
 };
 
-Gfx kaktus_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_4_mat_override_Metal__NO_RECOLOR__0[] = {
-	gsSPDisplayList(mat_kaktus_Metal__NO_RECOLOR_),
-	gsSPDisplayList(kaktus_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_4_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Metal__NO_RECOLOR_),
-	gsSPDisplayList(mat_kaktus_Prick_Top),
-	gsSPDisplayList(kaktus_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_4_tri_1),
-	gsSPDisplayList(mat_revert_kaktus_Prick_Top),
-	gsSPDisplayList(mat_kaktus_Prick_Bottom),
-	gsSPDisplayList(kaktus_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_4_tri_2),
-	gsSPDisplayList(mat_revert_kaktus_Prick_Bottom),
+Gfx kaktus_tour_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_4_mat_override_Metal__NO_RECOLOR__0[] = {
+	gsSPDisplayList(mat_kaktus_tour_Metal__NO_RECOLOR_),
+	gsSPDisplayList(kaktus_tour_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_4_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Metal__NO_RECOLOR_),
+	gsSPDisplayList(mat_kaktus_tour_Prick_Top),
+	gsSPDisplayList(kaktus_tour_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_4_tri_1),
+	gsSPDisplayList(mat_revert_kaktus_tour_Prick_Top),
+	gsSPDisplayList(mat_kaktus_tour_Prick_Bottom),
+	gsSPDisplayList(kaktus_tour_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_4_tri_2),
+	gsSPDisplayList(mat_revert_kaktus_tour_Prick_Bottom),
 	gsSPEndDisplayList(),
 };
 
-Gfx kaktus_Right_Hand_Wing_Cap_Swtich_Option_Wings_mesh_layer_4[] = {
-	gsSPDisplayList(mat_kaktus_Kaktus_Wing),
-	gsSPDisplayList(kaktus_Right_Hand_Wing_Cap_Swtich_Option_Wings_mesh_layer_4_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Kaktus_Wing),
+Gfx kaktus_tour_Right_Hand_Wing_Cap_Swtich_Option_Wings_mesh_layer_4[] = {
+	gsSPDisplayList(mat_kaktus_tour_Kaktus_Wing),
+	gsSPDisplayList(kaktus_tour_Right_Hand_Wing_Cap_Swtich_Option_Wings_mesh_layer_4_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Kaktus_Wing),
 	gsSPEndDisplayList(),
 };
 
-Gfx kaktus_Right_Hand_Wing_Cap_Swtich_Option_Wings_mesh_layer_4_mat_override_Metal__NO_RECOLOR__0[] = {
-	gsSPDisplayList(mat_kaktus_Metal__NO_RECOLOR_),
-	gsSPDisplayList(kaktus_Right_Hand_Wing_Cap_Swtich_Option_Wings_mesh_layer_4_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Metal__NO_RECOLOR_),
+Gfx kaktus_tour_Right_Hand_Wing_Cap_Swtich_Option_Wings_mesh_layer_4_mat_override_Metal__NO_RECOLOR__0[] = {
+	gsSPDisplayList(mat_kaktus_tour_Metal__NO_RECOLOR_),
+	gsSPDisplayList(kaktus_tour_Right_Hand_Wing_Cap_Swtich_Option_Wings_mesh_layer_4_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Metal__NO_RECOLOR_),
 	gsSPEndDisplayList(),
 };
 
-Gfx kaktus_Left_Thigh_Color_mesh_layer_1[] = {
-	gsSPDisplayList(mat_kaktus_Pants__PANTS__001),
-	gsSPDisplayList(kaktus_Left_Thigh_Color_mesh_layer_1_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Pants__PANTS__001),
+Gfx kaktus_tour_Left_Thigh_Color_mesh_layer_1[] = {
+	gsSPDisplayList(mat_kaktus_tour_Pants__PANTS__002),
+	gsSPDisplayList(kaktus_tour_Left_Thigh_Color_mesh_layer_1_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Pants__PANTS__002),
 	gsSPEndDisplayList(),
 };
 
-Gfx kaktus_Left_Thigh_Color_mesh_layer_1_mat_override_Metal__NO_RECOLOR__0[] = {
-	gsSPDisplayList(mat_kaktus_Metal__NO_RECOLOR_),
-	gsSPDisplayList(kaktus_Left_Thigh_Color_mesh_layer_1_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Metal__NO_RECOLOR_),
+Gfx kaktus_tour_Left_Thigh_Color_mesh_layer_1_mat_override_Metal__NO_RECOLOR__0[] = {
+	gsSPDisplayList(mat_kaktus_tour_Metal__NO_RECOLOR_),
+	gsSPDisplayList(kaktus_tour_Left_Thigh_Color_mesh_layer_1_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Metal__NO_RECOLOR_),
 	gsSPEndDisplayList(),
 };
 
-Gfx kaktus_Left_Leg_mesh_layer_1[] = {
-	gsSPDisplayList(mat_kaktus_f3dlite_material_001),
-	gsSPDisplayList(kaktus_Left_Leg_mesh_layer_1_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_f3dlite_material_001),
-	gsSPDisplayList(mat_kaktus_Pants__PANTS__001),
-	gsSPDisplayList(kaktus_Left_Leg_mesh_layer_1_tri_1),
-	gsSPDisplayList(mat_revert_kaktus_Pants__PANTS__001),
+Gfx kaktus_tour_Left_Leg_mesh_layer_1[] = {
+	gsSPDisplayList(mat_kaktus_tour_Shoes__SHOES__002),
+	gsSPDisplayList(kaktus_tour_Left_Leg_mesh_layer_1_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Shoes__SHOES__002),
+	gsSPDisplayList(mat_kaktus_tour_Pants__PANTS__002),
+	gsSPDisplayList(kaktus_tour_Left_Leg_mesh_layer_1_tri_1),
+	gsSPDisplayList(mat_revert_kaktus_tour_Pants__PANTS__002),
 	gsSPEndDisplayList(),
 };
 
-Gfx kaktus_Left_Leg_mesh_layer_1_mat_override_Metal__NO_RECOLOR__0[] = {
-	gsSPDisplayList(mat_kaktus_Metal__NO_RECOLOR_),
-	gsSPDisplayList(kaktus_Left_Leg_mesh_layer_1_tri_0),
-	gsSPDisplayList(kaktus_Left_Leg_mesh_layer_1_tri_1),
-	gsSPDisplayList(mat_revert_kaktus_Metal__NO_RECOLOR_),
+Gfx kaktus_tour_Left_Leg_mesh_layer_1_mat_override_Metal__NO_RECOLOR__0[] = {
+	gsSPDisplayList(mat_kaktus_tour_Metal__NO_RECOLOR_),
+	gsSPDisplayList(kaktus_tour_Left_Leg_mesh_layer_1_tri_0),
+	gsSPDisplayList(kaktus_tour_Left_Leg_mesh_layer_1_tri_1),
+	gsSPDisplayList(mat_revert_kaktus_tour_Metal__NO_RECOLOR_),
 	gsSPEndDisplayList(),
 };
 
-Gfx kaktus_Left_Shoe_mesh_layer_1[] = {
-	gsSPDisplayList(mat_kaktus_Shoes__SHOES__001),
-	gsSPDisplayList(kaktus_Left_Shoe_mesh_layer_1_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Shoes__SHOES__001),
+Gfx kaktus_tour_Left_Shoe_mesh_layer_1[] = {
+	gsSPDisplayList(mat_kaktus_tour_Shoes__SHOES__002),
+	gsSPDisplayList(kaktus_tour_Left_Shoe_mesh_layer_1_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Shoes__SHOES__002),
+	gsSPDisplayList(mat_kaktus_tour_f3dlite_material_003),
+	gsSPDisplayList(kaktus_tour_Left_Shoe_mesh_layer_1_tri_1),
+	gsSPDisplayList(mat_revert_kaktus_tour_f3dlite_material_003),
 	gsSPEndDisplayList(),
 };
 
-Gfx kaktus_Left_Shoe_mesh_layer_1_mat_override_Metal__NO_RECOLOR__0[] = {
-	gsSPDisplayList(mat_kaktus_Metal__NO_RECOLOR_),
-	gsSPDisplayList(kaktus_Left_Shoe_mesh_layer_1_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Metal__NO_RECOLOR_),
+Gfx kaktus_tour_Left_Shoe_mesh_layer_1_mat_override_Metal__NO_RECOLOR__0[] = {
+	gsSPDisplayList(mat_kaktus_tour_Metal__NO_RECOLOR_),
+	gsSPDisplayList(kaktus_tour_Left_Shoe_mesh_layer_1_tri_0),
+	gsSPDisplayList(kaktus_tour_Left_Shoe_mesh_layer_1_tri_1),
+	gsSPDisplayList(mat_revert_kaktus_tour_Metal__NO_RECOLOR_),
 	gsSPEndDisplayList(),
 };
 
-Gfx kaktus_Right_Thigh_Color_mesh_layer_1[] = {
-	gsSPDisplayList(mat_kaktus_Pants__PANTS__001),
-	gsSPDisplayList(kaktus_Right_Thigh_Color_mesh_layer_1_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Pants__PANTS__001),
+Gfx kaktus_tour_Right_Thigh_Color_mesh_layer_1[] = {
+	gsSPDisplayList(mat_kaktus_tour_Pants__PANTS__002),
+	gsSPDisplayList(kaktus_tour_Right_Thigh_Color_mesh_layer_1_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Pants__PANTS__002),
 	gsSPEndDisplayList(),
 };
 
-Gfx kaktus_Right_Thigh_Color_mesh_layer_1_mat_override_Metal__NO_RECOLOR__0[] = {
-	gsSPDisplayList(mat_kaktus_Metal__NO_RECOLOR_),
-	gsSPDisplayList(kaktus_Right_Thigh_Color_mesh_layer_1_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Metal__NO_RECOLOR_),
+Gfx kaktus_tour_Right_Thigh_Color_mesh_layer_1_mat_override_Metal__NO_RECOLOR__0[] = {
+	gsSPDisplayList(mat_kaktus_tour_Metal__NO_RECOLOR_),
+	gsSPDisplayList(kaktus_tour_Right_Thigh_Color_mesh_layer_1_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Metal__NO_RECOLOR_),
 	gsSPEndDisplayList(),
 };
 
-Gfx kaktus_Right_Leg_mesh_layer_1[] = {
-	gsSPDisplayList(mat_kaktus_Pants__PANTS__001),
-	gsSPDisplayList(kaktus_Right_Leg_mesh_layer_1_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Pants__PANTS__001),
-	gsSPDisplayList(mat_kaktus_f3dlite_material_001),
-	gsSPDisplayList(kaktus_Right_Leg_mesh_layer_1_tri_1),
-	gsSPDisplayList(mat_revert_kaktus_f3dlite_material_001),
+Gfx kaktus_tour_Right_Leg_mesh_layer_1[] = {
+	gsSPDisplayList(mat_kaktus_tour_Shoes__SHOES__002),
+	gsSPDisplayList(kaktus_tour_Right_Leg_mesh_layer_1_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Shoes__SHOES__002),
+	gsSPDisplayList(mat_kaktus_tour_Pants__PANTS__002),
+	gsSPDisplayList(kaktus_tour_Right_Leg_mesh_layer_1_tri_1),
+	gsSPDisplayList(mat_revert_kaktus_tour_Pants__PANTS__002),
 	gsSPEndDisplayList(),
 };
 
-Gfx kaktus_Right_Leg_mesh_layer_1_mat_override_Metal__NO_RECOLOR__0[] = {
-	gsSPDisplayList(mat_kaktus_Metal__NO_RECOLOR_),
-	gsSPDisplayList(kaktus_Right_Leg_mesh_layer_1_tri_0),
-	gsSPDisplayList(kaktus_Right_Leg_mesh_layer_1_tri_1),
-	gsSPDisplayList(mat_revert_kaktus_Metal__NO_RECOLOR_),
+Gfx kaktus_tour_Right_Leg_mesh_layer_1_mat_override_Metal__NO_RECOLOR__0[] = {
+	gsSPDisplayList(mat_kaktus_tour_Metal__NO_RECOLOR_),
+	gsSPDisplayList(kaktus_tour_Right_Leg_mesh_layer_1_tri_0),
+	gsSPDisplayList(kaktus_tour_Right_Leg_mesh_layer_1_tri_1),
+	gsSPDisplayList(mat_revert_kaktus_tour_Metal__NO_RECOLOR_),
 	gsSPEndDisplayList(),
 };
 
-Gfx kaktus_Right_Shoe_DL_mesh_layer_1[] = {
-	gsSPDisplayList(mat_kaktus_Shoes__SHOES__001),
-	gsSPDisplayList(kaktus_Right_Shoe_DL_mesh_layer_1_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Shoes__SHOES__001),
+Gfx kaktus_tour_Right_Shoe_DL_mesh_layer_1[] = {
+	gsSPDisplayList(mat_kaktus_tour_Shoes__SHOES__002),
+	gsSPDisplayList(kaktus_tour_Right_Shoe_DL_mesh_layer_1_tri_0),
+	gsSPDisplayList(mat_revert_kaktus_tour_Shoes__SHOES__002),
+	gsSPDisplayList(mat_kaktus_tour_f3dlite_material_003),
+	gsSPDisplayList(kaktus_tour_Right_Shoe_DL_mesh_layer_1_tri_1),
+	gsSPDisplayList(mat_revert_kaktus_tour_f3dlite_material_003),
 	gsSPEndDisplayList(),
 };
 
-Gfx kaktus_Right_Shoe_DL_mesh_layer_1_mat_override_Metal__NO_RECOLOR__0[] = {
-	gsSPDisplayList(mat_kaktus_Metal__NO_RECOLOR_),
-	gsSPDisplayList(kaktus_Right_Shoe_DL_mesh_layer_1_tri_0),
-	gsSPDisplayList(mat_revert_kaktus_Metal__NO_RECOLOR_),
+Gfx kaktus_tour_Right_Shoe_DL_mesh_layer_1_mat_override_Metal__NO_RECOLOR__0[] = {
+	gsSPDisplayList(mat_kaktus_tour_Metal__NO_RECOLOR_),
+	gsSPDisplayList(kaktus_tour_Right_Shoe_DL_mesh_layer_1_tri_0),
+	gsSPDisplayList(kaktus_tour_Right_Shoe_DL_mesh_layer_1_tri_1),
+	gsSPDisplayList(mat_revert_kaktus_tour_Metal__NO_RECOLOR_),
 	gsSPEndDisplayList(),
 };
 
-Gfx kaktus_material_revert_render_settings[] = {
+Gfx kaktus_tour_material_revert_render_settings[] = {
 	gsDPPipeSync(),
 	gsSPSetGeometryMode(G_LIGHTING),
 	gsSPClearGeometryMode(G_TEXTURE_GEN),
