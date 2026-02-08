@@ -423,7 +423,7 @@ if _G.charSelectExists then
                                                         "",
                                                         "His powerups are from other",
                                                         "Mario games, and as such may make",
-                                                        "some challenges impossible."}, "Kaktus64 & JerThePear", {r = 172, g = 80, b = 255}, E_MODEL_KAKTUS, CT_MARIO, KAKTUS_ICON)
+                                                        "some challenges impossible."}, "Kaktus64 & JerThePear", {r = 172, g = 80, b = 255}, E_MODEL_KAKTUS, CT_MARIO, KAKTUS_ICON, 0.95)
     --_G.charSelect.character_add_costume(CT_KAKTUS, "Goattus", {"goat simulator",
     --                                                    "",
     --                                                    "Kaktus's moveset is designed",
@@ -435,7 +435,7 @@ if _G.charSelectExists then
     --                                                    "His powerups are from other",
     --                                                    "Mario games, and as such may make",
     --                                                    "some challenges impossible."}, "Kaktus64 & JerThePear", {r = 153, g = 80, b = 72}, E_MODEL_KAKTUS_GOAT, CT_MARIO, KAKTUS_ICON_GOAT)
-    CT_ISIKLE = _G.charSelect.character_add("Isikle", "Kaktus' cool sister.", "Kaktus64 & JerThePear", {r = 102, g = 125, b = 146}, E_MODEL_ISIKLE, CT_LUIGI, ISIKLE_ICON) -- no icon yet, replace nil with ISIKLE_ICON
+    CT_ISIKLE = _G.charSelect.character_add("Isikle", "Kaktus' cool sister.", "Kaktus64 & JerThePear", {r = 102, g = 125, b = 146}, E_MODEL_ISIKLE, CT_LUIGI, ISIKLE_ICON, 1.1) -- no icon yet, replace nil with ISIKLE_ICON
 end
 
 local function on_character_select_load()
@@ -520,8 +520,6 @@ if is_kaktus() then
 
     if smlua_anim_util_get_current_animation_name(m.marioObj) == "kaktus_menu_pose" and m.marioBodyState.capState == MARIO_HAS_DEFAULT_CAP_ON then
     m.marioBodyState.eyeState = MARIO_EYES_LOOK_UP
-    m.marioBodyState.capState = MARIO_HAS_DEFAULT_CAP_OFF
-    m.marioBodyState.handState = MARIO_HAND_HOLDING_CAP
     end
 
     if smlua_anim_util_get_current_animation_name(m.marioObj) == "kaktus_goat_menu" then

@@ -3935,7 +3935,9 @@ Gfx kaktus_Right_Shoe_DL_mesh_layer_1_tri_0[] = {
 
 
 Gfx mat_kaktus_Bottom_001[] = {
-	gsSPCopyLightsPlayerPart(SHIRT),
+	gsSPLight(&kaktus_Bottom_001_lights.l, 1),
+    gsSPLight(&kaktus_Bottom_001_lights.a, 2),
+    gsSPCopyLightEXT(1, 5),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(0, 0, 0, SHADE, 0, 0, 0, ENVIRONMENT, 0, 0, 0, SHADE, 0, 0, 0, ENVIRONMENT),
 	gsDPSetAlphaDither(G_AD_NOISE),
@@ -4048,7 +4050,6 @@ Gfx mat_revert_kaktus_Hair__HAIR__001[] = {
 };
 
 Gfx mat_kaktus_Eyes_Open[] = {
-	gsSPClearGeometryMode(G_CULL_BACK),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(0, 0, 0, TEXEL0, 0, 0, 0, TEXEL0, 0, 0, 0, TEXEL0, 0, 0, 0, TEXEL0),
 	gsDPSetAlphaDither(G_AD_NOISE),
@@ -4062,7 +4063,6 @@ Gfx mat_kaktus_Eyes_Open[] = {
 };
 
 Gfx mat_revert_kaktus_Eyes_Open[] = {
-	gsSPSetGeometryMode(G_CULL_BACK),
 	gsDPPipeSync(),
 	gsDPSetAlphaDither(G_AD_DISABLE),
 	gsSPEndDisplayList(),
