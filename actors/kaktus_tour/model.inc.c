@@ -2687,7 +2687,7 @@ Gfx kaktus_tour_Left_Forearm_mesh_layer_1_tri_1[] = {
 	gsSPEndDisplayList(),
 };
 
-Vtx kaktus_tour_Left_Hand_DL_mesh_layer_1_vtx_0[16] = {
+Vtx kaktus_tour_Left_Hand_DL_mesh_layer_1_vtx_0[18] = {
 	{{{-13, 0, -1}, 0, {543, 1008}, {0x81, 0x00, 0x00, 0xFF}}},
 	{{{12, 29, 39}, 0, {449, 847}, {0xC4, 0x42, 0x5B, 0xFF}}},
 	{{{12, 47, -16}, 0, {636, 847}, {0xC4, 0x6A, 0xDD, 0xFF}}},
@@ -2699,40 +2699,41 @@ Vtx kaktus_tour_Left_Hand_DL_mesh_layer_1_vtx_0[16] = {
 	{{{62, -47, 15}, 0, {170, 686}, {0x3C, 0x96, 0x23, 0xFF}}},
 	{{{62, -29, -41}, 0, {-16, 686}, {0x3C, 0xBE, 0xA5, 0xFF}}},
 	{{{87, 0, -1}, 0, {449, 524}, {0x7F, 0x00, 0x00, 0xFF}}},
+	{{{87, 0, -1}, 0, {636, 524}, {0x7F, 0x00, 0x00, 0xFF}}},
+	{{{62, 29, -41}, 0, {729, 686}, {0x3C, 0x42, 0xA5, 0xFF}}},
+	{{{87, 0, -1}, 0, {77, 524}, {0x7F, 0x00, 0x00, 0xFF}}},
+	{{{62, -29, -41}, 0, {915, 686}, {0x3C, 0xBE, 0xA5, 0xFF}}},
 	{{{-13, 0, -1}, 0, {729, 1008}, {0x81, 0x00, 0x00, 0xFF}}},
 	{{{12, 0, -50}, 0, {822, 847}, {0xC4, 0x00, 0x90, 0xFF}}},
-	{{{62, 29, -41}, 0, {729, 686}, {0x3C, 0x42, 0xA5, 0xFF}}},
-	{{{62, -29, -41}, 0, {915, 686}, {0x3C, 0xBE, 0xA5, 0xFF}}},
 	{{{12, -47, -16}, 0, {1008, 847}, {0xC4, 0x96, 0xDD, 0xFF}}},
 };
 
 Gfx kaktus_tour_Left_Hand_DL_mesh_layer_1_tri_0[] = {
-	gsSPVertex(kaktus_tour_Left_Hand_DL_mesh_layer_1_vtx_0 + 0, 16, 0),
+	gsSPVertex(kaktus_tour_Left_Hand_DL_mesh_layer_1_vtx_0 + 0, 18, 0),
 	gsSP2Triangles(0, 1, 2, 0, 1, 3, 2, 0),
 	gsSP2Triangles(1, 4, 3, 0, 5, 4, 1, 0),
 	gsSP2Triangles(5, 1, 6, 0, 5, 6, 7, 0),
 	gsSP2Triangles(7, 8, 5, 0, 7, 9, 8, 0),
 	gsSP2Triangles(5, 8, 4, 0, 10, 4, 8, 0),
-	gsSP2Triangles(10, 3, 4, 0, 11, 2, 12, 0),
-	gsSP2Triangles(2, 13, 12, 0, 2, 3, 13, 0),
-	gsSP2Triangles(12, 13, 14, 0, 12, 14, 15, 0),
-	gsSP1Triangle(11, 12, 15, 0),
+	gsSP2Triangles(10, 3, 4, 0, 3, 11, 12, 0),
+	gsSP2Triangles(2, 3, 12, 0, 13, 8, 14, 0),
+	gsSP2Triangles(13, 14, 12, 0, 15, 2, 16, 0),
+	gsSP1Triangle(15, 16, 17, 0),
 	gsSPEndDisplayList(),
 };
 
-Vtx kaktus_tour_Left_Hand_DL_mesh_layer_1_vtx_1[6] = {
-	{{{62, 47, 15}, 0, {543, 686}, {0x3C, 0x6A, 0x23, 0xFF}}},
-	{{{87, 0, -1}, 0, {636, 524}, {0x7F, 0x00, 0x00, 0xFF}}},
-	{{{62, 29, -41}, 0, {729, 686}, {0x3C, 0x42, 0xA5, 0xFF}}},
-	{{{87, 0, -1}, 0, {77, 524}, {0x7F, 0x00, 0x00, 0xFF}}},
+Vtx kaktus_tour_Left_Hand_DL_mesh_layer_1_vtx_1[5] = {
+	{{{12, 0, -50}, 0, {822, 847}, {0xC4, 0x00, 0x90, 0xFF}}},
 	{{{62, -29, -41}, 0, {915, 686}, {0x3C, 0xBE, 0xA5, 0xFF}}},
-	{{{62, -47, 15}, 0, {170, 686}, {0x3C, 0x96, 0x23, 0xFF}}},
+	{{{12, -47, -16}, 0, {1008, 847}, {0xC4, 0x96, 0xDD, 0xFF}}},
+	{{{62, 29, -41}, 0, {729, 686}, {0x3C, 0x42, 0xA5, 0xFF}}},
+	{{{12, 47, -16}, 0, {636, 847}, {0xC4, 0x6A, 0xDD, 0xFF}}},
 };
 
 Gfx kaktus_tour_Left_Hand_DL_mesh_layer_1_tri_1[] = {
-	gsSPVertex(kaktus_tour_Left_Hand_DL_mesh_layer_1_vtx_1 + 0, 6, 0),
-	gsSP2Triangles(0, 1, 2, 0, 3, 4, 2, 0),
-	gsSP1Triangle(3, 5, 4, 0),
+	gsSPVertex(kaktus_tour_Left_Hand_DL_mesh_layer_1_vtx_1 + 0, 5, 0),
+	gsSP2Triangles(0, 1, 2, 0, 0, 3, 1, 0),
+	gsSP1Triangle(4, 3, 0, 0),
 	gsSPEndDisplayList(),
 };
 
@@ -2902,16 +2903,13 @@ Gfx kaktus_tour_Right_Forearm_mesh_layer_1_tri_1[] = {
 	gsSPEndDisplayList(),
 };
 
-Vtx kaktus_tour_Right_Hand_DL_mesh_layer_1_vtx_0[16] = {
+Vtx kaktus_tour_Right_Hand_DL_mesh_layer_1_vtx_0[18] = {
 	{{{-14, 0, -1}, 0, {543, 1008}, {0x81, 0x00, 0x00, 0xFF}}},
 	{{{11, 47, 14}, 0, {636, 847}, {0xC4, 0x6A, 0x23, 0xFF}}},
 	{{{11, 29, -42}, 0, {449, 847}, {0xC4, 0x42, 0xA5, 0xFF}}},
 	{{{61, 47, -17}, 0, {543, 686}, {0x3C, 0x6A, 0xDD, 0xFF}}},
 	{{{61, 29, 39}, 0, {729, 686}, {0x3C, 0x42, 0x5B, 0xFF}}},
-	{{{11, 0, 48}, 0, {822, 847}, {0xC4, 0x00, 0x70, 0xFF}}},
-	{{{-14, 0, -1}, 0, {729, 1008}, {0x81, 0x00, 0x00, 0xFF}}},
-	{{{11, -47, 14}, 0, {1008, 847}, {0xC4, 0x96, 0x23, 0xFF}}},
-	{{{61, -29, 39}, 0, {915, 686}, {0x3C, 0xBE, 0x5B, 0xFF}}},
+	{{{86, 0, -1}, 0, {636, 524}, {0x7F, 0x00, 0x00, 0xFF}}},
 	{{{61, 0, -51}, 0, {356, 686}, {0x3C, 0x00, 0x90, 0xFF}}},
 	{{{86, 0, -1}, 0, {449, 524}, {0x7F, 0x00, 0x00, 0xFF}}},
 	{{{61, -47, -17}, 0, {170, 686}, {0x3C, 0x96, 0xDD, 0xFF}}},
@@ -2919,35 +2917,39 @@ Vtx kaktus_tour_Right_Hand_DL_mesh_layer_1_vtx_0[16] = {
 	{{{11, -47, 14}, 0, {77, 847}, {0xC4, 0x96, 0x23, 0xFF}}},
 	{{{61, -29, 39}, 0, {-16, 686}, {0x3C, 0xBE, 0x5B, 0xFF}}},
 	{{{-14, 0, -1}, 0, {170, 1008}, {0x81, 0x00, 0x00, 0xFF}}},
+	{{{86, 0, -1}, 0, {77, 524}, {0x7F, 0x00, 0x00, 0xFF}}},
+	{{{61, -29, 39}, 0, {915, 686}, {0x3C, 0xBE, 0x5B, 0xFF}}},
+	{{{-14, 0, -1}, 0, {729, 1008}, {0x81, 0x00, 0x00, 0xFF}}},
+	{{{11, 0, 48}, 0, {822, 847}, {0xC4, 0x00, 0x70, 0xFF}}},
+	{{{11, -47, 14}, 0, {1008, 847}, {0xC4, 0x96, 0x23, 0xFF}}},
 };
 
 Gfx kaktus_tour_Right_Hand_DL_mesh_layer_1_tri_0[] = {
-	gsSPVertex(kaktus_tour_Right_Hand_DL_mesh_layer_1_vtx_0 + 0, 16, 0),
+	gsSPVertex(kaktus_tour_Right_Hand_DL_mesh_layer_1_vtx_0 + 0, 18, 0),
 	gsSP2Triangles(0, 1, 2, 0, 2, 1, 3, 0),
-	gsSP2Triangles(1, 4, 3, 0, 1, 5, 4, 0),
-	gsSP2Triangles(6, 5, 1, 0, 6, 7, 5, 0),
-	gsSP2Triangles(5, 7, 8, 0, 5, 8, 4, 0),
-	gsSP2Triangles(2, 3, 9, 0, 10, 9, 3, 0),
-	gsSP2Triangles(10, 11, 9, 0, 12, 9, 11, 0),
-	gsSP2Triangles(13, 12, 11, 0, 13, 11, 14, 0),
-	gsSP2Triangles(12, 13, 15, 0, 12, 15, 2, 0),
-	gsSP1Triangle(12, 2, 9, 0),
+	gsSP2Triangles(1, 4, 3, 0, 3, 4, 5, 0),
+	gsSP2Triangles(2, 3, 6, 0, 7, 6, 3, 0),
+	gsSP2Triangles(7, 8, 6, 0, 9, 6, 8, 0),
+	gsSP2Triangles(10, 9, 8, 0, 10, 8, 11, 0),
+	gsSP2Triangles(9, 10, 12, 0, 9, 12, 2, 0),
+	gsSP2Triangles(9, 2, 6, 0, 13, 14, 8, 0),
+	gsSP2Triangles(13, 4, 14, 0, 15, 16, 1, 0),
+	gsSP1Triangle(15, 17, 16, 0),
 	gsSPEndDisplayList(),
 };
 
-Vtx kaktus_tour_Right_Hand_DL_mesh_layer_1_vtx_1[6] = {
-	{{{61, 47, -17}, 0, {543, 686}, {0x3C, 0x6A, 0xDD, 0xFF}}},
-	{{{61, 29, 39}, 0, {729, 686}, {0x3C, 0x42, 0x5B, 0xFF}}},
-	{{{86, 0, -1}, 0, {636, 524}, {0x7F, 0x00, 0x00, 0xFF}}},
-	{{{86, 0, -1}, 0, {77, 524}, {0x7F, 0x00, 0x00, 0xFF}}},
+Vtx kaktus_tour_Right_Hand_DL_mesh_layer_1_vtx_1[5] = {
+	{{{11, 0, 48}, 0, {822, 847}, {0xC4, 0x00, 0x70, 0xFF}}},
+	{{{11, -47, 14}, 0, {1008, 847}, {0xC4, 0x96, 0x23, 0xFF}}},
 	{{{61, -29, 39}, 0, {915, 686}, {0x3C, 0xBE, 0x5B, 0xFF}}},
-	{{{61, -47, -17}, 0, {170, 686}, {0x3C, 0x96, 0xDD, 0xFF}}},
+	{{{61, 29, 39}, 0, {729, 686}, {0x3C, 0x42, 0x5B, 0xFF}}},
+	{{{11, 47, 14}, 0, {636, 847}, {0xC4, 0x6A, 0x23, 0xFF}}},
 };
 
 Gfx kaktus_tour_Right_Hand_DL_mesh_layer_1_tri_1[] = {
-	gsSPVertex(kaktus_tour_Right_Hand_DL_mesh_layer_1_vtx_1 + 0, 6, 0),
-	gsSP2Triangles(0, 1, 2, 0, 3, 1, 4, 0),
-	gsSP1Triangle(3, 4, 5, 0),
+	gsSPVertex(kaktus_tour_Right_Hand_DL_mesh_layer_1_vtx_1 + 0, 5, 0),
+	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
+	gsSP1Triangle(4, 0, 3, 0),
 	gsSPEndDisplayList(),
 };
 
