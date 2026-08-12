@@ -30,7 +30,7 @@ if not _G.charSelectExists then
     return 0
 end
 
-local E_MODEL_KAKTUS = smlua_model_util_get_id("kaktus_geo")
+local E_MODEL_KAKTUS = smlua_model_util_get_id("kaktus_new_geo")
 
 local E_MODEL_KAKTUS_TOURING = smlua_model_util_get_id("kaktus_tour_geo")
 
@@ -418,9 +418,9 @@ if _G.charSelectExists then
     CT_KAKTUS = _G.charSelect.character_add("Kaktus", {"Cactus guy with a cool umbrella.",
                                                         "",
                                                         "Kaktus's moveset is designed",
-                                                        "around his 'Brella. Larger",
+                                                        "around their 'Brella. Larger",
                                                         "Gaps may be easier to cross,",
-                                                        "but his main moves are less",
+                                                        "but their main moves are less",
                                                         "powerful.",
                                                         "",
                                                         "His powerups are from other",
@@ -429,12 +429,12 @@ if _G.charSelectExists then
     --_G.charSelect.character_add_costume(CT_KAKTUS, "Goattus", {"goat simulator",
     --                                                    "",
     --                                                    "Kaktus's moveset is designed",
-    --                                                    "around his 'Brella. Larger",
+    --                                                    "around their 'Brella. Larger",
     --                                                    "Gaps may be easier to cross,",
-    --                                                    "but his main moves are less",
+    --                                                    "but their main moves are less",
     --                                                    "powerful.",
     --                                                    "",
-    --                                                    "His powerups are from other",
+    --                                                    "their powerups are from other",
     --                                                    "Mario games, and as such may make",
     --                                                    "some challenges impossible."}, "Kaktus64 & JerThePear", {r = 153, g = 80, b = 72}, E_MODEL_KAKTUS_GOAT, CT_MARIO, KAKTUS_ICON_GOAT)
     CT_ISIKLE = _G.charSelect.character_add("Isikle", "Kaktus' cool sister.", "Kaktus64 & JerThePear", {r = 102, g = 125, b = 146}, E_MODEL_ISIKLE, CT_LUIGI, ISIKLE_ICON, 1.1) -- no icon yet, replace nil with ISIKLE_ICON
@@ -450,12 +450,12 @@ local function on_character_select_load()
     _G.charSelect.character_add_costume(CT_KAKTUS, "Touring", {"Cactus guy with a cool umbrella.",
                                                         "",
                                                         "Kaktus's moveset is designed",
-                                                        "around his 'Brella. Larger",
+                                                        "around their 'Brella. Larger",
                                                         "Gaps may be easier to cross,",
-                                                        "but his main moves are less",
+                                                        "but their main moves are less",
                                                         "powerful.",
                                                         "",
-                                                        "His powerups are from other",
+                                                        "Their powerups are from other",
                                                         "Mario games, and as such may make",
                                                         "some challenges impossible."}, "Kaktus64 & JerThePear", {r = 172, g = 80, b = 255}, E_MODEL_KAKTUS_TOURING, CT_MARIO, KAKTUS_ICON, 0.95)
     _G.charSelect.character_add_caps(E_MODEL_KAKTUS, CAPTABLE_KAKTUS)
