@@ -32,7 +32,7 @@ end
 
 local E_MODEL_KAKTUS = smlua_model_util_get_id("kaktus_new_geo")
 
-local E_MODEL_KAKTUS_TOURING = smlua_model_util_get_id("kaktus_tour_geo")
+--local E_MODEL_KAKTUS_TOURING = smlua_model_util_get_id("kaktus_tour_geo")
 
 local KAKTUS_ICON = get_texture_info("Kaktus-LifeIcon1")
 
@@ -113,7 +113,7 @@ local VOICETABLE_ISIKLE = {
 }
 
 local ANIMTABLE_KAKTUS = {
-    [_G.charSelect.CS_ANIM_MENU] = "kaktus_menu_pose",
+    --[_G.charSelect.CS_ANIM_MENU] = "kaktus_menu_pose",
     [CHAR_ANIM_SLIDEJUMP] = "kaktus_wallkick",
     [CHAR_ANIM_TRIPLE_JUMP] = 'triplejumpspin',
     [CHAR_ANIM_CREDITS_START_WALK_LOOK_UP] = 'endcutscenekak',
@@ -149,14 +149,14 @@ local ANIMTABLE_KAKTUS_GOAT = {
 local PALETTE_KAKTUS = {
 
     name = "Kaktus",
-    [PANTS]  = "313149",
-    [SHIRT]  = "791E82",
+    [PANTS]  = "28263B",
+    [SHIRT]  = "862692",
     [GLOVES] = "FF0003",
-    [SHOES]  = "D8004D",
-    [HAIR]   = "743F39",
-    [SKIN]   = "DB9C70",
-    [CAP]    = "3E8948",
-	[EMBLEM] = "D87644"
+    [SHOES]  = "FF003D",
+    [HAIR]   = "6B4637",
+    [SKIN]   = "ECA677",
+    [CAP]    = "37973B",
+	[EMBLEM] = "BB733B"
 }
 
 local PALETTE_KAKTUSP2 = {
@@ -446,7 +446,7 @@ local function on_character_select_load()
     --_G.charSelect.character_add_voice(E_MODEL_KAKTUS_GOAT, VOICETABLE_KAKTUS)
     --_G.charSelect.character_add_animations(E_MODEL_KAKTUS_GOAT, ANIMTABLE_KAKTUS_GOAT)
     --_G.charSelect.character_add_costume_health_meter(CT_KAKTUS, 1, HM_KAKTUS)
-
+--[[
     _G.charSelect.character_add_costume(CT_KAKTUS, "Touring", {"Cactus guy with a cool umbrella.",
                                                         "",
                                                         "Kaktus's moveset is designed",
@@ -458,6 +458,7 @@ local function on_character_select_load()
                                                         "Their powerups are from other",
                                                         "Mario games, and as such may make",
                                                         "some challenges impossible."}, "Kaktus64 & JerThePear", {r = 172, g = 80, b = 255}, E_MODEL_KAKTUS_TOURING, CT_MARIO, KAKTUS_ICON, 0.95)
+--]]
     _G.charSelect.character_add_caps(E_MODEL_KAKTUS, CAPTABLE_KAKTUS)
     _G.charSelect.character_add_voice(E_MODEL_KAKTUS, VOICETABLE_KAKTUS)
     _G.charSelect.character_add_voice(E_MODEL_ISIKLE, VOICETABLE_ISIKLE)
@@ -466,9 +467,9 @@ local function on_character_select_load()
     _G.charSelect.character_add_animations(E_MODEL_KAKTUS, ANIMTABLE_KAKTUS)
     _G.charSelect.character_add_menu_instrumental(CT_KAKTUS, KAKTUS_TUNE)
     _G.charSelect.character_add_graffiti(CT_KAKTUS, KAKTUS_ART)
-    _G.charSelect.character_add_caps(E_MODEL_KAKTUS_TOURING, CAPTABLE_KAKTUS)
-    _G.charSelect.character_add_voice(E_MODEL_KAKTUS_TOURING, VOICETABLE_KAKTUS)
-    _G.charSelect.character_add_animations(E_MODEL_KAKTUS_TOURING, ANIMTABLE_KAKTUS)
+    --_G.charSelect.character_add_caps(E_MODEL_KAKTUS_TOURING, CAPTABLE_KAKTUS)
+    --_G.charSelect.character_add_voice(E_MODEL_KAKTUS_TOURING, VOICETABLE_KAKTUS)
+    --_G.charSelect.character_add_animations(E_MODEL_KAKTUS_TOURING, ANIMTABLE_KAKTUS)
     --_G.charSelect.character_add_nickname(CT_KAKTUS, "Kaktus", false)
 
     _G.charSelect.character_add_caps(E_MODEL_ISIKLE, CAPTABLE_ISIKLE)
@@ -497,7 +498,7 @@ local function on_character_select_load()
     _G.charSelect.character_add_palette_preset(E_MODEL_KAKTUS, PALETTE_COOL_BREEZE_KAK, "Cool Breeze")
     _G.charSelect.character_add_palette_preset(E_MODEL_KAKTUS, PALETTE_FALL_BREEZE_KAK, "Fall Breeze")
     _G.charSelect.character_add_palette_preset(E_MODEL_KAKTUS, PALETTE_LOOK_GOOD_KAK, "Looking Good")
-
+--[[
     _G.charSelect.character_add_palette_preset(E_MODEL_KAKTUS_TOURING, PALETTE_KAKTUS, "Kaktus")
     _G.charSelect.character_add_palette_preset(E_MODEL_KAKTUS_TOURING, PALETTE_KAKTUSP2, "P2")
     _G.charSelect.character_add_palette_preset(E_MODEL_KAKTUS_TOURING, PALETTE_KAKTUSP3, "P3")
@@ -511,7 +512,7 @@ local function on_character_select_load()
     _G.charSelect.character_add_palette_preset(E_MODEL_KAKTUS_TOURING, PALETTE_COOL_BREEZE_KAK, "Cool Breeze")
     _G.charSelect.character_add_palette_preset(E_MODEL_KAKTUS_TOURING, PALETTE_FALL_BREEZE_KAK, "Fall Breeze")
     _G.charSelect.character_add_palette_preset(E_MODEL_KAKTUS_TOURING, PALETTE_LOOK_GOOD_KAK, "Looking Good")
-
+--]]
     _G.charSelect.character_add_palette_preset(E_MODEL_ISIKLE, PALETTE_ISIKLE, "Isikle")
     _G.charSelect.character_add_palette_preset(E_MODEL_ISIKLE, PALETTE_ISIKLE_LEGACY, "Ysikle")
     _G.charSelect.character_add_palette_preset(E_MODEL_ISIKLE, PALETTE_JESSIKLE, "Jessikle")

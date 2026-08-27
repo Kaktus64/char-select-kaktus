@@ -76,14 +76,14 @@ const GeoLayout kaktus_new_Capless_Head[] = {
 	GEO_RETURN(),
 };
 const GeoLayout kaktus_new_Left_Hand_Open[] = {
-	GEO_NODE_START(),
+	GEO_TRANSLATE_ROTATE(LAYER_OPAQUE, 60, 0, 0, 0, 0, 0),
 	GEO_OPEN_NODE(),
 		GEO_ANIMATED_PART(LAYER_OPAQUE, 60, 0, 0, kaktus_new_Left_Hand_Open_Switch_Option_Left_Hand_Open_mesh_layer_1),
 	GEO_CLOSE_NODE(),
 	GEO_RETURN(),
 };
 const GeoLayout kaktus_new_Right_Hand_Open[] = {
-	GEO_NODE_START(),
+	GEO_TRANSLATE_ROTATE(LAYER_OPAQUE, 60, 0, 0, 0, 0, 0),
 	GEO_OPEN_NODE(),
 		GEO_ANIMATED_PART(LAYER_OPAQUE, 60, 0, 0, kaktus_new_Right_Hand_Open_Switch_Option_Right_Hand_Open_mesh_layer_1),
 		GEO_OPEN_NODE(),
@@ -93,14 +93,17 @@ const GeoLayout kaktus_new_Right_Hand_Open[] = {
 	GEO_RETURN(),
 };
 const GeoLayout kaktus_new_Right_Hand_Peace[] = {
-	GEO_NODE_START(),
+	GEO_TRANSLATE_ROTATE(LAYER_OPAQUE, 60, 0, 0, 0, 0, 0),
 	GEO_OPEN_NODE(),
 		GEO_ANIMATED_PART(LAYER_OPAQUE, 60, 0, 0, kaktus_new_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_1),
+		GEO_OPEN_NODE(),
+			GEO_DISPLAY_LIST(LAYER_ALPHA, kaktus_new_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_4),
+		GEO_CLOSE_NODE(),
 	GEO_CLOSE_NODE(),
 	GEO_RETURN(),
 };
 const GeoLayout kaktus_new_Right_Hand_Cap[] = {
-	GEO_NODE_START(),
+	GEO_TRANSLATE_ROTATE(LAYER_OPAQUE, 60, 0, 0, 0, 0, 0),
 	GEO_OPEN_NODE(),
 		GEO_ANIMATED_PART(LAYER_OPAQUE, 60, 0, 0, kaktus_new_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_1),
 		GEO_OPEN_NODE(),
@@ -110,7 +113,7 @@ const GeoLayout kaktus_new_Right_Hand_Cap[] = {
 	GEO_RETURN(),
 };
 const GeoLayout kaktus_new_Right_Hand_Wing_Cap[] = {
-	GEO_NODE_START(),
+	GEO_TRANSLATE_ROTATE(LAYER_OPAQUE, 60, 0, 0, 0, 0, 0),
 	GEO_OPEN_NODE(),
 		GEO_ANIMATED_PART(LAYER_OPAQUE, 60, 0, 0, kaktus_new_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_1),
 		GEO_OPEN_NODE(),
@@ -569,16 +572,22 @@ const GeoLayout kaktus_new_B_LoD_Switch_opt0_Cap_State_Switch_opt1_jump_kaktus_n
 const GeoLayout kaktus_new_B_LoD_Switch_opt0_Cap_State_Switch_opt1_jump_kaktus_new_Left_Hand_Open[] = {
 	GEO_NODE_START(),
 	GEO_OPEN_NODE(),
-		GEO_ANIMATED_PART(LAYER_TRANSPARENT, 60, 0, 0, kaktus_new_Left_Hand_Open_Switch_Option_Left_Hand_Open_mesh_layer_1),
+		GEO_TRANSLATE_ROTATE(LAYER_OPAQUE, 60, 0, 0, 0, 0, 0),
+		GEO_OPEN_NODE(),
+			GEO_ANIMATED_PART(LAYER_TRANSPARENT, 60, 0, 0, kaktus_new_Left_Hand_Open_Switch_Option_Left_Hand_Open_mesh_layer_1),
+		GEO_CLOSE_NODE(),
 	GEO_CLOSE_NODE(),
 	GEO_RETURN(),
 };
 const GeoLayout kaktus_new_B_LoD_Switch_opt0_Cap_State_Switch_opt1_jump_kaktus_new_Right_Hand_Open[] = {
 	GEO_NODE_START(),
 	GEO_OPEN_NODE(),
-		GEO_ANIMATED_PART(LAYER_TRANSPARENT, 60, 0, 0, kaktus_new_Right_Hand_Open_Switch_Option_Right_Hand_Open_mesh_layer_1),
+		GEO_TRANSLATE_ROTATE(LAYER_OPAQUE, 60, 0, 0, 0, 0, 0),
 		GEO_OPEN_NODE(),
-			GEO_HELD_OBJECT(0, 0, 0, 0, geo_switch_mario_hand_grab_pos),
+			GEO_ANIMATED_PART(LAYER_TRANSPARENT, 60, 0, 0, kaktus_new_Right_Hand_Open_Switch_Option_Right_Hand_Open_mesh_layer_1),
+			GEO_OPEN_NODE(),
+				GEO_HELD_OBJECT(0, 0, 0, 0, geo_switch_mario_hand_grab_pos),
+			GEO_CLOSE_NODE(),
 		GEO_CLOSE_NODE(),
 	GEO_CLOSE_NODE(),
 	GEO_RETURN(),
@@ -586,16 +595,25 @@ const GeoLayout kaktus_new_B_LoD_Switch_opt0_Cap_State_Switch_opt1_jump_kaktus_n
 const GeoLayout kaktus_new_B_LoD_Switch_opt0_Cap_State_Switch_opt1_jump_kaktus_new_Right_Hand_Peace[] = {
 	GEO_NODE_START(),
 	GEO_OPEN_NODE(),
-		GEO_ANIMATED_PART(LAYER_TRANSPARENT, 60, 0, 0, kaktus_new_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_1),
+		GEO_TRANSLATE_ROTATE(LAYER_OPAQUE, 60, 0, 0, 0, 0, 0),
+		GEO_OPEN_NODE(),
+			GEO_ANIMATED_PART(LAYER_TRANSPARENT, 60, 0, 0, kaktus_new_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_1),
+			GEO_OPEN_NODE(),
+				GEO_DISPLAY_LIST(LAYER_TRANSPARENT, kaktus_new_Right_Hand_Peace_Switch_Option_Right_Hand_Peace_mesh_layer_4),
+			GEO_CLOSE_NODE(),
+		GEO_CLOSE_NODE(),
 	GEO_CLOSE_NODE(),
 	GEO_RETURN(),
 };
 const GeoLayout kaktus_new_B_LoD_Switch_opt0_Cap_State_Switch_opt1_jump_kaktus_new_Right_Hand_Cap[] = {
 	GEO_NODE_START(),
 	GEO_OPEN_NODE(),
-		GEO_ANIMATED_PART(LAYER_TRANSPARENT, 60, 0, 0, kaktus_new_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_1),
+		GEO_TRANSLATE_ROTATE(LAYER_OPAQUE, 60, 0, 0, 0, 0, 0),
 		GEO_OPEN_NODE(),
-			GEO_DISPLAY_LIST(LAYER_TRANSPARENT, kaktus_new_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_2),
+			GEO_ANIMATED_PART(LAYER_TRANSPARENT, 60, 0, 0, kaktus_new_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_1),
+			GEO_OPEN_NODE(),
+				GEO_DISPLAY_LIST(LAYER_TRANSPARENT, kaktus_new_Right_Hand_Cap_Switch_Option_Right_Hand_Cap_mesh_layer_2),
+			GEO_CLOSE_NODE(),
 		GEO_CLOSE_NODE(),
 	GEO_CLOSE_NODE(),
 	GEO_RETURN(),
@@ -603,10 +621,13 @@ const GeoLayout kaktus_new_B_LoD_Switch_opt0_Cap_State_Switch_opt1_jump_kaktus_n
 const GeoLayout kaktus_new_B_LoD_Switch_opt0_Cap_State_Switch_opt1_jump_kaktus_new_Right_Hand_Wing_Cap[] = {
 	GEO_NODE_START(),
 	GEO_OPEN_NODE(),
-		GEO_ANIMATED_PART(LAYER_TRANSPARENT, 60, 0, 0, kaktus_new_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_1),
+		GEO_TRANSLATE_ROTATE(LAYER_OPAQUE, 60, 0, 0, 0, 0, 0),
 		GEO_OPEN_NODE(),
-			GEO_DISPLAY_LIST(LAYER_TRANSPARENT, kaktus_new_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_2),
-			GEO_DISPLAY_LIST(LAYER_TRANSPARENT, kaktus_new_Right_Hand_Wing_Cap_Swtich_Option_Wings_mesh_layer_4),
+			GEO_ANIMATED_PART(LAYER_TRANSPARENT, 60, 0, 0, kaktus_new_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_1),
+			GEO_OPEN_NODE(),
+				GEO_DISPLAY_LIST(LAYER_TRANSPARENT, kaktus_new_Right_Hand_Wing_Cap_Swtich_Option_Right_Hand_Wing_Cap_mesh_layer_2),
+				GEO_DISPLAY_LIST(LAYER_TRANSPARENT, kaktus_new_Right_Hand_Wing_Cap_Swtich_Option_Wings_mesh_layer_4),
+			GEO_CLOSE_NODE(),
 		GEO_CLOSE_NODE(),
 	GEO_CLOSE_NODE(),
 	GEO_RETURN(),
@@ -614,56 +635,56 @@ const GeoLayout kaktus_new_B_LoD_Switch_opt0_Cap_State_Switch_opt1_jump_kaktus_n
 const GeoLayout kaktus_new_B_LoD_Switch_opt0_Cap_State_Switch_opt1_Capless_Switch_opt0_Eye_State_Switch_opt1[] = {
 	GEO_NODE_START(),
 	GEO_OPEN_NODE(),
-		GEO_DISPLAY_LIST(LAYER_TRANSPARENT, kaktus_new_Head_DL_mesh_layer_1_mat_override_Half_Closed_Eyes__SKIN__0),
-		GEO_DISPLAY_LIST(LAYER_TRANSPARENT, kaktus_new_Head_DL_mesh_layer_4_mat_override_Half_Closed_Eyes__SKIN__0),
+		GEO_DISPLAY_LIST(LAYER_TRANSPARENT, kaktus_new_Head_DL_mesh_layer_1_mat_override_EyeHalf_0),
+		GEO_DISPLAY_LIST(LAYER_TRANSPARENT, kaktus_new_Head_DL_mesh_layer_4_mat_override_EyeHalf_0),
 	GEO_CLOSE_NODE(),
 	GEO_RETURN(),
 };
 const GeoLayout kaktus_new_B_LoD_Switch_opt0_Cap_State_Switch_opt1_Capless_Switch_opt0_Eye_State_Switch_opt2[] = {
 	GEO_NODE_START(),
 	GEO_OPEN_NODE(),
-		GEO_DISPLAY_LIST(LAYER_TRANSPARENT, kaktus_new_Head_DL_mesh_layer_1_mat_override_Closed_Eyes__SKIN__1),
-		GEO_DISPLAY_LIST(LAYER_TRANSPARENT, kaktus_new_Head_DL_mesh_layer_4_mat_override_Closed_Eyes__SKIN__1),
+		GEO_DISPLAY_LIST(LAYER_TRANSPARENT, kaktus_new_Head_DL_mesh_layer_1_mat_override_EyeClosed_1),
+		GEO_DISPLAY_LIST(LAYER_TRANSPARENT, kaktus_new_Head_DL_mesh_layer_4_mat_override_EyeClosed_1),
 	GEO_CLOSE_NODE(),
 	GEO_RETURN(),
 };
 const GeoLayout kaktus_new_B_LoD_Switch_opt0_Cap_State_Switch_opt1_Capless_Switch_opt0_Eye_State_Switch_opt3[] = {
 	GEO_NODE_START(),
 	GEO_OPEN_NODE(),
-		GEO_DISPLAY_LIST(LAYER_TRANSPARENT, kaktus_new_Head_DL_mesh_layer_1_mat_override_Left_Eyes__SKIN__2),
-		GEO_DISPLAY_LIST(LAYER_TRANSPARENT, kaktus_new_Head_DL_mesh_layer_4_mat_override_Left_Eyes__SKIN__2),
+		GEO_DISPLAY_LIST(LAYER_TRANSPARENT, kaktus_new_Head_DL_mesh_layer_1_mat_override_EyeLeft_2),
+		GEO_DISPLAY_LIST(LAYER_TRANSPARENT, kaktus_new_Head_DL_mesh_layer_4_mat_override_EyeLeft_2),
 	GEO_CLOSE_NODE(),
 	GEO_RETURN(),
 };
 const GeoLayout kaktus_new_B_LoD_Switch_opt0_Cap_State_Switch_opt1_Capless_Switch_opt0_Eye_State_Switch_opt4[] = {
 	GEO_NODE_START(),
 	GEO_OPEN_NODE(),
-		GEO_DISPLAY_LIST(LAYER_TRANSPARENT, kaktus_new_Head_DL_mesh_layer_1_mat_override_Right_Eyes__SKIN__3),
-		GEO_DISPLAY_LIST(LAYER_TRANSPARENT, kaktus_new_Head_DL_mesh_layer_4_mat_override_Right_Eyes__SKIN__3),
+		GEO_DISPLAY_LIST(LAYER_TRANSPARENT, kaktus_new_Head_DL_mesh_layer_1_mat_override_EyeRight_3),
+		GEO_DISPLAY_LIST(LAYER_TRANSPARENT, kaktus_new_Head_DL_mesh_layer_4_mat_override_EyeRight_3),
 	GEO_CLOSE_NODE(),
 	GEO_RETURN(),
 };
 const GeoLayout kaktus_new_B_LoD_Switch_opt0_Cap_State_Switch_opt1_Capless_Switch_opt0_Eye_State_Switch_opt5[] = {
 	GEO_NODE_START(),
 	GEO_OPEN_NODE(),
-		GEO_DISPLAY_LIST(LAYER_TRANSPARENT, kaktus_new_Head_DL_mesh_layer_1_mat_override_Up_Eyes__SKIN__4),
-		GEO_DISPLAY_LIST(LAYER_TRANSPARENT, kaktus_new_Head_DL_mesh_layer_4_mat_override_Up_Eyes__SKIN__4),
+		GEO_DISPLAY_LIST(LAYER_TRANSPARENT, kaktus_new_Head_DL_mesh_layer_1_mat_override_EyeUp_4),
+		GEO_DISPLAY_LIST(LAYER_TRANSPARENT, kaktus_new_Head_DL_mesh_layer_4_mat_override_EyeUp_4),
 	GEO_CLOSE_NODE(),
 	GEO_RETURN(),
 };
 const GeoLayout kaktus_new_B_LoD_Switch_opt0_Cap_State_Switch_opt1_Capless_Switch_opt0_Eye_State_Switch_opt6[] = {
 	GEO_NODE_START(),
 	GEO_OPEN_NODE(),
-		GEO_DISPLAY_LIST(LAYER_TRANSPARENT, kaktus_new_Head_DL_mesh_layer_1_mat_override_Down_Eyes__SKIN__5),
-		GEO_DISPLAY_LIST(LAYER_TRANSPARENT, kaktus_new_Head_DL_mesh_layer_4_mat_override_Down_Eyes__SKIN__5),
+		GEO_DISPLAY_LIST(LAYER_TRANSPARENT, kaktus_new_Head_DL_mesh_layer_1_mat_override_EyeDown_5),
+		GEO_DISPLAY_LIST(LAYER_TRANSPARENT, kaktus_new_Head_DL_mesh_layer_4_mat_override_EyeDown_5),
 	GEO_CLOSE_NODE(),
 	GEO_RETURN(),
 };
 const GeoLayout kaktus_new_B_LoD_Switch_opt0_Cap_State_Switch_opt1_Capless_Switch_opt0_Eye_State_Switch_opt7[] = {
 	GEO_NODE_START(),
 	GEO_OPEN_NODE(),
-		GEO_DISPLAY_LIST(LAYER_TRANSPARENT, kaktus_new_Head_DL_mesh_layer_1_mat_override_Dead_Eyes__SKIN__6),
-		GEO_DISPLAY_LIST(LAYER_TRANSPARENT, kaktus_new_Head_DL_mesh_layer_4_mat_override_Dead_Eyes__SKIN__6),
+		GEO_DISPLAY_LIST(LAYER_TRANSPARENT, kaktus_new_Head_DL_mesh_layer_1_mat_override_EyeDead_6),
+		GEO_DISPLAY_LIST(LAYER_TRANSPARENT, kaktus_new_Head_DL_mesh_layer_4_mat_override_EyeDead_6),
 	GEO_CLOSE_NODE(),
 	GEO_RETURN(),
 };
@@ -817,56 +838,56 @@ const GeoLayout kaktus_new_B_LoD_Switch_opt0_Cap_State_Switch_opt1[] = {
 const GeoLayout kaktus_new_B_LoD_Switch_opt0_Cap_State_Switch_opt0_Capless_Switch_opt0_Eye_State_Switch_opt1[] = {
 	GEO_NODE_START(),
 	GEO_OPEN_NODE(),
-		GEO_DISPLAY_LIST(LAYER_OPAQUE, kaktus_new_Head_DL_mesh_layer_1_mat_override_Half_Closed_Eyes__SKIN__0),
-		GEO_DISPLAY_LIST(LAYER_ALPHA, kaktus_new_Head_DL_mesh_layer_4_mat_override_Half_Closed_Eyes__SKIN__0),
+		GEO_DISPLAY_LIST(LAYER_OPAQUE, kaktus_new_Head_DL_mesh_layer_1_mat_override_EyeHalf_0),
+		GEO_DISPLAY_LIST(LAYER_ALPHA, kaktus_new_Head_DL_mesh_layer_4_mat_override_EyeHalf_0),
 	GEO_CLOSE_NODE(),
 	GEO_RETURN(),
 };
 const GeoLayout kaktus_new_B_LoD_Switch_opt0_Cap_State_Switch_opt0_Capless_Switch_opt0_Eye_State_Switch_opt2[] = {
 	GEO_NODE_START(),
 	GEO_OPEN_NODE(),
-		GEO_DISPLAY_LIST(LAYER_OPAQUE, kaktus_new_Head_DL_mesh_layer_1_mat_override_Closed_Eyes__SKIN__1),
-		GEO_DISPLAY_LIST(LAYER_ALPHA, kaktus_new_Head_DL_mesh_layer_4_mat_override_Closed_Eyes__SKIN__1),
+		GEO_DISPLAY_LIST(LAYER_OPAQUE, kaktus_new_Head_DL_mesh_layer_1_mat_override_EyeClosed_1),
+		GEO_DISPLAY_LIST(LAYER_ALPHA, kaktus_new_Head_DL_mesh_layer_4_mat_override_EyeClosed_1),
 	GEO_CLOSE_NODE(),
 	GEO_RETURN(),
 };
 const GeoLayout kaktus_new_B_LoD_Switch_opt0_Cap_State_Switch_opt0_Capless_Switch_opt0_Eye_State_Switch_opt3[] = {
 	GEO_NODE_START(),
 	GEO_OPEN_NODE(),
-		GEO_DISPLAY_LIST(LAYER_OPAQUE, kaktus_new_Head_DL_mesh_layer_1_mat_override_Left_Eyes__SKIN__2),
-		GEO_DISPLAY_LIST(LAYER_ALPHA, kaktus_new_Head_DL_mesh_layer_4_mat_override_Left_Eyes__SKIN__2),
+		GEO_DISPLAY_LIST(LAYER_OPAQUE, kaktus_new_Head_DL_mesh_layer_1_mat_override_EyeLeft_2),
+		GEO_DISPLAY_LIST(LAYER_ALPHA, kaktus_new_Head_DL_mesh_layer_4_mat_override_EyeLeft_2),
 	GEO_CLOSE_NODE(),
 	GEO_RETURN(),
 };
 const GeoLayout kaktus_new_B_LoD_Switch_opt0_Cap_State_Switch_opt0_Capless_Switch_opt0_Eye_State_Switch_opt4[] = {
 	GEO_NODE_START(),
 	GEO_OPEN_NODE(),
-		GEO_DISPLAY_LIST(LAYER_OPAQUE, kaktus_new_Head_DL_mesh_layer_1_mat_override_Right_Eyes__SKIN__3),
-		GEO_DISPLAY_LIST(LAYER_ALPHA, kaktus_new_Head_DL_mesh_layer_4_mat_override_Right_Eyes__SKIN__3),
+		GEO_DISPLAY_LIST(LAYER_OPAQUE, kaktus_new_Head_DL_mesh_layer_1_mat_override_EyeRight_3),
+		GEO_DISPLAY_LIST(LAYER_ALPHA, kaktus_new_Head_DL_mesh_layer_4_mat_override_EyeRight_3),
 	GEO_CLOSE_NODE(),
 	GEO_RETURN(),
 };
 const GeoLayout kaktus_new_B_LoD_Switch_opt0_Cap_State_Switch_opt0_Capless_Switch_opt0_Eye_State_Switch_opt5[] = {
 	GEO_NODE_START(),
 	GEO_OPEN_NODE(),
-		GEO_DISPLAY_LIST(LAYER_OPAQUE, kaktus_new_Head_DL_mesh_layer_1_mat_override_Up_Eyes__SKIN__4),
-		GEO_DISPLAY_LIST(LAYER_ALPHA, kaktus_new_Head_DL_mesh_layer_4_mat_override_Up_Eyes__SKIN__4),
+		GEO_DISPLAY_LIST(LAYER_OPAQUE, kaktus_new_Head_DL_mesh_layer_1_mat_override_EyeUp_4),
+		GEO_DISPLAY_LIST(LAYER_ALPHA, kaktus_new_Head_DL_mesh_layer_4_mat_override_EyeUp_4),
 	GEO_CLOSE_NODE(),
 	GEO_RETURN(),
 };
 const GeoLayout kaktus_new_B_LoD_Switch_opt0_Cap_State_Switch_opt0_Capless_Switch_opt0_Eye_State_Switch_opt6[] = {
 	GEO_NODE_START(),
 	GEO_OPEN_NODE(),
-		GEO_DISPLAY_LIST(LAYER_OPAQUE, kaktus_new_Head_DL_mesh_layer_1_mat_override_Down_Eyes__SKIN__5),
-		GEO_DISPLAY_LIST(LAYER_ALPHA, kaktus_new_Head_DL_mesh_layer_4_mat_override_Down_Eyes__SKIN__5),
+		GEO_DISPLAY_LIST(LAYER_OPAQUE, kaktus_new_Head_DL_mesh_layer_1_mat_override_EyeDown_5),
+		GEO_DISPLAY_LIST(LAYER_ALPHA, kaktus_new_Head_DL_mesh_layer_4_mat_override_EyeDown_5),
 	GEO_CLOSE_NODE(),
 	GEO_RETURN(),
 };
 const GeoLayout kaktus_new_B_LoD_Switch_opt0_Cap_State_Switch_opt0_Capless_Switch_opt0_Eye_State_Switch_opt7[] = {
 	GEO_NODE_START(),
 	GEO_OPEN_NODE(),
-		GEO_DISPLAY_LIST(LAYER_OPAQUE, kaktus_new_Head_DL_mesh_layer_1_mat_override_Dead_Eyes__SKIN__6),
-		GEO_DISPLAY_LIST(LAYER_ALPHA, kaktus_new_Head_DL_mesh_layer_4_mat_override_Dead_Eyes__SKIN__6),
+		GEO_DISPLAY_LIST(LAYER_OPAQUE, kaktus_new_Head_DL_mesh_layer_1_mat_override_EyeDead_6),
+		GEO_DISPLAY_LIST(LAYER_ALPHA, kaktus_new_Head_DL_mesh_layer_4_mat_override_EyeDead_6),
 	GEO_CLOSE_NODE(),
 	GEO_RETURN(),
 };
