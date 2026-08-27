@@ -4811,7 +4811,7 @@ Gfx mat_revert_kaktus_new_Pants[] = {
 };
 
 Gfx mat_kaktus_new_Emblem__Hole_[] = {
-	gsSPSetLights1(kaktus_new_Emblem__Hole__lights),
+	gsSPCopyLightsPlayerPart(EMBLEM),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(TEXEL0, SHADE, TEXEL0_ALPHA, SHADE, 0, 0, 0, ENVIRONMENT, TEXEL0, SHADE, TEXEL0_ALPHA, SHADE, 0, 0, 0, ENVIRONMENT),
 	gsDPSetAlphaDither(G_AD_NOISE),
